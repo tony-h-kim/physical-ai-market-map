@@ -13,11 +13,11 @@ Most published landscapes split physical AI into hardware and software, then mer
 
 The hardware/software split fails on exactly the companies that matter most: NVIDIA is silicon *and* Isaac, Cosmos and GR00T; Figure is hardware *and* Helix 2. Tesla, Unitree, Anduril and Waymo are all both. That split places the fifteen most important companies in two boxes each — and has nowhere to put fleet orchestration, safety certification or systems integration.
 
-This map is organised by **where value is captured**, not by what a company touches.
+This map is organised by **unit of sale** — what the customer actually buys — not by what a company touches.
 
 ## The taxonomy
 
-Three planes, twenty-three layers. Every company is assigned to **one primary layer** — the unit of sale, meaning what the customer actually buys. Where no layer dominates, the company is marked **full-stack** rather than forced into a box. Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.
+Three planes, twenty-five layers. Every company is assigned to **one primary layer** — the unit of sale, meaning what the customer actually buys. Where no layer dominates, the company is marked **full-stack** rather than forced into a box. Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.
 
 | Plane | Groups | Layers |
 |---|---|---|
@@ -84,7 +84,7 @@ Exits non-zero on any error. It found 34 on its first run, including several tha
 
 ## Technical
 
-A single self-contained HTML file. No build step, no dependencies, no tracking. Light and dark themes, fluid typography, and accessible contrast verified in both. Open `index.html` locally or serve the directory.
+Two self-contained HTML files, the map and its companion note. No build step, no dependencies, no tracking. Light and dark themes, fluid typography, and accessible contrast verified in both. Open `index.html` locally or serve the directory.
 
 ---
 
