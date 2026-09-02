@@ -170,6 +170,16 @@ def main(path):
             warn(f'headline count "{quoted} companies" matches neither entries ({len(co)}) '
                  f'nor distinct companies ({len([c for c in co if not c["prod"]])})')
 
+    # 12b — the taxonomy figure must name every layer that exists
+    fig = re.search(r"<svg[^>]*aria-label=\"Three-plane.*?</svg>", head, re.S)
+    if fig:
+        shown = set(re.findall(r"\b([A-C]\d+)\b", fig.group(0)))
+        for code in layers:
+            if code not in shown:
+                err(f"Fig. 1 does not show layer {code} ({layers[code]['n']})")
+    else:
+        warn("could not locate the taxonomy figure to check layer coverage")
+
     # 13 — version string consistent
     vers = set(re.findall(r"V\d-00", head))
     if len(vers) > 1:
