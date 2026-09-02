@@ -1,6 +1,6 @@
 # Physical AI Market Map — 2026
 
-An interactive landscape of **249 companies across 23 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture.
+An interactive landscape of **243 companies across 25 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture.
 
 **[→ View the live map](https://tony-h-kim.github.io/physical-ai-market-map/)**
 
@@ -21,7 +21,7 @@ Three planes, twenty-three layers. Every company is assigned to **one primary la
 
 | Plane | Groups | Layers |
 |---|---|---|
-| **A · Body** | Components · Infrastructure · Embodiments | A1–A10 |
+| **A · Body** | Components · Infrastructure · Embodiments | A1–A12 |
 | **B · Brain** | Data · Modelling · Applied autonomy | B1–B8 |
 | **C · Operations** | Operational software · Commercial delivery | C1–C5 |
 
@@ -54,7 +54,15 @@ Stated rather than hidden — the full list is on the Method tab.
 - **Sources conflict.** Where they do, the more authoritative figure is used and the conflict is noted.
 - **Survivorship.** Wound-down and acquired companies are largely absent, which flatters the sector's apparent success rate.
 
-The roster is curated, not exhaustive — roughly 250 of an estimated 700+ companies in scope.
+The roster is curated, not exhaustive — roughly 243 of an estimated 700+ companies in scope.
+
+## Validation
+
+The map is one hand-maintained HTML file, which makes it easy to ship and easy to let the data drift out of sync with the prose.  parses the embedded company data and asserts the invariants the map claims about itself: no duplicate entries, no self-referential spans, every layer code resolving in both data and prose, product lines excluded from the parent company count, controlled vocabularies for geography and vertical, no empty layers, and headline counts matching the data.
+
+
+
+It exits non-zero on any error. It found 34 on first run.
 
 ## Technical
 

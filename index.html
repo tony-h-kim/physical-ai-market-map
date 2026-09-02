@@ -20,124 +20,135 @@
     --ink:#111a2e; --onink:#ffffff; --hi:#ffffff; --hiring:rgba(17,26,46,.06); --spanbg:#f3f8ff;
     --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
     --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    /* type scale — nine steps, everything snaps to one of these */
+    --fs-display:clamp(26px,2.6vw + 14px,44px);
+    --fs-metric:clamp(25px,1.0vw + 21px,32px);
+    --fs-h2:clamp(19px,0.7vw + 16.5px,26px);
+    --fs-lede:clamp(16px,0.4vw + 14.6px,19px);
+    --fs-body:clamp(14.5px,0.28vw + 13.6px,17px);
+    --fs-sm:clamp(13.4px,0.22vw + 12.7px,15.5px);
+    --fs-xs:clamp(12.6px,0.16vw + 12.1px,14px);
+    --fs-2xs:clamp(11.6px,0.14vw + 11.1px,12.5px);
+    --fs-3xs:clamp(10.2px,0.09vw + 9.9px,11px);
+    --fs-4xs:clamp(9.2px,0.06vw + 9px,9.8px);
     --sh:0 1px 2px rgba(16,24,40,.05);
     --sh2:0 4px 14px rgba(16,24,40,.08);
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-  body{line-height:1.68;overflow-x:hidden;font-size:clamp(14.5px,0.28vw + 13.6px,17px);font-feature-settings:"cv11","ss01";letter-spacing:-.003em}
+  body{line-height:1.68;overflow-x:hidden;font-size:var(--fs-body);font-feature-settings:"cv11","ss01";letter-spacing:-.003em}
   .wrap{width:100%;max-width:1560px;margin:0 auto;padding:clamp(16px,2vw,30px) clamp(14px,2.4vw,34px) 90px}
   .layer,.plane{min-width:0}
   .num,td.num,.keynum,.val,.pcount,table{font-variant-numeric:tabular-nums}
 
   header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 30px;box-shadow:var(--sh)}
-  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--body);font-weight:600;margin-bottom:10px}
-  h1{font-variation-settings:normal;font-size:clamp(26px,2.6vw + 14px,44px);margin:0 0 11px;font-weight:700;letter-spacing:-.03em;line-height:1.1;text-wrap:balance}
-  .sub{color:var(--fg2);font-size:clamp(15px,0.4vw + 13.6px,18.5px);max-width:none;text-wrap:pretty}
-  .meta{color:var(--fg3);font-size:clamp(11px,0.14vw + 10.6px,12.5px);margin-top:15px;padding-top:14px;border-top:1px solid var(--line);line-height:1.8;max-width:none}
+  .eyebrow{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.1em;text-transform:uppercase;color:var(--body);font-weight:600;margin-bottom:10px}
+  h1{font-size:var(--fs-display);margin:0 0 11px;font-weight:700;letter-spacing:-.03em;line-height:1.1;text-wrap:balance}
+  .sub{color:var(--fg2);font-size:var(--fs-lede);max-width:none;text-wrap:pretty}
+  .meta{color:var(--fg3);font-size:var(--fs-2xs);margin-top:15px;padding-top:14px;border-top:1px solid var(--line);line-height:1.8;max-width:none}
 
   nav.tabs{display:flex;gap:7px;margin:18px 0 20px;flex-wrap:wrap;position:sticky;top:0;background:linear-gradient(var(--bg) 76%,rgba(244,246,248,0));padding:12px 0 12px;z-index:40}
-  .tab{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:8px 17px;border-radius:9px;font-size:13.5px;cursor:pointer;font-family:inherit;font-weight:500;transition:.14s;box-shadow:var(--sh)}
+  .tab{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:8px 17px;border-radius:9px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.14s;box-shadow:var(--sh)}
   .tab:hover{color:var(--fg);border-color:var(--line2)}
   .tab[aria-selected="true"]{background:var(--ink);color:var(--onink);border-color:var(--ink);box-shadow:var(--sh2)}
   section[hidden]{display:none}
 
-  h2{font-size:clamp(19px,0.7vw + 16.5px,26px);margin:36px 0 6px;font-weight:700;letter-spacing:-.022em;line-height:1.22;text-wrap:balance}
+  h2{font-size:var(--fs-h2);margin:36px 0 6px;font-weight:700;letter-spacing:-.022em;line-height:1.22;text-wrap:balance}
   h2:first-child{margin-top:2px}
-  .h2sub{color:var(--fg2);font-size:clamp(13.5px,0.24vw + 12.7px,15.5px);margin:0 0 16px;max-width:none;text-wrap:pretty}
-  h3{font-size:clamp(15px,0.28vw + 14px,17.5px);margin:22px 0 7px;font-weight:600;letter-spacing:-.014em}
-  p{margin:0 0 14px;max-width:none;text-wrap:pretty}
+  .h2sub{color:var(--fg2);font-size:var(--fs-sm);margin:0 0 16px;max-width:none;text-wrap:pretty}
+  h3{font-size:var(--fs-body);margin:22px 0 7px;font-weight:600;letter-spacing:-.014em}
+  p{margin:0 0 14px;max-width:none;text-wrap:pretty;font-size:var(--fs-body)}
   strong{font-weight:600;color:var(--ink)}
-  .lede{font-size:clamp(15.5px,0.42vw + 14px,19px);color:var(--fg);background:var(--card);border:1px solid var(--line);border-left:4px solid var(--body);border-radius:12px;padding:clamp(14px,1.4vw,20px) clamp(16px,1.8vw,26px);margin:0 0 22px;box-shadow:var(--sh);line-height:1.58;text-wrap:pretty}
+  .lede{font-size:var(--fs-lede);color:var(--fg);background:var(--card);border:1px solid var(--line);border-left:4px solid var(--body);border-radius:12px;padding:clamp(14px,1.4vw,20px) clamp(16px,1.8vw,26px);margin:0 0 22px;box-shadow:var(--sh);line-height:1.58;text-wrap:pretty}
   ul,ol{margin:0 0 14px;padding-left:22px;max-width:none}
-  li{margin-bottom:7px}
+  li{margin-bottom:7px;font-size:var(--fs-body)}
   li::marker{color:var(--fg3)}
   a{color:var(--info);text-decoration:none;border-bottom:1px solid rgba(37,99,235,.28)}
   a:hover{border-bottom-color:var(--info)}
-  code{font-family:var(--mono);font-size:.88em;background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:4px}
+  code{font-family:var(--mono);font-size:var(--fs-2xs);background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:4px}
 
   .filters{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px;box-shadow:var(--sh)}
   .fgroup{display:flex;flex-direction:column;gap:8px}
-  .flabel{font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+  .flabel{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600}
   .chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-  .chip{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:5px 12px;border-radius:7px;font-size:12.5px;cursor:pointer;font-family:inherit;font-weight:500;transition:.12s;white-space:nowrap}
+  .chip{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:5px 12px;border-radius:7px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.12s;white-space:nowrap}
   .chip:hover{border-color:var(--line2);color:var(--fg)}
   .chip.on{background:var(--ink);color:var(--onink);border-color:var(--ink)}
-  input[type=search]{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:6px 12px;border-radius:7px;font-size:13px;min-width:200px;font-family:inherit}
+  input[type=search]{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:6px 12px;border-radius:7px;font-size:var(--fs-xs);min-width:200px;font-family:inherit}
   input[type=search]:focus{outline:none;border-color:var(--info);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
-  .count{font-size:13px;color:var(--fg2);margin:0 2px 16px}
+  .count{font-size:var(--fs-2xs);color:var(--fg2);margin:0 2px 16px}
   .count b{color:var(--ink);font-weight:600}
 
   .plane{margin-bottom:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
   .planehead{display:flex;align-items:center;gap:13px;padding:15px 22px;border-bottom:1px solid var(--line)}
-  .pbadge{font-family:var(--mono);font-size:12px;font-weight:600;width:26px;height:26px;display:grid;place-items:center;border-radius:7px;flex:none}
-  .pn{font-size:17px;font-weight:700;letter-spacing:-.01em}
-  .pd{font-size:13.5px;color:var(--fg2)}
-  .pcount{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--fg3)}
+  .pbadge{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;width:26px;height:26px;display:grid;place-items:center;border-radius:7px;flex:none}
+  .pn{font-size:var(--fs-body);font-weight:700;letter-spacing:-.01em}
+  .pd{font-size:var(--fs-2xs);color:var(--fg2)}
+  .pcount{margin-left:auto;font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3)}
   .plane.A .pbadge{background:var(--bodybg);color:var(--body)} .plane.A .pn{color:var(--body)}
   .plane.B .pbadge{background:var(--brainbg);color:var(--brain)} .plane.B .pn{color:var(--brain)}
   .plane.C .pbadge{background:var(--opsbg);color:var(--ops)} .plane.C .pn{color:var(--ops)}
 
   .grp{display:flex;align-items:baseline;gap:11px;padding:11px 22px 10px;border-top:1px solid var(--line);background:var(--sub)}
-  .grp .gname{font-family:var(--mono);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
-  .grp .gdesc{font-size:12px;color:var(--fg3);font-style:italic}
+  .grp .gname{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+  .grp .gdesc{font-size:var(--fs-2xs);color:var(--fg3);font-style:italic}
   .grp .gline{flex:1;height:1px;background:var(--line);align-self:center}
-  .grp .gcount{font-family:var(--mono);font-size:10px;color:var(--fg3);font-weight:500}
+  .grp .gcount{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);font-weight:500}
   .plane.A .grp .gname{color:var(--body)} .plane.B .grp .gname{color:var(--brain)} .plane.C .grp .gname{color:var(--ops)}
   .grp + .layer{border-top:none}
   .layer{display:grid;grid-template-columns:clamp(200px,16vw,272px) 1fr;border-top:1px solid var(--line)}
   .layer:first-of-type{border-top:none}
   .lmeta{padding:15px 18px;border-right:1px solid var(--line);background:var(--sub)}
-  .lcode{font-family:var(--mono);font-size:10.5px;color:var(--fg3);letter-spacing:.07em;font-weight:600}
-  .lname{font-size:clamp(13.6px,0.22vw + 13px,15.6px);font-weight:600;margin:3px 0 6px;line-height:1.3;letter-spacing:-.016em}
-  .ldesc{font-size:clamp(11.4px,0.16vw + 10.9px,13px);color:var(--fg2);line-height:1.6;text-wrap:pretty}
+  .lcode{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);letter-spacing:.07em;font-weight:600}
+  .lname{font-size:var(--fs-sm);font-weight:600;margin:3px 0 6px;line-height:1.3;letter-spacing:-.016em}
+  .ldesc{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.6;text-wrap:pretty}
   .lcos{padding:14px 16px;display:flex;flex-wrap:wrap;gap:7px;align-content:flex-start;min-width:0}
 
-  .co{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:clamp(12.4px,0.16vw + 11.9px,14.2px);color:var(--fg);transition:.12s;line-height:1.35;cursor:default}
+  .co{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:var(--fs-xs);color:var(--fg);transition:.12s;line-height:1.35;cursor:default}
   .co:hover{border-color:var(--line2);box-shadow:var(--sh2);transform:translateY(-1px)}
-  .co .g{font-family:var(--mono);font-size:9.5px;color:var(--fg3);letter-spacing:.04em;font-weight:500}
-  .co .val{font-family:var(--mono);font-size:10.5px;font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:5px}
+  .co .g{font-family:var(--mono);font-size:var(--fs-4xs);color:var(--fg3);letter-spacing:.04em;font-weight:500}
+  .co .val{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:5px}
   .co .val.est{color:var(--ops);background:var(--opsbg)}
-  .co .pub{font-family:var(--mono);font-size:9.5px;font-weight:600;color:var(--fg3);background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:5px}
+  .co .pub{font-family:var(--mono);font-size:var(--fs-4xs);font-weight:600;color:var(--fg3);background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:5px}
     .co.big{font-weight:700;border-color:var(--line2);background:var(--hi);box-shadow:inset 0 0 0 1px var(--hiring)}
   .co.spans{border:2px dashed var(--info);background:var(--spanbg);padding:5px 10px}
   .co.fs{box-shadow:inset 0 0 0 2px var(--body),0 1px 2px rgba(16,24,40,.06)}
-  .fsb{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.04em;color:var(--body);background:var(--bodybg);padding:2px 5px;border-radius:5px;text-transform:uppercase}
+  .fsb{font-family:var(--mono);font-size:var(--fs-4xs);font-weight:600;letter-spacing:.04em;color:var(--body);background:var(--bodybg);padding:2px 5px;border-radius:5px;text-transform:uppercase}
   .cv-tag.fs{color:var(--body);background:var(--bodybg)}
   .co.spans:hover{background:var(--infobg);border-color:var(--info)}
   a.co{text-decoration:none;color:var(--fg);cursor:pointer}
   a.co:hover{color:var(--ink)}
   .cvcard{display:none;position:absolute;z-index:200;width:min(370px,calc(100vw - 28px));background:var(--card);border:1px solid var(--line2);border-radius:12px;box-shadow:0 12px 32px rgba(16,24,40,.16);padding:15px 17px;pointer-events:none}
   .cv-h{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
-  .cv-n{font-size:15.5px;font-weight:700;letter-spacing:-.018em;color:var(--ink)}
-  .cv-tag{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:20px}
-  .cv-meta{font-family:var(--mono);font-size:10.5px;color:var(--fg3);margin-top:4px;letter-spacing:.01em}
-  .cv-ab{font-size:13px;color:var(--fg2);line-height:1.58;margin-top:9px}
+  .cv-n{font-size:var(--fs-sm);font-weight:700;letter-spacing:-.018em;color:var(--ink)}
+  .cv-tag{font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:20px}
+  .cv-meta{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);margin-top:4px;letter-spacing:.01em}
+  .cv-ab{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.58;margin-top:9px}
   .cv-v{display:flex;align-items:baseline;gap:8px;margin-top:11px;padding-top:10px;border-top:1px solid var(--line);flex-wrap:wrap}
-  .cv-val{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--info)}
+  .cv-val{font-family:var(--mono);font-size:var(--fs-xs);font-weight:600;color:var(--info)}
   .cv-val.est{color:var(--ops)} .cv-val.pubv,.cv-val.nov{color:var(--fg3);font-size:12px}
-  .cv-vl{font-size:11px;color:var(--fg3)}
-  .cv-note{font-size:11.5px;color:var(--fg3);margin-top:7px;line-height:1.5}
-  .cv-span{font-family:var(--mono);font-size:10px;color:var(--fg3);margin-top:6px}
+  .cv-vl{font-size:var(--fs-3xs);color:var(--fg3)}
+  .cv-note{font-size:var(--fs-3xs);color:var(--fg3);margin-top:7px;line-height:1.5}
+  .cv-span{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);margin-top:6px}
   .cv-f{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
-  .cv-verts{font-size:10.5px;color:var(--fg3)}
-  .cv-url{font-family:var(--mono);font-size:10.5px;color:var(--info);border:none;white-space:nowrap}
+  .cv-verts{font-size:var(--fs-3xs);color:var(--fg3)}
+  .cv-url{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--info);border:none;white-space:nowrap}
 
-  .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--fg2);margin:0 2px 18px;align-items:center}
+  .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:var(--fs-2xs);color:var(--fg2);margin:0 2px 18px;align-items:center}
   .legend span{display:inline-flex;align-items:center;gap:7px}
   .dash{width:18px;height:0;border-top:2px dashed var(--info)}
-  .swatch{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:5px}
+  .swatch{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:5px}
   .swatch.o{color:var(--ops);background:var(--opsbg)}
 
   .tblwrap{overflow-x:auto;margin:16px 0 22px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh)}
-  table{border-collapse:collapse;width:100%;font-size:clamp(12.8px,0.2vw + 12.1px,15px);min-width:620px}
+  table{border-collapse:collapse;width:100%;font-size:var(--fs-sm);min-width:620px}
   th,td{text-align:left;padding:11px 15px;vertical-align:top}
-  thead th{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);font-weight:600;background:var(--sub);border-bottom:1px solid var(--line)}
+  thead th{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);font-weight:600;background:var(--sub);border-bottom:1px solid var(--line)}
   tbody td{border-bottom:1px solid var(--line)}
   tbody tr:last-child td{border-bottom:none}
   tbody tr:hover{background:var(--sub)}
   td.num{font-family:var(--mono);white-space:nowrap;font-weight:600}
-  .pill{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}
+  .pill{display:inline-block;font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}
   .pill.g{background:var(--bodybg);color:var(--body)}
   .pill.a{background:var(--opsbg);color:var(--ops)}
   .pill.p{background:var(--brainbg);color:var(--brain)}
@@ -146,9 +157,9 @@
 
   .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:13px;margin:20px 0}
   .metric{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--sh)}
-  .mlab{font-size:12.5px;color:var(--fg2);font-weight:500;margin-bottom:8px}
-  .keynum{font-size:clamp(26px,1.1vw + 22px,36px);font-weight:700;line-height:1;letter-spacing:-.035em;color:var(--ink)}
-  .mfoot{font-size:11.5px;color:var(--fg3);margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
+  .mlab{font-size:var(--fs-2xs);color:var(--fg2);font-weight:500;margin-bottom:8px}
+  .keynum{font-size:var(--fs-metric);font-weight:700;line-height:1;letter-spacing:-.035em;color:var(--ink)}
+  .mfoot{font-size:var(--fs-3xs);color:var(--fg3);margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
   .mfoot b{font-weight:600;color:var(--fg2)}
 
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:19px 22px;margin:16px 0;box-shadow:var(--sh)}
@@ -156,27 +167,27 @@
   .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:15px;margin:18px 0}
 
   .callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ops);border-radius:12px;padding:17px 22px;margin:20px 0;box-shadow:var(--sh)}
-  .callout .lbl{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ops);margin-bottom:8px;font-weight:600}
+  .callout .lbl{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--ops);margin-bottom:8px;font-weight:600}
   .callout.b{border-left-color:var(--body)} .callout.b .lbl{color:var(--body)}
   .callout.w{border-left-color:var(--warn)} .callout.w .lbl{color:var(--warn)}
   .callout.i{border-left-color:var(--info)} .callout.i .lbl{color:var(--info)}
   .callout.p{border-left-color:var(--brain)} .callout.p .lbl{color:var(--brain)}
 
   figure{margin:22px 0 28px}
-  figcaption{color:var(--fg2);font-size:clamp(12px,0.2vw + 11.3px,14px);margin-top:12px;line-height:1.65;max-width:none;text-wrap:pretty}
-  .figtitle{font-size:14.5px;font-weight:600;margin-bottom:12px;letter-spacing:-.005em}
-  .svgbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;overflow-x:auto;box-shadow:var(--sh)}
-  svg{display:block;width:100%;height:auto;min-width:700px}
+  figcaption{color:var(--fg2);font-size:var(--fs-xs);margin-top:12px;line-height:1.65;max-width:none;text-wrap:pretty}
+  .figtitle{font-size:var(--fs-xs);font-weight:600;margin-bottom:12px;letter-spacing:-.005em}
+  .svgbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;overflow-x:auto;box-shadow:var(--sh);display:flex;justify-content:center}
+  svg{display:block;width:100%;max-width:900px;height:auto;min-width:700px;margin:0 auto}
   .sv-l{font-family:var(--sans);font-size:12.5px;fill:var(--fg2)}
-  .sv-s{font-family:var(--mono);font-size:10.5px;fill:var(--fg3)}
+  .sv-s{font-family:var(--mono);font-size:11px;fill:var(--fg3)}
   .sv-b{font-family:var(--sans);font-size:14px;fill:var(--fg);font-weight:600}
-  .sv-h{font-family:var(--mono);font-size:10.5px;fill:var(--fg3);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+  .sv-h{font-family:var(--mono);font-size:11px;fill:var(--fg3);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
 
   .noteblock{margin:26px 0 8px;padding:0 2px;max-width:none}
-  .noteblock .nt{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600;margin-bottom:10px}
-  .noteblock p{font-style:italic;color:var(--fg2);font-size:clamp(13.5px,0.26vw + 12.6px,16px);max-width:none;margin:0 0 11px;line-height:1.8;text-wrap:pretty}
+  .noteblock .nt{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600;margin-bottom:10px}
+  .noteblock p{font-style:italic;color:var(--fg2);font-size:var(--fs-body);max-width:none;margin:0 0 11px;line-height:1.8;text-wrap:pretty}
 
-  footer{margin-top:46px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--fg3);font-size:clamp(11.4px,0.16vw + 10.9px,13px);line-height:1.9;box-shadow:var(--sh);max-width:none}
+  footer{margin-top:46px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--fg3);font-size:var(--fs-2xs);line-height:1.9;box-shadow:var(--sh);max-width:none}
 
   @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
     --bg:#0e1116; --card:#161a21; --sub:#1b2029; --line:#262c36; --line2:#3a434f;
@@ -206,8 +217,8 @@
 <header>
   <div class="eyebrow">Market Landscape · September 2026</div>
   <h1>Physical AI Market Map</h1>
-  <div class="sub">A layer-based landscape of ~250 companies across humanoids, industrial robotics, autonomous vehicles, drones &amp; defence, construction, mining and agriculture — organised by <strong>where value is actually captured</strong>, not by hardware versus software.</div>
-  <div class="meta">V3-00 · September 2026 · 23 layers across 3 planes · 249 companies · humanoid, industrial, AV, drone &amp; defence, construction, mining, agriculture<br>
+  <div class="sub">A layer-based landscape of 243 companies across humanoids, industrial robotics, autonomous vehicles, drones &amp; defence, construction, mining and agriculture — organised by <strong>where value is actually captured</strong>, not by hardware versus software.</div>
+  <div class="meta">V4-00 · September 2026 · 25 layers across 3 planes · 243 companies · humanoid, industrial, AV, drone &amp; defence, construction, mining, agriculture<br>
   Funding, valuation and revenue data: Crunchbase, PitchBook, CB Insights, Dealroom, TrendForce, Smart Analytics Global, TechCrunch, Bloomberg · Structural analysis: Goldman Sachs, Morgan Stanley, Roland Berger, Bullhound, McKinsey, IFR, The Robot Report</div>
 </header>
 
@@ -249,8 +260,8 @@
   <div class="noteblock">
     <div class="nt">Deliberately out of scope</div>
     <p>Surgical and medical robotics (Intuitive Surgical, CMR Surgical), consumer and domestic robots (iRobot, Matic, Roborock), food service (Miso Robotics) and laboratory automation (Ginkgo, Emerald Cloud) remain outside this map.</p>
-    <p>Mining and agriculture were excluded in an earlier version on legibility grounds. That was a mistake, and they are now included at A10 — they are the only domains generating autonomous revenue at scale in unstructured environments, and leaving them out biased the map toward pre-revenue venture-backed platforms while removing the best real-world evidence for its own central argument.</p>
-    <p>The remaining exclusions share the same three-plane stack and would slot in at A6–A10 and C1–C5 without altering the taxonomy. That the structure extends to them without modification is itself a test of whether it holds. Surgical robotics in particular is a defensible future addition: Intuitive alone generates more revenue than most of this map combined.</p>
+    <p>Mining and agriculture were excluded in an earlier version on legibility grounds. That was a mistake, and they now have layers of their own at A11 and A12 — they are the only domains generating autonomous revenue at scale in unstructured environments, and leaving them out biased the map toward pre-revenue venture-backed platforms while removing the best real-world evidence for its own central argument.</p>
+    <p>The remaining exclusions share the same three-plane stack and would slot in at A6–A12 and C1–C5 without altering the taxonomy. That the structure extends to them without modification is itself a test of whether it holds. Surgical robotics in particular is a defensible future addition: Intuitive alone generates more revenue than most of this map combined.</p>
   </div>
 </section>
 
@@ -261,22 +272,22 @@
   <p>NVIDIA is silicon <em>and</em> Isaac, Cosmos and GR00T. Figure is hardware <em>and</em> Helix 2. Tesla, Unitree, 1X, Anduril and Waymo are all both. A hardware/software split places the fifteen most important companies in two boxes each, and asserts a separation that does not yet exist in this market. It is not mutually exclusive — and it is not collectively exhaustive either, because it has nowhere to put fleet orchestration, safety certification or systems integration.</p>
   <p>The instinct is right; the altitude is wrong. Hardware-weighting is real, but it is a <strong>gradient across layers</strong>, not a wall down the middle.</p>
 
-  <h2>Three planes, twenty-three layers</h2>
+  <h2>Three planes, twenty-five layers</h2>
   <p class="h2sub">Plane A is broadly hardware, Plane B broadly software, and Plane C is the operational layer that is neither — and that determines whether anything ships.</p>
 
   <figure>
-    <div class="figtitle">Fig. 1 — Twenty-three layers across three planes</div>
+    <div class="figtitle">Fig. 1 — Twenty-five layers across three planes</div>
     <div class="svgbox">
       <svg viewBox="0 0 900 560" role="img" aria-label="Three-plane twenty-three-layer taxonomy for physical AI">
         <rect x="0" y="0" width="288" height="42" rx="9" fill="var(--bodybg)"/>
         <text x="14" y="20" class="sv-b" fill="var(--body)">A · Body</text>
-        <text x="14" y="35" class="sv-s" fill="var(--body)">the physical substrate · 156 companies</text>
+        <text x="14" y="35" class="sv-s" fill="var(--body)">the physical substrate · 162 entries</text>
         <rect x="306" y="0" width="288" height="42" rx="9" fill="var(--brainbg)"/>
         <text x="320" y="20" class="sv-b" fill="var(--brain)">B · Brain</text>
         <text x="320" y="35" class="sv-s" fill="var(--brain)">perception, reasoning, action · 61</text>
         <rect x="612" y="0" width="288" height="42" rx="9" fill="var(--opsbg)"/>
         <text x="626" y="20" class="sv-b" fill="var(--ops)">C · Operations</text>
-        <text x="626" y="35" class="sv-s" fill="var(--ops)">deployment &amp; assurance · 32</text>
+        <text x="626" y="35" class="sv-s" fill="var(--ops)">deployment &amp; assurance · 30</text>
 
         <g class="sv-l">
         <text x="0" y="66" class="sv-s" fill="var(--body)" font-weight="600">COMPONENTS</text>
@@ -341,7 +352,7 @@
         </g>
       </svg>
     </div>
-    <figcaption>Highlighted layers are the ones this breakdown separates that most published maps merge: <strong>B4 world models vs. B3 physics simulation vs. B5 VLA policies</strong>, and <strong>C3 safety and certification</strong> as a layer in its own right. Companies are placed by primary value capture; spans are recorded separately, so no company appears twice.</figcaption>
+    <figcaption>Highlighted layers are the ones this breakdown separates that most published maps merge: <strong>B4 physics simulation vs. B5 world models vs. B6 VLA policies</strong>, and <strong>C3 safety and certification</strong> as a layer in its own right. Companies are placed by primary value capture; spans are recorded separately, so no company appears twice.</figcaption>
   </figure>
 
   <div class="callout p">
@@ -363,7 +374,7 @@
       <tr><td>"Foundation models"</td><td><strong>B6</strong> VLA · <strong>B7</strong> AV stacks · <strong>B8</strong> multi-agent</td><td>Different customers, safety cases and regulators. An AV stack cannot be sold to a warehouse.</td></tr>
       <tr><td>"Data"</td><td><strong>B1</strong> synthetic · <strong>B2</strong> real-world capture</td><td>One is a software margin, the other an operations cost. The moat argument only applies to B4.</td></tr>
       <tr><td>"Components" / "compute"</td><td><strong>A1</strong> actuation · <strong>A2</strong> sensing · <strong>A3</strong> power · <strong>A5</strong> real-time control</td><td>Four separate supply chains with opposite pricing trends. Actuation is capacity-constrained, lidar is in a price war, and hard real-time motor control is a different vendor set entirely from AI inference silicon.</td></tr>
-      <tr><td>"Robot companies"</td><td><strong>A6–A10</strong> by morphology</td><td>Morphology determines ODD, regulator and go-to-market. A humanoid and a robotaxi share almost no commercial DNA.</td></tr>
+      <tr><td>"Robot companies"</td><td><strong>A6–A12</strong> by morphology</td><td>Morphology determines ODD, regulator and go-to-market. A humanoid and a robotaxi share almost no commercial DNA.</td></tr>
       <tr><td>"Deployment"</td><td><strong>C1</strong> runtime · <strong>C2</strong> fleet ops · <strong>C3</strong> certification · <strong>C4</strong> integration · <strong>C5</strong> RaaS</td><td>C3 is a regulatory asset; C5 is a balance-sheet model. Merging them hides both.</td></tr>
     </tbody>
   </table></div>
@@ -371,7 +382,8 @@
   <div class="callout b">
     <div class="lbl">The assignment rule — unit of sale, because MECE is a property of the rule, not the boxes</div>
     <p>Every company is assigned to <strong>one primary layer: the unit of sale — what the customer actually buys</strong>. This is deliberately narrower than "where value is captured", which proved too elastic: an earlier version placed Waymo in the vehicle-platform layer even though it buys its vehicles from Zeekr and Jaguar and sells rides on a driver stack it built. Unit of sale is objective and checkable; value capture is an argument.</p>
-    <p style="margin-bottom:0">Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries. Where <em>no</em> layer honestly dominates — Waymo, Tesla, NVIDIA, Anduril, Amazon, Figure, Zoox — the company is marked <strong>full-stack</strong> rather than forced into one box, because forcing it would reintroduce exactly the false dichotomy this taxonomy exists to avoid. Seven companies carry that mark. The rest resolve cleanly.</p>
+    <p>Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.</p>
+    <p style="margin-bottom:0">Seven companies — Waymo, Tesla, NVIDIA, Anduril, Amazon, Figure, Zoox — are marked <strong>full-stack</strong>. To be precise about what that does and does not mean: they are still <em>placed</em> at one layer, because the map is a grid and everything has to sit somewhere. The placement is their unit of sale. The mark exists to tell you that the placement is <strong>unusually lossy</strong> for these seven, and that the spans matter more than the primary layer. It is a warning label on the taxonomy, not an exemption from it.</p>
   </div>
 
   <h2>What Plane C buys you — and what it is not</h2>
@@ -379,6 +391,7 @@
   <p>Plane C is split for honesty. <strong>C1–C3 are genuine technical layers</strong> — runtime, fleet operations, certification. <strong>C4–C5 are commercial delivery</strong>, and they are not technology: systems integration is a low-margin, headcount-heavy professional-services business, and RaaS is an off-balance-sheet financing structure. They earn their place because they own the customer and the operational envelope, but reading them as a software layer would misprice them badly.</p>
   <p>That silence matters, because the binding constraint on industrial deployment is not model capability but <strong>certifiability against a documented operational envelope</strong>. Roland Berger puts Tier 2 reliability at &gt;98% <em>with human exception handling</em> — and that qualifier carries most of the cost.</p>
   <p><em>Assume a 60-second takt and an 8-hour shift (~450 cycles per station), each exception requiring ~4 minutes of human intervention on a coupled line with no buffer.</em> At 98% that is ~9 interventions and ~36 line-minutes, or <strong>7.5% of the shift</strong>. At 99.9% — the fixed-automation norm — it is ~0.45 interventions and 1.8 minutes, or 0.4%. Roughly a 19× difference in intervention events. Layer C3 is where that gap is closed or it is not, and it is the least-mapped layer in the industry.</p>
+  <p><strong>Sensitivity, because the 19× depends on two choices I made:</strong> whether Roland Berger's “&gt;98%” means per-cycle task success or system uptime, and whether the line is coupled with no buffer. Change the second and the conclusion softens considerably. In a <em>buffered parallel cell</em> — independent stations, work-in-progress between them, a failed unit simply pulled from rotation — the same 9 exceptions per shift cost throughput roughly in proportion to the failure rate rather than stopping the line, so the penalty falls from ~7.5% of shift time to something closer to 2%. That is the architecture where cheap redundancy substitutes for reliability, and it is why logistics adopted robots a decade before manufacturing did. <strong>The reliability argument is an argument about coupled linear lines specifically, not about robots in general.</strong></p>
   <p style="font-size:12.5px;color:var(--fg3)">Arithmetic above is the author's own estimate from Roland Berger's published per-tier reliability targets plus standard takt assumptions — not a sourced figure.</p>
 
   <h2>The second axis: deployment tier</h2>
@@ -465,7 +478,7 @@
       <tr><td><strong>Agility Robotics</strong></td><td>A6</td><td class="num">~$2.5B</td><td><span class="pill b">SPAC</span></td><td>Going public via SPAC</td></tr>
       <tr><td><strong>Bedrock Robotics</strong></td><td>A10</td><td class="num">$1.75B</td><td><span class="pill g">Closed</span></td><td>Most valuable construction-autonomy company</td></tr>
       <tr><td><strong>Sunday Robotics</strong></td><td>B6</td><td class="num">$1.15B</td><td><span class="pill g">Closed</span></td><td>Newest unicorn on the map</td></tr>
-      <tr><td><strong>Dyna Robotics</strong></td><td>B6</td><td class="num">$600M</td><td><span class="pill g">Closed</span></td><td>Fastest-rising sub-unicorn in B5</td></tr>
+      <tr><td><strong>Dyna Robotics</strong></td><td>B6</td><td class="num">$600M</td><td><span class="pill g">Closed</span></td><td>Fastest-rising sub-unicorn in B6</td></tr>
     </tbody>
   </table></div>
 
@@ -579,7 +592,7 @@
   <ul>
     <li>A general-purpose platform sustaining <strong>&gt;99% on a Tier 3 task for 90 consecutive days</strong> without task-specific retraining between changeovers.</li>
     <li>A humanoid OEM publishing a <strong>certified ODD with ISO 25785-1 conformance</strong> for an unstructured industrial task, breaching the C3 moat.</li>
-    <li>Demonstrated <strong>cross-embodiment transfer</strong> from humanoid to purpose-built without retraining, collapsing the A6–A10 morphology question into a deployment-time choice.</li>
+    <li>Demonstrated <strong>cross-embodiment transfer</strong> from humanoid to purpose-built without retraining, collapsing the A6–A12 morphology question into a deployment-time choice.</li>
     <li>Sub-$15K humanoid-class hardware achieving 98%+ on a real production line, making <strong>redundancy a viable substitute for reliability</strong> — though only in parallel architectures, not coupled lines.</li>
     <li>The dexterity scaling law holding two further orders of magnitude with published sim-to-real transfer at industrial tolerance.</li>
   </ul>
@@ -605,28 +618,29 @@
   </table></div>
 
   <div class="callout w">
-    <div class="lbl">What the spread actually means</div>
-    <p>For humanoids alone in 2035 the range is <strong>$38B to $750B — roughly 20×</strong>. Some of that is scope (Goldman counts hardware; Roland Berger counts the ecosystem), but even comparing like with like, Goldman's $38B against Macquarie's $139B is a 3.7× gap on the same definition in the same year.</p>
+    <div class="lbl">What<p>The cleanest evidence that the market is pricing a binary is not the forecast spread — it is a struck price. <strong>Agility Robotics went public via SPAC at roughly $2.5B with the deepest deployment record in humanoids. Figure is marked at $39B with no disclosed revenue.</strong> One of those is a number a market agreed to pay; the other is a number a small syndicate agreed to write down. A ~15× gap between them, in the same sub-sector in the same year, is the disagreement made concrete.</p>
+    <p style="margin-bottom:0">The forecast spread is weaker evidence and should be read as such — it tells you analysts disagree about scope and adoption, not that anyone underwrites off ABI versus Roland Berger. Still, for humanoids alone in 2035 the range is <strong>$38B to $750B, roughly 20×</strong>, and even like-for-like Goldman's $38B against Macquarie's $139B is a 3.7× gap on the same definition in the same year.</p>
     <p style="margin-bottom:0">When credible forecasts disagree by an order of magnitude, <strong>the market is not pricing a growth curve — it is pricing a binary.</strong> The disagreement is not really about adoption rates. It is about whether general-purpose capability works at industrial reliability at all. That is the same question the Structure tab answers with reliability economics, arriving from the opposite direction. You are not underwriting a TAM; you are underwriting a technical outcome with a TAM attached.</p>
   </div>
 
   <h2>2 · Revenue reality — and who actually has any</h2>
   <p class="h2sub">The single most uncomfortable table in this map. Valuation is an input; revenue is an output.</p>
   <div class="tblwrap"><table>
-    <thead><tr><th>Company</th><th style="width:70px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:180px">Latest disclosed revenue</th><th class="num" style="width:110px">Implied multiple</th></tr></thead>
+    <thead><tr><th>Company</th><th style="width:70px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:190px">Latest disclosed revenue</th><th class="num" style="width:150px">Implied multiple <span style="font-weight:400;text-transform:none;letter-spacing:0">(basis)</span></th></tr></thead>
     <tbody>
       <tr><td><strong>Waymo</strong></td><td>B7</td><td class="num">$126B</td><td class="num">not separately disclosed</td><td class="num">n/m</td></tr>
       <tr><td><strong>Figure AI</strong></td><td>A6</td><td class="num">$39B</td><td class="num">not disclosed</td><td class="num">n/m</td></tr>
       <tr><td><strong>Skild AI</strong></td><td>B6</td><td class="num">$14B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
       <tr><td><strong>Physical Intelligence</strong></td><td>B6</td><td class="num">$5.6B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
-      <tr><td><strong>Shield AI</strong></td><td>B8</td><td class="num">$12.7B</td><td class="num">~$540M (2026E)</td><td class="num">~24×</td></tr>
-      <tr><td><strong>Unitree</strong></td><td>A6</td><td class="num">~$5.9B</td><td class="num">CNY 1.7B FY25 (~$235M)</td><td class="num">~25×</td></tr>
-      <tr><td><strong>AgiBot</strong></td><td>A6</td><td class="num">$5.1–6.4B</td><td class="num">CNY 4.0B 2026E (~$594M)</td><td class="num">~9–11×</td></tr>
-      <tr><td><strong>UBTech</strong></td><td>A6</td><td class="num">listed</td><td class="num">CNY 2.0B FY25 (~$280M)</td><td class="num">—</td></tr>
+      <tr><td><strong>Shield AI</strong></td><td>B8</td><td class="num">$12.7B</td><td class="num">~$540M</td><td class="num">~24× <span class="pill n">fwd</span></td></tr>
+      <tr><td><strong>Unitree</strong></td><td>A6</td><td class="num">~$5.9B</td><td class="num">CNY 1.7B (~$235M)</td><td class="num">~25× <span class="pill n">trailing</span></td></tr>
+      <tr><td><strong>AgiBot</strong></td><td>A6</td><td class="num">$5.1–6.4B</td><td class="num">CNY 4.0B (~$594M)</td><td class="num">~9–11× <span class="pill n">fwd</span></td></tr>
+      <tr><td><strong>UBTech</strong></td><td>A6</td><td class="num">listed</td><td class="num">CNY 2.0B (~$280M)</td><td class="num">— <span class="pill n">trailing</span></td></tr>
     </tbody>
   </table></div>
 
-  <p><strong>Every company on this map with materially disclosed robot revenue is Chinese.</strong> UBTech led humanoid revenue in 2025 at roughly CNY 2.0B (~$280M), selling 1,079 Walker S2 units for CNY 821M (~$115M) of humanoid-segment revenue. Unitree guided H1 2026 revenue of about CNY 1.1B (~$156M), up 36–45% year on year. AgiBot expects roughly CNY 4.0B (~$594M) for 2026. Global humanoid shipments reached 19,100 units in H1 2026, up 272% year on year, with AgiBot overtaking Unitree for the top position and the two together holding close to 80% of Chinese output.</p>
+  <p class="h2sub" style="margin:-8px 0 16px">Forward and trailing multiples are mixed by necessity — companies disclose on different bases — so each is labelled. Do not read down the column as like-for-like.</p>
+  <p><strong>Every venture-backed humanoid or robot-foundation-model company with materially disclosed revenue is Chinese.</strong> That qualifier matters: the incumbents in A7, A11 and A12 — ABB, FANUC, Caterpillar, Komatsu, John Deere, Symbotic — all disclose substantial robotics and autonomy revenue. The point is not that nobody in the West earns money from robots. It is that <em>within the venture-funded frontier this map is mostly about</em>, the revenue is Chinese and the valuations are not. UBTech led humanoid revenue in 2025 at roughly CNY 2.0B (~$280M), selling 1,079 Walker S2 units for CNY 821M (~$115M) of humanoid-segment revenue. Unitree guided H1 2026 revenue of about CNY 1.1B (~$156M), up 36–45% year on year. AgiBot expects roughly CNY 4.0B (~$594M) for 2026. Global humanoid shipments reached 19,100 units in H1 2026, up 272% year on year, with AgiBot overtaking Unitree for the top position and the two together holding close to 80% of Chinese output.</p>
 
   <p>Western leaders are valued on capability narrative. Chinese leaders are valued on shipped units and revenue — and at <strong>9–25× revenue</strong>, which is expensive but not unhinged. The Western marks have no denominator at all. That is not automatically wrong: platform bets are supposed to look like this early. But it means the two halves of this map are being underwritten on <em>completely different evidentiary standards</em>, and only one of them can be checked.</p>
 
@@ -650,7 +664,7 @@
   <p>Two implications. First, <strong>liquidity in this sector is arriving through Asian exchanges and US defence-adjacent listings, not through the humanoid companies carrying the highest marks.</strong> Second, Agility going out at ~$2.5B with real deployments, against Figure at $39B without disclosed revenue, is the clearest available public-market read on how the two halves of this map are valued when a real price is struck.</p>
 
   <h2>4 · The incumbents are absent from this map, and that is strange</h2>
-  <p>ABB, FANUC, Yaskawa and KUKA appear only in A6. They hold the installed base — the industry shipped 542,076 industrial robots in 2024 alone, on an operational stock in the millions — plus the service revenue, the distribution and the customer trust that every startup on this map is trying to rent.</p>
+  <p>ABB, FANUC, Yaskawa and KUKA appear only in A7. They hold the installed base — the industry shipped 542,076 industrial robots in 2024 alone, on an operational stock in the millions — plus the service revenue, the distribution and the customer trust that every startup on this map is trying to rent.</p>
   <p>They are almost entirely absent from A5, B2 and B5. Historically, industrial-automation incumbents acquire late and expensively rather than build. The Mobileye/Mentee deal suggests the acquisition phase has begun, but it began with a <em>silicon</em> incumbent rather than a robotics one.</p>
   <p><strong>The more urgent signal is that the incumbents are already losing their largest market.</strong> Chinese domestic manufacturers outsold foreign suppliers inside China for the first time in 2024 — in a market that is 54% of global installations. The incumbent question is not whether they get disrupted by humanoids in 2030. It is that they are being displaced right now, by Chinese industrial-arm makers, in the market that matters most.</p>
 
@@ -679,7 +693,7 @@
     </div>
     <div class="card">
       <h3 style="color:var(--brain)">Watch · B5 world models</h3>
-      <p style="margin-bottom:0">Too new to price, ~5× repricing in a year, and genuinely unresolved as to whether it is a layer or a feature of B5. The highest-variance position available. Size it as an option, not a conviction.</p>
+      <p style="margin-bottom:0">Too new to price, ~5× repricing in a year, and genuinely unresolved as to whether it is a layer or a feature of B6. The highest-variance position available. Size it as an option, not a conviction.</p>
     </div>
   </div>
 
@@ -688,7 +702,7 @@
   <ul>
     <li><strong>Gross margin per deployed robot.</strong> Nobody publishes it. Without it, every RaaS and OEM model on this map is a guess about whether the unit works.</li>
     <li><strong>Exception-handling headcount.</strong> The single number that would settle the reliability argument empirically — and its consistent absence from every vendor disclosure is itself informative.</li>
-    <li><strong>Whether B5 is a layer or a feature.</strong> If world models collapse into B6 as a training technique rather than a sold product, one of these twenty layers disappears.</li>
+    <li><strong>Whether B5 is a layer or a feature.</strong> If world models collapse into B6 as a training technique rather than a sold product, one of these twenty-five layers disappears.</li>
     <li><strong>Real depth of the Chinese component tier.</strong> Roughly 30 Chinese companies appear here against a population several times larger. In the half of the market that ships the units, this map is thinnest.</li>
     <li><strong>Renewal and churn in RaaS.</strong> Three-year contracts have not yet cycled. The deployment-moat thesis is untested past first renewal.</li>
   </ul>
@@ -699,7 +713,8 @@
 
   <h2>Taxonomy rules</h2>
   <ol>
-    <li><strong>One primary layer per company</strong>, assigned by <strong>unit of sale</strong> — what the customer buys — not by what the company touches, aspires to, or is valued on.</li>
+    <li><strong>One primary layer per entry</strong>, assigned by <strong>unit of sale</strong> — what the customer buys — not by what the company touches, aspires to, or is valued on.</li>
+    <li><strong>Product lines can be their own entry</strong> where they compete as separate products against separate rivals. Isaac Sim, Cosmos, GR00T and Halos are listed individually because a simulation buyer, a world-model buyer and a certification buyer are different people running different procurements. Those entries are tagged <code>product</code>, excluded from the company count, and removed from the parent's spans so nothing is counted twice. <strong>243 distinct companies, 251 entries.</strong>
     <li><strong>Ties broken by what the customer buys.</strong> Applied Intuition touches models but sells tooling, so B4. Symbotic builds robots but sells an integrated warehouse, so A7 with a span into C4 and C5.</li>
     <li><strong>Secondary positions recorded as spans</strong>, rendered as dashed borders, never as duplicate entries. Where no layer dominates, the company is marked <strong>full-stack</strong> instead of being forced.</li>
     <li><strong>Geography is headquarters</strong>, not manufacturing or market. Several Western OEMs manufacture predominantly in China; that is a supply-chain fact, not a taxonomy fact.</li>
@@ -782,24 +797,25 @@
 
   <div class="callout b">
     <div class="lbl">How this differs from the published maps</div>
-    <p style="margin-bottom:0">a16z, CB Insights and the VC landscape posts are organised by <em>category membership</em> — useful for discovery, and silent on where value goes. This map is organised by <strong>value capture position</strong>, states its assignment rule, extends beyond the intelligence layer into operations, and attaches a falsifiable view about margin geography. The company roster is the least original part of it; the taxonomy and the Plane C argument are the contribution.</p>
+    <p>a16z, CB Insights and the VC landscape posts are organised by <em>category membership</em> — useful for discovery, and silent on where value goes. This map is organised by <strong>unit of sale</strong>, states its assignment rule, extends beyond the intelligence layer into operations, and attaches a falsifiable view about margin geography.</p>
+    <p style="margin-bottom:0">Being precise about what is and is not original here, because a reader who works it out unaided will discount more than the truth warrants: <strong>the company roster is compiled, not discovered. The Capital tab is substantially a restatement of one Crunchbase analysis</strong> plus PitchBook round medians — accurate, verified, and not mine. The contributions are four: <strong>Plane C as a first-class plane</strong>, the <strong>unit-of-sale assignment rule</strong> published rather than assumed, the <strong>margin-geography read</strong>, and the <strong>deployment-tier framework</strong> together with the argument that mining and agriculture confirm rather than falsify it.</p>
   </div>
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V2-00 · September 2026<br>
-  Company roster is curated, not exhaustive — ~250 of an estimated 700+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
+  <strong>Physical AI Market Map</strong> · V4-00 · September 2026<br>
+  Company roster is curated, not exhaustive — ~243 of an estimated 700+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.
 </footer>
 
 </div>
 <script>
 const CO = [
-{n:"Harmonic Drive Systems",l:"A1",g:"KR/JP",v:["hum","ind"],pub:1,big:1,note:"strain-wave gearing · structural bottleneck"},
-{n:"Nabtesco",l:"A1",g:"KR/JP",v:["hum","ind"],pub:1,big:1,note:"cycloidal & precision reducers"},
+{n:"Harmonic Drive Systems",l:"A1",g:"JP",v:["hum","ind"],pub:1,big:1,note:"strain-wave gearing · structural bottleneck"},
+{n:"Nabtesco",l:"A1",g:"JP",v:["hum","ind"],pub:1,big:1,note:"cycloidal & precision reducers"},
 {n:"Leaderdrive",l:"A1",g:"CN",v:["hum"],pub:1,note:"Chinese harmonic entrant"},
 {n:"Suzhou Green Harmonic",l:"A1",g:"CN",v:["hum"],note:"~30-50% below incumbent pricing"},
-{n:"Sumitomo Drive",l:"A1",g:"KR/JP",v:["ind"],pub:1},
+{n:"Sumitomo Drive",l:"A1",g:"JP",v:["ind"],pub:1},
 {n:"SKF",l:"A1",g:"EU",v:["hum","ind"],pub:1,note:"planetary roller screws"},
 {n:"Schaeffler",l:"A1",g:"EU",v:["hum","ind"],pub:1,note:"multiple OEM partnerships"},
 {n:"Sanhua Intelligent Controls",l:"A1",g:"CN",v:["hum"],pub:1,note:"actuator assembly"},
@@ -808,39 +824,39 @@ const CO = [
 {n:"Moog",l:"A1",g:"US",v:["hum","def"],pub:1},
 {n:"maxon",l:"A1",g:"EU",v:["hum","ind"]},
 {n:"Kollmorgen",l:"A1",g:"US",v:["ind"]},
-{n:"Tesollo",l:"A1",g:"KR/JP",v:["hum"],note:"dexterous hands"},
+{n:"Tesollo",l:"A1",g:"KR",v:["hum"],note:"dexterous hands"},
 {n:"Shadow Robot",l:"A1",g:"EU",v:["hum"],note:"dexterous hands"},
-{n:"WIRobotics",l:"A1",g:"KR/JP",v:["hum"],note:"lightweight actuation"},
+{n:"WIRobotics",l:"A1",g:"KR",v:["hum"],note:"lightweight actuation"},
 {n:"Hesai",l:"A2",g:"CN",v:["av","hum"],pub:1,big:1,note:"lidar volume leader"},
 {n:"RoboSense",l:"A2",g:"CN",v:["av","ind"],pub:1,note:"lidar"},
 {n:"Ouster",l:"A2",g:"US",v:["av","ind"],pub:1,note:"lidar"},
 {n:"Luminar",l:"A2",g:"US",v:["av"],pub:1,note:"lidar"},
-{n:"Innoviz",l:"A2",g:"other",v:["av"],pub:1,note:"lidar"},
+{n:"Innoviz",l:"A2",g:"IL",v:["av"],pub:1,note:"lidar"},
 {n:"Aeva",l:"A2",g:"US",v:["av"],pub:1,note:"FMCW lidar"},
 {n:"Teradar",l:"A2",g:"US",v:["av"],note:"terahertz sensing"},
-{n:"Sony Semiconductor",l:"A2",g:"KR/JP",v:["av","ind"],pub:1,note:"image sensors"},
+{n:"Sony Semiconductor",l:"A2",g:"JP",v:["av","ind"],pub:1,note:"image sensors"},
 {n:"Bosch",l:"A2",g:"EU",v:["av","ind"],big:1,note:"sensors & MEMS"},
 {n:"Continental",l:"A2",g:"EU",v:["av"],pub:1},
-{n:"Keyence",l:"A2",g:"KR/JP",v:["ind"],pub:1,big:1,note:"industrial vision"},
+{n:"Keyence",l:"A2",g:"JP",v:["ind"],pub:1,big:1,note:"industrial vision"},
 {n:"Cognex",l:"A2",g:"US",v:["ind"],pub:1,note:"machine vision"},
 {n:"Basler",l:"A2",g:"EU",v:["ind"],pub:1},
 {n:"CATL",l:"A3",g:"CN",v:["hum","av"],pub:1,big:1,note:"cells"},
 {n:"BYD",l:"A3",g:"CN",v:["av","hum"],pub:1,big:1,note:"cells & vehicles"},
-{n:"Samsung SDI",l:"A3",g:"KR/JP",v:["hum","av"],pub:1,note:"solid-state roadmap"},
-{n:"LG Energy Solution",l:"A3",g:"KR/JP",v:["hum","av"],pub:1},
-{n:"Panasonic Energy",l:"A3",g:"KR/JP",v:["av"],pub:1},
+{n:"Samsung SDI",l:"A3",g:"KR",v:["hum","av"],pub:1,note:"solid-state roadmap"},
+{n:"LG Energy Solution",l:"A3",g:"KR",v:["hum","av"],pub:1},
+{n:"Panasonic Energy",l:"A3",g:"JP",v:["av"],pub:1},
 {n:"Infineon",l:"A3",g:"EU",v:["ind","av"],pub:1,note:"power semiconductors"},
-{n:"NVIDIA",fs:1,l:"A4",g:"US",v:["hum","ind","av","def"],pub:1,span:["A6","B4","B5","B1","B6","C1","C3"],big:1,note:"Jetson Thor · Isaac · Cosmos · GR00T · Halos"},
+{n:"NVIDIA",fs:1,l:"A4",g:"US",v:["hum","ind","av","def"],pub:1,span:["A6","B1","C1"],big:1,note:"Jetson Thor · Isaac · Cosmos · GR00T · Halos"},
 {n:"Qualcomm",l:"A4",g:"US",v:["av","hum"],pub:1,big:1,note:"Snapdragon Ride"},
 {n:"Arm",l:"A4",g:"EU",v:["hum","ind"],pub:1,big:1},
-{n:"Mobileye",l:"A4",g:"EU",v:["av"],pub:1,span:["B7"],big:1,note:"acquired Mentee Robotics ~$900M"},
+{n:"Mobileye",l:"A4",g:"IL",v:["av"],pub:1,span:["B7"],big:1,note:"acquired Mentee Robotics ~$900M"},
 {n:"Ambarella",l:"A4",g:"US",v:["av","ind"],pub:1},
-{n:"Hailo",l:"A4",g:"other",v:["ind","def"]},
+{n:"Hailo",l:"A4",g:"IL",v:["ind","def"]},
 {n:"Axelera AI",l:"A4",g:"EU",v:["ind"]},
 {n:"Horizon Robotics",l:"A4",g:"CN",v:["av"],pub:1,span:["B7"],note:"China AV silicon"},
 {n:"Black Sesame",l:"A4",g:"CN",v:["av"],pub:1},
 {n:"SiMa.ai",l:"A4",g:"US",v:["ind"]},
-{n:"Renesas",l:"A5",g:"KR/JP",v:["ind","av"],pub:1},
+{n:"Renesas",l:"A5",g:"JP",v:["ind","av"],pub:1},
 {n:"NXP",l:"A4",g:"EU",v:["av","ind"],pub:1},
 {n:"Figure AI",fs:1,l:"A6",g:"US",v:["hum"],span:["B2","B6"],big:1,val:"$39B",note:"Helix 2 · end-to-end neural · most valuable pure-play humanoid"},
 {n:"Tesla",fs:1,l:"A6",g:"US",v:["hum","av"],pub:1,span:["A4","A8","B4","B2","B6","B7","C1"],big:1,note:"Optimus · FSD"},
@@ -854,7 +870,7 @@ const CO = [
 {n:"Sanctuary AI",l:"A6",g:"US",v:["hum"],note:"teleop-to-autonomy"},
 {n:"Persona AI",l:"A6",g:"US",v:["hum","ind"],note:"industrial welding focus"},
 {n:"Humanoid",l:"A6",g:"EU",v:["hum"],note:"UK-based"},
-{n:"Mentee Robotics",l:"A6",g:"other",v:["hum"],note:"acquired by Mobileye"},
+{n:"Mentee Robotics",l:"A6",g:"IL",v:["hum"],note:"acquired by Mobileye"},
 {n:"UBTech",l:"A6",g:"CN",v:["hum","ind"],pub:1,big:1,note:"Walker S2 in mass production · HK-listed"},
 {n:"Fourier Intelligence",l:"A6",g:"CN",v:["hum"]},
 {n:"Galbot",l:"A6",g:"CN",v:["hum"],span:["B6"]},
@@ -865,15 +881,15 @@ const CO = [
 {n:"Kepler Robotics",l:"A6",g:"CN",v:["hum"]},
 {n:"Leju Robotics",l:"A6",g:"CN",v:["hum"]},
 {n:"Galaxy Bot",l:"A6",g:"CN",v:["hum"]},
-{n:"RLWRLD",l:"A6",g:"KR/JP",v:["hum","ind"],span:["B6"],note:"RLDX-1 with KAIST"},
-{n:"Honda",l:"A6",g:"KR/JP",v:["hum","av"],pub:1},
-{n:"FANUC",l:"A7",g:"KR/JP",v:["ind"],pub:1,big:1},
-{n:"Yaskawa",l:"A7",g:"KR/JP",v:["ind"],pub:1,big:1},
+{n:"RLWRLD",l:"A6",g:"KR",v:["hum","ind"],span:["B6"],note:"RLDX-1 with KAIST"},
+{n:"Honda",l:"A6",g:"JP",v:["hum","av"],pub:1},
+{n:"FANUC",l:"A7",g:"JP",v:["ind"],pub:1,big:1},
+{n:"Yaskawa",l:"A7",g:"JP",v:["ind"],pub:1,big:1},
 {n:"ABB Robotics",l:"A7",g:"EU",v:["ind"],pub:1,big:1},
 {n:"KUKA",l:"A7",g:"EU",v:["ind"],big:1,note:"Midea-owned"},
-{n:"Kawasaki",l:"A7",g:"KR/JP",v:["ind","hum"],pub:1},
+{n:"Kawasaki",l:"A7",g:"JP",v:["ind","hum"],pub:1},
 {n:"Universal Robots",l:"A7",g:"EU",v:["ind"],note:"Teradyne · cobot arms"},
-{n:"Doosan Robotics",l:"A7",g:"KR/JP",v:["ind"],pub:1},
+{n:"Doosan Robotics",l:"A7",g:"KR",v:["ind"],pub:1},
 {n:"Amazon Robotics",fs:1,l:"A7",g:"US",v:["ind"],pub:1,span:["B2","C2","C5"],big:1,note:"Vulcan · RBR50 Robot of the Year"},
 {n:"Symbotic",l:"A7",g:"US",v:["ind"],pub:1,span:["C4","C5"],big:1},
 {n:"AutoStore",l:"A7",g:"EU",v:["ind"],pub:1},
@@ -890,8 +906,8 @@ const CO = [
 {n:"Osaro",l:"A7",g:"US",v:["ind"]},
 {n:"GreyOrange",l:"A7",g:"US",v:["ind"],span:["C5"]},
 {n:"Attabotics",l:"A7",g:"US",v:["ind"]},
-{n:"Waymo",l:"B7",fs:1,g:"US",v:["av"],span:["A4","B4","B5","B2","B7","C2","C5"],big:1,val:"$126B",note:"$16B Series D Feb 2026 · expanding to 20+ new cities"},
-{n:"Nuro",l:"B7",g:"US",v:["av"],span:["B7"],val:"$6B",note:"pivoted from operator to licensor"},
+{n:"Waymo",l:"C5",fs:1,g:"US",v:["av"],span:["A4","A8","B2","B4","B7","C2"],big:1,val:"$126B",note:"$16B Series D Feb 2026 · expanding to 20+ new cities"},
+{n:"Nuro",l:"B7",g:"US",v:["av"],span:["A8"],val:"$6B",note:"pivoted from operator to licensor"},
 {n:"Zoox",fs:1,l:"A8",g:"US",v:["av"],span:["B7","C5"],val:"$3.2B",est:1,note:"last independent mark · now Amazon-owned"},
 {n:"Aurora",l:"A8",g:"US",v:["av"],pub:1,span:["B7"],note:"autonomous trucking"},
 {n:"Kodiak Robotics",l:"A8",g:"US",v:["av"],note:"trucking"},
@@ -901,7 +917,7 @@ const CO = [
 {n:"Einride",l:"A8",g:"EU",v:["av"],note:"electric autonomous freight"},
 {n:"Pony.ai",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"]},
 {n:"WeRide",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"]},
-{n:"Baidu Apollo",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"],big:1},
+{n:"Baidu Apollo",prod:1,l:"A8",g:"CN",v:["av"],pub:1,span:["B7"],big:1},
 {n:"Anduril",fs:1,l:"A9",g:"US",v:["def"],span:["A1","A2","B8","C1"],big:1,val:"$61B",note:"Lattice · vertical integration thesis"},
 {n:"Helsing",l:"A9",g:"EU",v:["def"],span:["B8"],big:1,val:"$12B",note:"$18B round reported in progress"},
 {n:"Saronic",l:"A9",g:"US",v:["def"],big:1,val:"$9.25B",note:"maritime uncrewed surface vessels"},
@@ -915,37 +931,37 @@ const CO = [
 {n:"Castelion",l:"A9",g:"US",v:["def"]},
 {n:"Neros",l:"A9",g:"US",v:["def"]},
 {n:"Firestorm Labs",l:"A9",g:"US",v:["def"]},
-{n:"Percepto",l:"A9",g:"other",v:["def","ind"]},
+{n:"Percepto",l:"A9",g:"IL",v:["def","ind"]},
 {n:"Saildrone",l:"A9",g:"US",v:["def"]},
-{n:"Bubble Robotics",l:"A9",g:"KR/JP",v:["def","ind"],note:"offshore inspection"},
+{n:"Bubble Robotics",l:"A9",g:"KR",v:["def","ind"],note:"offshore inspection"},
 {n:"Built Robotics",l:"A10",g:"US",v:["con"]},
 {n:"Dusty Robotics",l:"A10",g:"US",v:["con"],note:"FieldPrinter · BIM layout"},
 {n:"Canvas",l:"A10",g:"US",v:["con"],note:"drywall finishing · JLG"},
 {n:"Gravis Robotics",l:"A10",g:"EU",v:["con"]},
 {n:"Monumental",l:"A10",g:"EU",v:["con"],note:"masonry"},
 {n:"Toggle",l:"A10",g:"US",v:["con"],note:"rebar assembly"},
-{n:"SafeAI",l:"A10",g:"US",v:["con"],note:"retrofit heavy equipment"},
+{n:"SafeAI",l:"A11",g:"US",v:["con"],note:"retrofit heavy equipment"},
 {n:"Teleo",l:"A10",g:"US",v:["con"],note:"retrofit autonomy"},
 {n:"Rugged Robotics",l:"A10",g:"US",v:["con"]},
-{n:"NVIDIA Isaac Sim / Omniverse",l:"B4",g:"US",v:["hum","ind","av"],pub:1,big:1,note:"de-facto industry simulator"},
+{n:"NVIDIA Isaac Sim / Omniverse",prod:1,l:"B4",g:"US",v:["hum","ind","av"],pub:1,big:1,note:"de-facto industry simulator"},
 {n:"Applied Intuition",l:"B4",g:"US",v:["av","def"],span:["B1","B7"],big:1,val:"$15B",note:"AV toolchain"},
 {n:"MuJoCo",l:"B4",g:"US",v:["hum"],note:"DeepMind · open source"},
 {n:"Open Robotics / Gazebo",l:"B4",g:"US",v:["ind","hum"],note:"OSRF · open standard"},
 {n:"CoppeliaSim",l:"B4",g:"EU",v:["ind"]},
 {n:"dSPACE",l:"B4",g:"EU",v:["av"],note:"hardware-in-loop validation"},
 {n:"Unity",l:"B4",g:"US",v:["ind"],pub:1,note:"rendering & sim runtime"},
-{n:"NVIDIA Cosmos",intn:1,l:"B5",g:"US",v:["hum","av"],pub:1,big:1,note:"world foundation model for physical AI"},
+{n:"NVIDIA Cosmos",prod:1,intn:1,l:"B5",g:"US",v:["hum","av"],pub:1,big:1,note:"world foundation model for physical AI"},
 {n:"World Labs",l:"B5",g:"US",v:["hum"],big:1,val:"$5B",note:"spatial intelligence · Fei-Fei Li · Marble"},
-{n:"DeepMind Genie",intn:1,l:"B5",g:"EU",v:["hum"],note:"generative interactive environments"},
+{n:"DeepMind Genie",prod:1,intn:1,l:"B5",g:"EU",v:["hum"],note:"generative interactive environments"},
 {n:"Genesis AI",l:"B5",g:"US",v:["hum","ind"],note:"generative physics engine"},
-{n:"Decart",l:"B5",g:"other",v:["hum"],note:"real-time world generation"},
+{n:"Decart",l:"B5",g:"IL",v:["hum"],note:"real-time world generation"},
 {n:"Odyssey",l:"B5",g:"EU",v:["hum"]},
 {n:"Runway",l:"B5",g:"US",v:["hum"],note:"video world models"},
 {n:"AMI Labs",l:"B5",g:"EU",v:["hum"],note:"LeCun · JEPA architecture"},
 {n:"Parallel Domain",l:"B1",g:"US",v:["av"],note:"synthetic AV data"},
 {n:"Duality AI",l:"B1",g:"US",v:["ind","def"],note:"Falcon digital twin data"},
-{n:"Cognata",l:"B1",g:"other",v:["av"]},
-{n:"Foretellix",l:"B1",g:"other",v:["av"],note:"scenario coverage"},
+{n:"Cognata",l:"B1",g:"IL",v:["av"]},
+{n:"Foretellix",l:"B1",g:"IL",v:["av"],note:"scenario coverage"},
 {n:"Rendered.ai",l:"B1",g:"US",v:["def","ind"]},
 {n:"Scale AI",l:"B2",g:"US",v:["hum","av","def"],span:["B1"],big:1,val:"$29B",note:"Meta holds a ~49% minority stake"},
 {n:"micro1",l:"B2",g:"US",v:["hum"],val:"$500M"},
@@ -957,14 +973,14 @@ const CO = [
 {n:"Turing",l:"B2",g:"US",v:["hum"]},
 {n:"Reflex Robotics",l:"B3",g:"US",v:["hum"],note:"teleoperation rigs"},
 {n:"Dexmate",l:"B3",g:"US",v:["hum"]},
-{n:"Meta Project Aria",l:"B2",g:"US",v:["hum"],pub:1,note:"egocentric capture at scale"},
+{n:"Meta Project Aria",prod:1,l:"B2",g:"US",v:["hum"],pub:1,note:"egocentric capture at scale"},
 {n:"Skild AI",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$14B",note:"omni-bodied · tripled from $4.5B in seven months"},
 {n:"Physical Intelligence",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$5.6B",note:"pi-zero / pi-0.7 · ~$11B reported in talks, not closed"},
 {n:"Generalist AI",l:"B6",g:"US",v:["hum"],big:1,val:"$3B",note:"GEN-1 · trained from scratch · ex-DeepMind founders"},
 {n:"Sunday Robotics",l:"B6",g:"US",v:["hum"],val:"$1.15B",note:"Memo household robot"},
 {n:"Dyna Robotics",l:"B6",g:"US",v:["hum","ind"],val:"$600M"},
-{n:"NVIDIA GR00T",l:"B6",g:"US",v:["hum"],pub:1,big:1,note:"N1.7 shipped · N2 announced"},
-{n:"Gemini Robotics",l:"B6",g:"EU",v:["hum"],pub:1,big:1,note:"Google DeepMind · ER planner"},
+{n:"NVIDIA GR00T",prod:1,l:"B6",g:"US",v:["hum"],pub:1,big:1,note:"N1.7 shipped · N2 announced"},
+{n:"Gemini Robotics",prod:1,l:"B6",g:"EU",v:["hum"],pub:1,big:1,note:"Google DeepMind · ER planner"},
 {n:"Field AI",l:"B6",g:"US",v:["con","def","ind"],note:"field robot brains"},
 {n:"Rhoda AI",l:"B6",g:"US",v:["hum"]},
 {n:"Intrinsic",l:"B6",g:"US",v:["ind"],note:"Alphabet · industrial"},
@@ -977,7 +993,7 @@ const CO = [
 {n:"Wayve",l:"B7",g:"EU",v:["av"],big:1,val:"$8.6B",note:"end-to-end AI Driver · Series D post-money"},
 {n:"Waabi",l:"B7",g:"US",v:["av"],span:["B5"],note:"neural closed-loop sim · valuation undisclosed"},
 {n:"Momenta",l:"B7",g:"CN",v:["av"]},
-{n:"Plus",l:"B7",g:"US",v:["av"],note:"trucking autonomy"},
+{n:"Plus.ai",l:"B7",g:"US",v:["av"],note:"trucking autonomy"},
 {n:"Bot Auto",l:"B7",g:"US",v:["av"]},
 {n:"Shield AI",l:"B8",g:"US",v:["def"],big:1,val:"$12.7B",note:"Hivemind · platform-agnostic autonomy"},
 {n:"Auterion",l:"B8",g:"EU",v:["def"],note:"open drone autonomy & swarming"},
@@ -991,23 +1007,23 @@ const CO = [
 {n:"InOrbit",l:"C2",g:"US",v:["ind"]},
 {n:"Foxglove",l:"C2",g:"US",v:["ind","av"],note:"observability"},
 {n:"Freedom Robotics",l:"C2",g:"US",v:["ind"]},
-{n:"Rapyuta Robotics",l:"C2",g:"KR/JP",v:["ind"],note:"multi-robot orchestration"},
-{n:"NVIDIA Halos",l:"C3",g:"US",v:["hum","av"],pub:1,big:1,note:"early access · no third-party certificate issued yet"},
+{n:"Rapyuta Robotics",l:"C2",g:"JP",v:["ind"],note:"multi-robot orchestration"},
+{n:"NVIDIA Halos",prod:1,l:"C3",g:"US",v:["hum","av"],pub:1,big:1,note:"early access · no third-party certificate issued yet"},
 {n:"TUV SUD",l:"C3",g:"EU",v:["hum","av","ind"],big:1,note:"inspected Thor + Halos for ISO 26262"},
 {n:"TUV Rheinland",l:"C3",g:"EU",v:["ind","av"]},
 {n:"UL Solutions",l:"C3",g:"US",v:["ind","hum"],pub:1},
 {n:"Pilz",l:"C3",g:"EU",v:["ind"]},
-{n:"SICK AG",l:"C3",g:"EU",v:["ind"],pub:1,note:"safety sensing"},
+{n:"SICK AG",l:"A2",g:"EU",v:["ind"],pub:1,span:["C3"],note:"safety laser scanners & protective-field sensing"},
 {n:"Fort Robotics",l:"C3",g:"US",v:["ind","con"],note:"safety controls"},
-{n:"A3 Automation",l:"C3",g:"US",v:["ind"],note:"standards body"},
-{n:"IFR",l:"C3",g:"EU",v:["ind"],note:"statistics & standards"},
-{n:"Foxconn",l:"C4",g:"CN",v:["hum","ind"],pub:1,big:1,note:"contract manufacture"},
+
+
+{n:"Foxconn",l:"C4",g:"TW",v:["hum","ind"],pub:1,big:1,note:"contract manufacture"},
 {n:"Jabil",l:"C4",g:"US",v:["hum","ind"],pub:1},
 {n:"Flex",l:"C4",g:"US",v:["hum","ind"],pub:1},
 {n:"Accenture Industry X",l:"C4",g:"EU",v:["ind"],pub:1},
 {n:"Ocado Technology",l:"C4",g:"EU",v:["ind"],pub:1},
-{n:"Hanwha Systems",l:"C4",g:"KR/JP",v:["def","ind"],pub:1},
-{n:"Samsung Heavy Industries",l:"C4",g:"KR/JP",v:["ind"],pub:1,note:"shipyard end-customer"},
+{n:"Hanwha Systems",l:"C4",g:"KR",v:["def","ind"],pub:1},
+
 {n:"Cobot",l:"C5",g:"US",v:["ind"],note:"Proxie · bundles change management"},
 {n:"Formic",l:"C5",g:"US",v:["ind"],note:"robotics-as-a-service"},
 {n:"Rapid Robotics",l:"C5",g:"US",v:["ind"],note:"robotics-as-a-service"},
@@ -1021,29 +1037,34 @@ const CO = [
 {n:"Lattice Semiconductor",l:"A5",g:"US",v:["ind"],pub:1,note:"low-power FPGAs for deterministic control"},
 {n:"AMD",l:"A5",g:"US",v:["ind","av"],pub:1,big:1,note:"Zynq & Versal adaptive SoCs"},
 {n:"Beckhoff",l:"A5",g:"EU",v:["ind"],note:"EtherCAT real-time fieldbus"},
-{n:"Elmo Motion Control",l:"A5",g:"other",v:["ind"],note:"compact servo drives"},
+{n:"Elmo Motion Control",l:"A5",g:"IL",v:["ind"],note:"compact servo drives"},
 {n:"HaptX",l:"B3",g:"US",v:["hum"],note:"force-feedback gloves"},
 {n:"Manus",l:"B3",g:"EU",v:["hum"],note:"motion-capture gloves"},
-{n:"Ottopia",l:"B3",g:"other",v:["av","ind"],note:"teleoperation software"},
-{n:"DriveU.auto",l:"B3",g:"other",v:["av","ind"],note:"teleoperation connectivity"},
-{n:"Caterpillar",l:"A10",g:"US",v:["min","con"],pub:1,big:1,note:"MineStar Command · largest deployed autonomous fleet"},
-{n:"Komatsu",l:"A10",g:"KR/JP",v:["min","con"],pub:1,big:1,note:"FrontRunner AHS · first commercial autonomous haulage"},
-{n:"Sandvik",l:"A10",g:"EU",v:["min"],pub:1,big:1,note:"AutoMine underground autonomy"},
-{n:"Epiroc",l:"A10",g:"EU",v:["min"],pub:1,note:"underground mining automation"},
-{n:"Hitachi Construction Machinery",l:"A10",g:"KR/JP",v:["min","con"],pub:1},
-{n:"Liebherr",l:"A10",g:"EU",v:["min","con"],note:"autonomous haulage & cranes"},
-{n:"Pronto.ai",l:"A10",g:"US",v:["min"],note:"retrofit autonomous haulage"},
-{n:"John Deere",l:"A10",g:"US",v:["ag"],pub:1,big:1,note:"autonomous 8R tractor · See & Spray"},
-{n:"AGCO",l:"A10",g:"US",v:["ag"],pub:1,note:"Fendt · PTx Trimble autonomy"},
-{n:"CNH Industrial",l:"A10",g:"EU",v:["ag"],pub:1,note:"Case IH & New Holland autonomy"},
-{n:"Kubota",l:"A10",g:"KR/JP",v:["ag"],pub:1},
-{n:"Monarch Tractor",l:"A10",g:"US",v:["ag"],note:"electric driver-optional tractor"},
-{n:"Carbon Robotics",l:"A10",g:"US",v:["ag"],note:"LaserWeeder"},
-{n:"Bluewhite",l:"A10",g:"other",v:["ag"],note:"tractor autonomy retrofit"},
-{n:"Agtonomy",l:"A10",g:"US",v:["ag"]},
-{n:"Burro",l:"A10",g:"US",v:["ag"],note:"autonomous field carts"},
-{n:"Naio Technologies",l:"A10",g:"EU",v:["ag"],note:"autonomous weeding robots"},
-{n:"Verdant Robotics",l:"A10",g:"US",v:["ag"]}
+{n:"Ottopia",l:"B3",g:"IL",v:["av","ind"],note:"teleoperation software"},
+{n:"DriveU.auto",l:"B3",g:"IL",v:["av","ind"],note:"teleoperation connectivity"},
+{n:"Caterpillar",l:"A11",g:"US",v:["min","con"],pub:1,big:1,note:"MineStar Command · largest deployed autonomous fleet"},
+{n:"Komatsu",l:"A11",g:"JP",v:["min","con"],pub:1,big:1,note:"FrontRunner AHS · first commercial autonomous haulage"},
+{n:"Sandvik",l:"A11",g:"EU",v:["min"],pub:1,big:1,note:"AutoMine underground autonomy"},
+{n:"Epiroc",l:"A11",g:"EU",v:["min"],pub:1,note:"underground mining automation"},
+{n:"Hitachi Construction Machinery",l:"A11",g:"JP",v:["min","con"],pub:1},
+{n:"Liebherr",l:"A11",g:"EU",v:["min","con"],note:"autonomous haulage & cranes"},
+{n:"Pronto.ai",l:"A11",g:"US",v:["min"],note:"retrofit autonomous haulage"},
+{n:"John Deere",l:"A12",g:"US",v:["ag"],pub:1,big:1,note:"autonomous 8R tractor · See & Spray"},
+{n:"AGCO",l:"A12",g:"US",v:["ag"],pub:1,note:"Fendt · PTx Trimble autonomy"},
+{n:"CNH Industrial",l:"A12",g:"EU",v:["ag"],pub:1,note:"Case IH & New Holland autonomy"},
+{n:"Kubota",l:"A12",g:"JP",v:["ag"],pub:1},
+{n:"Monarch Tractor",l:"A12",g:"US",v:["ag"],note:"electric driver-optional tractor"},
+{n:"Carbon Robotics",l:"A12",g:"US",v:["ag"],note:"LaserWeeder"},
+{n:"Bluewhite",l:"A12",g:"IL",v:["ag"],note:"tractor autonomy retrofit"},
+{n:"Agtonomy",l:"A12",g:"US",v:["ag"]},
+{n:"Burro",l:"A12",g:"US",v:["ag"],note:"autonomous field carts"},
+{n:"Naio Technologies",l:"A12",g:"EU",v:["ag"],note:"autonomous weeding robots"},
+{n:"Verdant Robotics",l:"A12",g:"US",v:["ag"]},
+{n:"Atoms",l:"A6",g:"US",v:["hum"],val:"$1.7B",note:"Kalanick-backed · stealth until 2026"},
+{n:"Serve Robotics",l:"A8",g:"US",v:["av"],pub:1,note:"sidewalk delivery"},
+{n:"Starship Technologies",l:"A8",g:"EU",v:["av"],note:"sidewalk delivery at campus scale"},
+{n:"Cartken",l:"A8",g:"US",v:["av","ind"],note:"sidewalk & indoor delivery"},
+{n:"Coco Robotics",l:"A8",g:"US",v:["av"],note:"urban sidewalk delivery"}
 ];
 
 // name : [homepage, one-line overview]
@@ -1230,7 +1251,7 @@ const INFO={
 "Wayve":["wayve.ai","UK developer of an end-to-end learned driving system designed to generalise across vehicles and cities without HD maps."],
 "Waabi":["waabi.ai","Canadian autonomous trucking company built around a closed-loop neural simulator used in place of large-scale road testing."],
 "Momenta":["","Chinese autonomous driving company supplying assisted and highly automated driving software to vehicle manufacturers."],
-"Plus":["plus.ai","Developer of autonomous driving software for long-haul trucking, partnering with OEMs rather than operating fleets."],
+"Plus.ai":["plus.ai","Developer of autonomous driving software for long-haul trucking, partnering with OEMs rather than operating fleets."],
 "Bot Auto":["bot.auto","US autonomous trucking company pursuing capital-light driver-out freight operations in Texas."],
 "Shield AI":["shield.ai","Builds Hivemind, a platform-agnostic autonomy stack that flies third-party aircraft in GPS- and communications-denied environments."],
 "Auterion":["auterion.com","Provides an open operating system and swarming software for drones, used across defence and enterprise fleets."],
@@ -1252,15 +1273,15 @@ const INFO={
 "Pilz":["pilz.com","German automation safety specialist supplying safe control systems, sensors and machinery safety services."],
 "SICK AG":["sick.com","German sensor manufacturer supplying safety laser scanners and light curtains that define protective fields around machinery."],
 "Fort Robotics":["fortrobotics.com","Provides functional safety and secure wireless control systems for autonomous machines and industrial vehicles."],
-"A3 Automation":["automate.org","The Association for Advancing Automation; North America's robotics trade body and a standards-setting participant."],
-"IFR":["ifr.org","The International Federation of Robotics; publishes World Robotics, the authoritative global installation statistics for the industry."],
+
+
 "Foxconn":["foxconn.com","The world's largest contract electronics manufacturer, increasingly the production partner for robot hardware at scale."],
 "Jabil":["jabil.com","Global manufacturing solutions provider offering design and production services for complex electromechanical products."],
 "Flex":["flex.com","Global contract manufacturer providing design, engineering and supply-chain services across industrial and mobility hardware."],
 "Accenture Industry X":["accenture.com","Accenture's industrial digitalisation practice, integrating automation and robotics into manufacturing operations."],
 "Ocado Technology":["ocadogroup.com","Builds and licenses highly automated grocery fulfilment centres, one of the few proven large-scale robotic warehouse platforms."],
 "Hanwha Systems":["hanwhasystems.com","Korean defence electronics and systems integrator supplying military autonomy, sensors and command systems."],
-"Samsung Heavy Industries":["samsungshi.com","Korean shipbuilder and a representative industrial end-customer for welding and heavy-fabrication automation."],
+
 "Cobot":["co.bot","Builds Proxie, a people-collaborative material-movement robot, and bundles the change-management programme that deployment actually requires."],
 "Formic":["formic.co","Deploys industrial automation on a pay-per-hour basis, removing capital expenditure from the manufacturer's decision."],
 "Rapid Robotics":["rapidrobotics.com","Delivers pre-trained robotic work cells to manufacturers under a subscription rather than a purchase model."],
@@ -1296,7 +1317,12 @@ const INFO={
 "Agtonomy":["agtonomy.com","Develops autonomy and task-automation software for specialty-crop farm equipment."],
 "Burro":["burro.ai","Builds autonomous wheeled carts that carry harvested produce, among the highest-volume field robots deployed in agriculture."],
 "Naio Technologies":["naio-technologies.com","French manufacturer of autonomous weeding robots for vegetable and vineyard operations."],
-"Verdant Robotics":["verdantrobotics.com","Provides robotic precision treatment for specialty crops, targeting per-plant intervention."]
+"Verdant Robotics":["verdantrobotics.com","Provides robotic precision treatment for specialty crops, targeting per-plant intervention."],
+"Atoms":["atoms.com","Humanoid company founded by Travis Kalanick, operating largely in stealth until its 2026 round."],
+"Serve Robotics":["serverobotics.com","Operates sidewalk delivery robots in US cities, spun out of Uber and now publicly listed."],
+"Starship Technologies":["starship.xyz","Runs one of the largest sidewalk delivery fleets globally, concentrated on university campuses."],
+"Cartken":["cartken.com","Builds sidewalk and indoor delivery robots, with deployments spanning campuses and factory logistics."],
+"Coco Robotics":["cocodelivery.com","Operates remotely supervised sidewalk delivery robots for urban restaurant and retail orders."]
 };
 
 const PLANES=[
@@ -1310,7 +1336,9 @@ const PLANES=[
    {c:"A7",grp:"Embodiments",n:"Industrial arms, AMR & warehouse",d:"Fixed arms, mobile robots and goods-to-person systems. The revenue base of the industry."},
    {c:"A8",grp:"Embodiments",n:"Road & ground autonomy platforms",d:"Robotaxi, trucking and last-mile ground vehicles."},
    {c:"A9",grp:"Embodiments",n:"Aerial & maritime platforms",d:"Drones, uncrewed surface vessels and the defence programmes built on them."},
-   {c:"A10",grp:"Embodiments",n:"Heavy machinery & field autonomy",d:"Construction, mining and agriculture. The only domains generating autonomous revenue at scale in unstructured environments today."}]},
+   {c:"A10",grp:"Embodiments",n:"Construction machinery",d:"Excavators, layout and finishing robots. Mostly retrofit autonomy onto machines the customer already owns."},
+   {c:"A11",grp:"Embodiments",n:"Mining & resource autonomy",d:"Autonomous haulage and underground loading. The oldest production autonomy on this map — driverless fleets since well before the current cycle."},
+   {c:"A12",grp:"Embodiments",n:"Agricultural autonomy",d:"Tractors, weeding and per-plant treatment. A field is a bounded ODD, which is why this works commercially today."}]},
  {id:"B",name:"Brain",desc:"perception, reasoning, action",layers:[
    {c:"B1",grp:"Data",gd:"the input — and the binding bottleneck",n:"Synthetic data generation",d:"Pipelines that manufacture labelled training data at volume, usually on top of the simulation layers below."},
    {c:"B2",grp:"Data",n:"Real-world data capture & curation",d:"Egocentric video, wearables, annotation and curation. Cannot be replicated in simulation and cannot be bought."},
@@ -1324,7 +1352,7 @@ const PLANES=[
    {c:"C1",grp:"Operational software",gd:"what runs and watches the fleet",n:"Runtime & middleware",d:"The execution substrate on the robot: ROS and its commercial successors."},
    {c:"C2",grp:"Operational software",n:"Fleet operations & observability",d:"Monitoring, telemetry, OTA update and intervention tooling for deployed units."},
    {c:"C3",grp:"Operational software",n:"Safety, certification & standards",d:"The gate between demonstration and deployment. Least mapped, most defensible."},
-   {c:"C4",grp:"Commercial delivery",gd:"how the robot reaches and is paid for by the customer",n:"Integration & systems delivery",d:"Contract manufacture and systems integration. A professional-services margin profile, not a software one."},
+   {c:"C4",grp:"Commercial delivery",gd:"how the robot reaches and is paid for by the customer",n:"Contract manufacture & integration",d:"Who physically builds the units and wires them into a customer site. A manufacturing and professional-services margin profile, not a software one."},
    {c:"C5",grp:"Commercial delivery",n:"RaaS & operating models",d:"A financing and packaging model rather than a technology layer — but it owns the customer and the operational envelope."}]}
 ];
 
