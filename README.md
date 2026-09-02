@@ -1,6 +1,6 @@
 # Physical AI Market Map — 2026
 
-An interactive landscape of **219 companies across 20 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, and construction.
+An interactive landscape of **249 companies across 23 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture.
 
 **[→ View the live map](https://tony-h-kim.github.io/physical-ai-market-map/)**
 
@@ -17,17 +17,17 @@ This map is organised by **where value is captured**, not by what a company touc
 
 ## The taxonomy
 
-Three planes, twenty layers. Every company is assigned to **one primary layer** — where the majority of its value is captured today. Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.
+Three planes, twenty-three layers. Every company is assigned to **one primary layer** — the unit of sale, meaning what the customer actually buys. Where no layer dominates, the company is marked **full-stack** rather than forced into a box. Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.
 
 | Plane | Groups | Layers |
 |---|---|---|
-| **A · Body** | Components · Infrastructure · Embodiments | A1–A8 |
-| **B · Brain** | Data · Modelling · Applied autonomy | B1–B7 |
-| **C · Operations** | — | C1–C5 |
+| **A · Body** | Components · Infrastructure · Embodiments | A1–A10 |
+| **B · Brain** | Data · Modelling · Applied autonomy | B1–B8 |
+| **C · Operations** | Operational software · Commercial delivery | C1–C5 |
 
 Two distinctions this map draws that most others don't:
 
-- **B3 physics simulation vs. B4 world models vs. B5 robot foundation models.** Three different technical bets with different customers and opposite failure modes — authored dynamics, learned dynamics, and motor policy respectively.
+- **B4 physics simulation vs. B5 world models vs. B6 robot foundation models.** Three different technical bets with different customers and opposite failure modes — authored dynamics, learned dynamics, and motor policy respectively.
 - **C3 safety and certification as a layer of its own.** The most under-mapped layer in the industry, and arguably the most defensible.
 
 ## What's in it
@@ -54,7 +54,7 @@ Stated rather than hidden — the full list is on the Method tab.
 - **Sources conflict.** Where they do, the more authoritative figure is used and the conflict is noted.
 - **Survivorship.** Wound-down and acquired companies are largely absent, which flatters the sector's apparent success rate.
 
-The roster is curated, not exhaustive — roughly 220 of an estimated 600+ companies in scope.
+The roster is curated, not exhaustive — roughly 250 of an estimated 700+ companies in scope.
 
 ## Technical
 

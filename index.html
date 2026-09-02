@@ -101,6 +101,9 @@
   .co .pub{font-family:var(--mono);font-size:9.5px;font-weight:600;color:var(--fg3);background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:5px}
     .co.big{font-weight:700;border-color:var(--line2);background:var(--hi);box-shadow:inset 0 0 0 1px var(--hiring)}
   .co.spans{border:2px dashed var(--info);background:var(--spanbg);padding:5px 10px}
+  .co.fs{box-shadow:inset 0 0 0 2px var(--body),0 1px 2px rgba(16,24,40,.06)}
+  .fsb{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.04em;color:var(--body);background:var(--bodybg);padding:2px 5px;border-radius:5px;text-transform:uppercase}
+  .cv-tag.fs{color:var(--body);background:var(--bodybg)}
   .co.spans:hover{background:var(--infobg);border-color:var(--info)}
   a.co{text-decoration:none;color:var(--fg);cursor:pointer}
   a.co:hover{color:var(--ink)}
@@ -203,8 +206,8 @@
 <header>
   <div class="eyebrow">Market Landscape · September 2026</div>
   <h1>Physical AI Market Map</h1>
-  <div class="sub">A layer-based landscape of ~220 companies across humanoids, industrial robotics, autonomous vehicles, drones &amp; defence and construction — organised by <strong>where value is actually captured</strong>, not by hardware versus software.</div>
-  <div class="meta">V2-00 · September 2026 · 20 layers across 3 planes · 219 companies · valuations as last disclosed<br>
+  <div class="sub">A layer-based landscape of ~250 companies across humanoids, industrial robotics, autonomous vehicles, drones &amp; defence, construction, mining and agriculture — organised by <strong>where value is actually captured</strong>, not by hardware versus software.</div>
+  <div class="meta">V3-00 · September 2026 · 23 layers across 3 planes · 249 companies · humanoid, industrial, AV, drone &amp; defence, construction, mining, agriculture<br>
   Funding, valuation and revenue data: Crunchbase, PitchBook, CB Insights, Dealroom, TrendForce, Smart Analytics Global, TechCrunch, Bloomberg · Structural analysis: Goldman Sachs, Morgan Stanley, Roland Berger, Bullhound, McKinsey, IFR, The Robot Report</div>
 </header>
 
@@ -226,6 +229,7 @@
       <button class="chip" data-special="spans">Vertical integrators</button>
       <button class="chip" data-special="big">Category leaders</button>
       <button class="chip" data-special="val">Valuation disclosed</button>
+      <button class="chip" data-special="fs">Full-stack</button>
     </div></div>
     <div class="fgroup"><div class="flabel">Search</div><div class="chips"><input type="search" id="q" placeholder="company name…"><button class="chip" id="reset">Reset</button></div></div>
   </div>
@@ -236,6 +240,7 @@
     <span><span class="swatch o">$11B</span> reported or target — not a closed round</span>
     <span><span class="pill n">listed</span> publicly traded; market cap moves daily and is not shown</span>
     <span><i class="dash"></i> spans multiple planes</span>
+    <span><span class="fsb">full-stack</span> no single layer dominates</span>
     <span style="color:var(--fg3)">Companies are listed alphabetically within each layer; <strong style="font-weight:700;color:var(--fg2)">category leaders in bold</strong>.</span>
   </div>
 
@@ -243,8 +248,9 @@
 
   <div class="noteblock">
     <div class="nt">Deliberately out of scope</div>
-    <p>Agriculture (Monarch, Carbon Robotics, John Deere autonomy), surgical and medical robotics (Intuitive, CMR Surgical), mining autonomy (Sandvik, Epiroc), consumer and domestic robots (iRobot, Matic, Roborock), food service (Miso Robotics) and laboratory automation (Ginkgo, Emerald Cloud) are all excluded here.</p>
-    <p>Each of them shares the same three-plane stack and would slot in at layers A5–A8 and C3–C5 without altering the taxonomy. They are left out to keep the map legible and to concentrate the analysis on the verticals where capital and the general-purpose debate are actually concentrated. That the structure extends to them without modification is itself a test of whether the taxonomy holds.</p>
+    <p>Surgical and medical robotics (Intuitive Surgical, CMR Surgical), consumer and domestic robots (iRobot, Matic, Roborock), food service (Miso Robotics) and laboratory automation (Ginkgo, Emerald Cloud) remain outside this map.</p>
+    <p>Mining and agriculture were excluded in an earlier version on legibility grounds. That was a mistake, and they are now included at A10 — they are the only domains generating autonomous revenue at scale in unstructured environments, and leaving them out biased the map toward pre-revenue venture-backed platforms while removing the best real-world evidence for its own central argument.</p>
+    <p>The remaining exclusions share the same three-plane stack and would slot in at A6–A10 and C1–C5 without altering the taxonomy. That the structure extends to them without modification is itself a test of whether it holds. Surgical robotics in particular is a defensible future addition: Intuitive alone generates more revenue than most of this map combined.</p>
   </div>
 </section>
 
@@ -255,80 +261,83 @@
   <p>NVIDIA is silicon <em>and</em> Isaac, Cosmos and GR00T. Figure is hardware <em>and</em> Helix 2. Tesla, Unitree, 1X, Anduril and Waymo are all both. A hardware/software split places the fifteen most important companies in two boxes each, and asserts a separation that does not yet exist in this market. It is not mutually exclusive — and it is not collectively exhaustive either, because it has nowhere to put fleet orchestration, safety certification or systems integration.</p>
   <p>The instinct is right; the altitude is wrong. Hardware-weighting is real, but it is a <strong>gradient across layers</strong>, not a wall down the middle.</p>
 
-  <h2>Three planes, twenty layers</h2>
+  <h2>Three planes, twenty-three layers</h2>
   <p class="h2sub">Plane A is broadly hardware, Plane B broadly software, and Plane C is the operational layer that is neither — and that determines whether anything ships.</p>
 
   <figure>
-    <div class="figtitle">Fig. 1 — Twenty layers across three planes</div>
+    <div class="figtitle">Fig. 1 — Twenty-three layers across three planes</div>
     <div class="svgbox">
-      <svg viewBox="0 0 900 500" role="img" aria-label="Three-plane twenty-layer taxonomy for physical AI">
+      <svg viewBox="0 0 900 560" role="img" aria-label="Three-plane twenty-three-layer taxonomy for physical AI">
         <rect x="0" y="0" width="288" height="42" rx="9" fill="var(--bodybg)"/>
         <text x="14" y="20" class="sv-b" fill="var(--body)">A · Body</text>
-        <text x="14" y="35" class="sv-s" fill="var(--body)">the physical substrate · 132 companies</text>
+        <text x="14" y="35" class="sv-s" fill="var(--body)">the physical substrate · 156 companies</text>
         <rect x="306" y="0" width="288" height="42" rx="9" fill="var(--brainbg)"/>
         <text x="320" y="20" class="sv-b" fill="var(--brain)">B · Brain</text>
-        <text x="320" y="35" class="sv-s" fill="var(--brain)">perception, reasoning, action · 55</text>
+        <text x="320" y="35" class="sv-s" fill="var(--brain)">perception, reasoning, action · 61</text>
         <rect x="612" y="0" width="288" height="42" rx="9" fill="var(--opsbg)"/>
         <text x="626" y="20" class="sv-b" fill="var(--ops)">C · Operations</text>
         <text x="626" y="35" class="sv-s" fill="var(--ops)">deployment &amp; assurance · 32</text>
 
         <g class="sv-l">
-        <!-- A column -->
         <text x="0" y="66" class="sv-s" fill="var(--body)" font-weight="600">COMPONENTS</text>
         <line x1="96" y1="62" x2="288" y2="62" stroke="var(--line)"/>
-        <rect x="0" y="72" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="91">A1 · Actuation &amp; motion</text>
-        <rect x="0" y="106" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="125">A2 · Sensing hardware</text>
-        <text x="0" y="158" class="sv-s" fill="var(--body)" font-weight="600">INFRASTRUCTURE</text>
-        <line x1="118" y1="154" x2="288" y2="154" stroke="var(--line)"/>
-        <rect x="0" y="164" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="183">A3 · Power &amp; energy</text>
-        <rect x="0" y="198" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="217">A4 · Edge compute &amp; silicon</text>
-        <text x="0" y="250" class="sv-s" fill="var(--body)" font-weight="600">EMBODIMENTS</text>
-        <line x1="106" y1="246" x2="288" y2="246" stroke="var(--line)"/>
-        <rect x="0" y="256" width="288" height="30" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".3"/><text x="12" y="275">A5 · Humanoid platforms</text>
-        <rect x="0" y="290" width="288" height="30" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".3"/><text x="12" y="309">A6 · Industrial &amp; warehouse</text>
-        <rect x="0" y="324" width="288" height="30" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".3"/><text x="12" y="343">A7 · Road &amp; ground autonomy</text>
-        <rect x="0" y="358" width="288" height="30" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".3"/><text x="12" y="377">A8 · Aerial, sea &amp; machines</text>
-        <text x="0" y="412" class="sv-s">Divided by morphology, not by layer:</text>
-        <text x="0" y="426" class="sv-s">ODD and regulator differ per row.</text>
+        <rect x="0" y="72" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="90">A1 · Actuation &amp; motion</text>
+        <rect x="0" y="104" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="122">A2 · Sensing hardware</text>
+        <text x="0" y="154" class="sv-s" fill="var(--body)" font-weight="600">INFRASTRUCTURE</text>
+        <line x1="118" y1="150" x2="288" y2="150" stroke="var(--line)"/>
+        <rect x="0" y="160" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="178">A3 · Power &amp; energy</text>
+        <rect x="0" y="192" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="210">A4 · Edge AI compute</text>
+        <rect x="0" y="224" width="288" height="28" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".35"/><text x="12" y="242">A5 · Real-time control</text>
+        <text x="0" y="274" class="sv-s" fill="var(--body)" font-weight="600">EMBODIMENTS</text>
+        <line x1="106" y1="270" x2="288" y2="270" stroke="var(--line)"/>
+        <rect x="0" y="280" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="298">A6 · Humanoid platforms</text>
+        <rect x="0" y="312" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="330">A7 · Industrial &amp; warehouse</text>
+        <rect x="0" y="344" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="362">A8 · Road &amp; ground autonomy</text>
+        <rect x="0" y="376" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="394">A9 · Aerial &amp; maritime</text>
+        <rect x="0" y="408" width="288" height="28" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".35"/><text x="12" y="426">A10 · Heavy machinery &amp; field</text>
+        <text x="0" y="456" class="sv-s">A10 is where autonomous revenue</text>
+        <text x="0" y="470" class="sv-s">already exists at scale.</text>
 
-        <!-- B column -->
         <text x="306" y="66" class="sv-s" fill="var(--brain)" font-weight="600">DATA</text>
         <line x1="352" y1="62" x2="594" y2="62" stroke="var(--line)"/>
-        <rect x="306" y="72" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="91">B1 · Synthetic data generation</text>
-        <rect x="306" y="106" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="125">B2 · Real-world data capture</text>
-        <text x="306" y="158" class="sv-s" fill="var(--brain)" font-weight="600">MODELLING</text>
-        <line x1="392" y1="154" x2="594" y2="154" stroke="var(--line)"/>
-        <rect x="306" y="164" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="183">B3 · Physics simulation</text>
-        <rect x="306" y="198" width="288" height="30" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="217">B4 · World models</text>
-        <rect x="306" y="232" width="288" height="30" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="251">B5 · Robot foundation models</text>
-        <text x="306" y="284" class="sv-s" fill="var(--brain)" font-weight="600">APPLIED AUTONOMY</text>
-        <line x1="440" y1="280" x2="594" y2="280" stroke="var(--line)"/>
-        <rect x="306" y="290" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="309">B6 · Autonomous driving stacks</text>
-        <rect x="306" y="324" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="343">B7 · Multi-agent &amp; fleet</text>
-        <text x="306" y="412" class="sv-s" fill="var(--brain)">B4 and B5 are separate bets,</text>
-        <text x="306" y="426" class="sv-s" fill="var(--brain)">not variants — see note below.</text>
+        <rect x="306" y="72" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="90">B1 · Synthetic data generation</text>
+        <rect x="306" y="104" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="122">B2 · Real-world data capture</text>
+        <rect x="306" y="136" width="288" height="28" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="154">B3 · Teleoperation &amp; HITL</text>
+        <text x="306" y="184" class="sv-s" fill="var(--brain)" font-weight="600">MODELLING</text>
+        <line x1="392" y1="180" x2="594" y2="180" stroke="var(--line)"/>
+        <rect x="306" y="190" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="208">B4 · Physics simulation</text>
+        <rect x="306" y="222" width="288" height="28" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="240">B5 · World models</text>
+        <rect x="306" y="254" width="288" height="28" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="272">B6 · Robot foundation models</text>
+        <text x="306" y="302" class="sv-s" fill="var(--brain)" font-weight="600">APPLIED AUTONOMY</text>
+        <line x1="440" y1="298" x2="594" y2="298" stroke="var(--line)"/>
+        <rect x="306" y="308" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="326">B7 · Autonomous driving stacks</text>
+        <rect x="306" y="340" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="358">B8 · Multi-agent &amp; fleet</text>
+        <text x="306" y="456" class="sv-s" fill="var(--brain)">B5 is the least commercially</text>
+        <text x="306" y="470" class="sv-s" fill="var(--brain)">proven layer — see note below.</text>
 
-        <!-- C column -->
-        <text x="612" y="66" class="sv-s" fill="var(--ops)" font-weight="600">DEPLOYMENT &amp; ASSURANCE</text>
-        <line x1="784" y1="62" x2="900" y2="62" stroke="var(--line)"/>
-        <rect x="612" y="72" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="91">C1 · Runtime &amp; middleware</text>
-        <rect x="612" y="106" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="125">C2 · Fleet ops &amp; observability</text>
-        <rect x="612" y="140" width="288" height="30" rx="6" fill="var(--opsbg)" stroke="var(--ops)" stroke-opacity=".45"/><text x="624" y="159">C3 · Safety &amp; certification</text>
-        <rect x="612" y="174" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="193">C4 · Integration &amp; delivery</text>
-        <rect x="612" y="208" width="288" height="30" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="227">C5 · RaaS &amp; operating models</text>
-        <text x="612" y="412" class="sv-s" fill="var(--ops)">C3 is the least-mapped layer in the</text>
-        <text x="612" y="426" class="sv-s" fill="var(--ops)">industry and the most defensible.</text>
+        <text x="612" y="66" class="sv-s" fill="var(--ops)" font-weight="600">OPERATIONAL SOFTWARE</text>
+        <line x1="770" y1="62" x2="900" y2="62" stroke="var(--line)"/>
+        <rect x="612" y="72" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="90">C1 · Runtime &amp; middleware</text>
+        <rect x="612" y="104" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="122">C2 · Fleet ops &amp; observability</text>
+        <rect x="612" y="136" width="288" height="28" rx="6" fill="var(--opsbg)" stroke="var(--ops)" stroke-opacity=".45"/><text x="624" y="154">C3 · Safety &amp; certification</text>
+        <text x="612" y="184" class="sv-s" fill="var(--ops)" font-weight="600">COMMERCIAL DELIVERY</text>
+        <line x1="770" y1="180" x2="900" y2="180" stroke="var(--line)"/>
+        <rect x="612" y="190" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="208">C4 · Integration &amp; delivery</text>
+        <rect x="612" y="222" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="240">C5 · RaaS &amp; operating models</text>
+        <text x="612" y="456" class="sv-s" fill="var(--ops)">C4–C5 are commercial structures,</text>
+        <text x="612" y="470" class="sv-s" fill="var(--ops)">not technology layers.</text>
         </g>
 
-        <line x1="0" y1="448" x2="900" y2="448" stroke="var(--line)"/>
-        <text x="0" y="470" class="sv-h">Vertical integrators — layers spanned</text>
+        <line x1="0" y1="496" x2="900" y2="496" stroke="var(--line)"/>
+        <text x="0" y="518" class="sv-h">Full-stack — no single layer dominates</text>
         <g class="sv-s">
-          <rect x="300" y="456" width="88" height="20" rx="10" fill="var(--infobg)"/><text x="344" y="470" text-anchor="middle" fill="var(--info)">NVIDIA · 8</text>
-          <rect x="396" y="456" width="80" height="20" rx="10" fill="var(--infobg)"/><text x="436" y="470" text-anchor="middle" fill="var(--info)">Tesla · 8</text>
-          <rect x="484" y="456" width="88" height="20" rx="10" fill="var(--infobg)"/><text x="528" y="470" text-anchor="middle" fill="var(--info)">Waymo · 8</text>
-          <rect x="580" y="456" width="88" height="20" rx="10" fill="var(--infobg)"/><text x="624" y="470" text-anchor="middle" fill="var(--info)">Anduril · 5</text>
-          <rect x="676" y="456" width="96" height="20" rx="10" fill="var(--infobg)"/><text x="724" y="470" text-anchor="middle" fill="var(--info)">Amazon · 4</text>
-          <rect x="780" y="456" width="80" height="20" rx="10" fill="var(--infobg)"/><text x="820" y="470" text-anchor="middle" fill="var(--info)">Figure · 3</text>
+          <rect x="300" y="504" width="80" height="20" rx="10" fill="var(--infobg)"/><text x="340" y="518" text-anchor="middle" fill="var(--info)">NVIDIA</text>
+          <rect x="388" y="504" width="70" height="20" rx="10" fill="var(--infobg)"/><text x="423" y="518" text-anchor="middle" fill="var(--info)">Tesla</text>
+          <rect x="466" y="504" width="76" height="20" rx="10" fill="var(--infobg)"/><text x="504" y="518" text-anchor="middle" fill="var(--info)">Waymo</text>
+          <rect x="550" y="504" width="76" height="20" rx="10" fill="var(--infobg)"/><text x="588" y="518" text-anchor="middle" fill="var(--info)">Anduril</text>
+          <rect x="634" y="504" width="82" height="20" rx="10" fill="var(--infobg)"/><text x="675" y="518" text-anchor="middle" fill="var(--info)">Amazon</text>
+          <rect x="724" y="504" width="70" height="20" rx="10" fill="var(--infobg)"/><text x="759" y="518" text-anchor="middle" fill="var(--info)">Figure</text>
+          <rect x="802" y="504" width="64" height="20" rx="10" fill="var(--infobg)"/><text x="834" y="518" text-anchor="middle" fill="var(--info)">Zoox</text>
         </g>
       </svg>
     </div>
@@ -336,12 +345,13 @@
   </figure>
 
   <div class="callout p">
-    <div class="lbl">Why B3, B4 and B5 are three layers and not one</div>
+    <div class="lbl">Why B4, B5 and B6 are three layers and not one</div>
     <p>They are routinely collapsed into "simulation and models". They are three different technical bets, with different customers and different failure modes.</p>
     <ul style="margin-bottom:0">
-      <li><strong>B3 physics simulation</strong> solves dynamics from specified equations. You author the world. Failure mode is the sim-to-real gap.</li>
-      <li><strong>B4 world models</strong> <em>learn</em> dynamics generatively and predict future states. You sample the world rather than specify it. Failure mode is hallucinated physics — and per NVIDIA's own finding, when the video prediction fails the action fails with it.</li>
-      <li><strong>B5 robot foundation models</strong> output motor commands. They consume B3 and B4 output but sell a policy, not an environment.</li>
+      <li><strong>B4 physics simulation</strong> solves dynamics from specified equations. You author the world. Failure mode is the sim-to-real gap.</li>
+      <li><strong>B5 world models</strong> <em>learn</em> dynamics generatively and predict future states. You sample the world rather than specify it. Failure mode is hallucinated physics — and per NVIDIA's own finding, when the video prediction fails the action fails with it.</li>
+      <li><strong>B6 robot foundation models</strong> output motor commands. They consume B4 and B5 output but sell a policy, not an environment.</li>
+      <li><strong>The honest caveat on B5:</strong> the standalone commercial market is thin. Several entries — Cosmos, Genie — are internal tooling inside a larger platform rather than products sold on their own, and are tagged <code>internal</code> on the map. Independently funded pure plays do exist (World Labs at $5B, Decart, Odyssey), which is why the layer is kept separate rather than folded away — but it is the layer most likely to collapse into its neighbours.</li>
     </ul>
   </div>
 
@@ -349,22 +359,24 @@
   <div class="tblwrap"><table>
     <thead><tr><th style="width:210px">Commonly merged as…</th><th>Separated here into</th><th>Because</th></tr></thead>
     <tbody>
-      <tr><td>"Simulation &amp; world models"</td><td><strong>B3</strong> physics sim · <strong>B4</strong> world models</td><td>Authored dynamics versus learned dynamics. Opposite failure modes, different buyers.</td></tr>
-      <tr><td>"Foundation models"</td><td><strong>B5</strong> VLA · <strong>B6</strong> AV stacks · <strong>B7</strong> multi-agent</td><td>Different customers, safety cases and regulators. An AV stack cannot be sold to a warehouse.</td></tr>
+      <tr><td>"Simulation &amp; world models"</td><td><strong>B4</strong> physics sim · <strong>B5</strong> world models</td><td>Authored dynamics versus learned dynamics. Opposite failure modes, different buyers.</td></tr>
+      <tr><td>"Foundation models"</td><td><strong>B6</strong> VLA · <strong>B7</strong> AV stacks · <strong>B8</strong> multi-agent</td><td>Different customers, safety cases and regulators. An AV stack cannot be sold to a warehouse.</td></tr>
       <tr><td>"Data"</td><td><strong>B1</strong> synthetic · <strong>B2</strong> real-world capture</td><td>One is a software margin, the other an operations cost. The moat argument only applies to B4.</td></tr>
-      <tr><td>"Components"</td><td><strong>A1</strong> actuation · <strong>A2</strong> sensing · <strong>A3</strong> power</td><td>Three separate supply chains with opposite pricing trends — actuation is constrained, lidar is in a price war.</td></tr>
-      <tr><td>"Robot companies"</td><td><strong>A5–A8</strong> by morphology</td><td>Morphology determines ODD, regulator and go-to-market. A humanoid and a robotaxi share almost no commercial DNA.</td></tr>
+      <tr><td>"Components" / "compute"</td><td><strong>A1</strong> actuation · <strong>A2</strong> sensing · <strong>A3</strong> power · <strong>A5</strong> real-time control</td><td>Four separate supply chains with opposite pricing trends. Actuation is capacity-constrained, lidar is in a price war, and hard real-time motor control is a different vendor set entirely from AI inference silicon.</td></tr>
+      <tr><td>"Robot companies"</td><td><strong>A6–A10</strong> by morphology</td><td>Morphology determines ODD, regulator and go-to-market. A humanoid and a robotaxi share almost no commercial DNA.</td></tr>
       <tr><td>"Deployment"</td><td><strong>C1</strong> runtime · <strong>C2</strong> fleet ops · <strong>C3</strong> certification · <strong>C4</strong> integration · <strong>C5</strong> RaaS</td><td>C3 is a regulatory asset; C5 is a balance-sheet model. Merging them hides both.</td></tr>
     </tbody>
   </table></div>
 
   <div class="callout b">
-    <div class="lbl">The assignment rule — stated, because MECE is a property of the rule, not the boxes</div>
-    <p style="margin-bottom:0">Every company is assigned to <strong>one primary layer: where it captures the majority of its value today</strong>. Secondary positions are recorded as spans and rendered as dashed borders, never as duplicate entries. Where a primary layer is genuinely ambiguous — Applied Intuition (tooling versus models), Symbotic (OEM versus integration) — the tie is broken by <em>what the customer is actually buying</em>. This makes the map mutually exclusive by construction. It is collectively exhaustive across the stack, though <strong>not exhaustive of companies</strong>; no landscape is.</p>
+    <div class="lbl">The assignment rule — unit of sale, because MECE is a property of the rule, not the boxes</div>
+    <p>Every company is assigned to <strong>one primary layer: the unit of sale — what the customer actually buys</strong>. This is deliberately narrower than "where value is captured", which proved too elastic: an earlier version placed Waymo in the vehicle-platform layer even though it buys its vehicles from Zeekr and Jaguar and sells rides on a driver stack it built. Unit of sale is objective and checkable; value capture is an argument.</p>
+    <p style="margin-bottom:0">Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries. Where <em>no</em> layer honestly dominates — Waymo, Tesla, NVIDIA, Anduril, Amazon, Figure, Zoox — the company is marked <strong>full-stack</strong> rather than forced into one box, because forcing it would reintroduce exactly the false dichotomy this taxonomy exists to avoid. Seven companies carry that mark. The rest resolve cleanly.</p>
   </div>
 
-  <h2>What Plane C buys you</h2>
+  <h2>What Plane C buys you — and what it is not</h2>
   <p>CB Insights' widely-cited physical AI map covers 70+ companies across 10 categories — <strong>all of which sit inside Plane B</strong>. It is an excellent map of the intelligence layer, and silent on the other two-thirds of the stack.</p>
+  <p>Plane C is split for honesty. <strong>C1–C3 are genuine technical layers</strong> — runtime, fleet operations, certification. <strong>C4–C5 are commercial delivery</strong>, and they are not technology: systems integration is a low-margin, headcount-heavy professional-services business, and RaaS is an off-balance-sheet financing structure. They earn their place because they own the customer and the operational envelope, but reading them as a software layer would misprice them badly.</p>
   <p>That silence matters, because the binding constraint on industrial deployment is not model capability but <strong>certifiability against a documented operational envelope</strong>. Roland Berger puts Tier 2 reliability at &gt;98% <em>with human exception handling</em> — and that qualifier carries most of the cost.</p>
   <p><em>Assume a 60-second takt and an 8-hour shift (~450 cycles per station), each exception requiring ~4 minutes of human intervention on a coupled line with no buffer.</em> At 98% that is ~9 interventions and ~36 line-minutes, or <strong>7.5% of the shift</strong>. At 99.9% — the fixed-automation norm — it is ~0.45 interventions and 1.8 minutes, or 0.4%. Roughly a 19× difference in intervention events. Layer C3 is where that gap is closed or it is not, and it is the least-mapped layer in the industry.</p>
   <p style="font-size:12.5px;color:var(--fg3)">Arithmetic above is the author's own estimate from Roland Berger's published per-tier reliability targets plus standard takt assumptions — not a sourced figure.</p>
@@ -377,10 +389,15 @@
       <tr><td><strong>T1</strong></td><td>Intralogistics — tote and pallet transport, box picking</td><td><span class="pill g">Blooming now</span></td><td>Amazon Vulcan · Agility Digit at GXO · Locus · Geek+ · Cobot Proxie</td></tr>
       <tr><td><strong>T2</strong></td><td>Kitting, sub-assembly, multi-SKU sequencing</td><td><span class="pill a">2026–2028</span></td><td>UBTech Walker S2 · Figure at BMW · Dexterity</td></tr>
       <tr><td><strong>T3</strong></td><td>Process manufacturing — bolting, harness, welding</td><td><span class="pill p">2028–2032</span></td><td>Persona AI · early industrial-welding entrants</td></tr>
-      <tr><td><strong>T4</strong></td><td>Unstructured heavy industry — shipbuilding, construction</td><td><span class="pill n">2032+</span></td><td>Bedrock (partial, at the T3–T4 boundary)</td></tr>
+      <tr><td><strong>T4</strong></td><td>Unstructured heavy industry — shipbuilding, general construction</td><td><span class="pill n">2032+</span></td><td>Bedrock (partial, at the T3–T4 boundary)</td></tr>
     </tbody>
   </table></div>
-  <p>Read the two axes together and the map's central tension appears: <strong>capital is concentrated in Plane B and Tier 3–4 ambition, while revenue is concentrated in Plane A/C and Tier 1 reality.</strong></p>
+  <div class="callout b" style="margin-top:18px">
+    <div class="lbl">The tier framework's hardest test — and why it survives it</div>
+    <p>Mining and agriculture appear to falsify this table. Caterpillar's MineStar and Komatsu's FrontRunner have run <strong>driverless haul trucks in production mines for over a decade</strong>, moving billions of tonnes in open, unstructured terrain. John Deere ships a fully autonomous tractor. That looks like Tier 3–4 autonomy, profitable, today.</p>
+    <p style="margin-bottom:0">It is not a contradiction — it is the strongest available evidence <em>for</em> the argument. A mine haul road is geofenced, single-task, low-speed, on private land with no public-road regulator and no member of the public present. A field is a bounded polygon. These are not general-purpose systems operating in the open world; they are <strong>narrow, rigorously documented operational design domains</strong>, which is precisely the condition this map argues you need. The lesson is not that Tier 4 arrived early. It is that <strong>when you constrain the envelope hard enough, autonomy has been commercially viable in heavy industry for fifteen years</strong> — and that is the template, not the humanoid.</p>
+  </div>
+  <p>Read the two axes together and the map's central tension appears: <strong>capital is concentrated in Plane B and Tier 3–4 ambition, while revenue is concentrated in Plane A/C and Tier 1–2 reality — plus the mining and agriculture deployments that most physical AI maps leave out entirely.</strong></p>
 </section>
 
 <section id="capital" hidden>
@@ -424,31 +441,31 @@
   <div class="tblwrap"><table>
     <thead><tr><th>Company</th><th style="width:70px">Layer</th><th class="num" style="width:110px">Valuation</th><th style="width:100px">Status</th><th>Note</th></tr></thead>
     <tbody>
-      <tr><td><strong>Waymo</strong></td><td>A7</td><td class="num">$126B</td><td><span class="pill g">Closed</span></td><td>$16B Series D, Feb 2026 — largest private round in the sector</td></tr>
-      <tr><td><strong>Anduril</strong></td><td>A8</td><td class="num">$61B</td><td><span class="pill g">Closed</span></td><td>$5B growth round, May 2026</td></tr>
-      <tr><td><strong>Figure AI</strong></td><td>A5</td><td class="num">$39B</td><td><span class="pill g">Closed</span></td><td>Most valuable pure-play humanoid company</td></tr>
+      <tr><td><strong>Waymo</strong></td><td>B7 · full-stack</td><td class="num">$126B</td><td><span class="pill g">Closed</span></td><td>$16B Series D, Feb 2026 — largest private round in the sector</td></tr>
+      <tr><td><strong>Anduril</strong></td><td>A9 · full-stack</td><td class="num">$61B</td><td><span class="pill g">Closed</span></td><td>$5B growth round, May 2026</td></tr>
+      <tr><td><strong>Figure AI</strong></td><td>A6 · full-stack</td><td class="num">$39B</td><td><span class="pill g">Closed</span></td><td>Most valuable pure-play humanoid company</td></tr>
       <tr><td><strong>Scale AI</strong></td><td>B2</td><td class="num">$29B</td><td><span class="pill g">Closed</span></td><td>Meta holds a ~49% minority stake</td></tr>
-      <tr><td><strong>Applied Intuition</strong></td><td>B3</td><td class="num">$15B</td><td><span class="pill g">Closed</span></td><td>Toolchain vendor, not a robot maker</td></tr>
-      <tr><td><strong>Skild AI</strong></td><td>B5</td><td class="num">$14B</td><td><span class="pill g">Closed</span></td><td>Tripled in seven months from $4.5B</td></tr>
-      <tr><td><strong>Shield AI</strong></td><td>B7</td><td class="num">$12.7B</td><td><span class="pill g">Closed</span></td><td>Horizontal autonomy — Hivemind</td></tr>
-      <tr><td><strong>Helsing</strong></td><td>A8</td><td class="num">$12B</td><td><span class="pill g">Closed</span></td><td>$18B round reported in progress</td></tr>
-      <tr><td><strong>1X</strong></td><td>A5</td><td class="num">~$10B</td><td><span class="pill a">Reported</span></td><td>In talks; not confirmed closed</td></tr>
-      <tr><td><strong>Saronic</strong></td><td>A8</td><td class="num">$9.25B</td><td><span class="pill g">Closed</span></td><td>Maritime autonomy</td></tr>
-      <tr><td><strong>Wayve</strong></td><td>B6</td><td class="num">$8.6B</td><td><span class="pill g">Closed</span></td><td>Series D post-money, Feb 2026</td></tr>
-      <tr><td><strong>Neura Robotics</strong></td><td>A5</td><td class="num">~$7B</td><td><span class="pill g">Closed</span></td><td>Round led by Tether</td></tr>
-      <tr><td><strong>Skydio</strong></td><td>A8</td><td class="num">$6.2B</td><td><span class="pill b">S-1 filed</span></td><td>IPO filed June 2026</td></tr>
-      <tr><td><strong>Nuro</strong></td><td>A7</td><td class="num">$6B</td><td><span class="pill g">Closed</span></td><td>Pivoted from operator to licensor</td></tr>
-      <tr><td><strong>Unitree</strong></td><td>A5</td><td class="num">~$5.9B</td><td><span class="pill b">IPO cleared</span></td><td>China's first listed pure-play humanoid maker</td></tr>
-      <tr><td><strong>Physical Intelligence</strong></td><td>B5</td><td class="num">$5.6B</td><td><span class="pill g">Closed</span></td><td>~$11B reported in talks, not closed</td></tr>
-      <tr><td><strong>AgiBot</strong></td><td>A5</td><td class="num">$5.1–6.4B</td><td><span class="pill a">IPO target</span></td><td>Hong Kong listing target range</td></tr>
-      <tr><td><strong>Apptronik</strong></td><td>A5</td><td class="num">~$5.3B</td><td><span class="pill g">Closed</span></td><td>$935M Series A</td></tr>
-      <tr><td><strong>World Labs</strong></td><td>B4</td><td class="num">$5B</td><td><span class="pill g">Closed</span></td><td>Highest-valued pure world-model company</td></tr>
-      <tr><td><strong>Zoox</strong></td><td>A7</td><td class="num">$3.2B</td><td><span class="pill n">Pre-acq.</span></td><td>Last independent mark; now Amazon-owned</td></tr>
-      <tr><td><strong>Generalist AI</strong></td><td>B5</td><td class="num">$3B</td><td><span class="pill g">Closed</span></td><td>Ex-DeepMind founders</td></tr>
-      <tr><td><strong>Agility Robotics</strong></td><td>A5</td><td class="num">~$2.5B</td><td><span class="pill b">SPAC</span></td><td>Going public via SPAC</td></tr>
-      <tr><td><strong>Bedrock Robotics</strong></td><td>A8</td><td class="num">$1.75B</td><td><span class="pill g">Closed</span></td><td>Most valuable construction-autonomy company</td></tr>
-      <tr><td><strong>Sunday Robotics</strong></td><td>B5</td><td class="num">$1.15B</td><td><span class="pill g">Closed</span></td><td>Newest unicorn on the map</td></tr>
-      <tr><td><strong>Dyna Robotics</strong></td><td>B5</td><td class="num">$600M</td><td><span class="pill g">Closed</span></td><td>Fastest-rising sub-unicorn in B5</td></tr>
+      <tr><td><strong>Applied Intuition</strong></td><td>B4</td><td class="num">$15B</td><td><span class="pill g">Closed</span></td><td>Toolchain vendor, not a robot maker</td></tr>
+      <tr><td><strong>Skild AI</strong></td><td>B6</td><td class="num">$14B</td><td><span class="pill g">Closed</span></td><td>Tripled in seven months from $4.5B</td></tr>
+      <tr><td><strong>Shield AI</strong></td><td>B8</td><td class="num">$12.7B</td><td><span class="pill g">Closed</span></td><td>Horizontal autonomy — Hivemind</td></tr>
+      <tr><td><strong>Helsing</strong></td><td>A9</td><td class="num">$12B</td><td><span class="pill g">Closed</span></td><td>$18B round reported in progress</td></tr>
+      <tr><td><strong>1X</strong></td><td>A6</td><td class="num">~$10B</td><td><span class="pill a">Reported</span></td><td>In talks; not confirmed closed</td></tr>
+      <tr><td><strong>Saronic</strong></td><td>A9</td><td class="num">$9.25B</td><td><span class="pill g">Closed</span></td><td>Maritime autonomy</td></tr>
+      <tr><td><strong>Wayve</strong></td><td>B7</td><td class="num">$8.6B</td><td><span class="pill g">Closed</span></td><td>Series D post-money, Feb 2026</td></tr>
+      <tr><td><strong>Neura Robotics</strong></td><td>A6</td><td class="num">~$7B</td><td><span class="pill g">Closed</span></td><td>Round led by Tether</td></tr>
+      <tr><td><strong>Skydio</strong></td><td>A9</td><td class="num">$6.2B</td><td><span class="pill b">S-1 filed</span></td><td>IPO filed June 2026</td></tr>
+      <tr><td><strong>Nuro</strong></td><td>B7</td><td class="num">$6B</td><td><span class="pill g">Closed</span></td><td>Pivoted from operator to licensor</td></tr>
+      <tr><td><strong>Unitree</strong></td><td>A6</td><td class="num">~$5.9B</td><td><span class="pill b">IPO cleared</span></td><td>China's first listed pure-play humanoid maker</td></tr>
+      <tr><td><strong>Physical Intelligence</strong></td><td>B6</td><td class="num">$5.6B</td><td><span class="pill g">Closed</span></td><td>~$11B reported in talks, not closed</td></tr>
+      <tr><td><strong>AgiBot</strong></td><td>A6</td><td class="num">$5.1–6.4B</td><td><span class="pill a">IPO target</span></td><td>Hong Kong listing target range</td></tr>
+      <tr><td><strong>Apptronik</strong></td><td>A6</td><td class="num">~$5.3B</td><td><span class="pill g">Closed</span></td><td>$935M Series A</td></tr>
+      <tr><td><strong>World Labs</strong></td><td>B5</td><td class="num">$5B</td><td><span class="pill g">Closed</span></td><td>Highest-valued pure world-model company</td></tr>
+      <tr><td><strong>Zoox</strong></td><td>A8 · full-stack</td><td class="num">$3.2B</td><td><span class="pill n">Pre-acq.</span></td><td>Last independent mark; now Amazon-owned</td></tr>
+      <tr><td><strong>Generalist AI</strong></td><td>B6</td><td class="num">$3B</td><td><span class="pill g">Closed</span></td><td>Ex-DeepMind founders</td></tr>
+      <tr><td><strong>Agility Robotics</strong></td><td>A6</td><td class="num">~$2.5B</td><td><span class="pill b">SPAC</span></td><td>Going public via SPAC</td></tr>
+      <tr><td><strong>Bedrock Robotics</strong></td><td>A10</td><td class="num">$1.75B</td><td><span class="pill g">Closed</span></td><td>Most valuable construction-autonomy company</td></tr>
+      <tr><td><strong>Sunday Robotics</strong></td><td>B6</td><td class="num">$1.15B</td><td><span class="pill g">Closed</span></td><td>Newest unicorn on the map</td></tr>
+      <tr><td><strong>Dyna Robotics</strong></td><td>B6</td><td class="num">$600M</td><td><span class="pill g">Closed</span></td><td>Fastest-rising sub-unicorn in B5</td></tr>
     </tbody>
   </table></div>
 
@@ -495,28 +512,28 @@
           <text x="0" y="76" class="sv-l">A2 Sensing hardware</text>
           <rect x="250" y="62" width="331" height="20" rx="5" fill="var(--warn)" opacity="0.62"/>
           <text x="680" y="76" class="sv-l" fill="var(--ops)">Low–med — lidar price war</text>
-          <text x="0" y="108" class="sv-l">A4 Edge silicon</text>
+          <text x="0" y="108" class="sv-l">A4 Edge AI silicon</text>
           <rect x="250" y="94" width="123" height="20" rx="5" fill="var(--warn)" opacity="0.26"/>
           <text x="680" y="108" class="sv-l" fill="var(--body)">High — few credible vendors</text>
-          <text x="0" y="140" class="sv-l" fill="var(--fg)">A5 Humanoid platforms</text>
+          <text x="0" y="140" class="sv-l" fill="var(--fg)">A6 Humanoid platforms</text>
           <rect x="250" y="126" width="400" height="20" rx="5" fill="var(--warn)" opacity="0.85"/>
           <text x="680" y="140" class="sv-l" fill="var(--warn)">Low — China cost curve</text>
-          <text x="0" y="172" class="sv-l">A6 Industrial &amp; warehouse</text>
+          <text x="0" y="172" class="sv-l">A7 Industrial &amp; warehouse</text>
           <rect x="250" y="158" width="231" height="20" rx="5" fill="var(--warn)" opacity="0.44"/>
           <text x="680" y="172" class="sv-l" fill="var(--ops)">Medium — incumbent scale</text>
           <text x="0" y="204" class="sv-l">B2 Real-world data</text>
           <rect x="250" y="190" width="154" height="20" rx="5" fill="var(--warn)" opacity="0.3"/>
           <text x="680" y="204" class="sv-l" fill="var(--body)">High — proprietary &amp; sticky</text>
-          <text x="0" y="236" class="sv-l">B3 Physics simulation</text>
+          <text x="0" y="236" class="sv-l">B4 Physics simulation</text>
           <rect x="250" y="222" width="292" height="20" rx="5" fill="var(--warn)" opacity="0.55"/>
           <text x="680" y="236" class="sv-l" fill="var(--ops)">Low–med — open source erodes</text>
-          <text x="0" y="268" class="sv-l" fill="var(--brain)">B4 World models</text>
+          <text x="0" y="268" class="sv-l" fill="var(--brain)">B5 World models</text>
           <rect x="250" y="254" width="115" height="20" rx="5" fill="var(--warn)" opacity="0.24"/>
           <text x="680" y="268" class="sv-l" fill="var(--brain)">Unproven — too early to call</text>
-          <text x="0" y="300" class="sv-l" fill="var(--fg)">B5 Foundation models (VLA)</text>
+          <text x="0" y="300" class="sv-l" fill="var(--fg)">B6 Foundation models (VLA)</text>
           <rect x="250" y="286" width="354" height="20" rx="5" fill="var(--warn)" opacity="0.7"/>
           <text x="680" y="300" class="sv-l" fill="var(--ops)">Medium — weights commoditise</text>
-          <text x="0" y="332" class="sv-l">B6 AV stacks</text>
+          <text x="0" y="332" class="sv-l">B7 AV stacks</text>
           <rect x="250" y="318" width="254" height="20" rx="5" fill="var(--warn)" opacity="0.48"/>
           <text x="680" y="332" class="sv-l" fill="var(--ops)">Medium — regulation helps</text>
           <text x="0" y="364" class="sv-l">C2 Fleet ops</text>
@@ -531,7 +548,7 @@
         </g>
       </svg>
     </div>
-    <figcaption>Bar length is commoditisation pressure. The finer breakdown sharpens the central pattern: <strong>the two layers absorbing the most capital — A5 humanoid platforms and B5 foundation models — face the strongest erosion</strong>, from the Chinese cost curve and from open weights respectively. The layers with the most durable margin (C3 certification, B2 proprietary data, A4 silicon, A1 actuation) attract a fraction of it. B4 world models is the genuine unknown: too new to price, and the layer most likely to be repriced violently in either direction.</figcaption>
+    <figcaption>Bar length is commoditisation pressure. The finer breakdown sharpens the central pattern: <strong>the two layers absorbing the most capital — A6 humanoid platforms and B6 foundation models — face the strongest erosion</strong>, from the Chinese cost curve and from open weights respectively. The layers with the most durable margin (C3 certification, B2 proprietary data, A5 control silicon, A1 actuation) attract a fraction of it. B5 world models is the genuine unknown: too new to price, and the layer most likely to be repriced violently in either direction.</figcaption>
   </figure>
 
   <h2>Three places margin is likelier to pool</h2>
@@ -562,7 +579,7 @@
   <ul>
     <li>A general-purpose platform sustaining <strong>&gt;99% on a Tier 3 task for 90 consecutive days</strong> without task-specific retraining between changeovers.</li>
     <li>A humanoid OEM publishing a <strong>certified ODD with ISO 25785-1 conformance</strong> for an unstructured industrial task, breaching the C3 moat.</li>
-    <li>Demonstrated <strong>cross-embodiment transfer</strong> from humanoid to purpose-built without retraining, collapsing the A5–A8 morphology question into a deployment-time choice.</li>
+    <li>Demonstrated <strong>cross-embodiment transfer</strong> from humanoid to purpose-built without retraining, collapsing the A6–A10 morphology question into a deployment-time choice.</li>
     <li>Sub-$15K humanoid-class hardware achieving 98%+ on a real production line, making <strong>redundancy a viable substitute for reliability</strong> — though only in parallel architectures, not coupled lines.</li>
     <li>The dexterity scaling law holding two further orders of magnitude with published sim-to-real transfer at industrial tolerance.</li>
   </ul>
@@ -598,14 +615,14 @@
   <div class="tblwrap"><table>
     <thead><tr><th>Company</th><th style="width:70px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:180px">Latest disclosed revenue</th><th class="num" style="width:110px">Implied multiple</th></tr></thead>
     <tbody>
-      <tr><td><strong>Waymo</strong></td><td>A7</td><td class="num">$126B</td><td class="num">not separately disclosed</td><td class="num">n/m</td></tr>
-      <tr><td><strong>Figure AI</strong></td><td>A5</td><td class="num">$39B</td><td class="num">not disclosed</td><td class="num">n/m</td></tr>
-      <tr><td><strong>Skild AI</strong></td><td>B5</td><td class="num">$14B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
-      <tr><td><strong>Physical Intelligence</strong></td><td>B5</td><td class="num">$5.6B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
-      <tr><td><strong>Shield AI</strong></td><td>B7</td><td class="num">$12.7B</td><td class="num">~$540M (2026E)</td><td class="num">~24×</td></tr>
-      <tr><td><strong>Unitree</strong></td><td>A5</td><td class="num">~$5.9B</td><td class="num">CNY 1.7B FY25 (~$235M)</td><td class="num">~25×</td></tr>
-      <tr><td><strong>AgiBot</strong></td><td>A5</td><td class="num">$5.1–6.4B</td><td class="num">CNY 4.0B 2026E (~$594M)</td><td class="num">~9–11×</td></tr>
-      <tr><td><strong>UBTech</strong></td><td>A5</td><td class="num">listed</td><td class="num">CNY 2.0B FY25 (~$280M)</td><td class="num">—</td></tr>
+      <tr><td><strong>Waymo</strong></td><td>B7</td><td class="num">$126B</td><td class="num">not separately disclosed</td><td class="num">n/m</td></tr>
+      <tr><td><strong>Figure AI</strong></td><td>A6</td><td class="num">$39B</td><td class="num">not disclosed</td><td class="num">n/m</td></tr>
+      <tr><td><strong>Skild AI</strong></td><td>B6</td><td class="num">$14B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
+      <tr><td><strong>Physical Intelligence</strong></td><td>B6</td><td class="num">$5.6B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
+      <tr><td><strong>Shield AI</strong></td><td>B8</td><td class="num">$12.7B</td><td class="num">~$540M (2026E)</td><td class="num">~24×</td></tr>
+      <tr><td><strong>Unitree</strong></td><td>A6</td><td class="num">~$5.9B</td><td class="num">CNY 1.7B FY25 (~$235M)</td><td class="num">~25×</td></tr>
+      <tr><td><strong>AgiBot</strong></td><td>A6</td><td class="num">$5.1–6.4B</td><td class="num">CNY 4.0B 2026E (~$594M)</td><td class="num">~9–11×</td></tr>
+      <tr><td><strong>UBTech</strong></td><td>A6</td><td class="num">listed</td><td class="num">CNY 2.0B FY25 (~$280M)</td><td class="num">—</td></tr>
     </tbody>
   </table></div>
 
@@ -657,11 +674,11 @@
       <p style="margin-bottom:0">The only layer with proven revenue against a proven ODD today. Bounded upside, near-term cash. <strong>Risk:</strong> it is a services business wearing a technology multiple.</p>
     </div>
     <div class="card">
-      <h3 style="color:var(--warn)">Underweight · Western A5 at current marks</h3>
+      <h3 style="color:var(--warn)">Underweight · Western A6 at current marks</h3>
       <p style="margin-bottom:0">No revenue denominator, the strongest commoditisation pressure on the map, and Chinese comparables shipping real units at 9–25× actual revenue. The bet requires general-purpose capability to arrive <em>before</em> the cost curve bites. <strong>What would change this:</strong> a disclosed Tier 2–3 deployment sustaining &gt;99% for a quarter.</p>
     </div>
     <div class="card">
-      <h3 style="color:var(--brain)">Watch · B4 world models</h3>
+      <h3 style="color:var(--brain)">Watch · B5 world models</h3>
       <p style="margin-bottom:0">Too new to price, ~5× repricing in a year, and genuinely unresolved as to whether it is a layer or a feature of B5. The highest-variance position available. Size it as an option, not a conviction.</p>
     </div>
   </div>
@@ -671,7 +688,7 @@
   <ul>
     <li><strong>Gross margin per deployed robot.</strong> Nobody publishes it. Without it, every RaaS and OEM model on this map is a guess about whether the unit works.</li>
     <li><strong>Exception-handling headcount.</strong> The single number that would settle the reliability argument empirically — and its consistent absence from every vendor disclosure is itself informative.</li>
-    <li><strong>Whether B4 is a layer or a feature.</strong> If world models collapse into B5 as a training technique rather than a sold product, one of these twenty layers disappears.</li>
+    <li><strong>Whether B5 is a layer or a feature.</strong> If world models collapse into B6 as a training technique rather than a sold product, one of these twenty layers disappears.</li>
     <li><strong>Real depth of the Chinese component tier.</strong> Roughly 30 Chinese companies appear here against a population several times larger. In the half of the market that ships the units, this map is thinnest.</li>
     <li><strong>Renewal and churn in RaaS.</strong> Three-year contracts have not yet cycled. The deployment-moat thesis is untested past first renewal.</li>
   </ul>
@@ -682,9 +699,9 @@
 
   <h2>Taxonomy rules</h2>
   <ol>
-    <li><strong>One primary layer per company</strong>, assigned by where the majority of value is captured today — not by what the company touches or aspires to.</li>
-    <li><strong>Ties broken by what the customer buys.</strong> Applied Intuition touches models but sells tooling, so B3. Symbotic builds robots but sells an integrated warehouse, so A6 with a span into C4 and C5.</li>
-    <li><strong>Secondary positions recorded as spans</strong>, rendered as dashed borders, never as duplicate entries.</li>
+    <li><strong>One primary layer per company</strong>, assigned by <strong>unit of sale</strong> — what the customer buys — not by what the company touches, aspires to, or is valued on.</li>
+    <li><strong>Ties broken by what the customer buys.</strong> Applied Intuition touches models but sells tooling, so B4. Symbotic builds robots but sells an integrated warehouse, so A7 with a span into C4 and C5.</li>
+    <li><strong>Secondary positions recorded as spans</strong>, rendered as dashed borders, never as duplicate entries. Where no layer dominates, the company is marked <strong>full-stack</strong> instead of being forced.</li>
     <li><strong>Geography is headquarters</strong>, not manufacturing or market. Several Western OEMs manufacture predominantly in China; that is a supply-chain fact, not a taxonomy fact.</li>
     <li><strong>Verticals are tags, not boxes.</strong> A company can serve several. Only its layer is exclusive.</li>
   </ol>
@@ -695,6 +712,7 @@
     <li><strong>Publicly listed companies show no figure</strong>, only a <span class="pill n">listed</span> tag. Market caps move daily and would date the map within a week.</li>
     <li><strong>Reported-but-unclosed marks are flagged in amber.</strong> 1X at ~$10B and AgiBot at $5.1–6.4B are talks and IPO targets, not completed rounds. Physical Intelligence is shown at its confirmed $5.6B, not the ~$11B reported in negotiation.</li>
     <li><strong>Blank means undisclosed</strong>, not small. PitchBook shows no post-money for Waabi despite a $750M round — a disclosure gap, not an absence of value.</li>
+    <li><strong>Headline marks are not market caps, and should not be read as one.</strong> Late-stage private valuations are pre-money headline numbers agreed between a company and a small number of investors. They routinely sit on top of liquidation preferences, participation rights and ratchets that mean common equity is worth materially less than the headline implies. Several rounds on this map also involve strategic or circular structure — compute commitments, supplier equity, or an infrastructure vendor investing in a customer that buys its hardware. <strong>Aggregating these figures overstates the sector's real market scale, and does so most in Plane B</strong>, where marks are highest and revenue is thinnest.</li>
   </ul>
 
   <h2>Adversarial review</h2>
@@ -713,6 +731,20 @@
     </tbody>
   </table></div>
 
+  <h3>Second round — external review of V2</h3>
+  <p class="h2sub">V2 was reviewed by a reader arguing the taxonomy contradicted itself. Four objections were accepted, one declined with reasons.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th style="width:300px">Objection</th><th style="width:110px">Status</th><th>Resolution</th></tr></thead>
+    <tbody>
+      <tr><td><strong>"Forcing one primary layer reintroduces the dichotomy you reject. Waymo doesn't build vehicles; Figure's value is Helix."</strong></td><td><span class="pill g">Accepted</span></td><td>Correct, and it was a concrete rule violation rather than a philosophical dispute. Waymo sat in the vehicle-platform layer while buying its vehicles from Zeekr and Jaguar; Nuro sat there while described on its own chip as having "pivoted to licensor". The rule is now <strong>unit of sale</strong>, which is checkable, and seven companies where no layer dominates are marked <strong>full-stack</strong> rather than forced. Waymo and Nuro moved to B7.</td></tr>
+      <tr><td><strong>"Ag, mining and medical were excluded for legibility, which flatters speculative sectors."</strong></td><td><span class="pill g">Accepted</span></td><td>The sharpest point, and worse than stated — excluding mining removed the best <em>supporting</em> evidence for this map's own thesis. Caterpillar and Komatsu have run driverless haulage for over a decade in narrow, documented ODDs. Mining and agriculture are now included at A10, and the tier framework addresses them directly. Surgical robotics remains out, noted as a defensible future addition.</td></tr>
+      <tr><td><strong>"A4 ignores real-time motor control; B2 buries teleoperation rigs."</strong></td><td><span class="pill g">Accepted</span></td><td>Both are genuinely separate supply chains. Added <strong>A5 real-time control &amp; motor drive</strong> (TI, Microchip, ST, Lattice, AMD, Beckhoff) and <strong>B3 teleoperation &amp; human-in-the-loop</strong> (HaptX, Manus, Ottopia, DriveU).</td></tr>
+      <tr><td><strong>"Plane C mixes technical layers with financial structuring — RaaS is packaging, SI is services."</strong></td><td><span class="pill g">Accepted</span></td><td>Plane C is now explicitly split into <strong>Operational software</strong> (C1–C3) and <strong>Commercial delivery</strong> (C4–C5), with the margin profiles stated: integration is headcount-heavy professional services, RaaS is off-balance-sheet financing. They stay on the map because they own the customer, but they are no longer implied to be technology.</td></tr>
+      <tr><td><strong>"Private valuations are taken at face value despite preference stacks and circular deals."</strong></td><td><span class="pill g">Accepted</span></td><td>Caveat added to the valuation methodology above. No figures changed — the framing did.</td></tr>
+      <tr><td><strong>"Merge B5 world models into B4 and B6 — there is no standalone vendor market."</strong></td><td><span class="pill a">Declined</span></td><td>The strongest form of this is right and is now stated on the Structure tab: much of the layer is internal tooling, and those entries are tagged <code>internal</code>. But the premise overreaches — World Labs raised $1B at $5B specifically as a world-model company, alongside Decart, Odyssey and Runway. Collapsing a layer with billions in dedicated funding because its business model is unsettled would hide the open question rather than answer it. The layer stays, flagged as the least commercially proven on the map.</td></tr>
+    </tbody>
+  </table></div>
+
   <h2>Known weaknesses</h2>
   <div class="tblwrap"><table>
     <thead><tr><th style="width:200px">Gap</th><th>Effect</th></tr></thead>
@@ -722,6 +754,8 @@
       <tr><td><strong>Conflicting sources</strong></td><td>Saronic is reported at both $9.25B and ~$4B; the Crunchbase Series D figure is used. Apptronik's round and valuation figures conflict across trackers; ~$5.3B is the most consistently reported. Helsing appears at both $12B and $18B; the confirmed lower figure is used.</td></tr>
       <tr><td><strong>Plane C under-populated</strong></td><td>Partly real — the layer is genuinely immature — and partly a coverage gap, since integrators and RaaS operators are often private, unbranded, or embedded inside larger service businesses.</td></tr>
       <tr><td><strong>Survivorship</strong></td><td>Wound-down and acquired companies (Cruise, Covariant, Kindred) are largely absent, which flatters the sector's apparent success rate.</td></tr>
+      <tr><td><strong>Full-stack is a judgement</strong></td><td>Seven companies are marked full-stack. That line is drawn by whether any single layer plausibly accounts for the majority of the offer — defensible, but not mechanical. A stricter reading would mark more; a looser one, fewer.</td></tr>
+      <tr><td><strong>Incumbent depth in A10</strong></td><td>Mining and agriculture are represented by their major OEMs and a handful of retrofit startups. The tier-two supplier base in both — and the service contractors who actually run the fleets — is not mapped.</td></tr>
     </tbody>
   </table></div>
 
@@ -754,7 +788,7 @@
 
 <footer>
   <strong>Physical AI Market Map</strong> · V2-00 · September 2026<br>
-  Company roster is curated, not exhaustive — ~220 of an estimated 600+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
+  Company roster is curated, not exhaustive — ~250 of an estimated 700+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.
 </footer>
 
@@ -796,118 +830,118 @@ const CO = [
 {n:"LG Energy Solution",l:"A3",g:"KR/JP",v:["hum","av"],pub:1},
 {n:"Panasonic Energy",l:"A3",g:"KR/JP",v:["av"],pub:1},
 {n:"Infineon",l:"A3",g:"EU",v:["ind","av"],pub:1,note:"power semiconductors"},
-{n:"NVIDIA",l:"A4",g:"US",v:["hum","ind","av","def"],pub:1,span:["A5","B3","B4","B1","B5","C1","C3"],big:1,note:"Jetson Thor · Isaac · Cosmos · GR00T · Halos"},
+{n:"NVIDIA",fs:1,l:"A4",g:"US",v:["hum","ind","av","def"],pub:1,span:["A6","B4","B5","B1","B6","C1","C3"],big:1,note:"Jetson Thor · Isaac · Cosmos · GR00T · Halos"},
 {n:"Qualcomm",l:"A4",g:"US",v:["av","hum"],pub:1,big:1,note:"Snapdragon Ride"},
 {n:"Arm",l:"A4",g:"EU",v:["hum","ind"],pub:1,big:1},
-{n:"Mobileye",l:"A4",g:"EU",v:["av"],pub:1,span:["B6"],big:1,note:"acquired Mentee Robotics ~$900M"},
+{n:"Mobileye",l:"A4",g:"EU",v:["av"],pub:1,span:["B7"],big:1,note:"acquired Mentee Robotics ~$900M"},
 {n:"Ambarella",l:"A4",g:"US",v:["av","ind"],pub:1},
 {n:"Hailo",l:"A4",g:"other",v:["ind","def"]},
 {n:"Axelera AI",l:"A4",g:"EU",v:["ind"]},
-{n:"Horizon Robotics",l:"A4",g:"CN",v:["av"],pub:1,span:["B6"],note:"China AV silicon"},
+{n:"Horizon Robotics",l:"A4",g:"CN",v:["av"],pub:1,span:["B7"],note:"China AV silicon"},
 {n:"Black Sesame",l:"A4",g:"CN",v:["av"],pub:1},
 {n:"SiMa.ai",l:"A4",g:"US",v:["ind"]},
-{n:"Renesas",l:"A4",g:"KR/JP",v:["ind","av"],pub:1},
+{n:"Renesas",l:"A5",g:"KR/JP",v:["ind","av"],pub:1},
 {n:"NXP",l:"A4",g:"EU",v:["av","ind"],pub:1},
-{n:"Figure AI",l:"A5",g:"US",v:["hum"],span:["B2","B5"],big:1,val:"$39B",note:"Helix 2 · end-to-end neural · most valuable pure-play humanoid"},
-{n:"Tesla",l:"A5",g:"US",v:["hum","av"],pub:1,span:["A4","A7","B3","B2","B5","B6","C1"],big:1,note:"Optimus · FSD"},
-{n:"1X",l:"A5",g:"EU",v:["hum"],span:["B4","B5"],big:1,val:"~$10B",est:1,note:"NEO · reported in talks, not closed"},
-{n:"Neura Robotics",l:"A5",g:"EU",v:["hum","ind"],val:"~$7B",note:"round led by Tether"},
-{n:"Unitree",l:"A5",g:"CN",v:["hum"],big:1,val:"~$5.9B",note:"5,500+ units in 2025 · CNY 1.7B FY25 revenue · STAR Market IPO cleared"},
-{n:"AgiBot",l:"A5",g:"CN",v:["hum"],span:["B5"],big:1,val:"$5.1-6.4B",est:1,note:"Hong Kong IPO target range · 10,000th robot early 2026"},
-{n:"Apptronik",l:"A5",g:"US",v:["hum"],val:"~$5.3B",note:"Apollo · $935M Series A"},
-{n:"Agility Robotics",l:"A5",g:"US",v:["hum","ind"],span:["C2"],big:1,val:"~$2.5B",note:"Digit · 100K+ totes at GXO · going public via SPAC"},
-{n:"Boston Dynamics",l:"A5",g:"US",v:["hum","ind"],big:1,note:"Atlas · Hyundai-owned"},
-{n:"Sanctuary AI",l:"A5",g:"US",v:["hum"],note:"teleop-to-autonomy"},
-{n:"Persona AI",l:"A5",g:"US",v:["hum","ind"],note:"industrial welding focus"},
-{n:"Humanoid",l:"A5",g:"EU",v:["hum"],note:"UK-based"},
-{n:"Mentee Robotics",l:"A5",g:"other",v:["hum"],note:"acquired by Mobileye"},
-{n:"UBTech",l:"A5",g:"CN",v:["hum","ind"],pub:1,big:1,note:"Walker S2 in mass production · HK-listed"},
-{n:"Fourier Intelligence",l:"A5",g:"CN",v:["hum"]},
-{n:"Galbot",l:"A5",g:"CN",v:["hum"],span:["B5"]},
-{n:"EngineAI",l:"A5",g:"CN",v:["hum"]},
-{n:"Booster Robotics",l:"A5",g:"CN",v:["hum"]},
-{n:"Astribot",l:"A5",g:"CN",v:["hum"]},
-{n:"Robot Era",l:"A5",g:"CN",v:["hum"]},
-{n:"Kepler Robotics",l:"A5",g:"CN",v:["hum"]},
-{n:"Leju Robotics",l:"A5",g:"CN",v:["hum"]},
-{n:"Galaxy Bot",l:"A5",g:"CN",v:["hum"]},
-{n:"RLWRLD",l:"A5",g:"KR/JP",v:["hum","ind"],span:["B5"],note:"RLDX-1 with KAIST"},
-{n:"Honda",l:"A5",g:"KR/JP",v:["hum","av"],pub:1},
-{n:"FANUC",l:"A6",g:"KR/JP",v:["ind"],pub:1,big:1},
-{n:"Yaskawa",l:"A6",g:"KR/JP",v:["ind"],pub:1,big:1},
-{n:"ABB Robotics",l:"A6",g:"EU",v:["ind"],pub:1,big:1},
-{n:"KUKA",l:"A6",g:"EU",v:["ind"],big:1,note:"Midea-owned"},
-{n:"Kawasaki",l:"A6",g:"KR/JP",v:["ind","hum"],pub:1},
-{n:"Universal Robots",l:"A6",g:"EU",v:["ind"],note:"Teradyne · cobot arms"},
-{n:"Doosan Robotics",l:"A6",g:"KR/JP",v:["ind"],pub:1},
-{n:"Amazon Robotics",l:"A6",g:"US",v:["ind"],pub:1,span:["B2","C2","C5"],big:1,note:"Vulcan · RBR50 Robot of the Year"},
-{n:"Symbotic",l:"A6",g:"US",v:["ind"],pub:1,span:["C4","C5"],big:1},
-{n:"AutoStore",l:"A6",g:"EU",v:["ind"],pub:1},
-{n:"Exotec",l:"A6",g:"EU",v:["ind"]},
-{n:"Locus Robotics",l:"A6",g:"US",v:["ind"],span:["C5"]},
-{n:"Geek+",l:"A6",g:"CN",v:["ind"],pub:1,big:1},
-{n:"Hai Robotics",l:"A6",g:"CN",v:["ind"]},
-{n:"Quicktron",l:"A6",g:"CN",v:["ind"]},
-{n:"Dexterity",l:"A6",g:"US",v:["ind"],span:["B5"]},
-{n:"RightHand Robotics",l:"A6",g:"US",v:["ind"]},
-{n:"Ambi Robotics",l:"A6",g:"US",v:["ind"]},
-{n:"Plus One Robotics",l:"A6",g:"US",v:["ind"]},
-{n:"Nimble Robotics",l:"A6",g:"US",v:["ind"],span:["C5"]},
-{n:"Osaro",l:"A6",g:"US",v:["ind"]},
-{n:"GreyOrange",l:"A6",g:"US",v:["ind"],span:["C5"]},
-{n:"Attabotics",l:"A6",g:"US",v:["ind"]},
-{n:"Waymo",l:"A7",g:"US",v:["av"],span:["A4","B3","B4","B2","B6","C2","C5"],big:1,val:"$126B",note:"$16B Series D Feb 2026 · expanding to 20+ new cities"},
-{n:"Nuro",l:"A7",g:"US",v:["av"],span:["B6"],val:"$6B",note:"pivoted from operator to licensor"},
-{n:"Zoox",l:"A7",g:"US",v:["av"],span:["B6","C5"],val:"$3.2B",est:1,note:"last independent mark · now Amazon-owned"},
-{n:"Aurora",l:"A7",g:"US",v:["av"],pub:1,span:["B6"],note:"autonomous trucking"},
-{n:"Kodiak Robotics",l:"A7",g:"US",v:["av"],note:"trucking"},
-{n:"Gatik",l:"A7",g:"US",v:["av"],note:"middle-mile"},
-{n:"May Mobility",l:"A7",g:"US",v:["av"]},
-{n:"Motional",l:"A7",g:"US",v:["av"]},
-{n:"Einride",l:"A7",g:"EU",v:["av"],note:"electric autonomous freight"},
-{n:"Pony.ai",l:"A7",g:"CN",v:["av"],pub:1,span:["B6"]},
-{n:"WeRide",l:"A7",g:"CN",v:["av"],pub:1,span:["B6"]},
-{n:"Baidu Apollo",l:"A7",g:"CN",v:["av"],pub:1,span:["B6"],big:1},
-{n:"Anduril",l:"A8",g:"US",v:["def"],span:["A1","A2","B7","C1"],big:1,val:"$61B",note:"Lattice · vertical integration thesis"},
-{n:"Helsing",l:"A8",g:"EU",v:["def"],span:["B7"],big:1,val:"$12B",note:"$18B round reported in progress"},
-{n:"Saronic",l:"A8",g:"US",v:["def"],big:1,val:"$9.25B",note:"maritime uncrewed surface vessels"},
-{n:"Skydio",l:"A8",g:"US",v:["def"],span:["B7"],big:1,val:"$6.2B",note:"autonomous drones · S-1 filed June 2026"},
-{n:"Bedrock Robotics",l:"A8",g:"US",v:["con"],big:1,val:"$1.75B",note:"retrofit autonomy kit · operator-less excavators targeted 2026"},
-{n:"Zipline",l:"A8",g:"US",v:["def"],note:"logistics drones"},
-{n:"Wing",l:"A8",g:"US",v:["def"],note:"Alphabet"},
-{n:"Quantum Systems",l:"A8",g:"EU",v:["def"]},
-{n:"Tekever",l:"A8",g:"EU",v:["def"]},
-{n:"Mach Industries",l:"A8",g:"US",v:["def"]},
-{n:"Castelion",l:"A8",g:"US",v:["def"]},
-{n:"Neros",l:"A8",g:"US",v:["def"]},
-{n:"Firestorm Labs",l:"A8",g:"US",v:["def"]},
-{n:"Percepto",l:"A8",g:"other",v:["def","ind"]},
-{n:"Saildrone",l:"A8",g:"US",v:["def"]},
-{n:"Bubble Robotics",l:"A8",g:"KR/JP",v:["def","ind"],note:"offshore inspection"},
-{n:"Built Robotics",l:"A8",g:"US",v:["con"]},
-{n:"Dusty Robotics",l:"A8",g:"US",v:["con"],note:"FieldPrinter · BIM layout"},
-{n:"Canvas",l:"A8",g:"US",v:["con"],note:"drywall finishing · JLG"},
-{n:"Gravis Robotics",l:"A8",g:"EU",v:["con"]},
-{n:"Monumental",l:"A8",g:"EU",v:["con"],note:"masonry"},
-{n:"Toggle",l:"A8",g:"US",v:["con"],note:"rebar assembly"},
-{n:"SafeAI",l:"A8",g:"US",v:["con"],note:"retrofit heavy equipment"},
-{n:"Teleo",l:"A8",g:"US",v:["con"],note:"retrofit autonomy"},
-{n:"Rugged Robotics",l:"A8",g:"US",v:["con"]},
-{n:"NVIDIA Isaac Sim / Omniverse",l:"B3",g:"US",v:["hum","ind","av"],pub:1,big:1,note:"de-facto industry simulator"},
-{n:"Applied Intuition",l:"B3",g:"US",v:["av","def"],span:["B1","B6"],big:1,val:"$15B",note:"AV toolchain"},
-{n:"MuJoCo",l:"B3",g:"US",v:["hum"],note:"DeepMind · open source"},
-{n:"Open Robotics / Gazebo",l:"B3",g:"US",v:["ind","hum"],note:"OSRF · open standard"},
-{n:"CoppeliaSim",l:"B3",g:"EU",v:["ind"]},
-{n:"dSPACE",l:"B3",g:"EU",v:["av"],note:"hardware-in-loop validation"},
-{n:"Unity",l:"B3",g:"US",v:["ind"],pub:1,note:"rendering & sim runtime"},
-{n:"NVIDIA Cosmos",l:"B4",g:"US",v:["hum","av"],pub:1,big:1,note:"world foundation model for physical AI"},
-{n:"World Labs",l:"B4",g:"US",v:["hum"],big:1,val:"$5B",note:"spatial intelligence · Fei-Fei Li · Marble"},
-{n:"DeepMind Genie",l:"B4",g:"EU",v:["hum"],note:"generative interactive environments"},
-{n:"Genesis AI",l:"B4",g:"US",v:["hum","ind"],note:"generative physics engine"},
-{n:"Decart",l:"B4",g:"other",v:["hum"],note:"real-time world generation"},
-{n:"Odyssey",l:"B4",g:"EU",v:["hum"]},
-{n:"Runway",l:"B4",g:"US",v:["hum"],note:"video world models"},
-{n:"AMI Labs",l:"B4",g:"EU",v:["hum"],note:"LeCun · JEPA architecture"},
+{n:"Figure AI",fs:1,l:"A6",g:"US",v:["hum"],span:["B2","B6"],big:1,val:"$39B",note:"Helix 2 · end-to-end neural · most valuable pure-play humanoid"},
+{n:"Tesla",fs:1,l:"A6",g:"US",v:["hum","av"],pub:1,span:["A4","A8","B4","B2","B6","B7","C1"],big:1,note:"Optimus · FSD"},
+{n:"1X",l:"A6",g:"EU",v:["hum"],span:["B5","B6"],big:1,val:"~$10B",est:1,note:"NEO · reported in talks, not closed"},
+{n:"Neura Robotics",l:"A6",g:"EU",v:["hum","ind"],val:"~$7B",note:"round led by Tether"},
+{n:"Unitree",l:"A6",g:"CN",v:["hum"],big:1,val:"~$5.9B",note:"5,500+ units in 2025 · CNY 1.7B FY25 revenue · STAR Market IPO cleared"},
+{n:"AgiBot",l:"A6",g:"CN",v:["hum"],span:["B6"],big:1,val:"$5.1-6.4B",est:1,note:"Hong Kong IPO target range · 10,000th robot early 2026"},
+{n:"Apptronik",l:"A6",g:"US",v:["hum"],val:"~$5.3B",note:"Apollo · $935M Series A"},
+{n:"Agility Robotics",l:"A6",g:"US",v:["hum","ind"],span:["C2"],big:1,val:"~$2.5B",note:"Digit · 100K+ totes at GXO · going public via SPAC"},
+{n:"Boston Dynamics",l:"A6",g:"US",v:["hum","ind"],big:1,note:"Atlas · Hyundai-owned"},
+{n:"Sanctuary AI",l:"A6",g:"US",v:["hum"],note:"teleop-to-autonomy"},
+{n:"Persona AI",l:"A6",g:"US",v:["hum","ind"],note:"industrial welding focus"},
+{n:"Humanoid",l:"A6",g:"EU",v:["hum"],note:"UK-based"},
+{n:"Mentee Robotics",l:"A6",g:"other",v:["hum"],note:"acquired by Mobileye"},
+{n:"UBTech",l:"A6",g:"CN",v:["hum","ind"],pub:1,big:1,note:"Walker S2 in mass production · HK-listed"},
+{n:"Fourier Intelligence",l:"A6",g:"CN",v:["hum"]},
+{n:"Galbot",l:"A6",g:"CN",v:["hum"],span:["B6"]},
+{n:"EngineAI",l:"A6",g:"CN",v:["hum"]},
+{n:"Booster Robotics",l:"A6",g:"CN",v:["hum"]},
+{n:"Astribot",l:"A6",g:"CN",v:["hum"]},
+{n:"Robot Era",l:"A6",g:"CN",v:["hum"]},
+{n:"Kepler Robotics",l:"A6",g:"CN",v:["hum"]},
+{n:"Leju Robotics",l:"A6",g:"CN",v:["hum"]},
+{n:"Galaxy Bot",l:"A6",g:"CN",v:["hum"]},
+{n:"RLWRLD",l:"A6",g:"KR/JP",v:["hum","ind"],span:["B6"],note:"RLDX-1 with KAIST"},
+{n:"Honda",l:"A6",g:"KR/JP",v:["hum","av"],pub:1},
+{n:"FANUC",l:"A7",g:"KR/JP",v:["ind"],pub:1,big:1},
+{n:"Yaskawa",l:"A7",g:"KR/JP",v:["ind"],pub:1,big:1},
+{n:"ABB Robotics",l:"A7",g:"EU",v:["ind"],pub:1,big:1},
+{n:"KUKA",l:"A7",g:"EU",v:["ind"],big:1,note:"Midea-owned"},
+{n:"Kawasaki",l:"A7",g:"KR/JP",v:["ind","hum"],pub:1},
+{n:"Universal Robots",l:"A7",g:"EU",v:["ind"],note:"Teradyne · cobot arms"},
+{n:"Doosan Robotics",l:"A7",g:"KR/JP",v:["ind"],pub:1},
+{n:"Amazon Robotics",fs:1,l:"A7",g:"US",v:["ind"],pub:1,span:["B2","C2","C5"],big:1,note:"Vulcan · RBR50 Robot of the Year"},
+{n:"Symbotic",l:"A7",g:"US",v:["ind"],pub:1,span:["C4","C5"],big:1},
+{n:"AutoStore",l:"A7",g:"EU",v:["ind"],pub:1},
+{n:"Exotec",l:"A7",g:"EU",v:["ind"]},
+{n:"Locus Robotics",l:"A7",g:"US",v:["ind"],span:["C5"]},
+{n:"Geek+",l:"A7",g:"CN",v:["ind"],pub:1,big:1},
+{n:"Hai Robotics",l:"A7",g:"CN",v:["ind"]},
+{n:"Quicktron",l:"A7",g:"CN",v:["ind"]},
+{n:"Dexterity",l:"A7",g:"US",v:["ind"],span:["B6"]},
+{n:"RightHand Robotics",l:"A7",g:"US",v:["ind"]},
+{n:"Ambi Robotics",l:"A7",g:"US",v:["ind"]},
+{n:"Plus One Robotics",l:"A7",g:"US",v:["ind"]},
+{n:"Nimble Robotics",l:"A7",g:"US",v:["ind"],span:["C5"]},
+{n:"Osaro",l:"A7",g:"US",v:["ind"]},
+{n:"GreyOrange",l:"A7",g:"US",v:["ind"],span:["C5"]},
+{n:"Attabotics",l:"A7",g:"US",v:["ind"]},
+{n:"Waymo",l:"B7",fs:1,g:"US",v:["av"],span:["A4","B4","B5","B2","B7","C2","C5"],big:1,val:"$126B",note:"$16B Series D Feb 2026 · expanding to 20+ new cities"},
+{n:"Nuro",l:"B7",g:"US",v:["av"],span:["B7"],val:"$6B",note:"pivoted from operator to licensor"},
+{n:"Zoox",fs:1,l:"A8",g:"US",v:["av"],span:["B7","C5"],val:"$3.2B",est:1,note:"last independent mark · now Amazon-owned"},
+{n:"Aurora",l:"A8",g:"US",v:["av"],pub:1,span:["B7"],note:"autonomous trucking"},
+{n:"Kodiak Robotics",l:"A8",g:"US",v:["av"],note:"trucking"},
+{n:"Gatik",l:"A8",g:"US",v:["av"],note:"middle-mile"},
+{n:"May Mobility",l:"A8",g:"US",v:["av"]},
+{n:"Motional",l:"A8",g:"US",v:["av"]},
+{n:"Einride",l:"A8",g:"EU",v:["av"],note:"electric autonomous freight"},
+{n:"Pony.ai",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"]},
+{n:"WeRide",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"]},
+{n:"Baidu Apollo",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"],big:1},
+{n:"Anduril",fs:1,l:"A9",g:"US",v:["def"],span:["A1","A2","B8","C1"],big:1,val:"$61B",note:"Lattice · vertical integration thesis"},
+{n:"Helsing",l:"A9",g:"EU",v:["def"],span:["B8"],big:1,val:"$12B",note:"$18B round reported in progress"},
+{n:"Saronic",l:"A9",g:"US",v:["def"],big:1,val:"$9.25B",note:"maritime uncrewed surface vessels"},
+{n:"Skydio",l:"A9",g:"US",v:["def"],span:["B8"],big:1,val:"$6.2B",note:"autonomous drones · S-1 filed June 2026"},
+{n:"Bedrock Robotics",l:"A10",g:"US",v:["con"],big:1,val:"$1.75B",note:"retrofit autonomy kit · operator-less excavators targeted 2026"},
+{n:"Zipline",l:"A9",g:"US",v:["def"],note:"logistics drones"},
+{n:"Wing",l:"A9",g:"US",v:["def"],note:"Alphabet"},
+{n:"Quantum Systems",l:"A9",g:"EU",v:["def"]},
+{n:"Tekever",l:"A9",g:"EU",v:["def"]},
+{n:"Mach Industries",l:"A9",g:"US",v:["def"]},
+{n:"Castelion",l:"A9",g:"US",v:["def"]},
+{n:"Neros",l:"A9",g:"US",v:["def"]},
+{n:"Firestorm Labs",l:"A9",g:"US",v:["def"]},
+{n:"Percepto",l:"A9",g:"other",v:["def","ind"]},
+{n:"Saildrone",l:"A9",g:"US",v:["def"]},
+{n:"Bubble Robotics",l:"A9",g:"KR/JP",v:["def","ind"],note:"offshore inspection"},
+{n:"Built Robotics",l:"A10",g:"US",v:["con"]},
+{n:"Dusty Robotics",l:"A10",g:"US",v:["con"],note:"FieldPrinter · BIM layout"},
+{n:"Canvas",l:"A10",g:"US",v:["con"],note:"drywall finishing · JLG"},
+{n:"Gravis Robotics",l:"A10",g:"EU",v:["con"]},
+{n:"Monumental",l:"A10",g:"EU",v:["con"],note:"masonry"},
+{n:"Toggle",l:"A10",g:"US",v:["con"],note:"rebar assembly"},
+{n:"SafeAI",l:"A10",g:"US",v:["con"],note:"retrofit heavy equipment"},
+{n:"Teleo",l:"A10",g:"US",v:["con"],note:"retrofit autonomy"},
+{n:"Rugged Robotics",l:"A10",g:"US",v:["con"]},
+{n:"NVIDIA Isaac Sim / Omniverse",l:"B4",g:"US",v:["hum","ind","av"],pub:1,big:1,note:"de-facto industry simulator"},
+{n:"Applied Intuition",l:"B4",g:"US",v:["av","def"],span:["B1","B7"],big:1,val:"$15B",note:"AV toolchain"},
+{n:"MuJoCo",l:"B4",g:"US",v:["hum"],note:"DeepMind · open source"},
+{n:"Open Robotics / Gazebo",l:"B4",g:"US",v:["ind","hum"],note:"OSRF · open standard"},
+{n:"CoppeliaSim",l:"B4",g:"EU",v:["ind"]},
+{n:"dSPACE",l:"B4",g:"EU",v:["av"],note:"hardware-in-loop validation"},
+{n:"Unity",l:"B4",g:"US",v:["ind"],pub:1,note:"rendering & sim runtime"},
+{n:"NVIDIA Cosmos",intn:1,l:"B5",g:"US",v:["hum","av"],pub:1,big:1,note:"world foundation model for physical AI"},
+{n:"World Labs",l:"B5",g:"US",v:["hum"],big:1,val:"$5B",note:"spatial intelligence · Fei-Fei Li · Marble"},
+{n:"DeepMind Genie",intn:1,l:"B5",g:"EU",v:["hum"],note:"generative interactive environments"},
+{n:"Genesis AI",l:"B5",g:"US",v:["hum","ind"],note:"generative physics engine"},
+{n:"Decart",l:"B5",g:"other",v:["hum"],note:"real-time world generation"},
+{n:"Odyssey",l:"B5",g:"EU",v:["hum"]},
+{n:"Runway",l:"B5",g:"US",v:["hum"],note:"video world models"},
+{n:"AMI Labs",l:"B5",g:"EU",v:["hum"],note:"LeCun · JEPA architecture"},
 {n:"Parallel Domain",l:"B1",g:"US",v:["av"],note:"synthetic AV data"},
 {n:"Duality AI",l:"B1",g:"US",v:["ind","def"],note:"Falcon digital twin data"},
 {n:"Cognata",l:"B1",g:"other",v:["av"]},
@@ -921,33 +955,33 @@ const CO = [
 {n:"Mercor",l:"B2",g:"US",v:["hum"]},
 {n:"Surge AI",l:"B2",g:"US",v:["hum"]},
 {n:"Turing",l:"B2",g:"US",v:["hum"]},
-{n:"Reflex Robotics",l:"B2",g:"US",v:["hum"],note:"teleoperation rigs"},
-{n:"Dexmate",l:"B2",g:"US",v:["hum"]},
+{n:"Reflex Robotics",l:"B3",g:"US",v:["hum"],note:"teleoperation rigs"},
+{n:"Dexmate",l:"B3",g:"US",v:["hum"]},
 {n:"Meta Project Aria",l:"B2",g:"US",v:["hum"],pub:1,note:"egocentric capture at scale"},
-{n:"Skild AI",l:"B5",g:"US",v:["hum","ind"],big:1,val:"$14B",note:"omni-bodied · tripled from $4.5B in seven months"},
-{n:"Physical Intelligence",l:"B5",g:"US",v:["hum","ind"],big:1,val:"$5.6B",note:"pi-zero / pi-0.7 · ~$11B reported in talks, not closed"},
-{n:"Generalist AI",l:"B5",g:"US",v:["hum"],big:1,val:"$3B",note:"GEN-1 · trained from scratch · ex-DeepMind founders"},
-{n:"Sunday Robotics",l:"B5",g:"US",v:["hum"],val:"$1.15B",note:"Memo household robot"},
-{n:"Dyna Robotics",l:"B5",g:"US",v:["hum","ind"],val:"$600M"},
-{n:"NVIDIA GR00T",l:"B5",g:"US",v:["hum"],pub:1,big:1,note:"N1.7 shipped · N2 announced"},
-{n:"Gemini Robotics",l:"B5",g:"EU",v:["hum"],pub:1,big:1,note:"Google DeepMind · ER planner"},
-{n:"Field AI",l:"B5",g:"US",v:["con","def","ind"],note:"field robot brains"},
-{n:"Rhoda AI",l:"B5",g:"US",v:["hum"]},
-{n:"Intrinsic",l:"B5",g:"US",v:["ind"],note:"Alphabet · industrial"},
-{n:"Ineffable Intelligence",l:"B5",g:"US",v:["hum"],note:"RL superlearners"},
-{n:"X Square Robot",l:"B5",g:"CN",v:["hum"]},
-{n:"Spirit AI",l:"B5",g:"CN",v:["hum"]},
-{n:"Huawei",l:"B5",g:"CN",v:["hum","ind"],big:1},
-{n:"DeepSeek",l:"B5",g:"CN",v:["hum"],note:"open weights · levels the China field"},
-{n:"Hugging Face",l:"B5",g:"US",v:["hum"],note:"LeRobot · open ecosystem"},
-{n:"Wayve",l:"B6",g:"EU",v:["av"],big:1,val:"$8.6B",note:"end-to-end AI Driver · Series D post-money"},
-{n:"Waabi",l:"B6",g:"US",v:["av"],span:["B4"],note:"neural closed-loop sim · valuation undisclosed"},
-{n:"Momenta",l:"B6",g:"CN",v:["av"]},
-{n:"Plus",l:"B6",g:"US",v:["av"],note:"trucking autonomy"},
-{n:"Bot Auto",l:"B6",g:"US",v:["av"]},
-{n:"Shield AI",l:"B7",g:"US",v:["def"],big:1,val:"$12.7B",note:"Hivemind · platform-agnostic autonomy"},
-{n:"Auterion",l:"B7",g:"EU",v:["def"],note:"open drone autonomy & swarming"},
-{n:"Exyn Technologies",l:"B7",g:"US",v:["ind","def"],note:"autonomous aerial teams"},
+{n:"Skild AI",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$14B",note:"omni-bodied · tripled from $4.5B in seven months"},
+{n:"Physical Intelligence",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$5.6B",note:"pi-zero / pi-0.7 · ~$11B reported in talks, not closed"},
+{n:"Generalist AI",l:"B6",g:"US",v:["hum"],big:1,val:"$3B",note:"GEN-1 · trained from scratch · ex-DeepMind founders"},
+{n:"Sunday Robotics",l:"B6",g:"US",v:["hum"],val:"$1.15B",note:"Memo household robot"},
+{n:"Dyna Robotics",l:"B6",g:"US",v:["hum","ind"],val:"$600M"},
+{n:"NVIDIA GR00T",l:"B6",g:"US",v:["hum"],pub:1,big:1,note:"N1.7 shipped · N2 announced"},
+{n:"Gemini Robotics",l:"B6",g:"EU",v:["hum"],pub:1,big:1,note:"Google DeepMind · ER planner"},
+{n:"Field AI",l:"B6",g:"US",v:["con","def","ind"],note:"field robot brains"},
+{n:"Rhoda AI",l:"B6",g:"US",v:["hum"]},
+{n:"Intrinsic",l:"B6",g:"US",v:["ind"],note:"Alphabet · industrial"},
+{n:"Ineffable Intelligence",l:"B6",g:"US",v:["hum"],note:"RL superlearners"},
+{n:"X Square Robot",l:"B6",g:"CN",v:["hum"]},
+{n:"Spirit AI",l:"B6",g:"CN",v:["hum"]},
+{n:"Huawei",l:"B6",g:"CN",v:["hum","ind"],big:1},
+{n:"DeepSeek",l:"B6",g:"CN",v:["hum"],note:"open weights · levels the China field"},
+{n:"Hugging Face",l:"B6",g:"US",v:["hum"],note:"LeRobot · open ecosystem"},
+{n:"Wayve",l:"B7",g:"EU",v:["av"],big:1,val:"$8.6B",note:"end-to-end AI Driver · Series D post-money"},
+{n:"Waabi",l:"B7",g:"US",v:["av"],span:["B5"],note:"neural closed-loop sim · valuation undisclosed"},
+{n:"Momenta",l:"B7",g:"CN",v:["av"]},
+{n:"Plus",l:"B7",g:"US",v:["av"],note:"trucking autonomy"},
+{n:"Bot Auto",l:"B7",g:"US",v:["av"]},
+{n:"Shield AI",l:"B8",g:"US",v:["def"],big:1,val:"$12.7B",note:"Hivemind · platform-agnostic autonomy"},
+{n:"Auterion",l:"B8",g:"EU",v:["def"],note:"open drone autonomy & swarming"},
+{n:"Exyn Technologies",l:"B8",g:"US",v:["ind","def"],note:"autonomous aerial teams"},
 {n:"Isaac ROS",l:"C1",g:"US",v:["ind","hum"],pub:1,note:"NVIDIA · Jazzy line"},
 {n:"ROS 2 / OSRF",l:"C1",g:"US",v:["ind","hum"],big:1,note:"open standard"},
 {n:"Viam",l:"C1",g:"US",v:["ind"]},
@@ -979,7 +1013,37 @@ const CO = [
 {n:"Rapid Robotics",l:"C5",g:"US",v:["ind"],note:"robotics-as-a-service"},
 {n:"Chef Robotics",l:"C5",g:"US",v:["ind"]},
 {n:"Sereact",l:"C5",g:"EU",v:["ind"]},
-{n:"inVia Robotics",l:"C5",g:"US",v:["ind"],note:"robotics-as-a-service"}
+{n:"inVia Robotics",l:"C5",g:"US",v:["ind"],note:"robotics-as-a-service"},
+{n:"Texas Instruments",l:"A5",g:"US",v:["ind","av"],pub:1,big:1,note:"C2000 real-time MCUs & motor drivers"},
+{n:"Microchip Technology",l:"A5",g:"US",v:["ind"],pub:1,note:"dsPIC digital signal controllers"},
+{n:"STMicroelectronics",l:"A5",g:"EU",v:["ind","av"],pub:1,big:1,note:"STM32 MCUs & motor drive ICs"},
+{n:"Analog Devices",l:"A5",g:"US",v:["ind"],pub:1,note:"Trinamic motion control silicon"},
+{n:"Lattice Semiconductor",l:"A5",g:"US",v:["ind"],pub:1,note:"low-power FPGAs for deterministic control"},
+{n:"AMD",l:"A5",g:"US",v:["ind","av"],pub:1,big:1,note:"Zynq & Versal adaptive SoCs"},
+{n:"Beckhoff",l:"A5",g:"EU",v:["ind"],note:"EtherCAT real-time fieldbus"},
+{n:"Elmo Motion Control",l:"A5",g:"other",v:["ind"],note:"compact servo drives"},
+{n:"HaptX",l:"B3",g:"US",v:["hum"],note:"force-feedback gloves"},
+{n:"Manus",l:"B3",g:"EU",v:["hum"],note:"motion-capture gloves"},
+{n:"Ottopia",l:"B3",g:"other",v:["av","ind"],note:"teleoperation software"},
+{n:"DriveU.auto",l:"B3",g:"other",v:["av","ind"],note:"teleoperation connectivity"},
+{n:"Caterpillar",l:"A10",g:"US",v:["min","con"],pub:1,big:1,note:"MineStar Command · largest deployed autonomous fleet"},
+{n:"Komatsu",l:"A10",g:"KR/JP",v:["min","con"],pub:1,big:1,note:"FrontRunner AHS · first commercial autonomous haulage"},
+{n:"Sandvik",l:"A10",g:"EU",v:["min"],pub:1,big:1,note:"AutoMine underground autonomy"},
+{n:"Epiroc",l:"A10",g:"EU",v:["min"],pub:1,note:"underground mining automation"},
+{n:"Hitachi Construction Machinery",l:"A10",g:"KR/JP",v:["min","con"],pub:1},
+{n:"Liebherr",l:"A10",g:"EU",v:["min","con"],note:"autonomous haulage & cranes"},
+{n:"Pronto.ai",l:"A10",g:"US",v:["min"],note:"retrofit autonomous haulage"},
+{n:"John Deere",l:"A10",g:"US",v:["ag"],pub:1,big:1,note:"autonomous 8R tractor · See & Spray"},
+{n:"AGCO",l:"A10",g:"US",v:["ag"],pub:1,note:"Fendt · PTx Trimble autonomy"},
+{n:"CNH Industrial",l:"A10",g:"EU",v:["ag"],pub:1,note:"Case IH & New Holland autonomy"},
+{n:"Kubota",l:"A10",g:"KR/JP",v:["ag"],pub:1},
+{n:"Monarch Tractor",l:"A10",g:"US",v:["ag"],note:"electric driver-optional tractor"},
+{n:"Carbon Robotics",l:"A10",g:"US",v:["ag"],note:"LaserWeeder"},
+{n:"Bluewhite",l:"A10",g:"other",v:["ag"],note:"tractor autonomy retrofit"},
+{n:"Agtonomy",l:"A10",g:"US",v:["ag"]},
+{n:"Burro",l:"A10",g:"US",v:["ag"],note:"autonomous field carts"},
+{n:"Naio Technologies",l:"A10",g:"EU",v:["ag"],note:"autonomous weeding robots"},
+{n:"Verdant Robotics",l:"A10",g:"US",v:["ag"]}
 ];
 
 // name : [homepage, one-line overview]
@@ -1202,38 +1266,71 @@ const INFO={
 "Rapid Robotics":["rapidrobotics.com","Delivers pre-trained robotic work cells to manufacturers under a subscription rather than a purchase model."],
 "Chef Robotics":["chefrobotics.ai","Deploys AI-enabled robotic arms for high-mix food assembly, sold as a service to food producers."],
 "Sereact":["sereact.ai","German company providing vision-language-driven picking software for warehouse and logistics robots."],
-"inVia Robotics":["inviarobotics.com","Supplies warehouse automation as a service, combining mobile robots with fulfilment orchestration software."]
+"inVia Robotics":["inviarobotics.com","Supplies warehouse automation as a service, combining mobile robots with fulfilment orchestration software."],
+"Texas Instruments":["ti.com","US semiconductor maker whose C2000 real-time microcontrollers and gate drivers are the default for precision motor-control loops."],
+"Microchip Technology":["microchip.com","US supplier of dsPIC digital signal controllers and motor-drive ICs for deterministic embedded control."],
+"STMicroelectronics":["st.com","European semiconductor maker; STM32 microcontrollers and motor-driver ICs are ubiquitous in robot joint controllers."],
+"Analog Devices":["analog.com","US analog and mixed-signal semiconductor company; its Trinamic line supplies integrated motion-control silicon."],
+"Lattice Semiconductor":["latticesemi.com","US maker of low-power FPGAs used where robot control loops need hard real-time determinism."],
+"AMD":["amd.com","Supplies Zynq and Versal adaptive SoCs, widely used for deterministic real-time motion control alongside AI inference."],
+"Beckhoff":["beckhoff.com","German automation company behind EtherCAT, the dominant real-time fieldbus in industrial and robotic motion control."],
+"Elmo Motion Control":["elmomc.com","Israeli maker of compact high-performance servo drives for robotics and precision motion systems."],
+"HaptX":["haptx.com","Builds force-feedback gloves that give teleoperators physical sensation, used for dexterous manipulation data collection."],
+"Manus":["manus-meta.com","Dutch maker of motion-capture and haptic gloves used for robot teleoperation and demonstration capture."],
+"Ottopia":["ottopia.tech","Provides teleoperation software enabling remote human supervision of autonomous vehicles and industrial machines."],
+"DriveU.auto":["driveu.auto","Supplies the connectivity layer that makes low-latency teleoperation viable over public cellular networks."],
+"Caterpillar":["caterpillar.com","Operates the largest deployed autonomous fleet in the world through MineStar Command, with driverless haul trucks in production mines for over a decade."],
+"Komatsu":["komatsu.com","Japanese heavy equipment maker; its FrontRunner system was the first commercial autonomous haulage deployment and remains among the largest."],
+"Sandvik":["home.sandvik","Swedish engineering group whose AutoMine platform automates underground loaders and drills in production mines."],
+"Epiroc":["epiroc.com","Swedish mining equipment manufacturer supplying automation and teleremote systems for underground operations."],
+"Hitachi Construction Machinery":["hitachicm.com","Japanese manufacturer of mining and construction equipment with autonomous haulage programmes."],
+"Liebherr":["liebherr.com","Swiss-German manufacturer of mining trucks, excavators and cranes, developing autonomous haulage systems."],
+"Pronto.ai":["pronto.ai","Retrofits autonomy onto existing haul trucks in quarries and mines, selling driverless hauling as an operating service."],
+"John Deere":["deere.com","The most commercially advanced agricultural autonomy programme, with a fully autonomous tractor and See & Spray computer vision shipping at scale."],
+"AGCO":["agcocorp.com","US agricultural equipment group; its Fendt and PTx Trimble units supply autonomy and precision-agriculture systems."],
+"CNH Industrial":["cnhindustrial.com","Agricultural and construction equipment maker developing driverless tillage and precision-spraying systems."],
+"Kubota":["kubota.com","Japanese agricultural machinery manufacturer investing in autonomous and semi-autonomous farm equipment."],
+"Monarch Tractor":["monarchtractor.com","Builds a fully electric, driver-optional smart tractor aimed at specialty crops and vineyards."],
+"Carbon Robotics":["carbonrobotics.com","Its LaserWeeder kills weeds with high-power lasers guided by computer vision, eliminating herbicide use."],
+"Bluewhite":["bluewhite.co","Israeli company retrofitting existing tractors with autonomy kits for orchards and vineyards."],
+"Agtonomy":["agtonomy.com","Develops autonomy and task-automation software for specialty-crop farm equipment."],
+"Burro":["burro.ai","Builds autonomous wheeled carts that carry harvested produce, among the highest-volume field robots deployed in agriculture."],
+"Naio Technologies":["naio-technologies.com","French manufacturer of autonomous weeding robots for vegetable and vineyard operations."],
+"Verdant Robotics":["verdantrobotics.com","Provides robotic precision treatment for specialty crops, targeting per-plant intervention."]
 };
 
 const PLANES=[
  {id:"A",name:"Body",desc:"the physical substrate",layers:[
    {c:"A1",grp:"Components",gd:"the supply chain",n:"Actuation & motion",d:"Harmonic and strain-wave gearing, roller screws, motors, end-effectors. The supply-constrained floor of the stack."},
    {c:"A2",grp:"Components",n:"Sensing & perception hardware",d:"Lidar, radar, cameras, tactile and force-torque. Where the world enters the system."},
-   {c:"A3",grp:"Infrastructure",gd:"what powers and computes",n:"Power & energy",d:"Cells, packs, power electronics. Sets runtime ceilings and duty cycles."},
-   {c:"A4",grp:"Infrastructure",n:"Edge compute & silicon",d:"On-robot inference SoCs and the training platforms behind them."},
-   {c:"A5",grp:"Embodiments",gd:"whole machines, divided by morphology",n:"Humanoid & general-purpose platforms",d:"Bipedal and human-envelope embodiments sold as general-capability machines."},
-   {c:"A6",grp:"Embodiments",n:"Industrial arms, AMR & warehouse",d:"Fixed arms, mobile robots and goods-to-person systems. The revenue base of the industry."},
-   {c:"A7",grp:"Embodiments",n:"Road & ground autonomy platforms",d:"Robotaxi, trucking and last-mile ground vehicles."},
-   {c:"A8",grp:"Embodiments",n:"Aerial, maritime & heavy machines",d:"Drones, vessels, and autonomous construction and field machinery."}]},
+   {c:"A3",grp:"Infrastructure",gd:"what powers, computes and controls",n:"Power & energy",d:"Cells, packs, power electronics. Sets runtime ceilings and duty cycles."},
+   {c:"A4",grp:"Infrastructure",n:"Edge AI compute & silicon",d:"On-robot inference SoCs and the training platforms behind them."},
+   {c:"A5",grp:"Infrastructure",n:"Real-time control & motor drive",d:"MCUs, DSPs, FPGAs and servo drives. Hard real-time determinism is a separate supply chain and a separate bottleneck from AI inference."},
+   {c:"A6",grp:"Embodiments",gd:"whole machines, divided by morphology",n:"Humanoid & general-purpose platforms",d:"Bipedal and human-envelope embodiments sold as general-capability machines."},
+   {c:"A7",grp:"Embodiments",n:"Industrial arms, AMR & warehouse",d:"Fixed arms, mobile robots and goods-to-person systems. The revenue base of the industry."},
+   {c:"A8",grp:"Embodiments",n:"Road & ground autonomy platforms",d:"Robotaxi, trucking and last-mile ground vehicles."},
+   {c:"A9",grp:"Embodiments",n:"Aerial & maritime platforms",d:"Drones, uncrewed surface vessels and the defence programmes built on them."},
+   {c:"A10",grp:"Embodiments",n:"Heavy machinery & field autonomy",d:"Construction, mining and agriculture. The only domains generating autonomous revenue at scale in unstructured environments today."}]},
  {id:"B",name:"Brain",desc:"perception, reasoning, action",layers:[
-   {c:"B1",grp:"Data",gd:"the input — and the binding bottleneck",n:"Synthetic data generation",d:"Pipelines that manufacture labelled training data at volume, usually on top of the simulation layers above."},
-   {c:"B2",grp:"Data",n:"Real-world data capture & curation",d:"Teleoperation, wearables, egocentric video, annotation. Cannot be replicated in simulation and cannot be bought."},
-   {c:"B3",grp:"Modelling",gd:"how the world and the policy are represented",n:"Physics simulation & digital twins",d:"Deterministic engines. Explicit dynamics, contact and rendering — you specify the world."},
-   {c:"B4",grp:"Modelling",n:"World models & neural simulation",d:"Learned generative dynamics. The model predicts future states rather than solving them. A different bet from B3, not a variant of it."},
-   {c:"B5",grp:"Modelling",n:"Robot foundation models (VLA)",d:"Vision-language-action policies for manipulation and whole-body control. The most-mapped layer in the industry."},
-   {c:"B6",grp:"Applied autonomy",gd:"domain stacks with their own regulators",n:"Autonomous driving stacks",d:"Road autonomy. Separated from B5 because the customer, the safety case and the regulator are all different."},
-   {c:"B7",grp:"Applied autonomy",n:"Multi-agent & fleet intelligence",d:"Coordination and swarm autonomy across many units. The thinnest layer on the map — and a named unsolved problem."}]},
+   {c:"B1",grp:"Data",gd:"the input — and the binding bottleneck",n:"Synthetic data generation",d:"Pipelines that manufacture labelled training data at volume, usually on top of the simulation layers below."},
+   {c:"B2",grp:"Data",n:"Real-world data capture & curation",d:"Egocentric video, wearables, annotation and curation. Cannot be replicated in simulation and cannot be bought."},
+   {c:"B3",grp:"Data",n:"Teleoperation & human-in-the-loop",d:"Rigs, gloves, haptics and remote-supervision infrastructure. Both a data-generation engine and the operational fallback deployments depend on."},
+   {c:"B4",grp:"Modelling",gd:"how the world and the policy are represented",n:"Physics simulation & digital twins",d:"Deterministic engines. Explicit dynamics, contact and rendering — you specify the world."},
+   {c:"B5",grp:"Modelling",n:"World models & neural simulation",d:"Learned generative dynamics. The model predicts future states rather than solving them. Commercially the least proven layer on the map."},
+   {c:"B6",grp:"Modelling",n:"Robot foundation models (VLA)",d:"Vision-language-action policies for manipulation and whole-body control. The most-mapped layer in the industry."},
+   {c:"B7",grp:"Applied autonomy",gd:"domain stacks with their own regulators",n:"Autonomous driving stacks",d:"Road autonomy. Separated from B6 because the customer, the safety case and the regulator are all different."},
+   {c:"B8",grp:"Applied autonomy",n:"Multi-agent & fleet intelligence",d:"Coordination and swarm autonomy across many units. The thinnest layer on the map — and a named unsolved problem."}]},
  {id:"C",name:"Operations",desc:"deployment, assurance and service delivery",layers:[
-   {c:"C1",n:"Runtime & middleware",d:"The execution substrate on the robot: ROS and its commercial successors."},
-   {c:"C2",n:"Fleet operations & observability",d:"Monitoring, telemetry, OTA update and intervention tooling for deployed units."},
-   {c:"C3",n:"Safety, certification & standards",d:"The gate between demonstration and deployment. Least mapped, most defensible."},
-   {c:"C4",n:"Integration & systems delivery",d:"Contract manufacture, systems integration and the industrial customers who host deployments."},
-   {c:"C5",n:"RaaS & operating models",d:"Robots sold as an outcome rather than an asset. Owns the customer and the operational envelope."}]}
+   {c:"C1",grp:"Operational software",gd:"what runs and watches the fleet",n:"Runtime & middleware",d:"The execution substrate on the robot: ROS and its commercial successors."},
+   {c:"C2",grp:"Operational software",n:"Fleet operations & observability",d:"Monitoring, telemetry, OTA update and intervention tooling for deployed units."},
+   {c:"C3",grp:"Operational software",n:"Safety, certification & standards",d:"The gate between demonstration and deployment. Least mapped, most defensible."},
+   {c:"C4",grp:"Commercial delivery",gd:"how the robot reaches and is paid for by the customer",n:"Integration & systems delivery",d:"Contract manufacture and systems integration. A professional-services margin profile, not a software one."},
+   {c:"C5",grp:"Commercial delivery",n:"RaaS & operating models",d:"A financing and packaging model rather than a technology layer — but it owns the customer and the operational envelope."}]}
 ];
 
-const VERTS={hum:"Humanoid",ind:"Industrial",av:"Autonomous vehicles",def:"Drone & defence",con:"Construction"};
+const VERTS={hum:"Humanoid",ind:"Industrial",av:"Autonomous vehicles",def:"Drone & defence",con:"Construction",min:"Mining & resources",ag:"Agriculture"};
 const GEOS=["US","CN","EU","KR/JP","other"];
-const state={v:new Set(),g:new Set(),p:new Set(),big:false,spans:false,val:false,q:""};
+const state={v:new Set(),g:new Set(),p:new Set(),big:false,spans:false,val:false,fs:false,q:""};
 
 function build(){
   const fp=document.getElementById('f-p');
@@ -1247,7 +1344,7 @@ function build(){
   document.querySelectorAll('[data-special]').forEach(b=>{b.onclick=()=>{const k=b.dataset.special;state[k]=!state[k];b.classList.toggle('on');render();};});
   document.getElementById('q').oninput=e=>{state.q=e.target.value.toLowerCase().trim();render();};
   document.getElementById('reset').onclick=()=>{
-    state.v.clear();state.g.clear();state.p.clear();state.big=false;state.spans=false;state.val=false;state.q="";
+    state.v.clear();state.g.clear();state.p.clear();state.big=false;state.spans=false;state.val=false;state.fs=false;state.q="";
     document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));
     document.getElementById('q').value="";render();};
 
@@ -1279,6 +1376,7 @@ function pass(c){
   if(state.big && !c.big) return false;
   if(state.spans && !(c.span&&c.span.length)) return false;
   if(state.val && !c.val) return false;
+  if(state.fs && !c.fs) return false;
   if(state.p.size && !state.p.has(c.l[0])) return false;
   if(state.g.size && !state.g.has(c.g)) return false;
   if(state.v.size && !(c.v||[]).some(x=>state.v.has(x))) return false;
@@ -1287,7 +1385,7 @@ function pass(c){
 }
 
 const GEOFULL={"US":"United States","CN":"China","EU":"Europe","KR/JP":"Korea / Japan","other":"Other"};
-const VFULL={hum:"Humanoid",ind:"Industrial",av:"Autonomous vehicles",def:"Drone & defence",con:"Construction"};
+const VFULL={hum:"Humanoid",ind:"Industrial",av:"Autonomous vehicles",def:"Drone & defence",con:"Construction",min:"Mining & resources",ag:"Agriculture"};
 let card;
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
@@ -1300,10 +1398,12 @@ function showCard(c,anchor){
   else valLine='<span class="cv-val nov">—</span><span class="cv-vl">valuation not disclosed</span>';
   const layer=(PLANES.flatMap(p=>p.layers).find(L=>L.c===c.l)||{});
   card.innerHTML=
-    '<div class="cv-h"><span class="cv-n">'+esc(c.n)+'</span>'+(c.big?'<span class="cv-tag">category leader</span>':'')+'</div>'+
+    '<div class="cv-h"><span class="cv-n">'+esc(c.n)+'</span>'+(c.big?'<span class="cv-tag">category leader</span>':'')+(c.fs?'<span class="cv-tag fs">full-stack</span>':'')+'</div>'+
     '<div class="cv-meta">'+esc(c.l)+' · '+esc(layer.n||'')+' · '+esc(GEOFULL[c.g]||c.g)+'</div>'+
     (about?'<div class="cv-ab">'+esc(about)+'</div>':'')+
     '<div class="cv-v">'+valLine+'</div>'+
+    (c.intn?'<div class="cv-note">Internal tooling within a larger platform rather than a standalone commercial product.</div>':'')+
+    (c.fs?'<div class="cv-note">No single layer dominates. Primary layer shown reflects unit of sale; the company operates meaningfully across its spans.</div>':'')+
     (c.note?'<div class="cv-note">'+esc(c.note)+'</div>':'')+
     (c.span&&c.span.length?'<div class="cv-span">Also spans '+c.span.join(' · ')+'</div>':'')+
     '<div class="cv-f"><span class="cv-verts">'+(c.v||[]).map(x=>esc(VFULL[x]||x)).join(' · ')+'</span>'+
@@ -1328,9 +1428,11 @@ function render(){
     if(!host) return;
     const inf=INFO[c.n]||[];
     const e=document.createElement(inf[0]?'a':'span');
-    e.className='co'+(c.span&&c.span.length?' spans':'')+(c.big?' big':'');
+    e.className='co'+(c.span&&c.span.length?' spans':'')+(c.big?' big':'')+(c.fs?' fs':'');
     if(inf[0]){ e.href='https://'+inf[0]; e.target='_blank'; e.rel='noopener noreferrer'; }
     let h=esc(c.n)+' <span class="g">'+c.g+'</span>';
+    if(c.fs) h+=' <span class="fsb">full-stack</span>';
+    if(c.intn) h+=' <span class="pub">internal</span>';
     if(c.val) h+=' <span class="val'+(c.est?' est':'')+'">'+c.val+'</span>';
     else if(c.pub) h+=' <span class="pub">listed</span>';
     e.innerHTML=h;
