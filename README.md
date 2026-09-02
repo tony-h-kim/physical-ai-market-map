@@ -58,11 +58,21 @@ The roster is curated, not exhaustive — roughly 243 of an estimated 700+ compa
 
 ## Validation
 
-The map is one hand-maintained HTML file, which makes it easy to ship and easy to let the data drift out of sync with the prose.  parses the embedded company data and asserts the invariants the map claims about itself: no duplicate entries, no self-referential spans, every layer code resolving in both data and prose, product lines excluded from the parent company count, controlled vocabularies for geography and vertical, no empty layers, and headline counts matching the data.
+The map is one hand-maintained HTML file, which makes it easy to ship and easy to let the data drift out of sync with the prose. `validate.py` parses the embedded company data and asserts the invariants the map claims about itself:
 
+- no duplicate entries, and no company counted twice via its own spans
+- product lines (Isaac Sim, Cosmos, GR00T, Halos) tagged and excluded from the company count
+- no self-referential spans
+- every layer code resolves — in the data *and* in the prose
+- controlled vocabularies for geography and vertical
+- no empty layers
+- headline counts, plane counts and version strings match the data
 
+```bash
+python validate.py index.html
+```
 
-It exits non-zero on any error. It found 34 on first run.
+Exits non-zero on any error. It found 34 on its first run, including several that a careful human review had missed.
 
 ## Technical
 
