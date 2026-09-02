@@ -180,6 +180,14 @@ def main(path):
     else:
         warn("could not locate the taxonomy figure to check layer coverage")
 
+    # 12c — a callout label is a short line, not a container
+    for m in re.finditer(r'<div class="lbl">(.*?)</div>', head, re.S):
+        body = m.group(1)
+        if re.search(r"<(p|ul|ol|table|div)\b", body):
+            err(f'callout label contains block markup (unclosed label?): "{re.sub(chr(60)+"[^"+chr(62)+"]*"+chr(62), "", body)[:50]}..."')
+        elif len(body) > 90:
+            warn(f'callout label is unusually long ({len(body)} chars): "{body[:50]}..."')
+
     # 13 — version string consistent
     vers = set(re.findall(r"V\d-00", head))
     if len(vers) > 1:

@@ -168,11 +168,11 @@
   .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:15px;margin:18px 0}
 
   .callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ops);border-radius:12px;padding:17px 22px;margin:20px 0;box-shadow:var(--sh)}
-  .callout .lbl{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--ops);margin-bottom:8px;font-weight:600}
-  .callout.b{border-left-color:var(--body)} .callout.b .lbl{color:var(--body)}
-  .callout.w{border-left-color:var(--warn)} .callout.w .lbl{color:var(--warn)}
-  .callout.i{border-left-color:var(--info)} .callout.i .lbl{color:var(--info)}
-  .callout.p{border-left-color:var(--brain)} .callout.p .lbl{color:var(--brain)}
+  .callout .lbl{font-size:var(--fs-2xs);color:var(--fg2);margin-bottom:9px;font-weight:600;letter-spacing:-.005em}
+  .callout.b{border-left-color:var(--body)}
+  .callout.w{border-left-color:var(--warn)}
+  .callout.i{border-left-color:var(--info)}
+  .callout.p{border-left-color:var(--brain)}
 
   figure{margin:22px 0 28px}
   figcaption{color:var(--fg2);font-size:var(--fs-xs);margin-top:12px;line-height:1.65;max-width:none;text-wrap:pretty}
@@ -232,7 +232,7 @@
   .pos-r{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--line);font-size:var(--fs-2xs);color:var(--fg2)}
   .pos-rl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);margin-right:8px}
   .noteblock{margin:26px 0 8px;padding:0 2px;max-width:none}
-  .noteblock .nt{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600;margin-bottom:10px}
+  .noteblock .nt{font-size:var(--fs-2xs);color:var(--fg2);font-weight:600;margin-bottom:10px}
   .noteblock p{font-style:italic;color:var(--fg2);font-size:var(--fs-body);max-width:none;margin:0 0 11px;line-height:1.8;text-wrap:pretty}
 
   footer{margin-top:46px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--fg3);font-size:var(--fs-2xs);line-height:1.9;box-shadow:var(--sh);max-width:none}
@@ -526,9 +526,10 @@
   </table></div>
 
   <div class="callout w">
-    <div class="lbl">What<p>The cleanest evidence that the market is pricing a binary is not the forecast spread — it is a struck price. <strong>Agility Robotics went public via SPAC at roughly $2.5B with the deepest deployment record in humanoids. Figure is marked at $39B with no disclosed revenue.</strong> One of those is a number a market agreed to pay; the other is a number a small syndicate agreed to write down. A ~15× gap between them, in the same sub-sector in the same year, is the disagreement made concrete.</p>
-    <p style="margin-bottom:0">The forecast spread is weaker evidence and should be read as such — it tells you analysts disagree about scope and adoption, not that anyone underwrites off ABI versus Roland Berger. Still, for humanoids alone in 2035 the range is <strong>$38B to $750B, roughly 20×</strong>, and even like-for-like Goldman's $38B against Macquarie's $139B is a 3.7× gap on the same definition in the same year.</p>
-    <p style="margin-bottom:0">When credible forecasts disagree by an order of magnitude, <strong>the market is not pricing a growth curve — it is pricing a binary.</strong> The disagreement is not really about adoption rates. It is about whether general-purpose capability works at industrial reliability at all. That is the same question the Structure tab answers with reliability economics, arriving from the opposite direction. You are not underwriting a TAM; you are underwriting a technical outcome with a TAM attached.</p>
+    <div class="lbl">What the spread actually means</div>
+    <p>The cleanest evidence that the market is pricing a binary is not the forecast spread — it is a struck price. <strong>Agility Robotics went public via SPAC at roughly $2.5B with the deepest deployment record in humanoids, while Figure is marked at $39B with no disclosed revenue.</strong> One of those is a number a market agreed to pay; the other is a number a small syndicate agreed to write down. A ~15× gap between them, in the same sub-sector in the same year, is the disagreement made concrete.</p>
+    <p>The forecast spread is weaker evidence and should be read as such — it tells you analysts disagree about scope and adoption, not that anyone underwrites off ABI versus Roland Berger. Still, for humanoids alone in 2035 the range is $38B to $750B, roughly 20×, and even like-for-like Goldman’s $38B against Macquarie’s $139B is a 3.7× gap on the same definition in the same year.</p>
+    <p style="margin-bottom:0">Either way the conclusion is the same, and it is not about adoption rates. It is about whether general-purpose capability works at industrial reliability at all — the same question the Structure tab reaches from the opposite direction. You are not underwriting a market size; you are underwriting a technical outcome with a market size attached.</p>
   </div>
 
   <h2>2 · Revenue reality — and who actually has any</h2>
