@@ -186,6 +186,51 @@
   .sv-h{font-size:11px;fill:var(--fg3);letter-spacing:.09em;text-transform:uppercase;font-weight:600}
   .sv-n{font-family:var(--mono);font-size:12.5px;fill:var(--fg2);font-variant-numeric:tabular-nums}
 
+
+  /* ---- figures: HTML rather than SVG, so they fill the column, inherit the
+     type scale exactly, and reflow instead of scaling ---- */
+  .fig{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;box-shadow:var(--sh)}
+  .tax{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .tax-col{min-width:0}
+  .tax-head{border-radius:9px;padding:10px 14px;margin-bottom:6px}
+  .tax-head .tn{font-size:var(--fs-body);font-weight:600;letter-spacing:-.015em}
+  .tax-head .ts{font-size:var(--fs-3xs);opacity:.85}
+  .tax-grp{display:flex;align-items:center;gap:10px;margin:16px 0 9px;font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+  .tax-grp .ln{flex:1;height:1px;background:var(--line)}
+  .tax-row{border:1px solid var(--line);background:var(--sub);border-radius:7px;padding:9px 13px;font-size:var(--fs-2xs);color:var(--fg2);margin-bottom:7px;line-height:1.35}
+  .tax-row b{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);font-weight:600;margin-right:7px}
+  .tax-row.hiA{background:var(--bodybg);border-color:var(--body);color:var(--fg)}
+  .tax-row.hiB{background:var(--brainbg);border-color:var(--brain);color:var(--fg)}
+  .tax-row.hiC{background:var(--opsbg);border-color:var(--ops);color:var(--fg)}
+  .tax-note{font-size:var(--fs-3xs);color:var(--fg3);margin-top:12px;line-height:1.55}
+  .tax-fs{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}
+  .tax-fs .lbl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3)}
+  .tax-fs .c{font-size:var(--fs-3xs);font-family:var(--mono);color:var(--info);background:var(--infobg);padding:4px 11px;border-radius:20px}
+  .bars{display:grid;gap:12px}
+  .bar-hd{display:grid;grid-template-columns:190px 1fr;gap:18px;font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);padding-bottom:4px}
+  .bar-row{display:grid;grid-template-columns:190px 1fr;gap:18px;align-items:center}
+  .bar-lab .n{font-size:var(--fs-2xs);font-weight:600;color:var(--fg)}
+  .bar-lab .s{font-size:var(--fs-3xs);color:var(--fg3)}
+  .bar-wrap{display:flex;align-items:center;gap:12px;min-width:0}
+  .bar{height:30px;border-radius:6px;flex:none}
+  .bar-val{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--fg2);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .mg-row{display:grid;grid-template-columns:190px minmax(0,1fr) 260px;gap:18px;align-items:center}
+  .mg-lab{font-size:var(--fs-2xs);color:var(--fg2)}
+  .mg-lab.em{color:var(--fg);font-weight:600}
+  .mg-track{height:22px}
+  .mg-bar{height:22px;border-radius:5px;background:var(--warn)}
+  .mg-dur{font-size:var(--fs-2xs);white-space:nowrap}
+  @media (max-width:1000px){
+    .tax{grid-template-columns:1fr}
+    .bar-row,.bar-hd{grid-template-columns:150px 1fr}
+    .mg-row{grid-template-columns:140px minmax(0,1fr);row-gap:4px}
+    .mg-dur{grid-column:2}
+  }
+
+  .pos-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+  .pos-t{font-size:var(--fs-body);font-weight:600;color:var(--ink);letter-spacing:-.015em}
+  .pos-r{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--line);font-size:var(--fs-2xs);color:var(--fg2)}
+  .pos-rl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);margin-right:8px}
   .noteblock{margin:26px 0 8px;padding:0 2px;max-width:none}
   .noteblock .nt{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600;margin-bottom:10px}
   .noteblock p{font-style:italic;color:var(--fg2);font-size:var(--fs-body);max-width:none;margin:0 0 11px;line-height:1.8;text-wrap:pretty}
@@ -263,7 +308,7 @@
   <div class="noteblock">
     <div class="nt">Deliberately out of scope</div>
     <p>Surgical and medical robotics (Intuitive Surgical, CMR Surgical), consumer and domestic robots (iRobot, Matic, Roborock), food service (Miso Robotics) and laboratory automation (Ginkgo, Emerald Cloud) remain outside this map.</p>
-    <p>Mining and agriculture were excluded in an earlier version on legibility grounds. That was a mistake, and they now have layers of their own at A11 and A12 — they are the only domains generating autonomous revenue at scale in unstructured environments, and leaving them out biased the map toward pre-revenue venture-backed platforms while removing the best real-world evidence for its own central argument.</p>
+    
     <p>The remaining exclusions share the same three-plane stack and would slot in at A6–A12 and C1–C5 without altering the taxonomy. That the structure extends to them without modification is itself a test of whether it holds. Surgical robotics in particular is a defensible future addition: Intuitive alone generates more revenue than most of this map combined.</p>
   </div>
 </section>
@@ -280,83 +325,7 @@
 
   <figure>
     <div class="figtitle">Fig. 1 — Twenty-five layers across three planes</div>
-    <div class="svgbox">
-      <svg viewBox="0 0 900 610" role="img" aria-label="Three-plane twenty-five-layer taxonomy for physical AI">
-        <rect x="0" y="0" width="288" height="42" rx="9" fill="var(--bodybg)"/>
-        <text x="14" y="20" class="sv-b" fill="var(--body)">A &#183; Body</text>
-        <text x="14" y="35" class="sv-s" fill="var(--body)">the physical substrate &#183; 162 entries</text>
-        <rect x="306" y="0" width="288" height="42" rx="9" fill="var(--brainbg)"/>
-        <text x="320" y="20" class="sv-b" fill="var(--brain)">B &#183; Brain</text>
-        <text x="320" y="35" class="sv-s" fill="var(--brain)">perception, reasoning, action &#183; 61</text>
-        <rect x="612" y="0" width="288" height="42" rx="9" fill="var(--opsbg)"/>
-        <text x="626" y="20" class="sv-b" fill="var(--ops)">C &#183; Operations</text>
-        <text x="626" y="35" class="sv-s" fill="var(--ops)">deployment &amp; assurance &#183; 30</text>
-
-        <g class="sv-l">
-        <text x="0" y="66" class="sv-h" fill="var(--body)">Components</text>
-        <line x1="104" y1="62" x2="288" y2="62" stroke="var(--line)"/>
-        <rect x="0" y="72" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="90">A1 &#183; Actuation &amp; motion</text>
-        <rect x="0" y="104" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="122">A2 &#183; Sensing hardware</text>
-        <text x="0" y="154" class="sv-h" fill="var(--body)">Infrastructure</text>
-        <line x1="112" y1="150" x2="288" y2="150" stroke="var(--line)"/>
-        <rect x="0" y="160" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="178">A3 &#183; Power &amp; energy</text>
-        <rect x="0" y="192" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="210">A4 &#183; Edge AI compute</text>
-        <rect x="0" y="224" width="288" height="28" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".35"/><text x="12" y="242">A5 &#183; Real-time control</text>
-        <text x="0" y="274" class="sv-h" fill="var(--body)">Embodiments</text>
-        <line x1="108" y1="270" x2="288" y2="270" stroke="var(--line)"/>
-        <rect x="0" y="280" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="298">A6 &#183; Humanoid platforms</text>
-        <rect x="0" y="312" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="330">A7 &#183; Industrial &amp; warehouse</text>
-        <rect x="0" y="344" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="362">A8 &#183; Road &amp; ground autonomy</text>
-        <rect x="0" y="376" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="394">A9 &#183; Aerial &amp; maritime</text>
-        <rect x="0" y="408" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="12" y="426">A10 &#183; Construction machinery</text>
-        <rect x="0" y="440" width="288" height="28" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".35"/><text x="12" y="458">A11 &#183; Mining &amp; resources</text>
-        <rect x="0" y="472" width="288" height="28" rx="6" fill="var(--bodybg)" stroke="var(--body)" stroke-opacity=".35"/><text x="12" y="490">A12 &#183; Agricultural autonomy</text>
-        <text x="0" y="520" class="sv-s">A11 and A12 are where autonomous</text>
-        <text x="0" y="534" class="sv-s">revenue already exists at scale.</text>
-
-        <text x="306" y="66" class="sv-h" fill="var(--brain)">Data</text>
-        <line x1="352" y1="62" x2="594" y2="62" stroke="var(--line)"/>
-        <rect x="306" y="72" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="90">B1 &#183; Synthetic data generation</text>
-        <rect x="306" y="104" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="122">B2 &#183; Real-world data capture</text>
-        <rect x="306" y="136" width="288" height="28" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="154">B3 &#183; Teleoperation &amp; HITL</text>
-        <text x="306" y="184" class="sv-h" fill="var(--brain)">Modelling</text>
-        <line x1="386" y1="180" x2="594" y2="180" stroke="var(--line)"/>
-        <rect x="306" y="190" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="208">B4 &#183; Physics simulation</text>
-        <rect x="306" y="222" width="288" height="28" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="240">B5 &#183; World models</text>
-        <rect x="306" y="254" width="288" height="28" rx="6" fill="var(--brainbg)" stroke="var(--brain)" stroke-opacity=".45"/><text x="318" y="272">B6 &#183; Robot foundation models</text>
-        <text x="306" y="302" class="sv-h" fill="var(--brain)">Applied autonomy</text>
-        <line x1="432" y1="298" x2="594" y2="298" stroke="var(--line)"/>
-        <rect x="306" y="308" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="326">B7 &#183; Autonomous driving stacks</text>
-        <rect x="306" y="340" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="318" y="358">B8 &#183; Multi-agent &amp; fleet</text>
-        <text x="306" y="520" class="sv-s">B5 is the least commercially</text>
-        <text x="306" y="534" class="sv-s">proven layer &#8212; see note below.</text>
-
-        <text x="612" y="66" class="sv-h" fill="var(--ops)">Operational software</text>
-        <line x1="754" y1="62" x2="900" y2="62" stroke="var(--line)"/>
-        <rect x="612" y="72" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="90">C1 &#183; Runtime &amp; middleware</text>
-        <rect x="612" y="104" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="122">C2 &#183; Fleet ops &amp; observability</text>
-        <rect x="612" y="136" width="288" height="28" rx="6" fill="var(--opsbg)" stroke="var(--ops)" stroke-opacity=".45"/><text x="624" y="154">C3 &#183; Safety &amp; certification</text>
-        <text x="612" y="184" class="sv-h" fill="var(--ops)">Commercial delivery</text>
-        <line x1="752" y1="180" x2="900" y2="180" stroke="var(--line)"/>
-        <rect x="612" y="190" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="208">C4 &#183; Contract manufacture</text>
-        <rect x="612" y="222" width="288" height="28" rx="6" fill="var(--sub)" stroke="var(--line)"/><text x="624" y="240">C5 &#183; RaaS &amp; operating models</text>
-        <text x="612" y="520" class="sv-s">C4 and C5 are commercial</text>
-        <text x="612" y="534" class="sv-s">structures, not technology layers.</text>
-        </g>
-
-        <line x1="0" y1="556" x2="900" y2="556" stroke="var(--line)"/>
-        <text x="0" y="578" class="sv-h">Full-stack &#8212; no single layer dominates</text>
-        <g class="sv-s">
-          <rect x="300" y="564" width="80" height="20" rx="10" fill="var(--infobg)"/><text x="340" y="578" text-anchor="middle" fill="var(--info)">NVIDIA</text>
-          <rect x="388" y="564" width="70" height="20" rx="10" fill="var(--infobg)"/><text x="423" y="578" text-anchor="middle" fill="var(--info)">Tesla</text>
-          <rect x="466" y="564" width="76" height="20" rx="10" fill="var(--infobg)"/><text x="504" y="578" text-anchor="middle" fill="var(--info)">Waymo</text>
-          <rect x="550" y="564" width="76" height="20" rx="10" fill="var(--infobg)"/><text x="588" y="578" text-anchor="middle" fill="var(--info)">Anduril</text>
-          <rect x="634" y="564" width="82" height="20" rx="10" fill="var(--infobg)"/><text x="675" y="578" text-anchor="middle" fill="var(--info)">Amazon</text>
-          <rect x="724" y="564" width="70" height="20" rx="10" fill="var(--infobg)"/><text x="759" y="578" text-anchor="middle" fill="var(--info)">Figure</text>
-          <rect x="802" y="564" width="64" height="20" rx="10" fill="var(--infobg)"/><text x="834" y="578" text-anchor="middle" fill="var(--info)">Zoox</text>
-        </g>
-      </svg>
-    </div>
+    <div class="fig" id="fig-taxonomy"><div class="tax"><div class="tax-col"><div class="tax-head" style="background:var(--bodybg)"><div class="tn" style="color:var(--body)">A · Body</div><div class="ts" style="color:var(--body)">the physical substrate · 162 entries</div></div><div class="tax-grp" style="color:var(--body)">Components<span class="ln"></span></div><div class="tax-row"><b>A1</b>Actuation & motion</div><div class="tax-row"><b>A2</b>Sensing hardware</div><div class="tax-grp" style="color:var(--body)">Infrastructure<span class="ln"></span></div><div class="tax-row"><b>A3</b>Power & energy</div><div class="tax-row"><b>A4</b>Edge AI compute</div><div class="tax-row hiA"><b>A5</b>Real-time control & motor drive</div><div class="tax-grp" style="color:var(--body)">Embodiments<span class="ln"></span></div><div class="tax-row"><b>A6</b>Humanoid platforms</div><div class="tax-row"><b>A7</b>Industrial arms, AMR & warehouse</div><div class="tax-row"><b>A8</b>Road & ground autonomy</div><div class="tax-row"><b>A9</b>Aerial & maritime</div><div class="tax-row"><b>A10</b>Construction machinery</div><div class="tax-row hiA"><b>A11</b>Mining & resource autonomy</div><div class="tax-row hiA"><b>A12</b>Agricultural autonomy</div><div class="tax-note">A11 and A12 are where autonomous revenue already exists at scale.</div></div><div class="tax-col"><div class="tax-head" style="background:var(--brainbg)"><div class="tn" style="color:var(--brain)">B · Brain</div><div class="ts" style="color:var(--brain)">perception, reasoning, action · 61</div></div><div class="tax-grp" style="color:var(--brain)">Data<span class="ln"></span></div><div class="tax-row"><b>B1</b>Synthetic data generation</div><div class="tax-row"><b>B2</b>Real-world data capture</div><div class="tax-row hiB"><b>B3</b>Teleoperation & human-in-the-loop</div><div class="tax-grp" style="color:var(--brain)">Modelling<span class="ln"></span></div><div class="tax-row"><b>B4</b>Physics simulation</div><div class="tax-row hiB"><b>B5</b>World models</div><div class="tax-row hiB"><b>B6</b>Robot foundation models</div><div class="tax-grp" style="color:var(--brain)">Applied autonomy<span class="ln"></span></div><div class="tax-row"><b>B7</b>Autonomous driving stacks</div><div class="tax-row"><b>B8</b>Multi-agent & fleet</div><div class="tax-note">B5 is the least commercially proven layer — see the note below.</div></div><div class="tax-col"><div class="tax-head" style="background:var(--opsbg)"><div class="tn" style="color:var(--ops)">C · Operations</div><div class="ts" style="color:var(--ops)">deployment &amp; assurance · 30</div></div><div class="tax-grp" style="color:var(--ops)">Operational software<span class="ln"></span></div><div class="tax-row"><b>C1</b>Runtime & middleware</div><div class="tax-row"><b>C2</b>Fleet ops & observability</div><div class="tax-row hiC"><b>C3</b>Safety & certification</div><div class="tax-grp" style="color:var(--ops)">Commercial delivery<span class="ln"></span></div><div class="tax-row"><b>C4</b>Contract manufacture & integration</div><div class="tax-row"><b>C5</b>RaaS & operating models</div><div class="tax-note">C4 and C5 are commercial structures, not technology layers.</div></div></div><div class="tax-fs"><span class="lbl">Full-stack — no single layer dominates</span><span class="c">NVIDIA</span><span class="c">Tesla</span><span class="c">Waymo</span><span class="c">Anduril</span><span class="c">Amazon</span><span class="c">Figure</span><span class="c">Zoox</span></div></div>
     <figcaption>Highlighted layers are the ones this breakdown separates that most published maps merge: <strong>B4 physics simulation vs. B5 world models vs. B6 VLA policies</strong>, and <strong>C3 safety and certification</strong> as a layer in its own right. Companies are placed by primary value capture; spans are recorded separately, so no company appears twice.</figcaption>
   </figure>
 
@@ -386,7 +355,7 @@
 
   <div class="callout b">
     <div class="lbl">The assignment rule — unit of sale, because MECE is a property of the rule, not the boxes</div>
-    <p>Every company is assigned to <strong>one primary layer: the unit of sale — what the customer actually buys</strong>. This is deliberately narrower than "where value is captured", which proved too elastic: an earlier version placed Waymo in the vehicle-platform layer even though it buys its vehicles from Zeekr and Jaguar and sells rides on a driver stack it built. Unit of sale is objective and checkable; value capture is an argument.</p>
+    <p>Every company is assigned to <strong>one primary layer: the unit of sale — what the customer actually buys</strong>. This is deliberately narrower than "where value is captured", which is too elastic to adjudicate — it invites a debate about where the value <em>really</em> sits. Unit of sale is checkable: Waymo’s customer buys a ride, so Waymo sits in C5 no matter how much of the stack it built; Nuro’s customer licenses a driving stack, so Nuro sits in B7.</p>
     <p>Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.</p>
     <p style="margin-bottom:0">Seven companies — Waymo, Tesla, NVIDIA, Anduril, Amazon, Figure, Zoox — are marked <strong>full-stack</strong>. To be precise about what that does and does not mean: they are still <em>placed</em> at one layer, because the map is a grid and everything has to sit somewhere. The placement is their unit of sale. The mark exists to tell you that the placement is unusually lossy for these seven, and that the spans matter more than the primary layer. It is a warning label on the taxonomy, not an exemption from it.</p>
   </div>
@@ -432,25 +401,7 @@
 
   <figure>
     <div class="figtitle">Fig. 2 — Physical AI venture funding by half-year</div>
-    <div class="svgbox">
-      <svg viewBox="0 0 900 264" role="img" aria-label="Bar chart of physical AI venture funding by half year">
-        <text x="0" y="16" class="sv-h">Period</text>
-        <text x="215" y="16" class="sv-h">Capital deployed</text>
-        <line x1="210" y1="26" x2="210" y2="240" stroke="var(--line)"/>
-        <text x="0" y="56" class="sv-b">2022–24</text><text x="0" y="72" class="sv-s">3 years combined</text>
-        <rect x="210" y="38" width="419" height="30" rx="6" fill="var(--fg3)" opacity="0.45"/>
-        <text x="641" y="58" class="sv-n">$41.9B over 3 yrs</text>
-        <text x="0" y="112" class="sv-b">H1 2025</text><text x="0" y="128" class="sv-s">436 deals</text>
-        <rect x="210" y="94" width="264" height="30" rx="6" fill="var(--info)" opacity="0.55"/>
-        <text x="486" y="114" class="sv-n" fill="var(--info)">$26.4B</text>
-        <text x="0" y="168" class="sv-b">H2 2025</text><text x="0" y="184" class="sv-s">470 deals</text>
-        <rect x="210" y="150" width="120" height="30" rx="6" fill="var(--ops)" opacity="0.55"/>
-        <text x="342" y="170" class="sv-n" fill="var(--ops)">$12.0B</text>
-        <text x="0" y="224" class="sv-b" fill="var(--body)">H1 2026</text><text x="0" y="240" class="sv-s">521 deals</text>
-        <rect x="210" y="206" width="474" height="30" rx="6" fill="var(--body)" opacity="0.8"/>
-        <text x="696" y="226" class="sv-n" fill="var(--body)">$47.4B</text>
-      </svg>
-    </div>
+    <div class="fig" id="fig-funding"><div class="bar-hd"><span>Period</span><span>Capital deployed</span></div><div class="bars"><div class="bar-row"><div class="bar-lab"><div class="n">2022–24</div><div class="s">3 years combined</div></div><div class="bar-wrap"><div class="bar" style="width:88.4%;background:var(--fg3);opacity:.78"></div><div class="bar-val" style="color:var(--fg3)">$41.9B over 3 yrs</div></div></div><div class="bar-row"><div class="bar-lab"><div class="n">H1 2025</div><div class="s">436 deals</div></div><div class="bar-wrap"><div class="bar" style="width:55.7%;background:var(--info);opacity:.78"></div><div class="bar-val" style="color:var(--info)">$26.4B</div></div></div><div class="bar-row"><div class="bar-lab"><div class="n">H2 2025</div><div class="s">470 deals</div></div><div class="bar-wrap"><div class="bar" style="width:25.3%;background:var(--ops);opacity:.78"></div><div class="bar-val" style="color:var(--ops)">$12.0B</div></div></div><div class="bar-row"><div class="bar-lab"><div class="n">H1 2026</div><div class="s">521 deals</div></div><div class="bar-wrap"><div class="bar" style="width:100.0%;background:var(--body);opacity:.78"></div><div class="bar-val" style="color:var(--body)">$47.4B</div></div></div></div></div>
     <figcaption>Note the deal counts: 470 → 521 deals while capital went $12B → $47.4B. <strong>Round sizes inflated roughly 3.6× without a corresponding increase in company formation.</strong> This is concentration, not broadening.</figcaption>
   </figure>
 
@@ -517,72 +468,24 @@
 
   <figure>
     <div class="figtitle">Fig. 3 — Margin geography across the layers</div>
-    <div class="svgbox">
-      <svg viewBox="0 0 900 470" role="img" aria-label="Commoditisation pressure and margin durability by layer">
-        <text x="0" y="16" class="sv-h">Layer</text>
-        <text x="250" y="16" class="sv-h">Commoditisation pressure</text>
-        <text x="680" y="16" class="sv-h">Margin durability</text>
-        <line x1="245" y1="26" x2="245" y2="452" stroke="var(--line)"/>
-        <g>
-          <text x="0" y="44" class="sv-l">A1 Actuation</text>
-          <rect x="250" y="30" width="223" height="20" rx="5" fill="var(--warn)" opacity="0.42"/>
-          <text x="680" y="44" class="sv-l" fill="var(--body)">High — supply-constrained</text>
-          <text x="0" y="76" class="sv-l">A2 Sensing hardware</text>
-          <rect x="250" y="62" width="331" height="20" rx="5" fill="var(--warn)" opacity="0.62"/>
-          <text x="680" y="76" class="sv-l" fill="var(--ops)">Low–med — lidar price war</text>
-          <text x="0" y="108" class="sv-l">A4 Edge AI silicon</text>
-          <rect x="250" y="94" width="123" height="20" rx="5" fill="var(--warn)" opacity="0.26"/>
-          <text x="680" y="108" class="sv-l" fill="var(--body)">High — few credible vendors</text>
-          <text x="0" y="140" class="sv-l" fill="var(--fg)">A6 Humanoid platforms</text>
-          <rect x="250" y="126" width="400" height="20" rx="5" fill="var(--warn)" opacity="0.85"/>
-          <text x="680" y="140" class="sv-l" fill="var(--warn)">Low — China cost curve</text>
-          <text x="0" y="172" class="sv-l">A7 Industrial &amp; warehouse</text>
-          <rect x="250" y="158" width="231" height="20" rx="5" fill="var(--warn)" opacity="0.44"/>
-          <text x="680" y="172" class="sv-l" fill="var(--ops)">Medium — incumbent scale</text>
-          <text x="0" y="204" class="sv-l">B2 Real-world data</text>
-          <rect x="250" y="190" width="154" height="20" rx="5" fill="var(--warn)" opacity="0.3"/>
-          <text x="680" y="204" class="sv-l" fill="var(--body)">High — proprietary &amp; sticky</text>
-          <text x="0" y="236" class="sv-l">B4 Physics simulation</text>
-          <rect x="250" y="222" width="292" height="20" rx="5" fill="var(--warn)" opacity="0.55"/>
-          <text x="680" y="236" class="sv-l" fill="var(--ops)">Low–med — open source erodes</text>
-          <text x="0" y="268" class="sv-l" fill="var(--brain)">B5 World models</text>
-          <rect x="250" y="254" width="115" height="20" rx="5" fill="var(--warn)" opacity="0.24"/>
-          <text x="680" y="268" class="sv-l" fill="var(--brain)">Unproven — too early to call</text>
-          <text x="0" y="300" class="sv-l" fill="var(--fg)">B6 Foundation models (VLA)</text>
-          <rect x="250" y="286" width="354" height="20" rx="5" fill="var(--warn)" opacity="0.7"/>
-          <text x="680" y="300" class="sv-l" fill="var(--ops)">Medium — weights commoditise</text>
-          <text x="0" y="332" class="sv-l">B7 AV stacks</text>
-          <rect x="250" y="318" width="254" height="20" rx="5" fill="var(--warn)" opacity="0.48"/>
-          <text x="680" y="332" class="sv-l" fill="var(--ops)">Medium — regulation helps</text>
-          <text x="0" y="364" class="sv-l">C2 Fleet ops</text>
-          <rect x="250" y="350" width="177" height="20" rx="5" fill="var(--warn)" opacity="0.34"/>
-          <text x="680" y="364" class="sv-l" fill="var(--body)">High — switching costs</text>
-          <text x="0" y="396" class="sv-l" fill="var(--ops)">C3 Safety &amp; certification</text>
-          <rect x="250" y="382" width="69" height="20" rx="5" fill="var(--warn)" opacity="0.2"/>
-          <text x="680" y="396" class="sv-l" fill="var(--body)">Highest — regulatory sunk cost</text>
-          <text x="0" y="428" class="sv-l">C5 RaaS</text>
-          <rect x="250" y="414" width="215" height="20" rx="5" fill="var(--warn)" opacity="0.4"/>
-          <text x="680" y="428" class="sv-l" fill="var(--body)">High — owns the customer</text>
-        </g>
-      </svg>
-    </div>
+    <div class="fig" id="fig-margin"><div class="bars" style="gap:10px"><div class="mg-row" style="font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);margin-bottom:4px"><span>Layer</span><span>Commoditisation pressure</span><span>Margin durability</span></div><div class="mg-row"><div class="mg-lab">A1 Actuation</div><div class="mg-track"><div class="mg-bar" style="width:55.8%;opacity:0.56"></div></div><div class="mg-dur" style="color:var(--body)">High — supply-constrained</div></div><div class="mg-row"><div class="mg-lab">A2 Sensing hardware</div><div class="mg-track"><div class="mg-bar" style="width:82.8%;opacity:0.74"></div></div><div class="mg-dur" style="color:var(--ops)">Low–med — lidar price war</div></div><div class="mg-row"><div class="mg-lab">A4 Edge AI silicon</div><div class="mg-track"><div class="mg-bar" style="width:30.8%;opacity:0.40"></div></div><div class="mg-dur" style="color:var(--body)">High — few credible vendors</div></div><div class="mg-row"><div class="mg-lab em">A6 Humanoid platforms</div><div class="mg-track"><div class="mg-bar" style="width:100%;opacity:0.85"></div></div><div class="mg-dur" style="color:var(--warn)">Low — China cost curve</div></div><div class="mg-row"><div class="mg-lab">A7 Industrial & warehouse</div><div class="mg-track"><div class="mg-bar" style="width:57.8%;opacity:0.58"></div></div><div class="mg-dur" style="color:var(--ops)">Medium — incumbent scale</div></div><div class="mg-row"><div class="mg-lab">B2 Real-world data</div><div class="mg-track"><div class="mg-bar" style="width:38.5%;opacity:0.45"></div></div><div class="mg-dur" style="color:var(--body)">High — proprietary &amp; sticky</div></div><div class="mg-row"><div class="mg-lab">B4 Physics simulation</div><div class="mg-track"><div class="mg-bar" style="width:73.0%;opacity:0.67"></div></div><div class="mg-dur" style="color:var(--ops)">Low–med — open source erodes</div></div><div class="mg-row"><div class="mg-lab">B5 World models</div><div class="mg-track"><div class="mg-bar" style="width:28.8%;opacity:0.39"></div></div><div class="mg-dur" style="color:var(--brain)">Unproven — too early to call</div></div><div class="mg-row"><div class="mg-lab em">B6 Foundation models (VLA)</div><div class="mg-track"><div class="mg-bar" style="width:88.5%;opacity:0.78"></div></div><div class="mg-dur" style="color:var(--ops)">Medium — weights commoditise</div></div><div class="mg-row"><div class="mg-lab">B7 AV stacks</div><div class="mg-track"><div class="mg-bar" style="width:63.5%;opacity:0.61"></div></div><div class="mg-dur" style="color:var(--ops)">Medium — regulation helps</div></div><div class="mg-row"><div class="mg-lab">C2 Fleet ops</div><div class="mg-track"><div class="mg-bar" style="width:44.3%;opacity:0.49"></div></div><div class="mg-dur" style="color:var(--body)">High — switching costs</div></div><div class="mg-row"><div class="mg-lab">C3 Safety &amp; certification</div><div class="mg-track"><div class="mg-bar" style="width:17.3%;opacity:0.31"></div></div><div class="mg-dur" style="color:var(--body)">Highest — regulatory sunk cost</div></div><div class="mg-row"><div class="mg-lab">C5 RaaS</div><div class="mg-track"><div class="mg-bar" style="width:53.8%;opacity:0.55"></div></div><div class="mg-dur" style="color:var(--body)">High — owns the customer</div></div></div></div>
     <figcaption>Bar length is commoditisation pressure. The finer breakdown sharpens the central pattern: <strong>the two layers absorbing the most capital — A6 humanoid platforms and B6 foundation models — face the strongest erosion</strong>, from the Chinese cost curve and from open weights respectively. The layers with the most durable margin (C3 certification, B2 proprietary data, A5 control silicon, A1 actuation) attract a fraction of it. B5 world models is the genuine unknown: too new to price, and the layer most likely to be repriced violently in either direction.</figcaption>
   </figure>
 
   <h2>Three places margin is likelier to pool</h2>
   <div class="grid2">
     <div class="card">
-      <h3 style="color:var(--body)">C3 · Safety &amp; certification</h3>
+      <h3>C3 · Safety &amp; certification</h3>
       <p>The most under-discussed moat in the stack. Certification cost amortised across an ecosystem is stickier than any licence, because it is a <em>sunk regulatory asset</em> rather than a technical lead.</p>
       <p style="margin-bottom:0">NVIDIA's Halos pre-assesses the platform so partners certify only application logic. No third-party certificate has yet been issued, and TÜV SÜD inspection is not certification — so the moat is <strong>announced but not yet proven</strong>.</p>
     </div>
     <div class="card">
-      <h3 style="color:var(--body)">B2 · Proprietary deployment data</h3>
+      <h3>B2 · Proprietary deployment data</h3>
       <p>Cannot be replicated in simulation and cannot be bought. A US defence contractor's operational data is structurally inaccessible to a Chinese OEM — jurisdiction is part of the moat.</p>
       <p style="margin-bottom:0">The counter-case is serious: NVIDIA's Ego-Scale result pre-trains on 21,000 hours of egocentric human video with <em>zero robot data</em>, then fine-tunes on 4 hours of teleoperation. If that scales, this moat is worth far less than assumed.</p>
     </div>
     <div class="card">
-      <h3 style="color:var(--body)">A1 · Actuation bottlenecks</h3>
+      <h3>A1 · Actuation bottlenecks</h3>
       <p>Harmonic and strain-wave gearboxes are the clearest structural constraint — capacity cannot be added quickly, unlike electronics. Concentrated in Harmonic Drive, Nabtesco and rising Chinese entrants such as Leaderdrive.</p>
       <p style="margin-bottom:0">Planetary roller screws are tighter still: narrow supplier base, long lead times, minimal substitution. Goldman's supply-chain-over-OEM call rests here — with erosion risk from Chinese entrants pricing 30–50% below incumbents.</p>
     </div>
@@ -675,32 +578,7 @@
 
   <h2>5 · Where the framework says to deploy</h2>
   <p class="h2sub">If the margin geography in Value Capture is right, these follow. Stated as positions so they can be argued with.</p>
-  <div class="grid2">
-    <div class="card">
-      <h3 style="color:var(--body)">Overweight · A1 actuation</h3>
-      <p style="margin-bottom:0">Supply-constrained, real revenue, priced as industrials rather than as AI. Goldman's supply-chain-over-OEM call. <strong>Risk:</strong> Chinese entrants pricing 30–50% below incumbents compress the margin before the volume arrives.</p>
-    </div>
-    <div class="card">
-      <h3 style="color:var(--body)">Overweight · C3 certification</h3>
-      <p style="margin-bottom:0">The highest margin durability on the map — and <strong>there is no venture-backed pure play in it.</strong> The only names are incumbent test houses and one vendor programme. A gap in the market, not just in the map.</p>
-    </div>
-    <div class="card">
-      <h3 style="color:var(--body)">Overweight · B2 with jurisdictional lock</h3>
-      <p style="margin-bottom:0">Defence and critical-infrastructure operational data is structurally inaccessible to Chinese competitors. Jurisdiction is the moat, not the algorithm. <strong>Risk:</strong> the Ego-Scale result — if 21,000 hours of ordinary human video substitutes for robot data, this thesis weakens sharply.</p>
-    </div>
-    <div class="card">
-      <h3 style="color:var(--ops)">Neutral · C5 RaaS in Tier 1</h3>
-      <p style="margin-bottom:0">The only layer with proven revenue against a proven ODD today. Bounded upside, near-term cash. <strong>Risk:</strong> it is a services business wearing a technology multiple.</p>
-    </div>
-    <div class="card">
-      <h3 style="color:var(--warn)">Underweight · Western A6 at current marks</h3>
-      <p style="margin-bottom:0">No revenue denominator, the strongest commoditisation pressure on the map, and Chinese comparables shipping real units at 9–25× actual revenue. The bet requires general-purpose capability to arrive <em>before</em> the cost curve bites. <strong>What would change this:</strong> a disclosed Tier 2–3 deployment sustaining &gt;99% for a quarter.</p>
-    </div>
-    <div class="card">
-      <h3 style="color:var(--brain)">Watch · B5 world models</h3>
-      <p style="margin-bottom:0">Too new to price, ~5× repricing in a year, and genuinely unresolved as to whether it is a layer or a feature of B6. The highest-variance position available. Size it as an option, not a conviction.</p>
-    </div>
-  </div>
+  <div class="grid2"><div class="card"><div class="pos-h"><span class="pos-t">A1 actuation</span><span class="pill g">Overweight</span></div><p>Supply-constrained, real revenue, priced as industrials rather than as AI. Goldman's supply-chain-over-OEM call.</p><p class="pos-r"><span class="pos-rl">Risk</span>Chinese entrants pricing 30–50% below incumbents compress the margin before the volume arrives.</p></div><div class="card"><div class="pos-h"><span class="pos-t">C3 certification</span><span class="pill g">Overweight</span></div><p>The highest margin durability on the map — and there is no venture-backed pure play in it. The only names are incumbent test houses and one vendor programme. A gap in the market, not just in the map.</p><p class="pos-r"><span class="pos-rl">Risk</span>The layer may not be commercially separable at all, which would explain the absence.</p></div><div class="card"><div class="pos-h"><span class="pos-t">B2 with jurisdictional lock</span><span class="pill g">Overweight</span></div><p>Defence and critical-infrastructure operational data is structurally inaccessible to Chinese competitors. Jurisdiction is the moat, not the algorithm.</p><p class="pos-r"><span class="pos-rl">Risk</span>The Ego-Scale result — if 21,000 hours of ordinary human video substitutes for robot data, this thesis weakens sharply.</p></div><div class="card"><div class="pos-h"><span class="pos-t">C5 RaaS in Tier 1</span><span class="pill a">Neutral</span></div><p>The only layer with proven revenue against a proven ODD today. Bounded upside, near-term cash.</p><p class="pos-r"><span class="pos-rl">Risk</span>It is a services business wearing a technology multiple.</p></div><div class="card"><div class="pos-h"><span class="pos-t">Western A6 at current marks</span><span class="pill n">Underweight</span></div><p>No revenue denominator, the strongest commoditisation pressure on the map, and Chinese comparables shipping real units at 9–25× actual revenue. The bet requires general-purpose capability to arrive <em>before</em> the cost curve bites.</p><p class="pos-r"><span class="pos-rl">Risk</span>A disclosed Tier 2–3 deployment sustaining &gt;99% for a quarter would change this.</p></div><div class="card"><div class="pos-h"><span class="pos-t">B5 world models</span><span class="pill p">Watch</span></div><p>Too new to price, ~5× repricing in a year, and genuinely unresolved as to whether it is a layer or a feature of B6. The highest-variance position available. Size it as an option, not a conviction.</p><p class="pos-r"><span class="pos-rl">Risk</span>If the layer collapses into B4 and B6, the position disappears rather than losing money.</p></div></div>
 
   <h2>6 · What this map still cannot tell you</h2>
   <p class="h2sub">The residual gaps, stated rather than hidden. Each would change conclusions if resolved.</p>
@@ -735,8 +613,8 @@
     <li><strong>Headline marks are not market caps, and should not be read as one.</strong> Late-stage private valuations are pre-money headline numbers agreed between a company and a small number of investors. They routinely sit on top of liquidation preferences, participation rights and ratchets that mean common equity is worth materially less than the headline implies. Several rounds on this map also involve strategic or circular structure — compute commitments, supplier equity, or an infrastructure vendor investing in a customer that buys its hardware. Aggregating these figures overstates the sector's real market scale, and does so most in Plane B, where marks are highest and revenue is thinnest.</li>
   </ul>
 
-  <h2>Adversarial review</h2>
-  <p class="h2sub">V1 of this map was critiqued from the perspective of a growth-stage investor whose job is to find the hole in it. Eight objections were raised; six are now addressed in the Investor View tab, two are conceded.</p>
+  <h2>Objections and responses</h2>
+  <p class="h2sub">The strongest objections a sophisticated reader raises, and what this map does about each. Two are conceded rather than answered.</p>
   <div class="tblwrap"><table>
     <thead><tr><th style="width:300px">Objection</th><th style="width:110px">Status</th><th>Resolution</th></tr></thead>
     <tbody>
@@ -751,13 +629,13 @@
     </tbody>
   </table></div>
 
-  <h3>Second round — external review of V2</h3>
-  <p class="h2sub">V2 was reviewed by a reader arguing the taxonomy contradicted itself. Four objections were accepted, one declined with reasons.</p>
+  <h3>Structural objections</h3>
+  <p class="h2sub">Objections to the taxonomy itself. Five accepted, one declined with reasons.</p>
   <div class="tblwrap"><table>
     <thead><tr><th style="width:300px">Objection</th><th style="width:110px">Status</th><th>Resolution</th></tr></thead>
     <tbody>
-      <tr><td>"Forcing one primary layer reintroduces the dichotomy you reject. Waymo doesn't build vehicles; Figure's value is Helix."</td><td><span class="pill g">Accepted</span></td><td>Correct, and it was a concrete rule violation rather than a philosophical dispute. Waymo sat in the vehicle-platform layer while buying its vehicles from Zeekr and Jaguar; Nuro sat there while described on its own chip as having "pivoted to licensor". The rule is now unit of sale, which is checkable, and seven companies where no layer dominates are marked full-stack rather than forced. Waymo and Nuro moved to B7.</td></tr>
-      <tr><td>"Ag, mining and medical were excluded for legibility, which flatters speculative sectors."</td><td><span class="pill g">Accepted</span></td><td>The sharpest point, and worse than stated — excluding mining removed the best <em>supporting</em> evidence for this map's own thesis. Caterpillar and Komatsu have run driverless haulage for over a decade in narrow, documented ODDs. Mining and agriculture are now included at A10, and the tier framework addresses them directly. Surgical robotics remains out, noted as a defensible future addition.</td></tr>
+      <tr><td>"Forcing one primary layer reintroduces the dichotomy you reject. Waymo doesn't build vehicles; Figure's value is Helix."</td><td><span class="pill g">Accepted</span></td><td>A fair challenge. The rule is <strong>unit of sale</strong>, which is checkable, and seven companies where no layer dominates are marked full-stack rather than forced. Waymo sits in C5 because its customer buys a ride; Nuro in B7 because its customer licenses a stack.</td></tr>
+      <tr><td>"Ag, mining and medical were excluded for legibility, which flatters speculative sectors."</td><td><span class="pill g">Accepted</span></td><td>Accepted. Mining and agriculture are the only domains generating autonomous revenue at scale in unstructured environments, and they are the strongest <em>supporting</em> evidence for this map's thesis rather than a counterexample to it. Caterpillar and Komatsu have run driverless haulage for over a decade in narrow, documented ODDs. Mining and agriculture are now included at A10, and the tier framework addresses them directly. Surgical robotics remains out, noted as a defensible future addition.</td></tr>
       <tr><td>"A4 ignores real-time motor control; B2 buries teleoperation rigs."</td><td><span class="pill g">Accepted</span></td><td>Both are genuinely separate supply chains. Added A5 real-time control &amp; motor drive (TI, Microchip, ST, Lattice, AMD, Beckhoff) and B3 teleoperation &amp; human-in-the-loop (HaptX, Manus, Ottopia, DriveU).</td></tr>
       <tr><td>"Plane C mixes technical layers with financial structuring — RaaS is packaging, SI is services."</td><td><span class="pill g">Accepted</span></td><td>Plane C is now explicitly split into Operational software (C1–C3) and Commercial delivery (C4–C5), with the margin profiles stated: integration is headcount-heavy professional services, RaaS is off-balance-sheet financing. They stay on the map because they own the customer, but they are no longer implied to be technology.</td></tr>
       <tr><td>"Private valuations are taken at face value despite preference stacks and circular deals."</td><td><span class="pill g">Accepted</span></td><td>Caveat added to the valuation methodology above. No figures changed — the framing did.</td></tr>

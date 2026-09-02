@@ -171,7 +171,7 @@ def main(path):
                  f'nor distinct companies ({len([c for c in co if not c["prod"]])})')
 
     # 12b — the taxonomy figure must name every layer that exists
-    fig = re.search(r"<svg[^>]*aria-label=\"Three-plane.*?</svg>", head, re.S)
+    fig = re.search(r'<div class="fig" id="fig-taxonomy">.*?\n', head, re.S)
     if fig:
         shown = set(re.findall(r"\b([A-C]\d+)\b", fig.group(0)))
         for code in layers:
