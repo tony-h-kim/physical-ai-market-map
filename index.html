@@ -231,6 +231,26 @@
   .pos-t{font-size:var(--fs-body);font-weight:600;color:var(--ink);letter-spacing:-.015em}
   .pos-r{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--line);font-size:var(--fs-2xs);color:var(--fg2)}
   .pos-rl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);margin-right:8px}
+
+  .loop{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:19px 22px;margin:16px 0;box-shadow:var(--sh)}
+  .loop-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .loop-t{font-size:var(--fs-body);font-weight:600;color:var(--ink);letter-spacing:-.015em}
+  .loop-sub{font-size:var(--fs-2xs);color:var(--fg3);margin:4px 0 14px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0 10px}
+  .step{border:1px solid var(--line);background:var(--sub);border-radius:9px;padding:12px 14px}
+  .step .sn{font-size:var(--fs-3xs);font-weight:600;color:var(--fg3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:5px}
+  .step .sb{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.5}
+  .step .sb b{color:var(--ink);font-weight:600}
+  .ret{display:flex;align-items:baseline;gap:11px;border-top:2px dashed var(--info);padding-top:11px}
+  .ret .rl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--info);white-space:nowrap}
+  .ret .rb{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.5}
+  .ev{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:var(--fs-2xs);color:var(--fg3);line-height:1.6}
+  .ev b{color:var(--fg2);font-weight:600}
+  .test{display:grid;grid-template-columns:24px 1fr;gap:12px;align-items:start;margin-bottom:12px;font-size:var(--fs-2xs);color:var(--fg2);line-height:1.6}
+  .test .q{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;color:var(--info);padding-top:2px}
+  .ecoparts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .ecoparts span{font-size:var(--fs-3xs);border:1px solid var(--line);background:var(--sub);border-radius:6px;padding:4px 9px;color:var(--fg2)}
+  .ecoparts span.off{opacity:.55;font-style:italic}
   .noteblock{margin:26px 0 8px;padding:0 2px;max-width:none}
   .noteblock .nt{font-size:var(--fs-2xs);color:var(--fg2);font-weight:600;margin-bottom:10px}
   .noteblock p{font-style:italic;color:var(--fg3);font-size:var(--fs-2xs);max-width:none;margin:0 0 9px;line-height:1.7;text-wrap:pretty}
@@ -276,8 +296,8 @@
   <button class="tab" role="tab" aria-selected="false" data-t="capital">Capital</button>
   <button class="tab" role="tab" aria-selected="false" data-t="value">Value Capture</button>
   <button class="tab" role="tab" aria-selected="false" data-t="investor">Investor View</button>
+  <button class="tab" role="tab" aria-selected="false" data-t="ecosystem">Ecosystem</button>
   <button class="tab" role="tab" aria-selected="false" data-t="method">Method &amp; Sources</button>
-  <a class="tab" href="capital-loops.html" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px">Circular Capital &#8599;</a>
 </nav>
 
 <section id="map">
@@ -591,6 +611,101 @@
     <li><strong>Real depth of the Chinese component tier.</strong> Roughly 30 Chinese companies appear here against a population several times larger. In the half of the market that ships the units, this map is thinnest.</li>
     <li><strong>Renewal and churn in RaaS.</strong> Three-year contracts have not yet cycled. The deployment-moat thesis is untested past first renewal.</li>
   </ul>
+</section>
+
+<section id="ecosystem" hidden>
+  <div class="lede">In physical AI the same parties increasingly fund, supply and buy from one another. Some of that is deliberate ecosystem construction and works. Some of it means a valuation is no longer an independent read on what a company is worth. This tab separates the two.</div>
+
+  <h2>Why ecosystems form here rather than elsewhere</h2>
+  <p>Software markets bootstrap themselves: a developer ships, users arrive, revenue follows. Physical AI cannot. A robot company needs actuators that are not yet made at volume, a simulator it cannot afford to build, a factory willing to host an unproven machine, and three years before any of it earns. Every one of those is somebody else's capital expenditure.</p>
+  <p>So the participants solve it structurally — a supplier takes equity to justify tooling up, a platform gives away a toolchain to create demand for silicon, an industrial group buys the robot maker outright and deploys into its own plants. <strong>Ecosystem construction is the rational response to a market that cannot bootstrap.</strong> Intel Capital and Qualcomm Ventures ran the same playbook for decades and built real industries.</p>
+  <p>The reason to map it is narrower than "is this a bubble". It is that <strong>when the investor, the supplier and the customer are the same party, the price paid for equity stops being independent evidence</strong> — and this map's valuation column is the most quotable thing on it.</p>
+
+  <h2>The largest ecosystem: NVIDIA</h2>
+  <p class="h2sub">NVIDIA spans eight of this map's twenty-five layers and anchors the partnerships across most of the rest. What it supplies and what it receives are worth separating.</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th style="width:200px">NVIDIA provides</th><th>Layer</th><th>What returns</th></tr></thead>
+    <tbody>
+      <tr><td>Jetson Thor edge compute</td><td>A4</td><td>Silicon revenue per robot shipped, and a switching cost once a fleet is certified on it</td></tr>
+      <tr><td>Isaac Sim / Isaac Lab</td><td>B4</td><td>Policies trained in NVIDIA's simulator run best on NVIDIA hardware</td></tr>
+      <tr><td>Cosmos world models</td><td>B5</td><td>Training compute demand, priced per token of generated world</td></tr>
+      <tr><td>GR00T foundation models</td><td>B6</td><td>Open weights that lower the barrier to building a humanoid — and raise the barrier to building one without NVIDIA</td></tr>
+      <tr><td>Isaac ROS runtime</td><td>C1</td><td>Deployment-time lock-in at the middleware layer</td></tr>
+      <tr><td>Halos safety programme</td><td>C3</td><td>Partners certify only application logic, which is the stickiest dependency of all</td></tr>
+      <tr><td>Equity</td><td>—</td><td>Direct exposure to the companies that consume all of the above</td></tr>
+    </tbody>
+  </table></div>
+  <p>Publicly named ecosystem partners building on that stack:</p>
+  <div class="ecoparts"><span>ABB Robotics</span><span>AgiBot</span><span>Agility Robotics</span><span>FANUC</span><span>Figure AI</span><span>KUKA</span><span>Skild AI</span><span>Universal Robots</span><span>World Labs</span><span>Yaskawa</span><span>Foxconn</span><span>LG</span><span class="off">CMR Surgical · off-map</span><span class="off">Medtronic · off-map</span><span class="off">Hexagon · off-map</span></div>
+  <p style="margin-top:12px;font-size:var(--fs-2xs);color:var(--fg3)">Three named partners sit outside this map's scope — surgical robotics and industrial metrology — which is a reminder that NVIDIA's ecosystem is wider than the verticals mapped here.</p>
+
+  <h2>Four partnership archetypes</h2>
+  <div class="tblwrap"><table>
+    <thead><tr><th style="width:180px">Archetype</th><th style="width:170px">Who</th><th>Gives</th><th>Gets</th></tr></thead>
+    <tbody>
+      <tr><td>Platform</td><td>NVIDIA, Qualcomm</td><td>Toolchain, models, silicon, sometimes capital</td><td>Demand for compute, and the standard everyone builds against</td></tr>
+      <tr><td>Component co-development</td><td>Schaeffler, Bosch</td><td>Actuation and sensing parts, engineering, equity</td><td>Design-in at the reference platform, and volume when it scales</td></tr>
+      <tr><td>Deployment anchor</td><td>Foxconn, Hyundai, Amazon</td><td>Factories, floor space, tolerance for failure, operating data</td><td>First-mover automation, and equity in the maker</td></tr>
+      <tr><td>Channel</td><td>LG, Samsung</td><td>Distribution, brand, domestic market access</td><td>A product line without the R&amp;D cycle</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>When a partnership becomes a financing loop</h2>
+  <p class="h2sub">Across AI generally, roughly $800B of arrangements have been described as circular. Physical AI's version is tighter, because industrial groups can occupy all three roles at once.</p>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">1 · The compute loop</span><span class="pill b">NVIDIA</span></div>
+    <div class="loop-sub">The tightest and best documented of the four.</div>
+    <div class="cycle"><div class="step"><div class="sn">Invests</div><div class="sb">Equity in <b>Figure</b> (Series B at $2.6B, again in the Series C at $39B), <b>Wayve</b> ($1.05B round, a further ~$500M reported), <b>Skild AI</b> and <b>Field AI</b>.</div></div><div class="step"><div class="sn">They build on NVIDIA</div><div class="sb">Those companies train on <b>Isaac Lab</b> and <b>Cosmos</b> and ship on <b>Jetson</b>, alongside a dozen named ecosystem partners on the same stack.</div></div><div class="step"><div class="sn">Revenue returns</div><div class="sb">Compute and licence spend flows back, and the ecosystem announcements support the platform narrative underwriting NVIDIA's own multiple.</div></div></div><div class="ret"><span class="rl">Closing the loop</span><span class="rb">Skild's model — NVIDIA-funded, NVIDIA-trained — runs the Foxconn assembly lines in Houston that build <b>NVIDIA's own Blackwell servers</b>. Investor, toolchain, customer and end market are one company.</span></div>
+    <div class="ev"><b>Scale:</b> NVIDIA is reported to be working a deal pipeline above $750B, including ~$500B of financing partnerships with BlackRock and Apollo extending credit for GPU purchases. Jensen Huang has publicly rejected the circular-financing characterisation, calling it a virtuous cycle rather than manufactured demand.</div>
+  </div>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">2 · The component loop</span><span class="pill a">Schaeffler · Bosch</span></div>
+    <div class="loop-sub">The clearest case of a supplier funding its own demand.</div>
+    <div class="cycle"><div class="step"><div class="sn">Invests</div><div class="sb"><b>Schaeffler</b> and <b>Bosch</b> both join <b>Neura Robotics'</b> Series C and <b>Humanoid's</b> Series A. Schaeffler separately partners with <b>Leju Robotics</b> in China.</div></div><div class="step"><div class="sn">Supplies them</div><div class="sb">Schaeffler provides drivetrain components to <b>Agility</b> and to its own portfolio companies — the actuation layer these robots cannot be built without.</div></div><div class="step"><div class="sn">Then buys the output</div><div class="sb">Schaeffler holds an order for <b>1,000+ robots from Humanoid</b>, reported as implying 100,000 units by 2031, destined for its own plants.</div></div></div><div class="ret"><span class="rl">Closing the loop</span><span class="rb">One company is shareholder, component vendor and anchor customer simultaneously. Each leg is individually rational; together they mean Humanoid's order book and Schaeffler's equity mark are not independent of one another.</span></div>
+    <div class="ev"><b>In fairness:</b> this is how automotive tier-one supply has always worked — co-development with an equity stake is unremarkable there. The difference is that the robot maker's price is being set in venture markets rather than negotiated as a supply contract.</div>
+  </div>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">3 · The conglomerate loop</span><span class="pill p">Hyundai · Samsung · LG</span></div>
+    <div class="loop-sub">Where one group owns the maker, the supply chain and the factory.</div>
+    <div class="cycle"><div class="step"><div class="sn">Owns the maker</div><div class="sb"><b>Hyundai</b> moved to full ownership of <b>Boston Dynamics</b> via the SoftBank buyout. <b>Samsung</b> raised its <b>Rainbow Robotics</b> stake to ~35% (₩267B) to become largest shareholder. <b>LG</b> took a $60M position in <b>Bear Robotics</b>.</div></div><div class="step"><div class="sn">Directs the supply chain</div><div class="sb">Hyundai has mobilised roughly <b>200 tier-one suppliers</b> to build a domestic humanoid component base, asking each for a business plan in the category.</div></div><div class="step"><div class="sn">Deploys into itself</div><div class="sb">Hyundai plans about <b>25,000 Atlas units across its own factories from 2028</b> — manufacturer, supplier network and customer inside one group.</div></div></div><div class="ret"><span class="rl">Closing the loop</span><span class="rb">Vertical integration at chaebol scale removes the market test. Internal volume proves the group's commitment; it does not prove a third party would buy at that price.</span></div>
+    <div class="ev"><b>Why it still counts for something:</b> internal deployment produces real operating hours, and the embodied-data-density argument applies regardless of who the customer is. But an internal transfer price is not a market price.</div>
+  </div>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">4 · The strategic syndicate</span><span class="pill n">Neura Series C</span></div>
+    <div class="loop-sub">Less a loop than the absence of an arm's-length buyer.</div>
+    <p>Neura Robotics' Series C — up to $1.4B, milestone-contingent — was assembled from <strong>Tether, NVIDIA, Amazon, Qualcomm, Bosch, Schaeffler, the European Investment Bank and a Qatari sovereign investor.</strong> A stablecoin issuer, two chip vendors, a cloud and logistics operator, two component suppliers, a development bank and a sovereign. No classic venture lead set the price.</p>
+    <div class="ev">Reporting on the sector's largest 2025–26 rounds describes the same pattern generally: the biggest cheques were assembled by <b>corporate strategic investors in coordinated syndicates</b> rather than priced by financial investors. Dealroom counted about <b>$8.7B</b> of humanoid venture funding in 2026 to late July.</div>
+  </div>
+
+  <h2>What this does and does not mean</h2>
+  <p>The comparison critics reach for is dot-com vendor financing: Nortel and Lucent lent customers the money to buy switching gear, and the revenue vanished with the credit. It is a fair analogy for the mechanism and an unfair one for the conclusion — vendor financing did not make fibre worthless, it made the reported demand curve wrong.</p>
+  <p>So the defensible claim is narrow. <strong>Circular structure is not evidence the technology is fake. It is evidence the price signal is degraded.</strong> Where investor, supplier and customer are the same party, a headline valuation and an order book corroborate each other rather than independently confirming anything.</p>
+
+  <h2>Four questions that separate the healthy from the hollow</h2>
+  <div class="card">
+    <div class="test"><span class="q">1</span><span>Would the customer buy at the same volume <strong>absent the equity stake</strong>? Schaeffler ordering robots it part-owns is a weaker signal than a Schaeffler competitor ordering them.</span></div>
+    <div class="test"><span class="q">2</span><span>Is the back-flow <strong>at market terms and separately disclosed</strong>? Ecosystem investment survives scrutiny when the revenue is broken out, and does not when it is buried in a segment line.</span></div>
+    <div class="test"><span class="q">3</span><span>Did a <strong>financial investor set the price</strong>, or only strategics? A round with no arm's-length lead has no independent pricing anchor.</span></div>
+    <div class="test"><span class="q">4</span><span>Does the company have <strong>revenue from outside the loop</strong>? This is the one that resolves it — external customers are the only proof demand is not manufactured.</span></div>
+  </div>
+
+  <h2>What would change this reading</h2>
+  <ul>
+    <li>A major humanoid or foundation-model company disclosing <strong>revenue split by strategic-investor versus independent customer</strong>. Nobody currently does, and that absence is itself informative.</li>
+    <li>A priced round <strong>led by a financial investor with no commercial relationship</strong> to the company, at or above the last strategic mark.</li>
+    <li>Schaeffler's Humanoid order <strong>converting to repeat volume from unaffiliated buyers</strong>, which would turn an anchor commitment into a market.</li>
+    <li>Conversely, a down round at a company whose last mark was set entirely by its own suppliers and customers would settle the question quickly and publicly.</li>
+  </ul>
+
+  <div class="noteblock">
+    <div class="nt">Scope and limits</div>
+    <p>This tab maps publicly announced investments, partnerships and orders. Deal terms are mostly undisclosed, so it can establish that a relationship exists but not what was paid or on what terms. Several figures — the NVIDIA pipeline, the additional Wayve tranche, the Neura milestone conditions — are reported rather than confirmed and are described as such above.</p>
+    <p>Nothing here asserts wrongdoing. Strategic investment is ordinary, frequently value-additive, and in a capital-intensive early market often the only way a supply chain gets built at all. The argument concerns how much a valuation tells you, not anyone's conduct.</p>
+  </div>
 </section>
 
 <section id="method" hidden>
