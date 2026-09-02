@@ -63,4 +63,4 @@ A single self-contained HTML file. No build step, no dependencies, no tracking. 
 
 ---
 
-Built by Tony Kim. Analysis and any errors are my own.
+Built by [Tony Kim](https://github.com/tony-h-kim). Analysis and any errors are my own.
