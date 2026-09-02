@@ -188,6 +188,22 @@ def main(path):
         elif len(body) > 90:
             warn(f'callout label is unusually long ({len(body)} chars): "{body[:50]}..."')
 
+    # 12d — every font-size must come from the scale, not an ad hoc px value
+    style = re.search(r"<style>(.*?)</style>", head, re.S)
+    if style:
+        css = style.group(1)
+        scale = set(re.findall(r"--fs-[\w-]+:", css))
+        adhoc = {}
+        for m in re.finditer(r"([^{}]+)\{[^}]*font-size:\s*(\d[\d.]*px)", css):
+            sel = m.group(1).strip().splitlines()[-1].strip()
+            if not sel.startswith("--"):
+                adhoc.setdefault(m.group(2), []).append(sel)
+        for px, sels in sorted(adhoc.items()):
+            if not all(s.startswith(".sv-") for s in sels):
+                warn(f"font-size {px} set directly on {', '.join(sels[:3])} — should use a --fs-* token")
+        if len(scale) > 12:
+            warn(f"type scale has grown to {len(scale)} steps")
+
     # 13 — version string consistent
     vers = set(re.findall(r"V\d-00", head))
     if len(vers) > 1:
