@@ -39,6 +39,14 @@ Two distinctions this map draws that most others don't:
 - **Investor View** — TAM disagreement, revenue reality, the exit window, incumbent response, and six explicit positions.
 - **Method & Sources** — taxonomy rules, valuation methodology, an adversarial review, and known weaknesses.
 
+## Companion note — Circular Capital
+
+**[The Money Goes in a Circle](https://tony-h-kim.github.io/physical-ai-market-map/capital-loops.html)**
+
+Who funds physical AI, who supplies it and who buys from it are increasingly the same parties. The note maps four loops — NVIDIA's compute loop, Schaeffler and Bosch's component loop, the Korean conglomerate loop, and the strategic-syndicate pattern in Neura's Series C — then gives four tests for separating ordinary ecosystem building from a degraded price signal.
+
+It exists because the map's valuation methodology asserts that circular structure inflates marks. This is the evidence for that claim.
+
 ## Data and methodology
 
 Funding, valuation and revenue data from Crunchbase, PitchBook, CB Insights, Dealroom, TrendForce, Smart Analytics Global, TechCrunch and Bloomberg, current to H1 2026. Structural analysis from Goldman Sachs, Morgan Stanley, Roland Berger, Bullhound, McKinsey, IFR and The Robot Report.

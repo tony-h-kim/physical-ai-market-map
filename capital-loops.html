@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg:#f4f6f8; --card:#ffffff; --sub:#fafbfc;
+    --line:#e5e8ed; --line2:#d3d8e0;
+    --fg:#0f1729; --fg2:#596373; --fg3:#78828f;
+    --body:#0d8a6a; --bodybg:#e9f7f2;
+    --brain:#6d43c4; --brainbg:#f1ecfc;
+    --ops:#b06a05; --opsbg:#fdf3e3;
+    --info:#2563eb; --infobg:#e8f0fe;
+    --warn:#c93a4e; --warnbg:#fdecee;
+    --ink:#111a2e; --onink:#ffffff; --hi:#ffffff; --hiring:rgba(17,26,46,.06); --spanbg:#f3f8ff;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    /* type scale — nine steps, everything snaps to one of these */
+    --fs-display:clamp(26px,2.6vw + 14px,44px);
+    --fs-metric:clamp(25px,1.0vw + 21px,32px);
+    --fs-h2:clamp(19px,0.7vw + 16.5px,26px);
+    --fs-lede:clamp(16px,0.4vw + 14.6px,19px);
+    --fs-body:clamp(14.5px,0.28vw + 13.6px,17px);
+    --fs-sm:clamp(13.4px,0.22vw + 12.7px,15.5px);
+    --fs-xs:clamp(12.6px,0.16vw + 12.1px,14px);
+    --fs-2xs:clamp(11.6px,0.14vw + 11.1px,12.5px);
+    --fs-3xs:clamp(10.2px,0.09vw + 9.9px,11px);
+    --fs-4xs:clamp(9.2px,0.06vw + 9px,9.8px);
+    --sh:0 1px 2px rgba(16,24,40,.05);
+    --sh2:0 4px 14px rgba(16,24,40,.08);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  body{line-height:1.68;overflow-x:hidden;font-size:var(--fs-body);font-feature-settings:"cv11","ss01";letter-spacing:-.003em}
+  .wrap{width:100%;max-width:1560px;margin:0 auto;padding:clamp(16px,2vw,30px) clamp(14px,2.4vw,34px) 90px}
+  .layer,.plane{min-width:0}
+  .num,td.num,.keynum,.val,.pcount,table{font-variant-numeric:tabular-nums}
+
+  header{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 30px;box-shadow:var(--sh)}
+  .eyebrow{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.1em;text-transform:uppercase;color:var(--body);font-weight:600;margin-bottom:10px}
+  h1{font-size:var(--fs-display);margin:0 0 11px;font-weight:700;letter-spacing:-.03em;line-height:1.1;text-wrap:balance}
+  .sub{color:var(--fg2);font-size:var(--fs-lede);max-width:none;text-wrap:pretty}
+  .meta{color:var(--fg3);font-size:var(--fs-2xs);margin-top:15px;padding-top:14px;border-top:1px solid var(--line);line-height:1.8;max-width:none}
+
+  nav.tabs{display:flex;gap:7px;margin:18px 0 20px;flex-wrap:wrap;position:sticky;top:0;background:linear-gradient(var(--bg) 76%,rgba(244,246,248,0));padding:12px 0 12px;z-index:40}
+  .tab{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:8px 17px;border-radius:9px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.14s;box-shadow:var(--sh)}
+  .tab:hover{color:var(--fg);border-color:var(--line2)}
+  .tab[aria-selected="true"]{background:var(--ink);color:var(--onink);border-color:var(--ink);box-shadow:var(--sh2)}
+  section[hidden]{display:none}
+
+  h2{font-size:var(--fs-h2);margin:36px 0 6px;font-weight:700;letter-spacing:-.022em;line-height:1.22;text-wrap:balance}
+  h2:first-child{margin-top:2px}
+  .h2sub{color:var(--fg2);font-size:var(--fs-sm);margin:0 0 16px;max-width:none;text-wrap:pretty}
+  h3{font-size:var(--fs-body);margin:22px 0 7px;font-weight:600;letter-spacing:-.014em}
+  p{margin:0 0 14px;max-width:none;text-wrap:pretty;font-size:var(--fs-body)}
+  strong{font-weight:600;color:var(--ink)}
+  .lede{font-size:var(--fs-lede);color:var(--fg);background:var(--card);border:1px solid var(--line);border-left:4px solid var(--body);border-radius:12px;padding:clamp(14px,1.4vw,20px) clamp(16px,1.8vw,26px);margin:0 0 22px;box-shadow:var(--sh);line-height:1.58;text-wrap:pretty}
+  ul,ol{margin:0 0 14px;padding-left:22px;max-width:none}
+  li{margin-bottom:7px;font-size:var(--fs-body)}
+  li::marker{color:var(--fg3)}
+  a{color:var(--info);text-decoration:none;border-bottom:1px solid rgba(37,99,235,.28)}
+  a:hover{border-bottom-color:var(--info)}
+  code{font-family:var(--mono);font-size:var(--fs-2xs);background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:4px}
+
+  .filters{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:14px;box-shadow:var(--sh)}
+  .fgroup{display:flex;flex-direction:column;gap:8px}
+  .flabel{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+  .chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .chip{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:5px 12px;border-radius:7px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.12s;white-space:nowrap}
+  .chip:hover{border-color:var(--line2);color:var(--fg)}
+  .chip.on{background:var(--ink);color:var(--onink);border-color:var(--ink)}
+  input[type=search]{background:var(--card);border:1px solid var(--line);color:var(--fg);padding:6px 12px;border-radius:7px;font-size:var(--fs-xs);min-width:200px;font-family:inherit}
+  input[type=search]:focus{outline:none;border-color:var(--info);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+  .count{font-size:var(--fs-2xs);color:var(--fg2);margin:0 2px 16px}
+  .count b{color:var(--ink);font-weight:600}
+
+  .plane{margin-bottom:22px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
+  .planehead{display:flex;align-items:center;gap:13px;padding:15px 22px;border-bottom:1px solid var(--line)}
+  .pbadge{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;width:26px;height:26px;display:grid;place-items:center;border-radius:7px;flex:none}
+  .pn{font-size:var(--fs-body);font-weight:700;letter-spacing:-.01em}
+  .pd{font-size:var(--fs-2xs);color:var(--fg2)}
+  .pcount{margin-left:auto;font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3)}
+  .plane.A .pbadge{background:var(--bodybg);color:var(--body)} .plane.A .pn{color:var(--body)}
+  .plane.B .pbadge{background:var(--brainbg);color:var(--brain)} .plane.B .pn{color:var(--brain)}
+  .plane.C .pbadge{background:var(--opsbg);color:var(--ops)} .plane.C .pn{color:var(--ops)}
+
+  .grp{display:flex;align-items:baseline;gap:11px;padding:11px 22px 10px;border-top:1px solid var(--line);background:var(--sub)}
+  .grp .gname{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+  .grp .gdesc{font-size:var(--fs-2xs);color:var(--fg3);font-style:italic}
+  .grp .gline{flex:1;height:1px;background:var(--line);align-self:center}
+  .grp .gcount{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);font-weight:500}
+  .plane.A .grp .gname{color:var(--body)} .plane.B .grp .gname{color:var(--brain)} .plane.C .grp .gname{color:var(--ops)}
+  .grp + .layer{border-top:none}
+  .layer{display:grid;grid-template-columns:clamp(200px,16vw,272px) 1fr;border-top:1px solid var(--line)}
+  .layer:first-of-type{border-top:none}
+  .lmeta{padding:15px 18px;border-right:1px solid var(--line);background:var(--sub)}
+  .lcode{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);letter-spacing:.07em;font-weight:600}
+  .lname{font-size:var(--fs-sm);font-weight:600;margin:3px 0 6px;line-height:1.3;letter-spacing:-.016em}
+  .ldesc{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.6;text-wrap:pretty}
+  .lcos{padding:14px 16px;display:flex;flex-wrap:wrap;gap:7px;align-content:flex-start;min-width:0}
+
+  .co{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 11px;font-size:var(--fs-xs);color:var(--fg);transition:.12s;line-height:1.35;cursor:default}
+  .co:hover{border-color:var(--line2);box-shadow:var(--sh2);transform:translateY(-1px)}
+  .co .g{font-family:var(--mono);font-size:var(--fs-4xs);color:var(--fg3);letter-spacing:.04em;font-weight:500}
+  .co .val{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:5px}
+  .co .val.est{color:var(--ops);background:var(--opsbg)}
+  .co .pub{font-family:var(--mono);font-size:var(--fs-4xs);font-weight:600;color:var(--fg3);background:var(--sub);border:1px solid var(--line);padding:1px 5px;border-radius:5px}
+    .co.big{font-weight:700;border-color:var(--line2);background:var(--hi);box-shadow:inset 0 0 0 1px var(--hiring)}
+  .co.spans{border:2px dashed var(--info);background:var(--spanbg);padding:5px 10px}
+  .co.fs{box-shadow:inset 0 0 0 2px var(--body),0 1px 2px rgba(16,24,40,.06)}
+  .fsb{font-family:var(--mono);font-size:var(--fs-4xs);font-weight:600;letter-spacing:.04em;color:var(--body);background:var(--bodybg);padding:2px 5px;border-radius:5px;text-transform:uppercase}
+  .cv-tag.fs{color:var(--body);background:var(--bodybg)}
+  .co.spans:hover{background:var(--infobg);border-color:var(--info)}
+  a.co{text-decoration:none;color:var(--fg);cursor:pointer}
+  a.co:hover{color:var(--ink)}
+  .cvcard{display:none;position:absolute;z-index:200;width:min(370px,calc(100vw - 28px));background:var(--card);border:1px solid var(--line2);border-radius:12px;box-shadow:0 12px 32px rgba(16,24,40,.16);padding:15px 17px;pointer-events:none}
+  .cv-h{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+  .cv-n{font-size:var(--fs-sm);font-weight:700;letter-spacing:-.018em;color:var(--ink)}
+  .cv-tag{font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:20px}
+  .cv-meta{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);margin-top:4px;letter-spacing:.01em}
+  .cv-ab{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.58;margin-top:9px}
+  .cv-v{display:flex;align-items:baseline;gap:8px;margin-top:11px;padding-top:10px;border-top:1px solid var(--line);flex-wrap:wrap}
+  .cv-val{font-family:var(--mono);font-size:var(--fs-xs);font-weight:600;color:var(--info)}
+  .cv-val.est{color:var(--ops)} .cv-val.pubv,.cv-val.nov{color:var(--fg3);font-size:12px}
+  .cv-vl{font-size:var(--fs-3xs);color:var(--fg3)}
+  .cv-note{font-size:var(--fs-3xs);color:var(--fg3);margin-top:7px;line-height:1.5}
+  .cv-span{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);margin-top:6px}
+  .cv-f{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:11px;padding-top:9px;border-top:1px solid var(--line)}
+  .cv-verts{font-size:var(--fs-3xs);color:var(--fg3)}
+  .cv-url{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--info);border:none;white-space:nowrap}
+
+  .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:var(--fs-2xs);color:var(--fg2);margin:0 2px 18px;align-items:center}
+  .legend span{display:inline-flex;align-items:center;gap:7px}
+  .dash{width:18px;height:0;border-top:2px dashed var(--info)}
+  .swatch{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;color:var(--info);background:var(--infobg);padding:2px 6px;border-radius:5px}
+  .swatch.o{color:var(--ops);background:var(--opsbg)}
+
+  .tblwrap{overflow-x:auto;margin:16px 0 22px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--sh)}
+  table{border-collapse:collapse;width:100%;font-size:var(--fs-sm);min-width:620px}
+  th,td{text-align:left;padding:11px 15px;vertical-align:top}
+  thead th{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);font-weight:600;background:var(--sub);border-bottom:1px solid var(--line)}
+  tbody td{border-bottom:1px solid var(--line)}
+  tbody td:first-child{font-weight:600;color:var(--ink)}
+  tbody tr:last-child td{border-bottom:none}
+  tbody tr:hover{background:var(--sub)}
+  td.num{font-family:var(--mono);white-space:nowrap;font-weight:600}
+  .pill{display:inline-block;font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap}
+  .pill.g{background:var(--bodybg);color:var(--body)}
+  .pill.a{background:var(--opsbg);color:var(--ops)}
+  .pill.p{background:var(--brainbg);color:var(--brain)}
+  .pill.n{background:var(--sub);color:var(--fg3);border:1px solid var(--line)}
+  .pill.b{background:var(--infobg);color:var(--info)}
+
+  .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:13px;margin:20px 0}
+  .metric{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--sh)}
+  .mlab{font-size:var(--fs-2xs);color:var(--fg2);font-weight:500;margin-bottom:8px}
+  .keynum{font-size:var(--fs-metric);font-weight:700;line-height:1;letter-spacing:-.035em;color:var(--ink)}
+  .mfoot{font-size:var(--fs-3xs);color:var(--fg3);margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
+  .mfoot b{font-weight:600;color:var(--fg2)}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:19px 22px;margin:16px 0;box-shadow:var(--sh)}
+  .card h3{margin-top:0}
+  .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:15px;margin:18px 0}
+
+  .callout{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--ops);border-radius:12px;padding:17px 22px;margin:20px 0;box-shadow:var(--sh)}
+  .callout .lbl{font-size:var(--fs-2xs);color:var(--fg2);margin-bottom:9px;font-weight:600;letter-spacing:-.005em}
+  .callout.b{border-left-color:var(--body)}
+  .callout.w{border-left-color:var(--warn)}
+  .callout.i{border-left-color:var(--info)}
+  .callout.p{border-left-color:var(--brain)}
+
+  figure{margin:22px 0 28px}
+  figcaption{color:var(--fg2);font-size:var(--fs-xs);margin-top:12px;line-height:1.65;max-width:none;text-wrap:pretty}
+  .figtitle{font-size:var(--fs-xs);font-weight:600;margin-bottom:12px;letter-spacing:-.005em}
+  .svgbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 16px;overflow-x:auto;box-shadow:var(--sh);display:flex;justify-content:center}
+  svg{display:block;width:100%;max-width:900px;height:auto;min-width:700px;margin:0 auto}
+  svg text{font-family:var(--sans)}
+  .sv-l{font-size:12.5px;fill:var(--fg2)}
+  .sv-s{font-size:11px;fill:var(--fg3)}
+  .sv-b{font-size:14px;fill:var(--fg);font-weight:600;letter-spacing:-.012em}
+  .sv-h{font-size:11px;fill:var(--fg3);letter-spacing:.09em;text-transform:uppercase;font-weight:600}
+  .sv-n{font-family:var(--mono);font-size:12.5px;fill:var(--fg2);font-variant-numeric:tabular-nums}
+
+
+  /* ---- figures: HTML rather than SVG, so they fill the column, inherit the
+     type scale exactly, and reflow instead of scaling ---- */
+  .fig{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;box-shadow:var(--sh)}
+  .tax{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+  .tax-col{min-width:0}
+  .tax-head{border-radius:9px;padding:10px 14px;margin-bottom:6px}
+  .tax-head .tn{font-size:var(--fs-body);font-weight:600;letter-spacing:-.015em}
+  .tax-head .ts{font-size:var(--fs-3xs);opacity:.85}
+  .tax-grp{display:flex;align-items:center;gap:10px;margin:16px 0 9px;font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase}
+  .tax-grp .ln{flex:1;height:1px;background:var(--line)}
+  .tax-row{border:1px solid var(--line);background:var(--sub);border-radius:7px;padding:9px 13px;font-size:var(--fs-2xs);color:var(--fg2);margin-bottom:7px;line-height:1.35}
+  .tax-row b{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);font-weight:600;margin-right:7px}
+  .tax-row.hiA{background:var(--bodybg);border-color:var(--body);color:var(--fg)}
+  .tax-row.hiB{background:var(--brainbg);border-color:var(--brain);color:var(--fg)}
+  .tax-row.hiC{background:var(--opsbg);border-color:var(--ops);color:var(--fg)}
+  .tax-note{font-size:var(--fs-3xs);color:var(--fg3);margin-top:12px;line-height:1.55}
+  .tax-fs{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}
+  .tax-fs .lbl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3)}
+  .tax-fs .c{font-size:var(--fs-3xs);font-family:var(--mono);color:var(--info);background:var(--infobg);padding:4px 11px;border-radius:20px}
+  .bars{display:grid;gap:12px}
+  .bar-hd{display:grid;grid-template-columns:190px 1fr;gap:18px;font-size:var(--fs-3xs);font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);padding-bottom:4px}
+  .bar-row{display:grid;grid-template-columns:190px 1fr;gap:18px;align-items:center}
+  .bar-lab .n{font-size:var(--fs-2xs);font-weight:600;color:var(--fg)}
+  .bar-lab .s{font-size:var(--fs-3xs);color:var(--fg3)}
+  .bar-wrap{display:flex;align-items:center;gap:12px;min-width:0}
+  .bar{height:30px;border-radius:6px;flex:none}
+  .bar-val{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--fg2);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .mg-row{display:grid;grid-template-columns:190px minmax(0,1fr) 260px;gap:18px;align-items:center}
+  .mg-lab{font-size:var(--fs-2xs);color:var(--fg2)}
+  .mg-lab.em{color:var(--fg);font-weight:600}
+  .mg-track{height:22px}
+  .mg-bar{height:22px;border-radius:5px;background:var(--warn)}
+  .mg-dur{font-size:var(--fs-2xs);white-space:nowrap}
+  @media (max-width:1000px){
+    .tax{grid-template-columns:1fr}
+    .bar-row,.bar-hd{grid-template-columns:150px 1fr}
+    .mg-row{grid-template-columns:140px minmax(0,1fr);row-gap:4px}
+    .mg-dur{grid-column:2}
+  }
+
+  .pos-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+  .pos-t{font-size:var(--fs-body);font-weight:600;color:var(--ink);letter-spacing:-.015em}
+  .pos-r{margin:12px 0 0;padding-top:11px;border-top:1px solid var(--line);font-size:var(--fs-2xs);color:var(--fg2)}
+  .pos-rl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--fg3);margin-right:8px}
+  .noteblock{margin:26px 0 8px;padding:0 2px;max-width:none}
+  .noteblock .nt{font-size:var(--fs-2xs);color:var(--fg2);font-weight:600;margin-bottom:10px}
+  .noteblock p{font-style:italic;color:var(--fg3);font-size:var(--fs-2xs);max-width:none;margin:0 0 9px;line-height:1.7;text-wrap:pretty}
+
+  footer{margin-top:46px;padding:20px 24px;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--fg3);font-size:var(--fs-2xs);line-height:1.9;box-shadow:var(--sh);max-width:none}
+
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --bg:#0e1116; --card:#161a21; --sub:#1b2029; --line:#262c36; --line2:#3a434f;
+    --fg:#e8ecf2; --fg2:#a7b1bf; --fg3:#7d8896;
+    --body:#3fbf95; --bodybg:#102620; --brain:#ab8ef2; --brainbg:#1f1932;
+    --ops:#e3a950; --opsbg:#2c2214; --info:#6ea9ff; --infobg:#16294a;
+    --warn:#f2798c; --warnbg:#2f171c;
+    --ink:#f2f6fb; --onink:#0e1116; --hi:#1e242e; --hiring:rgba(255,255,255,.07); --spanbg:#131c2b;
+    --sh:0 1px 2px rgba(0,0,0,.4); --sh2:0 6px 20px rgba(0,0,0,.5);
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0e1116; --card:#161a21; --sub:#1b2029; --line:#262c36; --line2:#3a434f;
+    --fg:#e8ecf2; --fg2:#a7b1bf; --fg3:#7d8896;
+    --body:#3fbf95; --bodybg:#102620; --brain:#ab8ef2; --brainbg:#1f1932;
+    --ops:#e3a950; --opsbg:#2c2214; --info:#6ea9ff; --infobg:#16294a;
+    --warn:#f2798c; --warnbg:#2f171c;
+    --ink:#f2f6fb; --onink:#0e1116; --hi:#1e242e; --hiring:rgba(255,255,255,.07); --spanbg:#131c2b;
+    --sh:0 1px 2px rgba(0,0,0,.4); --sh2:0 6px 20px rgba(0,0,0,.5);
+  }
+  a.co{color:var(--fg)}
+  @media (max-width:820px){ .layer{grid-template-columns:1fr} .lmeta{border-right:none;border-bottom:1px solid var(--line)} .filters{position:static} .wrap{padding:16px 14px 60px} }
+
+  /* ---- capital loop components ---- */
+  .loop{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0;box-shadow:var(--sh)}
+  .loop-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+  .loop-t{font-size:var(--fs-body);font-weight:600;color:var(--ink);letter-spacing:-.015em}
+  .loop-sub{font-size:var(--fs-2xs);color:var(--fg3);margin-bottom:16px}
+  .cycle{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:stretch;margin:14px 0 10px}
+  .step{border:1px solid var(--line);background:var(--sub);border-radius:9px;padding:12px 14px;position:relative}
+  .step .sn{font-size:var(--fs-3xs);font-weight:600;color:var(--fg3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:5px}
+  .step .sb{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.5}
+  .step .sb b{color:var(--ink);font-weight:600}
+  .ret{display:flex;align-items:center;gap:10px;border-top:2px dashed var(--info);padding-top:11px;margin-top:2px}
+  .ret .rl{font-size:var(--fs-3xs);font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--info);white-space:nowrap}
+  .ret .rb{font-size:var(--fs-2xs);color:var(--fg2)}
+  .ev{margin-top:15px;padding-top:13px;border-top:1px solid var(--line);font-size:var(--fs-2xs);color:var(--fg3);line-height:1.65}
+  .ev b{color:var(--fg2);font-weight:600}
+  .test{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;margin-bottom:13px}
+  .test .q{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:600;color:var(--info);padding-top:2px}
+  .backlink{display:inline-block;margin-top:6px;font-size:var(--fs-2xs)}
+  @media (max-width:820px){ .cycle{grid-template-columns:1fr} }
+</style></head>
+<body>
+<title>Physical AI — Circular Capital</title>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Companion note · September 2026</div>
+  <h1>The Money Goes in a Circle</h1>
+  <div class="sub">Who funds physical AI, who supplies it, and who buys from it are increasingly the same parties. This note maps four loops, then asks which are ordinary ecosystem building and which make a valuation hard to read.</div>
+  <div class="meta">V1-00 · September 2026 · companion to the Physical AI Market Map<br>
+  Sources: NVIDIA and portfolio-company announcements, TechCrunch, Bloomberg, Forbes, Korea Economic Daily, The Robot Report, Dealroom</div>
+</header>
+
+<section>
+  <div class="lede">Across AI generally, roughly $800B of arrangements have been described as circular — vendors investing in customers who spend the money back on the vendor's product. Physical AI has its own version, and it is tighter, because the same industrial groups can be investor, component supplier and end customer at once.</div>
+
+  <h2>Why this shape appears</h2>
+  <p>It is not usually a conspiracy. Early capital-intensive markets have a genuine bootstrapping problem: the supplier needs a customer to justify capacity, the customer needs a supplier to exist at all, and neither can wait for the other. Equity is how that gets bridged. Intel Capital and Qualcomm Ventures ran this playbook for decades and built real ecosystems.</p>
+  <p>The reason to map it anyway is narrower. <strong>When an investor is also a supplier and a customer, the price it pays for equity stops being an independent read on the company's worth.</strong> That matters for a market map whose valuation column is the most-quoted thing on it.</p>
+
+  <h2>Four loops</h2>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">1 · The compute loop</span><span class="pill b">NVIDIA</span></div>
+    <div class="loop-sub">The tightest and most documented of the four.</div>
+    <div class="cycle"><div class="step"><div class="sn">Invests</div><div class="sb">NVIDIA takes equity in <b>Figure</b> (Series B at $2.6B, again in the Series C at $39B), <b>Wayve</b> ($1.05B round, with a further ~$500M reported), <b>Skild AI</b> and <b>Field AI</b>.</div></div><div class="step"><div class="sn">They build on NVIDIA</div><div class="sb">Those companies train on <b>Isaac Lab</b> and <b>Cosmos</b>, and ship on <b>Jetson</b>. Roughly a dozen ecosystem partners — ABB, AgiBot, Agility, FANUC, KUKA, Universal Robots, World Labs, Yaskawa — are publicly built on the same stack.</div></div><div class="step"><div class="sn">Revenue returns</div><div class="sb">Compute and licence spend flows back to NVIDIA, and the ecosystem announcements support the platform narrative that underwrites its own multiple.</div></div></div><div class="ret"><span class="rl">Closing the loop</span><span class="rb">Skild's model, trained on NVIDIA software and funded partly by NVIDIA, runs the Foxconn assembly lines in Houston that build <b>NVIDIA's own Blackwell servers</b>. Investor, toolchain, customer and end market are the same company.</span></div>
+    <div class="ev"><b>Scale:</b> NVIDIA is reported to be working through a deal pipeline above $750B, including ~$500B of financing partnerships with BlackRock and Apollo that extend credit for GPU purchases. Jensen Huang has publicly rejected the "circular financing" characterisation, calling it a virtuous cycle rather than manufactured demand.</div>
+  </div>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">2 · The component loop</span><span class="pill a">Schaeffler · Bosch</span></div>
+    <div class="loop-sub">The clearest case of a supplier funding its own demand.</div>
+    <div class="cycle"><div class="step"><div class="sn">Invests</div><div class="sb"><b>Schaeffler</b> and <b>Bosch</b> both take part in <b>Neura Robotics'</b> Series C and <b>Humanoid's</b> Series A. Schaeffler separately partners with <b>Leju Robotics</b> in China.</div></div><div class="step"><div class="sn">Supplies them</div><div class="sb">Schaeffler provides drivetrain components to <b>Agility</b> and to its portfolio companies — the actuation layer these robots cannot be built without.</div></div><div class="step"><div class="sn">Then buys the output</div><div class="sb">Schaeffler has an order for <b>1,000+ robots from Humanoid</b>, a deal reported as implying 100,000 units by 2031, destined for its own plants.</div></div></div><div class="ret"><span class="rl">Closing the loop</span><span class="rb">One company is simultaneously shareholder, component vendor and anchor customer. Every leg is individually rational; together they mean Humanoid's order book and Schaeffler's equity mark are not independent of each other.</span></div>
+    <div class="ev"><b>Note:</b> this is also how the automotive tier-one system has always worked — co-development with an equity stake is normal there. The difference is that the robot's valuation is being set in venture markets, not negotiated as a supply contract.</div>
+  </div>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">3 · The conglomerate loop</span><span class="pill p">Hyundai · Samsung · LG</span></div>
+    <div class="loop-sub">Where the group owns the maker, the supply chain and the factory.</div>
+    <div class="cycle"><div class="step"><div class="sn">Owns the maker</div><div class="sb"><b>Hyundai</b> moved to full ownership of <b>Boston Dynamics</b> via the SoftBank buyout. <b>Samsung</b> raised its <b>Rainbow Robotics</b> stake to ~35% (₩267B, ~$181M) to become largest shareholder. <b>LG</b> took a $60M position in <b>Bear Robotics</b>.</div></div><div class="step"><div class="sn">Directs the supply chain</div><div class="sb">Hyundai has mobilised roughly <b>200 tier-one suppliers</b> to build a domestic humanoid component base, asking them for business plans in the category.</div></div><div class="step"><div class="sn">Deploys into itself</div><div class="sb">Hyundai plans about <b>25,000 Atlas units across its own factories from 2028</b> — the group is the manufacturer, the supplier network and the customer.</div></div></div><div class="ret"><span class="rl">Closing the loop</span><span class="rb">Vertical integration at chaebol scale. It removes the market test entirely: internal deployment volume proves the group's commitment, not that a third party would buy at that price.</span></div>
+    <div class="ev"><b>Why it still matters:</b> internal deployment is real revenue and real operating data — the embodied-data-density argument applies. But an internal transfer price is not a market price, and 25,000 units bought from yourself is a weaker demand signal than 25,000 sold to strangers.</div>
+  </div>
+
+  <div class="loop">
+    <div class="loop-h"><span class="loop-t">4 · The strategic syndicate</span><span class="pill n">Neura Series C</span></div>
+    <div class="loop-sub">Not a loop so much as the absence of an arm's-length buyer.</div>
+    <p style="margin-bottom:12px">Neura Robotics' Series C — up to $1.4B, milestone-contingent — was assembled from <strong>Tether, NVIDIA, Amazon, Qualcomm, Bosch, Schaeffler, the European Investment Bank and a Qatari sovereign investor.</strong> Read the list again: a stablecoin issuer, two chip vendors, a cloud and logistics operator, two component suppliers, a development bank and a sovereign. There is no classic venture lead setting the price.</p>
+    <div class="ev">Reporting on the sector's largest 2025–26 rounds describes the same pattern generally: the biggest cheques were assembled by <b>corporate strategic investors acting in coordinated syndicates</b> rather than priced by financial investors. Dealroom counted about <b>$8.7B</b> of humanoid venture funding in 2026 to late July.</div>
+  </div>
+
+  <h2>What this does and does not mean</h2>
+  <p>The dot-com comparison is the one critics reach for: Nortel and Lucent lent customers the money to buy switching gear, and the revenue evaporated when the credit did. It is a fair analogy for the <em>mechanism</em>, and an unfair one for the <em>conclusion</em> — vendor financing did not make fibre worthless, it made the reported demand curve wrong.</p>
+  <p>The defensible reading is narrower and more useful than either cheerleading or alarm. <strong>Circular structure is not evidence that the technology is fake. It is evidence that the price signal is degraded.</strong> Where investor, supplier and customer are the same party, a headline valuation and an order book are corroborating each other rather than independently confirming anything.</p>
+
+  <h2>Four questions that separate the healthy from the hollow</h2>
+  <div class="card">
+    <div class="test"><span class="q">1</span><span>Would the customer buy at the same volume <strong>absent the equity stake</strong>? Schaeffler ordering robots it also part-owns is a weaker signal than a competitor of Schaeffler ordering them.</span></div>
+    <div class="test"><span class="q">2</span><span>Is the back-flow <strong>at market terms and separately disclosed</strong>? Ecosystem investment survives scrutiny when the revenue is broken out. It does not when it is buried in a segment line.</span></div>
+    <div class="test"><span class="q">3</span><span>Did a <strong>financial investor set the price</strong>, or only strategics? A round with no arm's-length lead has no independent pricing anchor — the Neura pattern.</span></div>
+    <div class="test"><span class="q">4</span><span>Does the company have <strong>revenue from outside the loop</strong>? This is the one that resolves it. External customers are the only proof the demand is not manufactured.</span></div>
+  </div>
+
+  <h2>What would change this reading</h2>
+  <ul>
+    <li>A major humanoid or foundation-model company disclosing <strong>revenue split by strategic-investor versus independent customer</strong>. Nobody currently does, and that absence is itself informative.</li>
+    <li>A priced round in the sector <strong>led by a financial investor with no commercial relationship</strong> to the company, at or above the last strategic mark.</li>
+    <li>Schaeffler's Humanoid order <strong>converting to repeat volume from unaffiliated buyers</strong>, which would convert an anchor commitment into a market.</li>
+    <li>Conversely: a down round at a company whose last mark was set entirely by its own suppliers and customers would confirm the pricing concern quickly and publicly.</li>
+  </ul>
+
+  <div class="noteblock">
+    <div class="nt">Scope and limits</div>
+    <p>This note maps publicly announced investments, partnerships and orders. Deal terms are mostly undisclosed, so it can show that a relationship exists but not what was paid or on what terms. Several figures — the NVIDIA pipeline, the additional Wayve tranche, the Neura milestone conditions — are reported rather than confirmed, and are described as such above.</p>
+    <p>Nothing here asserts wrongdoing. Strategic investment is ordinary, frequently value-additive, and in a capital-intensive early market often the only way a supply chain gets built at all. The argument is about how much a valuation tells you, not about anyone's conduct.</p>
+  </div>
+
+  <p class="backlink"><a href="index.html">← Back to the Physical AI Market Map</a></p>
+</section>
+
+<footer>
+  <strong>The Money Goes in a Circle</strong> · V1-00 · September 2026 · companion to the Physical AI Market Map<br>
+  Relationships shown are publicly announced. Terms are largely undisclosed; reported-but-unconfirmed figures are marked as such in the text.
+</footer>
+
+</div>
+
+</body>
+</html>
