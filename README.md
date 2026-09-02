@@ -2,9 +2,8 @@
 
 An interactive landscape of **219 companies across 20 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, and construction.
 
-Open `index.html` in any browser — it is a single self-contained file with no build step or dependencies.
+**[→ View the live map](https://tony-h-kim.github.io/physical-ai-market-map/)**
 
-> This repository is currently private. Making it public enables GitHub Pages, which publishes the map at a live URL.
 
 ---
 
