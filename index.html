@@ -438,6 +438,29 @@
     .orient-g{grid-template-columns:1fr}
     .panel{width:100vw}
   }
+
+  /* ---------- layer x business-model matrix ---------- */
+  table.matrix{border-collapse:collapse;width:100%;min-width:760px;font-size:var(--fs-2xs)}
+  table.matrix th{text-align:center;font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.03em;text-transform:uppercase;color:var(--fg3);font-weight:600;padding:11px 4px;border-bottom:1px solid var(--line2);white-space:nowrap;background:var(--card);position:sticky;top:0;z-index:2}
+  table.matrix thead th:first-child,table.matrix tfoot th:first-child{text-align:left}
+  table.matrix tfoot th{border-bottom:none;border-top:1px solid var(--line2);color:var(--fg2);position:static}
+  table.matrix td{padding:0;border-bottom:1px solid var(--line);text-align:center}
+  table.matrix tbody tr:last-child td{border-bottom:none}
+  .mx-lab{text-align:left!important;padding:9px 12px 9px 0!important;white-space:nowrap;border-left:3px solid transparent;width:auto}
+  .mx-lab.A{border-left-color:var(--body)} .mx-lab.B{border-left-color:var(--brain)} .mx-lab.C{border-left-color:var(--ops)}
+  .mx-code{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:700;color:var(--fg2);display:inline-block;width:34px;padding-left:11px}
+  .mx-name{font-size:var(--fs-3xs);color:var(--fg2)}
+  .mx-mono{font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.05em;text-transform:uppercase;color:var(--fg3);background:var(--sub);border:1px solid var(--line);border-radius:20px;padding:1px 7px;margin-left:9px}
+  .mx-c{position:relative;cursor:pointer;height:34px;min-width:62px;line-height:34px;vertical-align:middle}
+  .mx-c .mx-fill{position:absolute;inset:3px;border-radius:5px;display:block}
+  .mx-c.A .mx-fill{background:var(--body)} .mx-c.B .mx-fill{background:var(--brain)} .mx-c.C .mx-fill{background:var(--ops)}
+  .mx-n{position:relative;font-family:var(--mono);font-size:var(--fs-3xs);font-weight:700;color:var(--hi)}
+  .mx-n.pale{color:var(--ink)}
+  .mx-c:hover .mx-fill{outline:2px solid var(--ink);outline-offset:-1px}
+  .mx-zero{background:repeating-linear-gradient(135deg,transparent,transparent 5px,var(--sub) 5px,var(--sub) 6px)}
+  .mx-tot{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);padding:0 10px!important;text-align:right!important;width:56px}
+  tr.mx-off{opacity:.35}
+  .mx-corner{text-align:left!important}
 </style>
 </head>
 <body>
@@ -447,7 +470,7 @@
   <div class="eyebrow">Market Landscape · September 2026</div>
   <h1>Physical AI Market Map</h1>
   <div class="sub">A layer-based landscape of 243 companies across humanoids, industrial robotics, autonomous vehicles, drones &amp; defence, construction, mining and agriculture — organised by <strong>where value is actually captured</strong>, not by hardware versus software.</div>
-  <div class="meta">V5-00 · September 2026 · 25 layers across 3 planes · 243 companies · humanoid, industrial, AV, drone &amp; defence, construction, mining, agriculture<br>
+  <div class="meta">V5-01 · September 2026 · 25 layers across 3 planes · 243 companies · humanoid, industrial, AV, drone &amp; defence, construction, mining, agriculture<br>
   Funding, valuation and revenue data: Crunchbase, PitchBook, CB Insights, Dealroom, TrendForce, Smart Analytics Global, TechCrunch, Bloomberg · Structural analysis: Goldman Sachs, Morgan Stanley, Roland Berger, Bullhound, McKinsey, IFR, The Robot Report</div>
 </header>
 
@@ -488,6 +511,7 @@
     <button class="vb" data-v="chain" role="tab" aria-selected="true" type="button">Value chain</button>
     <button class="vb" data-v="industry" role="tab" aria-selected="false" type="button">By industry</button>
     <button class="vb" data-v="geo" role="tab" aria-selected="false" type="button">By geography</button>
+    <button class="vb" data-v="matrix" role="tab" aria-selected="false" type="button">Layer &times; model</button>
     <button class="vb" data-v="table" role="tab" aria-selected="false" type="button">Screening table</button>
   </div>
   <div class="viewhint" id="viewhint"></div>
@@ -633,7 +657,8 @@
     <div class="card">
       <h3>C3 · Safety &amp; certification</h3>
       <p>The most under-discussed moat in the stack. Certification cost amortised across an ecosystem is stickier than any licence, because it is a <em>sunk regulatory asset</em> rather than a technical lead.</p>
-      <p style="margin-bottom:0">NVIDIA's Halos pre-assesses the platform so partners certify only application logic. No third-party certificate has yet been issued, and TÜV SÜD inspection is not certification — so the moat is <strong>announced but not yet proven</strong>.</p>
+      <p>NVIDIA's Halos pre-assesses the platform so partners certify only application logic. In June 2026 its AI Systems Inspection Lab was accredited to ISO/IEC 17020 by ANAB, the first formal assurance infrastructure to appear in this layer. The accreditation is for <em>inspection</em>, and describes itself as a foundation for future certification rather than a substitute for it. No third-party certificate has yet been issued against it, so the earlier reading holds: inspection is not certification.</p>
+      <p style="margin-bottom:0">What has changed is that the moat is now <strong>partly instantiated rather than merely announced</strong>, and the instructive fact is who instantiated it. The accredited lab belongs to the compute vendor, not to an independent certification body. If the most defensible layer on this map is assembled by the platform that already sells into every other layer, C3 may prove to be less a standalone profit pool than an extension of NVIDIA's.</p>
     </div>
     <div class="card">
       <h3>B2 · Proprietary deployment data</h3>
@@ -902,7 +927,15 @@
   <p><strong>Sensitivity, because the 19× depends on two choices I made:</strong> whether Roland Berger's “&gt;98%” means per-cycle task success or system uptime, and whether the line is coupled with no buffer. Change the second and the conclusion softens considerably. In a <em>buffered parallel cell</em> — independent stations, work-in-progress between them, a failed unit simply pulled from rotation — the same 9 exceptions per shift cost throughput roughly in proportion to the failure rate rather than stopping the line, so the penalty falls from ~7.5% of shift time to something closer to 2%. That is the architecture where cheap redundancy substitutes for reliability, and it is why logistics adopted robots a decade before manufacturing did. The reliability argument is an argument about coupled linear lines specifically, not about robots in general.</p>
   <p style="font-size:12.5px;color:var(--fg3)">Arithmetic above is the author's own estimate from Roland Berger's published per-tier reliability targets plus standard takt assumptions — not a sourced figure.</p>
 
-  <h2>The second axis: deployment tier</h2>
+  <h2>The commercial axis: how value is captured</h2>
+  <p>A fair objection to everything above: this map claims to organise by where value is captured, then assigns every company to exactly one technical layer. Those are not the same question. Waymo and Anduril capture value precisely <em>by</em> spanning layers, and C4 and C5 are commercial structures wearing a technology layer's clothing. Tagging the hard cases full-stack and moving on would be an evasion.</p>
+  <p>The resolution is that the map reads on two axes rather than one. <strong>The layer says what the customer buys. The business model says how the seller gets paid.</strong> Eight values: component supply, machine sale, software licence, robots-as-a-service, owned-fleet operations, integration and manufacturing, testing and certification, open source. Every entry on the map carries both, and the pair is cross-tabulated in the <strong>Layer &times; model</strong> view under Explore.</p>
+  <p>The two axes turn out to be correlated without being identical, and both halves of that matter. <strong>Twelve of the twenty-five layers are a single business model.</strong> Every company in A1 through A5 sells components; every company in A6 sells machines; B1, B5, B7, B8 and C2 are wholly software. Where a layer is a monoculture the layer alone is a sufficient description, and the objection has no force there.</p>
+  <p>Where the axes diverge is where the second one earns its place. <strong>A8 is barely a platform layer at all</strong>: thirteen of its fourteen companies are owned-fleet operators who never sell a vehicle to anyone. B2 splits four software businesses against five services businesses, a margin distinction the layer hides completely. And full-stack turns out not to be one phenomenon but three. Waymo and Zoox span layers because an operator has to own its whole stack in order to sell the outcome. Figure, Tesla, Amazon and Anduril span for cost and capability while still selling a machine. NVIDIA spans by selling components into every layer at once. One tag, three unrelated economic reasons, legible only on the commercial axis.</p>
+  <p>The sharpest single reading on the grid is A6. <strong>Twenty-six humanoid companies, and all twenty-six sell the same thing the same way.</strong> No cell on this map is more crowded on both axes at once, which is the commoditisation argument of the whole Value capture section compressed into one square.</p>
+  <p style="margin-bottom:0">This does not rescue C4 and C5, and it is not meant to. Those two remain the layers where the axes very nearly coincide, kept as layers because the customer's procurement genuinely differs: you buy integration hours, or you buy robot-hours, and in both cases the commercial structure <em>is</em> the unit of sale. That is the one place where the taxonomy is answering two questions with one box, and it is stated here rather than hidden.</p>
+
+  <h2>The temporal axis: deployment tier</h2>
   <p class="h2sub">Layer position says nothing about commercial readiness. The companion question is which operational envelope a company actually ships into.</p>
   <div class="tblwrap"><table>
     <thead><tr><th style="width:64px">Tier</th><th>Envelope</th><th style="width:130px">Status</th><th>Representative</th></tr></thead>
@@ -1028,7 +1061,7 @@
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V5-00 · September 2026<br>
+  <strong>Physical AI Market Map</strong> · V5-01 · September 2026<br>
   Company roster is curated, not exhaustive — ~243 of an estimated 700+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.
 </footer>
@@ -1233,7 +1266,7 @@ const CO = [
 {n:"Foxglove",l:"C2",g:"US",v:["ind","av"],note:"observability"},
 {n:"Freedom Robotics",l:"C2",g:"US",v:["ind"]},
 {n:"Rapyuta Robotics",l:"C2",g:"JP",v:["ind"],note:"multi-robot orchestration"},
-{n:"NVIDIA Halos",prod:1,l:"C3",g:"US",v:["hum","av"],pub:1,big:1,note:"early access · no third-party certificate issued yet"},
+{n:"NVIDIA Halos",prod:1,l:"C3",g:"US",v:["hum","av"],pub:1,big:1,note:"ISO/IEC 17020 inspection lab, ANAB-accredited Jun 2026 · inspection, not certification"},
 {n:"TUV SUD",l:"C3",g:"EU",v:["hum","av","ind"],big:1,note:"inspected Thor + Halos for ISO 26262"},
 {n:"TUV Rheinland",l:"C3",g:"EU",v:["ind","av"]},
 {n:"UL Solutions",l:"C3",g:"US",v:["ind","hum"],pub:1},
@@ -1491,7 +1524,7 @@ const INFO={
 "Foxglove":["foxglove.dev","Visualisation and observability tooling for robotics data, widely used for debugging perception and control."],
 "Freedom Robotics":["freedomrobotics.com","Infrastructure software for monitoring, managing and supporting deployed robot fleets."],
 "Rapyuta Robotics":["rapyuta-robotics.com","Japanese company providing cloud-based multi-robot orchestration and warehouse automation systems."],
-"NVIDIA Halos":["nvidia.com","A full-stack safety system for physical AI, pre-assessing the platform so partners certify only their application logic."],
+"NVIDIA Halos":["nvidia.com","A full-stack safety system for physical AI, pre-assessing the platform so partners certify only their application logic. Its AI Systems Inspection Lab was accredited to ISO/IEC 17020 by ANAB in June 2026, which the accreditation frames as a foundation for later certification rather than a substitute for it."],
 "TUV SUD":["tuvsud.com","German technical inspection and certification body; assesses functional safety for automotive and industrial autonomous systems."],
 "TUV Rheinland":["tuv.com","Independent testing and certification organisation covering machinery safety, functional safety and industrial compliance."],
 "UL Solutions":["ulsolutions.com","Global safety science and certification company setting and testing standards for industrial and robotic equipment."],
@@ -1843,13 +1876,14 @@ const GEOFULL={};GEOS.forEach(function(x){GEOFULL[x[0]]=x[1];});
 const BMF={comp:"Component supply",plat:"Machine sale",soft:"Software licence",raas:"Robots-as-a-service",ops:"Owned-fleet operations",svc:"Integration & manufacturing",cert:"Testing & certification",oss:"Open source / ecosystem"};
 const BMD={comp:"Sells parts into someone else's machine",plat:"Sells the whole machine",soft:"Licenses software or models",raas:"Subscription or per-hour, with no customer capex",ops:"Owns the fleet and sells the outcome",svc:"Builds or integrates for a fee",cert:"Assesses and certifies other people's systems",oss:"Open source; monetised indirectly or not at all"};
 const BMORDER=["comp","plat","soft","raas","ops","svc","cert","oss"];
+const BMSHORT={comp:"Component",plat:"Machine",soft:"Software",raas:"RaaS",ops:"Fleet ops",svc:"Integration",cert:"Certification",oss:"Open source"};
 const MATF={res:"Research",pilot:"Pilot",comm:"Commercial",scaled:"Scaled"};
 const MATD={res:"Pre-commercial: research, stealth or unreleased",pilot:"Named pilots or first deployments",comm:"Selling, with revenue",scaled:"Mass deployment or a dominant installed base"};
 const MATORDER=["res","pilot","comm","scaled"];
 
 const LAYER={};PLANES.forEach(function(p){p.layers.forEach(function(L){LAYER[L.c]=L;L.plane=p.id;});});
 const PLANEOF={};PLANES.forEach(function(p){PLANEOF[p.id]=p;});
-const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),big:false,spans:false,val:false,fs:false,dep:false,q:""};
+const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),lay:null,big:false,spans:false,val:false,fs:false,dep:false,q:""};
 let view="chain";
 const collapsed=new Set();
 
@@ -1876,6 +1910,7 @@ function pass(c){
   if(state.val && !c.val) return false;
   if(state.fs && !c.fs) return false;
   if(state.dep && !depOf(c)) return false;
+  if(state.lay && c.l!==state.lay) return false;
   if(state.p.size && !state.p.has(c.l[0])) return false;
   if(state.g.size && !state.g.has(c.g)) return false;
   if(state.b.size && !state.b.has(bmOf(c))) return false;
@@ -1997,6 +2032,52 @@ function viewGeo(host,shown){
     } else box.innerHTML='<span class="nores">no matches</span>';
     d.appendChild(box);host.appendChild(d);
   });
+}
+
+/* ---------- view: layer x business model ---------- */
+function viewMatrix(host,shown){
+  var note=document.createElement('div');note.className='vnote';
+  note.innerHTML='The layer says what the customer buys. The business model says how the seller gets paid. Where a row uses a single model, the layer alone describes the business; where it spreads, the layer hides something. Click any cell to see the companies in it. Counts respect the filters above.';
+  host.appendChild(note);
+  var grid={},layTot={},bmTot={},max=1;
+  shown.forEach(function(c){
+    var b=bmOf(c),k=c.l+'|'+b;
+    grid[k]=(grid[k]||0)+1; if(grid[k]>max)max=grid[k];
+    layTot[c.l]=(layTot[c.l]||0)+1; bmTot[b]=(bmTot[b]||0)+1;
+  });
+  var layers=[];PLANES.forEach(function(p){p.layers.forEach(function(L){layers.push(L);});});
+  var t=document.createElement('div');t.className='tablewrap';
+  var h='<table class="matrix"><thead><tr><th class="mx-corner">Layer</th>';
+  BMORDER.forEach(function(b){h+='<th title="'+esc(BMF[b])+' — '+esc(BMD[b])+'">'+esc(BMSHORT[b])+'</th>';});
+  h+='<th class="mx-tot">Total</th></tr></thead><tbody>';
+  layers.forEach(function(L){
+    var models=BMORDER.filter(function(b){return grid[L.c+'|'+b];});
+    var mono=models.length===1&&layTot[L.c]>1;
+    h+='<tr class="'+(layTot[L.c]?'':'mx-off')+'">'+
+       '<td class="mx-lab '+L.c[0]+'"><span class="mx-code">'+L.c+'</span><span class="mx-name">'+esc(L.n)+'</span>'+
+       (mono?'<span class="mx-mono">single model</span>':'')+'</td>';
+    BMORDER.forEach(function(b){
+      var n=grid[L.c+'|'+b]||0;
+      if(!n){h+='<td class="mx-c mx-zero"></td>';return;}
+      var op=0.16+0.74*(n/max);
+      h+='<td class="mx-c '+L.c[0]+'" data-l="'+L.c+'" data-b="'+b+'" title="'+n+' in '+L.c+' selling as '+esc(BMF[b])+'">'+
+         '<span class="mx-fill" style="opacity:'+op.toFixed(2)+'"></span><span class="mx-n'+(op<0.52?' pale':'')+'">'+n+'</span></td>';
+    });
+    h+='<td class="mx-tot">'+(layTot[L.c]||'')+'</td></tr>';
+  });
+  h+='</tbody><tfoot><tr><th class="mx-lab">Total</th>';
+  BMORDER.forEach(function(b){h+='<th>'+(bmTot[b]||'')+'</th>';});
+  h+='<th class="mx-tot">'+shown.length+'</th></tr></tfoot></table>';
+  t.innerHTML=h;
+  t.querySelectorAll('.mx-c[data-l]').forEach(function(td){
+    td.onclick=function(){
+      state.lay=td.dataset.l; state.b=new Set([td.dataset.b]);
+      view='chain';
+      document.querySelectorAll('.vb').forEach(function(x){x.setAttribute('aria-selected',String(x.dataset.v==='chain'));});
+      render();
+    };
+  });
+  host.appendChild(t);
 }
 
 var sortKey='n', sortDir=1;
@@ -2126,6 +2207,7 @@ function buildFilters(){
 }
 function activeChips(){
   var out=[];
+  if(state.lay){var L0=LAYER[state.lay];out.push([state.lay+' '+(L0?L0.n:''),function(){state.lay=null;}]);}
   state.p.forEach(function(k){out.push([PLANEOF[k].id+' · '+PLANEOF[k].name,function(){state.p.delete(k);}]);});
   state.v.forEach(function(k){out.push([VERTS[k],function(){state.v.delete(k);}]);});
   state.g.forEach(function(k){out.push([GEOFULL[k],function(){state.g.delete(k);}]);});
@@ -2138,7 +2220,7 @@ function activeChips(){
   return out;
 }
 function resetAll(){
-  state.v.clear();state.g.clear();state.p.clear();state.b.clear();state.m.clear();
+  state.v.clear();state.g.clear();state.p.clear();state.b.clear();state.m.clear();state.lay=null;
   state.big=state.spans=state.val=state.fs=state.dep=false;state.q='';
   document.getElementById('q').value='';render();
 }
@@ -2147,6 +2229,7 @@ const VIEWHINT={
   chain:"Every company placed in the one layer it sells. Twenty-five layers is the argument, so the density is deliberate. Collapse a plane you do not need.",
   industry:"The same companies regrouped by the industry they serve, for comparing who competes for the same buyer.",
   geo:"Where these companies are headquartered, and which layers each region concentrates in.",
+  matrix:"The two axes crossed: where a company sits, against how it is paid. This is the answer to whether a single-layer taxonomy can carry a claim about value capture.",
   table:"A flat, sortable list for screening. Click a column to sort, a row to open the profile."
 };
 
@@ -2159,6 +2242,7 @@ function render(){
   if(view==='chain')viewChain(host,shown);
   else if(view==='industry')viewIndustry(host,shown);
   else if(view==='geo')viewGeo(host,shown);
+  else if(view==='matrix')viewMatrix(host,shown);
   else viewTable(host,shown);
 
   var distinct=shown.filter(function(c){return !c.prod;}).length;

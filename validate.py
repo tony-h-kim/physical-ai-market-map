@@ -207,7 +207,7 @@ def main(path):
             warn(f"type scale has grown to {len(scale)} steps")
 
     # 13 — version string consistent
-    vers = set(re.findall(r"V\d-00", head))
+    vers = set(re.findall(r"V\d-\d\d", head))
     if len(vers) > 1:
         err(f"inconsistent version strings: {sorted(vers)}")
 
