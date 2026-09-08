@@ -212,8 +212,9 @@
   .bar-row{display:grid;grid-template-columns:190px 1fr;gap:18px;align-items:center}
   .bar-lab .n{font-size:var(--fs-sm);font-weight:600;color:var(--fg)}
   .bar-lab .s{font-size:var(--fs-3xs);color:var(--fg3)}
-  .bar-wrap{display:flex;align-items:center;gap:12px;min-width:0}
-  .bar{height:30px;border-radius:6px;flex:none}
+  .valtable td:nth-child(2){white-space:nowrap}
+  .bar-wrap{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:12px;align-items:center;min-width:0}
+  .bar{height:30px;border-radius:6px;min-width:3px}
   .bar-val{font-family:var(--mono);font-size:var(--fs-sm);color:var(--fg2);white-space:nowrap;font-variant-numeric:tabular-nums}
   .mg-row{display:grid;grid-template-columns:190px minmax(0,1fr) 260px;gap:18px;align-items:center}
   .mg-lab{font-size:var(--fs-sm);color:var(--fg2)}
@@ -362,7 +363,8 @@
 
   /* ---------- screening table ---------- */
   .tablewrap{background:var(--card);border:1px solid var(--line);border-radius:13px;box-shadow:var(--sh);overflow-x:auto}
-  table.screen{border-collapse:collapse;width:100%;min-width:820px;font-size:var(--fs-2xs)}
+  table.screen{border-collapse:collapse;width:100%;min-width:1100px;font-size:var(--fs-2xs)}
+  table.screen td:nth-child(3),table.screen td:nth-child(4){white-space:nowrap}
   table.screen th{text-align:left;font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.08em;text-transform:uppercase;color:var(--fg3);font-weight:600;padding:12px 13px;border-bottom:1px solid var(--line2);cursor:pointer;white-space:nowrap;user-select:none;position:sticky;top:0;background:var(--card);z-index:2}
   table.screen th:hover{color:var(--fg)}
   table.screen th.sorted{color:var(--info)}
@@ -433,6 +435,9 @@
   nav.subtabs button:hover{color:var(--fg);background:var(--sub)}
   nav.subtabs button[aria-selected="true"]{background:var(--ink);color:var(--onink)}
 
+  @media (max-width:600px){
+    .bar-wrap{grid-template-columns:minmax(0,1fr);row-gap:5px}
+  }
   @media (max-width:720px){
     .pgrid{grid-template-columns:1fr}
     .orient-g{grid-template-columns:1fr}
@@ -587,8 +592,8 @@
 
   <h2>The most valuable companies on the map</h2>
   <p class="h2sub">Last disclosed valuation, private companies only. Publicly listed companies are excluded because market caps move daily and would date the map immediately.</p>
-  <div class="tblwrap"><table>
-    <thead><tr><th>Company</th><th style="width:70px">Layer</th><th class="num" style="width:110px">Valuation</th><th style="width:100px">Status</th><th>Note</th></tr></thead>
+  <div class="tblwrap"><table class="valtable">
+    <thead><tr><th>Company</th><th style="width:124px">Layer</th><th class="num" style="width:110px">Valuation</th><th style="width:100px">Status</th><th>Note</th></tr></thead>
     <tbody>
       <tr><td>Waymo</td><td>B7 · full-stack</td><td class="num">$126B</td><td><span class="pill g">Closed</span></td><td>$16B Series D, Feb 2026 — largest private round in the sector</td></tr>
       <tr><td>Anduril</td><td>A9 · full-stack</td><td class="num">$61B</td><td><span class="pill g">Closed</span></td><td>$5B growth round, May 2026</td></tr>
@@ -713,8 +718,8 @@
 
   <h2>2 · Revenue reality — and who actually has any</h2>
   <p class="h2sub">The single most uncomfortable table in this map. Valuation is an input; revenue is an output.</p>
-  <div class="tblwrap"><table>
-    <thead><tr><th>Company</th><th style="width:70px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:190px">Latest disclosed revenue</th><th class="num" style="width:150px">Implied multiple <span style="font-weight:400;text-transform:none;letter-spacing:0">(basis)</span></th></tr></thead>
+  <div class="tblwrap"><table class="valtable">
+    <thead><tr><th>Company</th><th style="width:124px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:190px">Latest disclosed revenue</th><th class="num" style="width:150px">Implied multiple <span style="font-weight:400;text-transform:none;letter-spacing:0">(basis)</span></th></tr></thead>
     <tbody>
       <tr><td>Waymo</td><td>B7</td><td class="num">$126B</td><td class="num">not separately disclosed</td><td class="num">n/m</td></tr>
       <tr><td>Figure AI</td><td>A6</td><td class="num">$39B</td><td class="num">not disclosed</td><td class="num">n/m</td></tr>
