@@ -297,10 +297,10 @@
   .orient-f{font-size:var(--fs-2xs);color:var(--fg3);margin-top:12px}
 
   /* ---------- view switcher ---------- */
-  .viewbar{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:5px;box-shadow:var(--sh);width:fit-content;max-width:100%}
-  .vb{background:transparent;border:none;color:var(--fg2);padding:7px 15px;border-radius:7px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.13s;white-space:nowrap}
-  .vb:hover{color:var(--fg);background:var(--sub)}
-  .vb[aria-selected="true"]{background:var(--ink);color:var(--onink)}
+  .viewbar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px;max-width:100%}
+  .vb{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:8px 16px;border-radius:9px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.14s;white-space:nowrap;box-shadow:var(--sh)}
+  .vb:hover{color:var(--fg);border-color:var(--line2)}
+  .vb[aria-selected="true"]{background:var(--ink);color:var(--onink);border-color:var(--ink);box-shadow:var(--sh2)}
   .viewhint{font-size:var(--fs-2xs);color:var(--fg3);margin:0 2px 14px;line-height:1.5;max-width:74ch}
 
   /* ---------- filters ---------- */
@@ -318,7 +318,7 @@
   .csub{color:var(--fg3)}
   .activef{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
   .aflabel{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.09em;text-transform:uppercase;color:var(--fg3);font-weight:600;margin-right:2px}
-  .afchip{background:var(--infobg);border:1px solid rgba(37,99,235,.24);color:var(--info);padding:4px 9px;border-radius:20px;font-size:var(--fs-3xs);cursor:pointer;font-family:inherit;font-weight:600;transition:.12s;display:inline-flex;align-items:center;gap:5px}
+  .afchip{background:var(--infobg);border:1px solid currentColor;color:var(--info);padding:4px 9px;border-radius:20px;font-size:var(--fs-3xs);cursor:pointer;font-family:inherit;font-weight:600;transition:.12s;display:inline-flex;align-items:center;gap:5px}
   .afchip:hover{background:var(--info);color:var(--onink);border-color:var(--info)}
   .afx{opacity:.6;font-size:var(--fs-3xs);line-height:1}
   .afreset{background:transparent;border:none;color:var(--fg3);font-size:var(--fs-3xs);cursor:pointer;font-family:inherit;text-decoration:underline;text-underline-offset:2px;padding:4px 6px}
@@ -423,7 +423,7 @@
   .spanchip.B{color:var(--brain);background:var(--brainbg);border-color:transparent}
   .spanchip.C{color:var(--ops);background:var(--opsbg);border-color:transparent}
   .spanchip.v{font-family:var(--sans);font-size:var(--fs-3xs)}
-  .purl{display:inline-block;font-family:var(--mono);font-size:var(--fs-3xs);color:var(--info);border:1px solid rgba(37,99,235,.24);background:var(--infobg);padding:6px 11px;border-radius:7px;margin-top:2px}
+  .purl{display:inline-block;font-family:var(--mono);font-size:var(--fs-2xs);color:var(--info);border:1px solid currentColor;background:var(--infobg);padding:6px 11px;border-radius:7px;margin-top:2px}
   .purl:hover{background:var(--info);color:var(--onink);border-color:var(--info)}
   .pgap{font-size:var(--fs-4xs);color:var(--fg3);line-height:1.55;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);font-style:italic}
 
@@ -440,25 +440,24 @@
   }
 
   /* ---------- layer x business-model matrix ---------- */
-  table.matrix{border-collapse:collapse;width:100%;min-width:760px;font-size:var(--fs-2xs)}
-  table.matrix th{text-align:center;font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.03em;text-transform:uppercase;color:var(--fg3);font-weight:600;padding:11px 4px;border-bottom:1px solid var(--line2);white-space:nowrap;background:var(--card);position:sticky;top:0;z-index:2}
+  table.matrix{border-collapse:collapse;width:100%;min-width:760px;font-size:var(--fs-xs)}
+  table.matrix th{text-align:center;font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.02em;text-transform:uppercase;color:var(--fg2);font-weight:600;padding:12px 6px;border-bottom:1px solid var(--line2);white-space:nowrap;background:var(--card);position:sticky;top:0;z-index:2}
   table.matrix thead th:first-child,table.matrix tfoot th:first-child{text-align:left}
   table.matrix tfoot th{border-bottom:none;border-top:1px solid var(--line2);color:var(--fg2);position:static}
   table.matrix td{padding:0;border-bottom:1px solid var(--line);text-align:center}
   table.matrix tbody tr:last-child td{border-bottom:none}
   .mx-lab{text-align:left!important;padding:9px 12px 9px 0!important;white-space:nowrap;border-left:3px solid transparent;width:auto}
   .mx-lab.A{border-left-color:var(--body)} .mx-lab.B{border-left-color:var(--brain)} .mx-lab.C{border-left-color:var(--ops)}
-  .mx-code{font-family:var(--mono);font-size:var(--fs-3xs);font-weight:700;color:var(--fg2);display:inline-block;width:34px;padding-left:11px}
-  .mx-name{font-size:var(--fs-3xs);color:var(--fg2)}
-  .mx-mono{font-family:var(--mono);font-size:var(--fs-4xs);letter-spacing:.05em;text-transform:uppercase;color:var(--fg3);background:var(--sub);border:1px solid var(--line);border-radius:20px;padding:1px 7px;margin-left:9px}
-  .mx-c{position:relative;cursor:pointer;height:34px;min-width:62px;line-height:34px;vertical-align:middle}
+  .mx-code{font-family:var(--mono);font-size:var(--fs-xs);font-weight:700;color:var(--fg);display:inline-block;width:40px;padding-left:11px}
+  .mx-name{font-size:var(--fs-xs);color:var(--fg)}
+  .mx-mono{font-family:var(--mono);font-size:var(--fs-3xs);letter-spacing:.04em;text-transform:uppercase;color:var(--fg2);background:var(--sub);border:1px solid var(--line);border-radius:20px;padding:2px 8px;margin-left:9px}
+  .mx-c{position:relative;cursor:pointer;height:40px;min-width:66px;line-height:40px;vertical-align:middle}
   .mx-c .mx-fill{position:absolute;inset:3px;border-radius:5px;display:block}
   .mx-c.A .mx-fill{background:var(--body)} .mx-c.B .mx-fill{background:var(--brain)} .mx-c.C .mx-fill{background:var(--ops)}
-  .mx-n{position:relative;font-family:var(--mono);font-size:var(--fs-3xs);font-weight:700;color:var(--hi)}
-  .mx-n.pale{color:var(--ink)}
+  .mx-n{position:relative;font-family:var(--mono);font-size:var(--fs-xs);font-weight:700;color:var(--ink)}
   .mx-c:hover .mx-fill{outline:2px solid var(--ink);outline-offset:-1px}
   .mx-zero{background:repeating-linear-gradient(135deg,transparent,transparent 5px,var(--sub) 5px,var(--sub) 6px)}
-  .mx-tot{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--fg3);padding:0 10px!important;text-align:right!important;width:56px}
+  .mx-tot{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--fg2);padding:0 10px!important;text-align:right!important;width:60px}
   tr.mx-off{opacity:.35}
   .mx-corner{text-align:left!important}
 </style>
@@ -1893,6 +1892,31 @@ function matOf(c){var b=BIZ[c.n];return b?b[1]:null;}
 function depOf(c){var b=BIZ[c.n];return b&&b[2]?b[2]:null;}
 function aboutOf(c){var i=INFO[c.n];return i&&i[1]?i[1]:null;}
 function urlOf(c){var i=INFO[c.n];return i&&i[0]?i[0]:null;}
+
+// Pick the readable numeral colour for a matrix cell. The fill is a plane colour at
+// partial opacity over the card, and which of --ink / --hi wins depends on both the
+// plane (green, purple and amber differ a lot in luminance) and the active theme,
+// so it is computed rather than guessed at a fixed opacity threshold.
+function _col(v){
+  v=String(v).trim();
+  if(v.charAt(0)==='#'){var h=v.slice(1);
+    if(h.length===3)h=h.charAt(0)+h.charAt(0)+h.charAt(1)+h.charAt(1)+h.charAt(2)+h.charAt(2);
+    return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];}
+  var m=v.match(/[0-9.]+/g);return m?[+m[0],+m[1],+m[2]]:[0,0,0];
+}
+function _lin(c){c/=255;return c<=0.03928?c/12.92:Math.pow((c+0.055)/1.055,2.4);}
+function _lum(c){return 0.2126*_lin(c[0])+0.7152*_lin(c[1])+0.0722*_lin(c[2]);}
+function _cr(a,b){var x=_lum(a),y=_lum(b);return (Math.max(x,y)+0.05)/(Math.min(x,y)+0.05);}
+function themeInk(){
+  var cs=getComputedStyle(document.documentElement);
+  return {card:_col(cs.getPropertyValue('--card')),ink:_col(cs.getPropertyValue('--ink')),
+          hi:_col(cs.getPropertyValue('--hi')),
+          A:_col(cs.getPropertyValue('--body')),B:_col(cs.getPropertyValue('--brain')),C:_col(cs.getPropertyValue('--ops'))};
+}
+function cellInk(T,plane,op){
+  var f=T[plane],comp=[f[0]*op+T.card[0]*(1-op),f[1]*op+T.card[1]*(1-op),f[2]*op+T.card[2]*(1-op)];
+  return _cr(comp,T.ink)>=_cr(comp,T.hi)?'--ink':'--hi';
+}
 // normalise a valuation string to millions so $126B sorts above $600M.
 // handles "~$10B", "$5.1-6.4B" (takes the low end) and plain "$600M".
 function valNum(v){
@@ -2039,6 +2063,7 @@ function viewMatrix(host,shown){
   var note=document.createElement('div');note.className='vnote';
   note.innerHTML='The layer says what the customer buys. The business model says how the seller gets paid. Where a row uses a single model, the layer alone describes the business; where it spreads, the layer hides something. Click any cell to see the companies in it. Counts respect the filters above.';
   host.appendChild(note);
+  var T=themeInk();
   var grid={},layTot={},bmTot={},max=1;
   shown.forEach(function(c){
     var b=bmOf(c),k=c.l+'|'+b;
@@ -2059,9 +2084,10 @@ function viewMatrix(host,shown){
     BMORDER.forEach(function(b){
       var n=grid[L.c+'|'+b]||0;
       if(!n){h+='<td class="mx-c mx-zero"></td>';return;}
-      var op=0.16+0.74*(n/max);
+      var op=0.10+0.45*(n/max);   // ramp capped so the numeral clears 4.5:1 in both themes
       h+='<td class="mx-c '+L.c[0]+'" data-l="'+L.c+'" data-b="'+b+'" title="'+n+' in '+L.c+' selling as '+esc(BMF[b])+'">'+
-         '<span class="mx-fill" style="opacity:'+op.toFixed(2)+'"></span><span class="mx-n'+(op<0.52?' pale':'')+'">'+n+'</span></td>';
+         '<span class="mx-fill" style="opacity:'+op.toFixed(2)+'"></span>'+
+         '<span class="mx-n" style="color:var('+cellInk(T,L.c[0],op)+')">'+n+'</span></td>';
     });
     h+='<td class="mx-tot">'+(layTot[L.c]||'')+'</td></tr>';
   });
@@ -2293,6 +2319,8 @@ function boot(){
   scrim=document.createElement('div');scrim.className='scrim';scrim.onclick=closePanel;
   document.body.appendChild(scrim);document.body.appendChild(panel);
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closePanel();});
+  if(window.matchMedia){var mq=window.matchMedia('(prefers-color-scheme: dark)');
+    if(mq.addEventListener)mq.addEventListener('change',function(){render();});}
 
   var tabs=[].slice.call(document.querySelectorAll('.tab'));
   tabs.forEach(function(t){t.addEventListener('click',function(){
