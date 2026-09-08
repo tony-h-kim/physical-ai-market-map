@@ -17,6 +17,8 @@ from collections import Counter
 from pathlib import Path
 
 GEOS = {"US", "CN", "EU", "KR", "JP", "TW", "IL", "other"}
+BIZ_MODELS = {"comp", "plat", "soft", "raas", "ops", "svc", "cert", "oss"}
+MATURITIES = {"res", "pilot", "comm", "scaled"}
 VERTS = {"hum", "ind", "av", "def", "con", "min", "ag"}
 
 try:
@@ -220,6 +222,52 @@ def main(path):
     for quoted in set(re.findall(r"(\d+) layers", head)):
         if quoted.isdigit() and int(quoted) not in (len(layers), 3):
             err(f'prose claims {quoted} layers, data has {len(layers)}')
+
+    # 16 — business model / maturity classification present and in vocabulary
+    biz = {}
+    for name, bm, mat in re.findall(r'^"((?:[^"\\]|\\.)*)":\["(\w+)","(\w+)"', slice_between(js, "const BIZ={", "\n};"), re.M):
+        biz[name] = (bm, mat)
+    for c in co:
+        if c["n"] not in biz:
+            err(f'{c["n"]}: no BIZ classification (business model / maturity)')
+    for name in biz:
+        if not any(c["n"] == name for c in co):
+            err(f"BIZ entry with no company: {name}")
+    for name, (bm, mat) in biz.items():
+        if bm not in BIZ_MODELS:
+            err(f"{name}: business model '{bm}' not in {sorted(BIZ_MODELS)}")
+        if mat not in MATURITIES:
+            err(f"{name}: maturity '{mat}' not in {sorted(MATURITIES)}")
+
+    # 17 — every filter chip vocabulary must cover the values actually in the data.
+    #      This is the check that would have caught the KR/JP geography bug: the
+    #      filter offered "KR/JP" and "other" while the data used KR, JP, IL, TW,
+    #      so 36 companies were unreachable through the geography filter.
+    geo_chips = set(re.findall(r'\["(\w+)","[^"]+"\]', slice_between(js, "const GEOS=[", ";")))
+    for g in sorted({c["g"] for c in co}):
+        if g not in geo_chips:
+            err(f"geography '{g}' is used by companies but has no filter chip — those companies are unreachable")
+    for g in sorted(geo_chips):
+        if g not in {c["g"] for c in co}:
+            warn(f"geography filter offers '{g}' but no company uses it — the chip always returns nothing")
+    vert_chips = set(re.findall(r"(\w+):\"", slice_between(js, "const VERTS={", "};")))
+    for v in sorted({v for c in co for v in c["v"]}):
+        if v not in vert_chips:
+            err(f"vertical '{v}' is used by companies but has no filter chip")
+
+    # 18 — plane entry counts quoted in the taxonomy figure (the "· 61" form,
+    #      which check 11 misses because it has no "companies" suffix)
+    for plane, name in (("A", "Body"), ("B", "Brain"), ("C", "Operations")):
+        n = sum(1 for c in co if c["l"][0] == plane)
+        for quoted in re.findall(rf'{plane} · {name}</div><div class="ts"[^>]*>[^<]*· (\d+)</div>', head):
+            if int(quoted) != n:
+                err(f"taxonomy figure says plane {plane} has {quoted} entries, data has {n}")
+
+    # 19 — deployment strings should be present for the count the prose claims
+    dep_n = len(re.findall(r'^"(?:[^"\\]|\\.)*":\["\w+","\w+","', slice_between(js, "const BIZ={", "\n};"), re.M))
+    for quoted in re.findall(r"(\d+) of \d+ entries carry one", head):
+        if int(quoted) != dep_n:
+            err(f"prose claims {quoted} entries carry a deployment, data has {dep_n}")
 
     print(f"ERRORS   {len(errors)}")
     for e in errors:
