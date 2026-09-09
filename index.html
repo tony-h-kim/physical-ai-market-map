@@ -483,13 +483,6 @@
   tr.mx-off{opacity:.35}
   .mx-corner{text-align:left!important}
 
-  /* ---------- byline ---------- */
-  .byline{display:flex;gap:22px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:13px;padding:clamp(15px,1.6vw,20px) clamp(16px,1.8vw,24px);margin:30px 0 6px;box-shadow:var(--sh)}
-  .by-l{flex:1 1 420px;min-width:0}
-  .by-n{font-size:var(--fs-sm);font-weight:700;letter-spacing:-.018em;color:var(--ink);margin-bottom:5px}
-  .by-b{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.6;max-width:74ch}
-  .by-r a{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--info);border:1px solid currentColor;background:var(--infobg);padding:7px 12px;border-radius:8px;white-space:nowrap;display:inline-block}
-  .by-r a:hover{background:var(--info);color:var(--onink)}
 
   .countrow{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
   .copylink{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:5px 11px;border-radius:7px;font-size:var(--fs-3xs);font-family:inherit;cursor:pointer;white-space:nowrap;transition:.13s}
@@ -498,6 +491,8 @@
 
   .cit{font-family:var(--mono);font-size:var(--fs-4xs);color:var(--fg3);border:1px solid var(--line);background:var(--sub);border-radius:5px;padding:1px 5px;margin-left:3px;white-space:nowrap;vertical-align:1px;text-decoration:none;letter-spacing:.02em}
   .cit:hover{color:var(--info);border-color:var(--info);background:var(--infobg)}
+  .fineprint a{color:var(--fg3);border-bottom:1px solid var(--line2)}
+  .fineprint a:hover{color:var(--info);border-bottom-color:var(--info)}
 </style>
 </head>
 <body>
@@ -662,7 +657,7 @@
 
   <div class="callout w">
     <div class="lbl">Finding 1 — the capital/shipment inversion</div>
-    <p>Western companies hold the overwhelming majority of disclosed capital. Chinese companies hold the overwhelming majority of units shipped. <strong>Chinese firms accounted for over 80% of global humanoid installations in 2025</strong> (Counterpoint), and China took 54% of all industrial robot installations in 2024, 295,000 of 542,076 units <a class="cit" href="https://ifr.org/worldrobotics/report-2025" target="_blank" rel="noopener noreferrer" title="IFR">IFR</a>, with domestic manufacturers outselling foreign suppliers at home for the first time.</p>
+    <p>Western companies hold the overwhelming majority of disclosed capital. Chinese companies hold the overwhelming majority of units shipped. <strong>Chinese firms accounted for over 80% of global humanoid installations in 2025</strong> <a class="cit" href="https://counterpointresearch.com/en/insights/Global-Humanoid-Robot-Installations-Reach-16%2C000-Units-in-2025-as-Mass-Production-Picks-Pace" target="_blank" rel="noopener noreferrer" title="Counterpoint">Counterpoint</a>, and China took 54% of all industrial robot installations in 2024, 295,000 of 542,076 units <a class="cit" href="https://ifr.org/worldrobotics/report-2025" target="_blank" rel="noopener noreferrer" title="IFR">IFR</a>, with domestic manufacturers outselling foreign suppliers at home for the first time.</p>
     <p>Unitree shipped more than 5,500 humanoids in 2025 <a class="cit" href="https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data" target="_blank" rel="noopener noreferrer" title="Unitree">Unitree</a> on roughly CNY 1.7B (about $235M) of revenue, at an IPO valuation near $5.9B. Figure has shipped a small fraction of that volume and is marked at $39B. AgiBot reported more than 5,100 units and over $140M of revenue against a listing target of $5.1–6.4B.</p>
     <p style="margin-bottom:0"><strong>Valuation is being set in one hemisphere and volume in the other.</strong> The implication depends on what the durable advantage in this market turns out to be. If it is the density of real-world operating data, then capital is concentrated on the side of that trade currently generating less of it. If instead the advantage sits in model capability or in the ability to fund a long pre-revenue build, the allocation looks more defensible. We would not treat the inversion as self-evidently mispriced, but it is the clearest structural asymmetry on the map.</p>
   </div>
@@ -740,10 +735,10 @@
       <tr><td>ABI Research</td><td class="num">$6.5B</td><td>2030</td><td>Humanoid only</td></tr>
       <tr><td>BCC Research</td><td class="num">$11B</td><td>2030</td><td>Humanoid only</td></tr>
       <tr><td>Goldman Sachs <a class="cit" href="https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035" target="_blank" rel="noopener noreferrer" title="Goldman Sachs">Goldman Sachs</a></td><td class="num">$38B</td><td>2035</td><td>Humanoid, hardware-narrow. Blue-sky case $205B</td></tr>
-      <tr><td>MarketsandMarkets</td><td class="num">$50.3B</td><td>2035</td><td>Humanoid · 28.1% CAGR</td></tr>
+      <tr><td>MarketsandMarkets <a class="cit" href="https://www.marketsandmarkets.com/PressReleases/humanoid-robot.asp" target="_blank" rel="noopener noreferrer" title="M&amp;M">M&amp;M</a></td><td class="num">$50.3B</td><td>2035</td><td>Humanoid · 28.1% CAGR</td></tr>
       <tr><td>Macquarie</td><td class="num">$139B</td><td>2035</td><td>Humanoid · 6.3M units</td></tr>
-      <tr><td>Roland Berger</td><td class="num">$300–750B</td><td>2035</td><td>Humanoid OEM revenue including services and ecosystem</td></tr>
-      <tr><td>Morgan Stanley</td><td class="num">~$5T</td><td>2050</td><td>Assumes full general-purpose deployment</td></tr>
+      <tr><td>Roland Berger <a class="cit" href="https://www.rolandberger.com/en/Insights/Publications/Humanoid-robots-why-the-convergence-moment-is-now.html" target="_blank" rel="noopener noreferrer" title="Roland Berger">Roland Berger</a></td><td class="num">$300–750B</td><td>2035</td><td>Humanoid OEM revenue including services and ecosystem</td></tr>
+      <tr><td>Morgan Stanley <a class="cit" href="https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050" target="_blank" rel="noopener noreferrer" title="Morgan Stanley">Morgan Stanley</a></td><td class="num">~$5T</td><td>2050</td><td>Assumes full general-purpose deployment</td></tr>
       <tr><td>Physical AI, all categories</td><td class="num">$81B → $1,145B</td><td>2025→2035</td><td>33.5% CAGR · whole category</td></tr>
     </tbody>
   </table></div>
@@ -971,10 +966,10 @@
   <h2>What Plane C buys you — and what it is not</h2>
   <p>CB Insights' widely-cited physical AI map covers 70+ companies across 10 categories — <strong>all of which sit inside Plane B</strong>. It is an excellent map of the intelligence layer, and silent on the other two-thirds of the stack.</p>
   <p>Plane C is split for honesty. <strong>C1–C3 are genuine technical layers</strong> — runtime, fleet operations, certification. C4–C5 are commercial delivery, and they are not technology: systems integration is a low-margin, headcount-heavy professional-services business, and RaaS is an off-balance-sheet financing structure. They earn their place because they own the customer and the operational envelope, but reading them as a software layer would misprice them badly.</p>
-  <p>That omission matters, because on our reading the binding constraint on industrial deployment is not model capability but <strong>certifiability against a documented operational design domain</strong>, the specific, bounded set of conditions a system is approved to work within. Roland Berger puts Tier 2 reliability at over 98% <em>with human exception handling</em>, and that qualifier carries most of the cost.</p>
+  <p>That omission matters, because on our reading the binding constraint on industrial deployment is not model capability but <strong>certifiability against a documented operational design domain</strong>, the specific, bounded set of conditions a system is approved to work within. Roland Berger's four-tier framing of humanoid use cases <a class="cit" href="https://www.rolandberger.com/en/Insights/Publications/Humanoid-robots-why-the-convergence-moment-is-now.html" target="_blank" rel="noopener noreferrer" title="Roland Berger">Roland Berger</a> is the basis for the tiers used here. The reliability rates below are the author's own working assumptions rather than figures from that study, which sets the tiers out qualitatively and publishes no numeric success-rate targets.</p>
   <p>The following is an illustration of how sensitive throughput is to error rate, not a measurement. <em>Assume a 60-second takt time, meaning one unit leaves the station each minute, across an 8-hour shift of roughly 450 cycles, with each exception requiring about 4 minutes of human intervention on a coupled line with no buffer.</em> At 98% success that is around 9 interventions and 36 line-minutes, or <strong>7.5% of the shift</strong>. At 99.9%, the norm for fixed automation, it is under half an intervention and about 2 minutes, or 0.4%. The gap between those two is roughly nineteenfold in intervention events. C3 is the layer where that gap is closed, and it is among the least mapped in the industry.</p>
-  <p><strong>Sensitivity, because the 19× depends on two choices I made:</strong> whether Roland Berger's “&gt;98%” means per-cycle task success or system uptime, and whether the line is coupled with no buffer. Change the second and the conclusion softens considerably. In a <em>buffered parallel cell</em> — independent stations, work-in-progress between them, a failed unit simply pulled from rotation — the same 9 exceptions per shift cost throughput roughly in proportion to the failure rate rather than stopping the line, so the penalty falls from ~7.5% of shift time to something closer to 2%. That is the architecture where cheap redundancy substitutes for reliability, and it is why logistics adopted robots a decade before manufacturing did. The reliability argument is an argument about coupled linear lines specifically, not about robots in general.</p>
-  <p style="font-size:12.5px;color:var(--fg3)">Arithmetic above is the author's own estimate from Roland Berger's published per-tier reliability targets plus standard takt assumptions — not a sourced figure.</p>
+  <p><strong>Sensitivity, because the 19× depends on two choices I made:</strong> whether the assumed “&gt;98%” is read as per-cycle task success or as system uptime, and whether the line is coupled with no buffer. Change the second and the conclusion softens considerably. In a <em>buffered parallel cell</em> — independent stations, work-in-progress between them, a failed unit simply pulled from rotation — the same 9 exceptions per shift cost throughput roughly in proportion to the failure rate rather than stopping the line, so the penalty falls from ~7.5% of shift time to something closer to 2%. That is the architecture where cheap redundancy substitutes for reliability, and it is why logistics adopted robots a decade before manufacturing did. The reliability argument is an argument about coupled linear lines specifically, not about robots in general.</p>
+  <p style="font-size:12.5px;color:var(--fg3)">Both the reliability rates and the takt assumptions above are the author's own, chosen to illustrate sensitivity. Roland Berger is the source for the four-tier structure only; that study publishes no numeric reliability targets. No figure in this paragraph is a sourced one.</p>
 
   <h2>The commercial axis: how value is captured</h2>
   <p>There is a fair objection to everything above. A map organised around where value is captured, but which assigns every company to exactly one technical layer, is answering two questions with one structure. Waymo and Anduril capture value partly <em>by</em> spanning layers, and C4 and C5 are commercial structures in a technology layer's clothing. Marking the difficult cases full-stack and moving on would not resolve that.</p>
@@ -1095,10 +1090,10 @@
   <h3>Industry &amp; analyst research — structural analysis</h3>
   <ul>
     <li><strong>Goldman Sachs</strong>, <em>Global Automation: Humanoid Robots III — The Supply Chain Dynamism</em> (Feb 2025) — supply-chain-over-OEM thesis, component preferences, technology-inflection criteria</li>
-    <li><strong>Roland Berger</strong>, <em>Humanoid Robots 2026: The Convergence Moment</em> (Apr 2026) — deployment tiers, hardware maturity, per-tier reliability targets</li>
-    <li><strong>Morgan Stanley</strong>, <em>Humanoid 100</em> (Feb 2025) and <em>Robot Almanac</em> (Dec 2025) — Brain/Body/Integrator taxonomy, form-factor sizing</li>
+    <li><strong>Roland Berger</strong>, <em>Humanoid Robots 2026: The Convergence Moment</em> (Apr 2026) <a class="cit" href="https://www.rolandberger.com/en/Insights/Publications/Humanoid-robots-why-the-convergence-moment-is-now.html" target="_blank" rel="noopener noreferrer" title="link">link</a> — deployment tiers and hardware maturity. The study defines four tiers qualitatively and publishes no numeric reliability targets; the percentages used in Structure are the author&rsquo;s own.</li>
+    <li><strong>Morgan Stanley</strong> <a class="cit" href="https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050" target="_blank" rel="noopener noreferrer" title="link">link</a>, <em>Humanoid 100</em> (Feb 2025) and <em>Robot Almanac</em> (Dec 2025) — Brain/Body/Integrator taxonomy, form-factor sizing</li>
     <li><strong>Bullhound Capital</strong>, <em>Assembled Intelligence</em> (May 2026) — RaaS unit economics, deployment-moat thesis</li>
-    <li><strong>McKinsey</strong> — humanoid supply chain (Apr 2026), <em>The Next Act for Robotics</em> (Mar 2026, ODD framework and the linear-versus-parallel architecture distinction)</li>
+    <li><strong>McKinsey</strong> <a class="cit" href="https://www.mckinsey.com/industries/industrials/our-insights/turning-humanoid-supply-chain-constraints-into-billion-dollar-wins" target="_blank" rel="noopener noreferrer" title="link">link</a> — humanoid supply chain (Apr 2026), <em>The Next Act for Robotics</em> (Mar 2026, ODD framework and the linear-versus-parallel architecture distinction)</li>
     <li><strong>The Robot Report</strong>, <em>RBR50 2026</em> · IEEE Spectrum, Hurst &amp; Brondmo, <em>Will Robotics Have a ChatGPT Moment?</em> (May 2026)</li>
   </ul>
 
@@ -1110,20 +1105,11 @@
 </section>
 </section>
 
-<div class="byline">
-  <div class="by-l">
-    <div class="by-n">Tony Kim</div>
-    <div class="by-b">Incoming MBA, UC Berkeley Haas. Previously corporate development and strategy at MakinaRocks, a KOSDAQ-listed industrial AI company, where he built the European business from zero. Advises a seed-stage humanoid robotics company on shipyard welding. Writes about where value accrues in physical AI.</div>
-  </div>
-  <div class="by-r">
-    <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim &#8599;</a>
-  </div>
-</div>
-
 <footer>
   <strong>Physical AI Market Map</strong> · V6-00 · September 2026 · compiled and written by Tony Kim<br>
   Company roster is curated, not exhaustive — ~243 of an estimated 700+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
-  The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.
+  The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.<br>
+  <span class="fineprint"><a href="https://www.linkedin.com/in/hagsoo-kim/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hagsoo-kim</a> · <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim</a></span>
 </footer>
 
 </div>
