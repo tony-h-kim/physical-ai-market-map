@@ -11,7 +11,12 @@
 <meta property="og:title" content="Physical AI Market Map 2026">
 <meta property="og:description" content="A layer-based landscape of 243 companies across humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture. Organised by what the customer actually buys and how the seller is paid, with margin, capital and liquidity analysis. Compiled by Tony Kim.">
 <meta property="og:url" content="https://tony-h-kim.github.io/physical-ai-market-map/">
+<meta property="og:image" content="https://tony-h-kim.github.io/physical-ai-market-map/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Physical AI Market Map: 243 companies across three planes, Body, Brain and Operations">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tony-h-kim.github.io/physical-ai-market-map/og-image.png">
 <meta name="twitter:title" content="Physical AI Market Map 2026">
 <meta name="twitter:description" content="A layer-based landscape of 243 companies across humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture. Organised by what the customer actually buys and how the seller is paid, with margin, capital and liquidity analysis. Compiled by Tony Kim.">
 <title>Physical AI Market Map 2026</title>
@@ -485,6 +490,14 @@
   .by-b{font-size:var(--fs-2xs);color:var(--fg2);line-height:1.6;max-width:74ch}
   .by-r a{font-family:var(--mono);font-size:var(--fs-3xs);color:var(--info);border:1px solid currentColor;background:var(--infobg);padding:7px 12px;border-radius:8px;white-space:nowrap;display:inline-block}
   .by-r a:hover{background:var(--info);color:var(--onink)}
+
+  .countrow{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .copylink{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:5px 11px;border-radius:7px;font-size:var(--fs-3xs);font-family:inherit;cursor:pointer;white-space:nowrap;transition:.13s}
+  .copylink:hover{border-color:var(--line2);color:var(--fg)}
+  .copylink.ok{background:var(--bodybg);color:var(--body);border-color:transparent}
+
+  .cit{font-family:var(--mono);font-size:var(--fs-4xs);color:var(--fg3);border:1px solid var(--line);background:var(--sub);border-radius:5px;padding:1px 5px;margin-left:3px;white-space:nowrap;vertical-align:1px;text-decoration:none;letter-spacing:.02em}
+  .cit:hover{color:var(--info);border-color:var(--info);background:var(--infobg)}
 </style>
 </head>
 <body>
@@ -562,7 +575,7 @@
   </div>
 
   <div class="resultbar">
-    <div class="count" id="count"></div>
+    <div class="countrow"><div class="count" id="count"></div><button class="copylink" id="copylink" type="button" title="Copy a link that reopens this exact view">Copy link to this view</button></div>
     <div class="activef" id="activef"></div>
   </div>
 
@@ -597,13 +610,13 @@
   <div class="lede">Physical AI companies raised more in the first half of 2026 than in 2022, 2023 and 2024 combined. The headline total is the least useful part of that. What follows traces where the money went, which layers it avoided, and what the pattern implies.</div>
 
   <div class="metrics">
-    <div class="metric"><div class="mlab">H1 2026 physical AI VC</div><div class="keynum">$47.4B</div><div class="mfoot">across <b>521 deals</b></div></div>
+    <div class="metric"><div class="mlab">H1 2026 physical AI VC <a class="cit" href="https://news.crunchbase.com/venture/physical-ai-funding-startups-robotics-aerospace-h1-2026/" target="_blank" rel="noopener noreferrer" title="Crunchbase">Crunchbase</a></div><div class="keynum">$47.4B</div><div class="mfoot">across <b>521 deals</b></div></div>
     <div class="metric"><div class="mlab">Versus H2 2025</div><div class="keynum">4×</div><div class="mfoot">was <b>$12.0B</b> across 470 deals</div></div>
     <div class="metric"><div class="mlab">Median round, YTD 2026</div><div class="keynum">$165M</div><div class="mfoot">average <b>$295M</b></div></div>
     <div class="metric"><div class="mlab">Share to humanoids</div><div class="keynum">43.2%</div><div class="mfoot">largest single category</div></div>
   </div>
 
-  <p>The three years from 2022 to 2024 produced <strong>$41.9B in total</strong>. The first half of 2026 exceeded that on its own. Measured year on year against H1 2025, funding is up roughly 80%. Measured against the preceding half, it is up about fourfold. The acceleration is therefore recent rather than gradual, which is worth holding in mind when reading any trend line drawn through these points.</p>
+  <p>The three years from 2022 to 2024 produced <strong>$41.9B in total</strong> <a class="cit" href="https://news.crunchbase.com/venture/physical-ai-funding-startups-robotics-aerospace-h1-2026/" target="_blank" rel="noopener noreferrer" title="Crunchbase">Crunchbase</a>. The first half of 2026 exceeded that on its own. Measured year on year against H1 2025, funding is up roughly 80%. Measured against the preceding half, it is up about fourfold. The acceleration is therefore recent rather than gradual, which is worth holding in mind when reading any trend line drawn through these points.</p>
   <p>One round accounts for a large share of it. <strong>Waymo's $16B Series D is roughly a third of the entire half.</strong> Excluding it, H1 2026 is about $31.4B against H2 2025's $12.0B, so the half-on-half increase is closer to <strong>2.6×</strong> than 4×. Both figures are real and neither is the "right" one, but a reader forming a view on sector momentum should know that a single transaction moves the headline growth rate by that much.</p>
 
   <figure>
@@ -628,14 +641,14 @@
       <tr><td>1X</td><td>A6</td><td class="num">~$10B</td><td><span class="pill a">Reported</span></td><td>In talks; not confirmed closed</td></tr>
       <tr><td>Saronic</td><td>A9</td><td class="num">$9.25B</td><td><span class="pill g">Closed</span></td><td>Maritime autonomy</td></tr>
       <tr><td>Wayve</td><td>B7</td><td class="num">$8.6B</td><td><span class="pill g">Closed</span></td><td>Series D post-money, Feb 2026</td></tr>
-      <tr><td>Neura Robotics</td><td>A6</td><td class="num">~$7B</td><td><span class="pill g">Closed</span></td><td>Round led by Tether</td></tr>
+      <tr><td>Neura Robotics</td><td>A6</td><td class="num">~$7B</td><td><span class="pill g">Closed</span></td><td>Round led by Tether <a class="cit" href="https://neura-robotics.com/record-series-c/" target="_blank" rel="noopener noreferrer" title="NEURA">NEURA</a></td></tr>
       <tr><td>Skydio</td><td>A9</td><td class="num">$6.2B</td><td><span class="pill b">S-1 filed</span></td><td>IPO filed June 2026</td></tr>
       <tr><td>Nuro</td><td>B7</td><td class="num">$6B</td><td><span class="pill g">Closed</span></td><td>Pivoted from operator to licensor</td></tr>
       <tr><td>Unitree</td><td>A6</td><td class="num">~$5.9B</td><td><span class="pill b">IPO cleared</span></td><td>China's first listed pure-play humanoid maker</td></tr>
       <tr><td>Physical Intelligence</td><td>B6</td><td class="num">$5.6B</td><td><span class="pill g">Closed</span></td><td>~$11B reported in talks, not closed</td></tr>
       <tr><td>AgiBot</td><td>A6</td><td class="num">$5.1–6.4B</td><td><span class="pill a">IPO target</span></td><td>Hong Kong listing target range</td></tr>
       <tr><td>Apptronik</td><td>A6</td><td class="num">~$5.3B</td><td><span class="pill g">Closed</span></td><td>$935M Series A</td></tr>
-      <tr><td>AMI Labs</td><td>B5</td><td class="num">$3.5B</td><td><span class="pill g">Closed</span></td><td>$1.03B seed, Mar 2026, at a pre-money mark</td></tr>
+      <tr><td>AMI Labs</td><td>B5</td><td class="num">$3.5B</td><td><span class="pill g">Closed</span></td><td>$1.03B seed, Mar 2026, at a pre-money mark <a class="cit" href="https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/" target="_blank" rel="noopener noreferrer" title="TechCrunch">TechCrunch</a></td></tr>
       <tr><td>World Labs</td><td>B5</td><td class="num">$5B</td><td><span class="pill g">Closed</span></td><td>Highest-valued pure world-model company</td></tr>
       <tr><td>Zoox</td><td>A8 · full-stack</td><td class="num">$3.2B</td><td><span class="pill n">Pre-acq.</span></td><td>Last independent mark; now Amazon-owned</td></tr>
       <tr><td>Generalist AI</td><td>B6</td><td class="num">$3B</td><td><span class="pill g">Closed</span></td><td>Ex-DeepMind founders</td></tr>
@@ -649,8 +662,8 @@
 
   <div class="callout w">
     <div class="lbl">Finding 1 — the capital/shipment inversion</div>
-    <p>Western companies hold the overwhelming majority of disclosed capital. Chinese companies hold the overwhelming majority of units shipped. <strong>Chinese firms accounted for over 80% of global humanoid installations in 2025</strong> (Counterpoint), and China took 54% of all industrial robot installations in 2024 — 295,000 of 542,076 units (IFR) — with domestic manufacturers outselling foreign suppliers at home for the first time.</p>
-    <p>Unitree shipped more than 5,500 humanoids in 2025 on roughly CNY 1.7B (about $235M) of revenue, at an IPO valuation near $5.9B. Figure has shipped a small fraction of that volume and is marked at $39B. AgiBot reported more than 5,100 units and over $140M of revenue against a listing target of $5.1–6.4B.</p>
+    <p>Western companies hold the overwhelming majority of disclosed capital. Chinese companies hold the overwhelming majority of units shipped. <strong>Chinese firms accounted for over 80% of global humanoid installations in 2025</strong> (Counterpoint), and China took 54% of all industrial robot installations in 2024, 295,000 of 542,076 units <a class="cit" href="https://ifr.org/worldrobotics/report-2025" target="_blank" rel="noopener noreferrer" title="IFR">IFR</a>, with domestic manufacturers outselling foreign suppliers at home for the first time.</p>
+    <p>Unitree shipped more than 5,500 humanoids in 2025 <a class="cit" href="https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data" target="_blank" rel="noopener noreferrer" title="Unitree">Unitree</a> on roughly CNY 1.7B (about $235M) of revenue, at an IPO valuation near $5.9B. Figure has shipped a small fraction of that volume and is marked at $39B. AgiBot reported more than 5,100 units and over $140M of revenue against a listing target of $5.1–6.4B.</p>
     <p style="margin-bottom:0"><strong>Valuation is being set in one hemisphere and volume in the other.</strong> The implication depends on what the durable advantage in this market turns out to be. If it is the density of real-world operating data, then capital is concentrated on the side of that trade currently generating less of it. If instead the advantage sits in model capability or in the ability to fund a long pre-revenue build, the allocation looks more defensible. We would not treat the inversion as self-evidently mispriced, but it is the clearest structural asymmetry on the map.</p>
   </div>
 
@@ -687,7 +700,7 @@
     <div class="card">
       <h3>C3 · Safety &amp; certification</h3>
       <p>One of the least discussed layers in the stack, and on our reading one of the more defensible. Certification cost, once amortised across an ecosystem, tends to be stickier than a software licence: it is a sunk regulatory asset rather than a technical lead, and a competitor cannot shortcut it by building a better product.</p>
-      <p>NVIDIA's Halos pre-assesses the platform so that partners certify only their own application logic. The assurance infrastructure here is older than it first appears: NVIDIA's DRIVE AI Systems Inspection Lab was accredited to ISO/IEC 17020 by ANAB in <strong>January 2025</strong> for autonomous vehicles, and ANAB expanded that scope to robotics under Halos in <strong>June 2026</strong>. The accreditation covers <em>inspection</em>, and presents itself as a foundation for later certification rather than a replacement for it, so the technical distinction holds: inspection is not certification.</p>
+      <p>NVIDIA's Halos pre-assesses the platform so that partners certify only their own application logic. The assurance infrastructure here is older than it first appears: NVIDIA's DRIVE AI Systems Inspection Lab was accredited to ISO/IEC 17020 by ANAB in <strong>January 2025</strong> for autonomous vehicles <a class="cit" href="https://blogs.nvidia.com/blog/drive-ai-lab-ces" target="_blank" rel="noopener noreferrer" title="NVIDIA">NVIDIA</a>, and ANAB expanded that scope to robotics under Halos in <strong>June 2026</strong> <a class="cit" href="https://anab.ansi.org/anab-accredits-nvidia-halos-ai-inspection-lab-advancing-independent-assurance-for-physical-ai-safety/" target="_blank" rel="noopener noreferrer" title="ANAB">ANAB</a>. The accreditation covers <em>inspection</em>, and presents itself as a foundation for later certification rather than a replacement for it, so the technical distinction holds: inspection is not certification.</p>
       <p style="margin-bottom:0">The instructive fact is who built it. The accredited lab belongs to the compute vendor rather than to an independent certification body, and established assessors including TÜV SÜD, TÜV Rheinland and UL Solutions now treat its inspection reports as valid inputs to their own work, with pre-assessed pathways described for named partners. That is a more developed position than "announced". It also points somewhere specific: if the layer we assess as the most defensible on this map is being assembled by the platform that already sells into every other layer, then <strong>C3 looks less like a standalone profit pool and more like an extension of NVIDIA's</strong>. On current evidence that reading is better supported than a cautious one.</p>
     </div>
     <div class="card">
@@ -710,7 +723,7 @@
   <h2>What would change this view</h2>
   <ul>
     <li>A general-purpose platform sustaining <strong>&gt;99% on a Tier 3 task for 90 consecutive days</strong> without task-specific retraining between changeovers.</li>
-    <li>A humanoid OEM publishing a <strong>a certified ODD under a finalised mobile-robot safety standard (ISO 25785-1 remains a committee draft, so nothing can yet be certified against it)</strong> for an unstructured industrial task, breaching the C3 moat.</li>
+    <li>A humanoid OEM publishing a <strong>a certified ODD under a finalised mobile-robot safety standard (ISO 25785-1 remains a committee draft <a class="cit" href="https://www.iso.org/standard/91469.html" target="_blank" rel="noopener noreferrer" title="ISO">ISO</a>, so nothing can yet be certified against it)</strong> for an unstructured industrial task, breaching the C3 moat.</li>
     <li>Demonstrated <strong>cross-embodiment transfer</strong> from humanoid to purpose-built without retraining, collapsing the A6–A12 morphology question into a deployment-time choice.</li>
     <li>Sub-$15K humanoid-class hardware achieving 98%+ on a real production line, making <strong>redundancy a viable substitute for reliability</strong> — though only in parallel architectures, not coupled lines.</li>
     <li>The dexterity scaling law holding two further orders of magnitude with published sim-to-real transfer at industrial tolerance.</li>
@@ -726,7 +739,7 @@
     <tbody>
       <tr><td>ABI Research</td><td class="num">$6.5B</td><td>2030</td><td>Humanoid only</td></tr>
       <tr><td>BCC Research</td><td class="num">$11B</td><td>2030</td><td>Humanoid only</td></tr>
-      <tr><td>Goldman Sachs</td><td class="num">$38B</td><td>2035</td><td>Humanoid, hardware-narrow. Blue-sky case $205B</td></tr>
+      <tr><td>Goldman Sachs <a class="cit" href="https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035" target="_blank" rel="noopener noreferrer" title="Goldman Sachs">Goldman Sachs</a></td><td class="num">$38B</td><td>2035</td><td>Humanoid, hardware-narrow. Blue-sky case $205B</td></tr>
       <tr><td>MarketsandMarkets</td><td class="num">$50.3B</td><td>2035</td><td>Humanoid · 28.1% CAGR</td></tr>
       <tr><td>Macquarie</td><td class="num">$139B</td><td>2035</td><td>Humanoid · 6.3M units</td></tr>
       <tr><td>Roland Berger</td><td class="num">$300–750B</td><td>2035</td><td>Humanoid OEM revenue including services and ecosystem</td></tr>
@@ -760,9 +773,9 @@
   </table></div>
 
   <p class="h2sub" style="margin:-8px 0 16px">Forward and trailing multiples are mixed by necessity — companies disclose on different bases — so each is labelled. Do not read down the column as like-for-like.</p>
-  <p>The nearest Western counterexample is worth stating before the claim, because it is the one a sceptical reader will reach for. <strong>Agility Robotics disclosed more than $300M in booked orders</strong> in its SPAC materials, alongside roughly 65,000 hours of operation across nine states and named customers including Amazon, GXO, Toyota Motor Manufacturing Canada and Schaeffler. Its chief executive was explicit that these are contracted orders rather than recognised revenue, and no unit-deployment count was disclosed. On a recognised-revenue basis the claim below therefore survives, but it is narrower than it first looks, and Agility is the datapoint most likely to overturn it as the deal proceeds.</p>
+  <p>The nearest Western counterexample is worth stating before the claim, because it is the one a sceptical reader will reach for. <strong>Agility Robotics disclosed more than $300M in booked orders</strong> in its SPAC materials <a class="cit" href="https://www.stocktitan.net/sec-filings/CCXI/425-churchill-capital-corp-xi-business-combination-communication-d6087afb84f5.html" target="_blank" rel="noopener noreferrer" title="Form 425">Form 425</a>, alongside roughly 65,000 hours of operation across nine states and named customers including Amazon, GXO, Toyota Motor Manufacturing Canada and Schaeffler. Its chief executive was explicit that these are contracted orders rather than recognised revenue, and no unit-deployment count was disclosed. On a recognised-revenue basis the claim below therefore survives, but it is narrower than it first looks, and Agility is the datapoint most likely to overturn it as the deal proceeds.</p>
 
-  <p><strong>Among venture-backed humanoid and robot-foundation-model companies, those with materially disclosed recognised revenue are Chinese.</strong> That qualifier matters: the incumbents in A7, A11 and A12 — ABB, FANUC, Caterpillar, Komatsu, John Deere, Symbotic — all disclose substantial robotics and autonomy revenue. The point is not that nobody in the West earns money from robots. It is that <em>within the venture-funded frontier this map is mostly about</em>, the revenue is Chinese and the valuations are not. UBTech led humanoid revenue in 2025 at roughly CNY 2.0B (~$280M), selling 1,079 Walker S2 units for CNY 821M (~$115M) of humanoid-segment revenue. Unitree guided H1 2026 revenue of about CNY 1.1B (~$156M), up 36–45% year on year. AgiBot expects roughly CNY 4.0B (~$594M) for 2026. Global humanoid shipments reached 19,100 units in H1 2026, up 272% year on year, with AgiBot overtaking Unitree for the top position and the two together holding close to 80% of Chinese output.</p>
+  <p><strong>Among venture-backed humanoid and robot-foundation-model companies, those with materially disclosed recognised revenue are Chinese.</strong> That qualifier matters: the incumbents in A7, A11 and A12 — ABB, FANUC, Caterpillar, Komatsu, John Deere, Symbotic — all disclose substantial robotics and autonomy revenue. The point is not that nobody in the West earns money from robots. It is that <em>within the venture-funded frontier this map is mostly about</em>, the revenue is Chinese and the valuations are not. UBTech led humanoid revenue in 2025 at roughly CNY 2.0B (~$280M), selling 1,079 Walker S2 units for CNY 821M (~$115M) of humanoid-segment revenue. Unitree guided H1 2026 revenue of about CNY 1.1B (~$156M), up 36–45% year on year. AgiBot expects roughly CNY 4.0B (~$594M) for 2026. Global humanoid shipments reached 19,100 units in H1 2026, up 272% year on year <a class="cit" href="https://technode.com/2026/08/11/chinese-makers-accounted-for-more-than-97-of-global-humanoid-robot-shipments-in-h1-2026/" target="_blank" rel="noopener noreferrer" title="TechNode">TechNode</a>, with AgiBot overtaking Unitree for the top position and the two together holding close to 80% of Chinese output.</p>
 
   <p>Western leaders are valued largely on expected capability. Chinese leaders are valued on units shipped and revenue booked, at roughly <strong>9–25× revenue</strong>, which is demanding but within the range familiar from other hardware categories. The Western marks have no denominator to test against. That is not necessarily wrong, since early platform bets often look exactly like this. It does mean the two halves of the map are being underwritten to <em>different evidentiary standards</em>, and only one of them can currently be checked.</p>
 
@@ -779,15 +792,15 @@
       <tr><td>Unitree</td><td><span class="pill b">IPO priced</span></td><td>STAR Market, August 2026. China's first listed pure-play humanoid maker — and it listed <em>before</em> any Western humanoid company.</td></tr>
       <tr><td>AgiBot</td><td><span class="pill a">IPO filed</span></td><td>Hong Kong. Second Chinese humanoid listing inside twelve months.</td></tr>
       <tr><td>Skydio</td><td><span class="pill b">S-1 filed</span></td><td>June 2026, ~$6.2B. First major US autonomy IPO of the cycle.</td></tr>
-      <tr><td>Agility Robotics</td><td><span class="pill a">SPAC announced</span></td><td>Agreed at ~$2.5B with Churchill Capital XI; S-4 filed July 2026. The deal has not closed, so this is a negotiated value rather than a market price. It sits below its private-market peers despite the deepest deployment record in humanoids.</td></tr>
-      <tr><td>Mentee Robotics</td><td><span class="pill n">M&amp;A</span></td><td>Acquired by Mobileye for ~$900M — the first meaningful humanoid acquisition by a silicon incumbent.</td></tr>
+      <tr><td>Agility Robotics</td><td><span class="pill a">SPAC announced</span></td><td>Agreed at ~$2.5B with Churchill Capital XI <a class="cit" href="https://www.agilityrobotics.com/content/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi" target="_blank" rel="noopener noreferrer" title="Agility">Agility</a>; S-4 filed July 2026. The deal has not closed, so this is a negotiated value rather than a market price. It sits below its private-market peers despite the deepest deployment record in humanoids.</td></tr>
+      <tr><td>Mentee Robotics</td><td><span class="pill n">M&amp;A</span></td><td>Acquired by Mobileye for ~$900M <a class="cit" href="https://techcrunch.com/2026/01/06/mobileye-acquires-humanoid-robot-startup-mentee-robotics-for-900m/" target="_blank" rel="noopener noreferrer" title="TechCrunch">TechCrunch</a>, the first meaningful humanoid acquisition by a silicon incumbent.</td></tr>
       <tr><td>SpaceX</td><td><span class="pill b">IPO</span></td><td>June 2026, $1.77T. Adjacent, but it resets institutional risk appetite for capital-intensive hardware.</td></tr>
     </tbody>
   </table></div>
   <p>Two things follow. First, <strong>liquidity is arriving through Asian exchanges and US defence-adjacent listings rather than through the humanoid companies carrying the highest private marks.</strong> Second, Agility has agreed to combine at roughly $2.5B despite the deepest deployment record in the category, while Figure is marked at $39B with no disclosed revenue. That is a negotiated value rather than a struck price, so it is suggestive rather than conclusive. If the deal closes near its agreed terms, it would be the first read on how these two halves of the map are priced when a buyer and seller actually have to agree.</p>
 
   <h2>4 · The incumbents occupy less of this map than their position warrants</h2>
-  <p>ABB, FANUC, Yaskawa and KUKA appear only in A7. They hold the installed base: the industry shipped 542,076 industrial robots in 2024 alone, against an operational stock in the millions. They also hold the service revenue, the distribution and the customer relationships that most startups on this map are effectively trying to rent.</p>
+  <p>ABB, FANUC, Yaskawa and KUKA appear only in A7. They hold the installed base: the industry shipped 542,076 industrial robots in 2024 alone, against an operational stock in the millions <a class="cit" href="https://ifr.org/worldrobotics/report-2025" target="_blank" rel="noopener noreferrer" title="IFR">IFR</a>. They also hold the service revenue, the distribution and the customer relationships that most startups on this map are effectively trying to rent.</p>
   <p>They are almost entirely absent from A5, B2 and B5. Historically, industrial-automation incumbents acquire late and expensively rather than build. The Mobileye/Mentee deal suggests the acquisition phase has begun, but it began with a <em>silicon</em> incumbent rather than a robotics one.</p>
   <p>The nearer-term pressure on them is not humanoids. <strong>Chinese domestic manufacturers outsold foreign suppliers inside China for the first time in 2024</strong>, in a market representing 54% of global installations. On that evidence the incumbent question is less about disruption by general-purpose robots later this decade, and more about competitive displacement already underway in their largest single market.</p>
 
@@ -2205,7 +2218,7 @@ function viewTable(host,shown){
   host.appendChild(t);
 }
 
-let panel,scrim;
+let panel,scrim,openCo=null;
 function field(label,value){return value?'<div class="pf"><div class="pfl">'+label+'</div><div class="pfv">'+value+'</div></div>':'';}
 function openPanel(c){
   var bm=bmOf(c),mat=matOf(c),dep=depOf(c),about=aboutOf(c),url=urlOf(c);
@@ -2243,8 +2256,86 @@ function openPanel(c){
   panel.querySelector('.pclose').onclick=closePanel;
   panel.classList.add('open');scrim.classList.add('open');
   panel.scrollTop=0;
+  openCo=c.n; writeHash();
 }
-function closePanel(){panel.classList.remove('open');scrim.classList.remove('open');}
+function closePanel(){panel.classList.remove('open');scrim.classList.remove('open');openCo=null;writeHash();}
+
+/* ---------- shareable URL state ----------
+   Every filter, view, tab and open company profile is encoded in the hash so a
+   reader can be sent straight to "A6 filtered to China" rather than to the top
+   of a long page. replaceState is used rather than pushState: the goal is a
+   copyable link, not a browser-history trail through every filter click. */
+function currentTab(){
+  var t=document.querySelector('.tab[aria-selected="true"]');
+  return t?t.dataset.t.replace('t-',''):'explore';
+}
+function writeHash(){
+  var q=[], tab=currentTab();
+  if(tab!=='explore'){
+    q.push('tab='+tab);
+    var sub=document.querySelector('#t-'+tab+' .subtabs button[aria-selected="true"]');
+    if(sub) q.push('s='+sub.dataset.s);
+  } else {
+    if(view!=='chain') q.push('view='+view);
+    if(state.p.size) q.push('p='+Array.from(state.p).join(','));
+    if(state.v.size) q.push('v='+Array.from(state.v).join(','));
+    if(state.g.size) q.push('g='+Array.from(state.g).join(','));
+    if(state.b.size) q.push('b='+Array.from(state.b).join(','));
+    if(state.m.size) q.push('m='+Array.from(state.m).join(','));
+    if(state.lay) q.push('lay='+state.lay);
+    var f=['big','spans','val','fs','dep'].filter(function(k){return state[k];});
+    if(f.length) q.push('f='+f.join(','));
+    if(state.q) q.push('q='+encodeURIComponent(state.q));
+  }
+  if(openCo) q.push('co='+encodeURIComponent(openCo));
+  var h=q.length?('#'+q.join('&')):'';
+  if(location.hash!==h){
+    try{ history.replaceState(null,'',location.pathname+location.search+h); }catch(e){}
+  }
+}
+function readHash(){
+  var h=location.hash.replace(/^#/,'');
+  if(!h) return null;
+  var kv={};
+  h.split('&').forEach(function(x){var i=x.indexOf('='); if(i>0) kv[x.slice(0,i)]=decodeURIComponent(x.slice(i+1));});
+  var set=function(t,val,valid){ t.clear(); (val||'').split(',').forEach(function(k){ if(k&&(!valid||valid.indexOf(k)>=0)) t.add(k); }); };
+  set(state.p,kv.p,['A','B','C']);
+  set(state.v,kv.v,Object.keys(VERTS));
+  set(state.g,kv.g,GEOS.map(function(x){return x[0];}));
+  set(state.b,kv.b,BMORDER);
+  set(state.m,kv.m,MATORDER);
+  state.lay = (kv.lay && LAYER[kv.lay]) ? kv.lay : null;
+  ['big','spans','val','fs','dep'].forEach(function(k){ state[k]=false; });
+  (kv.f||'').split(',').forEach(function(k){ if(['big','spans','val','fs','dep'].indexOf(k)>=0) state[k]=true; });
+  state.q = kv.q ? kv.q.toLowerCase() : '';
+  var qEl=document.getElementById('q'); if(qEl) qEl.value = kv.q || '';
+  if(kv.view && ['chain','industry','geo','matrix','table'].indexOf(kv.view)>=0){
+    view=kv.view;
+    document.querySelectorAll('.vb').forEach(function(x){x.setAttribute('aria-selected',String(x.dataset.v===view));});
+  }
+  var tab=(kv.tab==='insights'||kv.tab==='method')?('t-'+kv.tab):'t-explore';
+  document.querySelectorAll('.tab').forEach(function(x){
+    x.setAttribute('aria-selected',String(x.dataset.t===tab));
+    document.getElementById(x.dataset.t).hidden = x.dataset.t!==tab;
+  });
+  if(kv.s){
+    var nav=document.querySelector('#'+tab+' .subtabs');
+    if(nav) nav.querySelectorAll('button').forEach(function(x){
+      x.setAttribute('aria-selected',String(x.dataset.s===kv.s));
+      var sec=document.getElementById(x.dataset.s); if(sec) sec.hidden = x.dataset.s!==kv.s;
+    });
+  }
+  return kv.co || null;
+}
+function copyLink(btn){
+  writeHash();
+  var url=location.href;
+  var done=function(){ var o=btn.textContent; btn.textContent='Link copied'; btn.classList.add('ok');
+    setTimeout(function(){btn.textContent=o;btn.classList.remove('ok');},1600); };
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(done,function(){}); }
+  else { var ta=document.createElement('textarea'); ta.value=url; document.body.appendChild(ta); ta.select();
+         try{document.execCommand('copy');done();}catch(e){} ta.remove(); }
+}
 
 function chip(label,on,fn,title){
   var b=document.createElement('button');b.className='chip'+(on?' on':'');b.textContent=label;
@@ -2341,6 +2432,7 @@ function render(){
     var r=document.createElement('button');r.className='afreset';r.textContent='Clear all';r.onclick=resetAll;af.appendChild(r);
   }
   document.getElementById('viewhint').textContent=VIEWHINT[view];
+  writeHash();
   document.getElementById('legendbox').hidden=(view!=='chain');
   if(!shown.length){
     host.innerHTML='<div class="empty-all"><b>No companies match these filters.</b><br>Try removing one above. Geography and business model are the easiest to over-narrow.</div>';
@@ -2369,16 +2461,24 @@ function boot(){
   document.addEventListener('keydown',function(e){if(e.key==='Escape')closePanel();});
   if(window.matchMedia){var mq=window.matchMedia('(prefers-color-scheme: dark)');
     if(mq.addEventListener)mq.addEventListener('change',function(){render();});}
+  var lnk=document.getElementById('copylink');
+  if(lnk) lnk.onclick=function(){copyLink(lnk);};
+  window.addEventListener('hashchange',function(){
+    var co=readHash(); render();
+    if(co){var c=CO.filter(function(x){return x.n===co;})[0]; if(c) openPanel(c); }
+  });
 
   var tabs=[].slice.call(document.querySelectorAll('.tab'));
   tabs.forEach(function(t){t.addEventListener('click',function(){
     tabs.forEach(function(x){x.setAttribute('aria-selected',String(x===t));document.getElementById(x.dataset.t).hidden=x!==t;});
     window.scrollTo({top:0,behavior:'smooth'});
+    writeHash();
   });});
   document.querySelectorAll('.subtabs').forEach(function(nav){
     var subs=[].slice.call(nav.querySelectorAll('button'));
     subs.forEach(function(sb){sb.addEventListener('click',function(){
       subs.forEach(function(x){x.setAttribute('aria-selected',String(x===sb));document.getElementById(x.dataset.s).hidden=x!==sb;});
+      writeHash();
     });});
   });
   document.querySelectorAll('[data-goto]').forEach(function(a){
@@ -2396,7 +2496,9 @@ function boot(){
     var el=document.querySelector('.ocard[data-plane="'+p.id+'"] .oc-m');
     if(el)el.innerHTML='<b>'+CO.filter(function(c){return c.l[0]===p.id;}).length+'</b> entries · '+p.layers.length+' layers';
   });
+  var bootCo=readHash();
   render();
+  if(bootCo){ var bc=CO.filter(function(x){return x.n===bootCo;})[0]; if(bc) openPanel(bc); }
 }
 boot();
 </script>
