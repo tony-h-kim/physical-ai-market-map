@@ -259,7 +259,7 @@ def main(path):
     #      which check 11 misses because it has no "companies" suffix)
     for plane, name in (("A", "Body"), ("B", "Brain"), ("C", "Operations")):
         n = sum(1 for c in co if c["l"][0] == plane)
-        for quoted in re.findall(rf'{plane} · {name}</div><div class="ts"[^>]*>[^<]*· (\d+)</div>', head):
+        for quoted in re.findall(rf'{plane} · {name}</div><div class="ts"[^>]*>[^<]*· (\d+)(?: entries)?</div>', head):
             if int(quoted) != n:
                 err(f"taxonomy figure says plane {plane} has {quoted} entries, data has {n}")
 

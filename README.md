@@ -1,6 +1,6 @@
 # Physical AI Market Map — 2026
 
-An interactive landscape of **243 companies across 25 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture.
+An interactive landscape of **245 companies across 25 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture.
 
 **[→ View the live map](https://tony-h-kim.github.io/physical-ai-market-map/)**
 
@@ -53,7 +53,7 @@ Funding, valuation and revenue data from Crunchbase, PitchBook, CB Insights, Dea
 
 **Business model and commercial maturity** are the author's classification, not sourced figures. Business model is the unit of sale restated commercially — component supply, machine sale, software licence, RaaS, owned-fleet operations, integration, certification, open source. Maturity describes the *primary layer*, not the company: Tesla is marked *pilot* because its mapped layer is A6 humanoid platforms and Optimus is a pilot, not because Tesla is early-stage.
 
-**Deployments** are publicly reported only — company announcements and press coverage, neither confirmed with the companies nor audited. 71 of 251 entries carry one; the remaining 180 were not researched for one. Absence is a gap in the research, not evidence that none exist, and each profile says so rather than showing an empty field.
+**Deployments** are publicly reported only — company announcements and press coverage, neither confirmed with the companies nor audited. 73 of 253 entries carry one; the remaining 180 were not researched for one. Absence is a gap in the research, not evidence that none exist, and each profile says so rather than showing an empty field.
 
 **Revenue is deliberately not a field.** It is not reliably available for private companies at this scale, and a column populated by estimates would be the least defensible thing on the map.
 
@@ -68,7 +68,7 @@ Stated rather than hidden — the full list is on the Method tab.
 - **Sources conflict.** Where they do, the more authoritative figure is used and the conflict is noted.
 - **Survivorship.** Wound-down and acquired companies are largely absent, which flatters the sector's apparent success rate.
 
-The roster is curated, not exhaustive — roughly 243 of an estimated 700+ companies in scope.
+The roster is curated, not exhaustive — roughly 245 of an estimated 700+ companies in scope.
 
 ## Validation
 
