@@ -315,11 +315,15 @@
   .orient-f{font-size:var(--fs-2xs);color:var(--fg3);margin-top:12px}
 
   /* ---------- view switcher ---------- */
-  .viewbar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px;max-width:100%}
+  .viewrow{display:flex;gap:10px 14px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.viewbar{display:flex;gap:7px;flex-wrap:wrap;max-width:100%}
+.vsearch{margin-left:auto;flex:1 1 240px;max-width:320px;min-width:0}
+.vsearch input[type=search]{width:100%;min-width:0;padding:8px 13px;border-radius:9px;box-shadow:var(--sh)}
+@media (max-width:700px){.vsearch{margin-left:0;max-width:none;flex-basis:100%}}
   .vb{background:var(--card);border:1px solid var(--line);color:var(--fg2);padding:8px 16px;border-radius:9px;font-size:var(--fs-xs);cursor:pointer;font-family:inherit;font-weight:500;transition:.14s;white-space:nowrap;box-shadow:var(--sh)}
   .vb:hover{color:var(--fg);border-color:var(--line2)}
   .vb[aria-selected="true"]{background:var(--ink);color:var(--onink);border-color:var(--ink);box-shadow:var(--sh2)}
-  .viewhint{font-size:var(--fs-2xs);color:var(--fg3);margin:0 2px 14px;line-height:1.5;max-width:74ch}
+  .viewhint{font-size:var(--fs-2xs);color:var(--fg3);margin:0 2px 14px;line-height:1.5;max-width:none}
 
   /* ---------- filters ---------- */
   .morefilters{width:100%;border-top:1px solid var(--line);padding-top:13px;margin-top:2px}
@@ -539,17 +543,19 @@
     <div class="orient-f">Click a plane to filter everything below. <a href="#" data-goto="structure">Why this structure rather than hardware versus software &#8594;</a></div>
   </div>
 
-  <div class="viewbar" role="tablist" aria-label="View">
-    <button class="vb" data-v="chain" role="tab" aria-selected="true" type="button">Value chain</button>
-    <button class="vb" data-v="industry" role="tab" aria-selected="false" type="button">By industry</button>
-    <button class="vb" data-v="geo" role="tab" aria-selected="false" type="button">By geography</button>
-    <button class="vb" data-v="matrix" role="tab" aria-selected="false" type="button">Layer &times; model</button>
-    <button class="vb" data-v="table" role="tab" aria-selected="false" type="button">Screening table</button>
+  <div class="viewrow">
+    <div class="viewbar" role="tablist" aria-label="View">
+      <button class="vb" data-v="chain" role="tab" aria-selected="true" type="button">Value chain</button>
+      <button class="vb" data-v="industry" role="tab" aria-selected="false" type="button">By industry</button>
+      <button class="vb" data-v="geo" role="tab" aria-selected="false" type="button">By geography</button>
+      <button class="vb" data-v="matrix" role="tab" aria-selected="false" type="button">Layer &times; model</button>
+      <button class="vb" data-v="table" role="tab" aria-selected="false" type="button">Screening table</button>
+    </div>
+    <div class="vsearch"><input type="search" id="q" placeholder="Search company, layer or keyword&hellip;" aria-label="Search companies"></div>
   </div>
   <div class="viewhint" id="viewhint"></div>
 
   <div class="filters">
-    <div class="fgroup"><div class="flabel">Search</div><div class="chips"><input type="search" id="q" placeholder="company, layer or keyword&hellip;"></div></div>
     <div class="fgroup"><div class="flabel">Plane</div><div class="chips" id="f-p"></div></div>
     <div class="fgroup"><div class="flabel">Vertical</div><div class="chips" id="f-v"></div></div>
     <div class="fgroup"><div class="flabel">Headquarters</div><div class="chips" id="f-g"></div></div>
@@ -587,10 +593,8 @@
 
   <div class="noteblock">
     <div class="nt">What is in scope, and what is not</div>
-    <p>Two tests decide inclusion, and neither of them is the customer's industry. First, autonomy has to be the thing being bought rather than a feature of it. Second, the offer has to be sold into a commercial or industrial operation as capital or as a service, and to fit one of the twenty-five layers.</p>
-    <p>That rule admits hospital logistics. Diligent Robotics' Moxi is a mobile manipulator with an arm that fetches and delivers without human assistance, and Relay Robotics runs indoor delivery fleets on a subscription. Both sell into a building what Locus and Geek+ sell into a warehouse, so both sit at A7 alongside them. Excluding them because the building is a hospital would have been a vertical judgement inside a taxonomy that claims not to make them.</p>
-    <p>The same rule keeps surgical robotics out. A da Vinci system is teleoperated: the surgeon drives every motion, and what it sells is precision and ergonomics rather than autonomy. Consumer and domestic robots (iRobot, Matic, Roborock) fail the second test instead, since a retail appliance is not a capital deployment.</p>
-    <p style="margin-bottom:0">Food service (Miso Robotics) and laboratory automation (Ginkgo, Emerald Cloud) are the honest exceptions: both would pass the two tests, and both are left out on coverage rather than on principle. Excluding surgical robotics still costs the margin analysis something, which is why Intuitive Surgical now appears in Value capture as a named comparator rather than as an absence.</p>
+    <p>Two tests decide inclusion, and neither is the customer's industry: autonomy has to be the thing being bought, and the offer has to sell into a commercial or industrial operation as capital or as a service.</p>
+    <p style="margin-bottom:0">Hospital logistics passes. Diligent Robotics and Relay Robotics sell into a building what Locus and Geek+ sell into a warehouse, so both sit at A7. Surgical robotics fails the first test, since a da Vinci system is teleoperated. Consumer and domestic robots (iRobot, Roborock), food service (Miso Robotics) and laboratory automation (Ginkgo, Emerald Cloud) are out of scope. Intuitive Surgical appears in Value capture as a comparator rather than as an entry.</p>
   </div>
 </section>
 
