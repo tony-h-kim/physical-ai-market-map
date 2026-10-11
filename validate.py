@@ -169,7 +169,7 @@ def main(path):
     # 12 — headline company count
     for quoted in set(re.findall(r"(\d{3}) companies", head)):
         if int(quoted) not in (len(co), len([c for c in co if not c["prod"]])):
-            warn(f'headline count "{quoted} companies" matches neither entries ({len(co)}) '
+            err(f'headline count "{quoted} companies" matches neither entries ({len(co)}) '
                  f'nor distinct companies ({len([c for c in co if not c["prod"]])})')
 
     # 12b — the taxonomy figure must name every layer that exists
@@ -268,6 +268,18 @@ def main(path):
     for quoted in re.findall(r"(\d+) of \d+ entries carry one", head):
         if int(quoted) != dep_n:
             err(f"prose claims {quoted} entries carry a deployment, data has {dep_n}")
+
+    # Entity aliases can pass exact-name deduplication while inflating the roster.
+    if {"Leaderdrive", "Suzhou Green Harmonic"}.issubset({c["n"] for c in co}):
+        err("Leaderdrive / Suzhou Green Harmonic are one supplier, not two entries")
+    # Company sites must be safe host/path values before the renderer adds https://.
+    for name, url in info.items():
+        if url and (re.search(r'[\s"<>]', url) or ":" in url):
+            err(f"{name}: unsafe company website value")
+    for quoted in re.findall(r"(\d+) humanoid-platform entries", head):
+        actual = sum(c["l"] == "A6" for c in co)
+        if int(quoted) != actual:
+            err(f"A6 prose says {quoted} entries, data has {actual}")
 
     print(f"ERRORS   {len(errors)}")
     for e in errors:
