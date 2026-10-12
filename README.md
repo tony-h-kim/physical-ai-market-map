@@ -46,9 +46,15 @@ Three sections, in the order a reader actually needs them.
 
 Filter by plane, vertical, headquarters, business model, commercial maturity, and position (category leaders, full-stack, vertical integrators, disclosed valuation, named deployments). Active filters are shown as dismissible chips with a live count. Click any company for a profile panel: what it sells, how it charges, how far along it is, publicly reported deployments, spans and verticals.
 
-**Insights** — *Capital* (H1 2026 funding, the most valuable private companies, the capital/shipment inversion between the US and China) · *Value capture* (margin geography by layer) · *Investor view* (TAM disagreement, revenue reality, the exit window, incumbent response, six explicit positions) · *Ecosystem* (how NVIDIA, Schaeffler, Bosch and the Korean conglomerates built partnership ecosystems, where those become circular financing loops, and four tests for telling the two apart).
+**Insights** — *Capital* (comparable half-year funding and transaction evidence) · *Value capture* (pricing power and an adjacent revenue-mix example) · *Investor view* (forecast scope, deployment evidence and four commercial questions) · *Ecosystem* (capital and product flows, partnership incentives and four demand tests).
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
+
+## V9-01 — comparison-table corrections, October 12, 2026
+
+The layer × business model matrix now uses explicit column widths, indented wrapping labels, centered counts and full-cell controls. Redundant badges and patterned empty cells are removed. Column headings and layer labels stay visible during table scrolling. Row headers identify the layer for assistive technology, and cell selection returns focus to the view control.
+
+The screening table uses a narrower company column on phones, wrapping text, stable sort indicators and fixed headings. Its methodology note is expandable. Both tables were reviewed in light and dark themes, including 320- and 390-pixel layouts; all seven map views were checked for page overflow at desktop and phone widths.
 
 ## V9-00 — editorial atlas and rebuilt Insights, October 11, 2026
 

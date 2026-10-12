@@ -570,6 +570,52 @@ nav.subtabs{gap:26px;background:var(--bg);border:0;border-bottom:1px solid var(-
 /* Axis labels share the bars' origin; footer height is constant when the toggle wraps. */
 .funding-axis{position:relative;display:block;margin-bottom:calc(10px + var(--fs-xs)*1.35 + var(--fs-3xs)*2.8)}.funding-axis span{position:absolute;left:0;transform:translateY(-50%)}.funding-axis span:nth-child(1){top:0}.funding-axis span:nth-child(2){top:50%}.funding-axis span:nth-child(3){top:100%}.funding-period{height:calc(var(--fs-xs)*1.35)}.funding-deals{height:calc(var(--fs-3xs)*2.8)}
 
+
+/* Comparison tables: explicit columns and aligned row labels. */
+.matrix-wrap{max-height:72vh;overflow:auto;isolation:isolate;scroll-padding:64px 0 0 280px}
+table.matrix{table-layout:fixed;border-collapse:separate;border-spacing:0;min-width:1100px}
+table.matrix col.mx-layer-col{width:280px}
+table.matrix col.mx-total-col{width:64px}
+table.matrix th,table.matrix td{vertical-align:middle}
+table.matrix thead th{height:56px;white-space:normal;line-height:1.35;padding:10px 8px;z-index:3}
+table.matrix tbody th.mx-lab{top:auto;z-index:2;font-weight:400;border-bottom:1px solid var(--line)}
+table.matrix .mx-corner{position:sticky;left:0;z-index:4;padding-left:16px!important}
+table.matrix .mx-lab{width:auto;max-width:none;padding:12px 14px!important;white-space:normal;box-shadow:1px 0 0 var(--line2);line-height:1.4}
+.mx-label{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start;text-align:left}
+table.matrix .mx-code{width:auto;padding:0;font-family:var(--sans);font-size:var(--fs-3xs);color:var(--fg2)}
+table.matrix .mx-name{display:block;padding:0;font-size:var(--fs-xs);overflow-wrap:break-word}
+table.matrix .mx-c{height:52px;line-height:normal;cursor:default}
+table.matrix .mx-c button{display:flex;align-items:center;justify-content:center;position:absolute;inset:0;min-height:44px;line-height:1.4}
+table.matrix .mx-n,table.matrix .mx-tot{font-family:var(--sans);font-variant-numeric:tabular-nums}
+table.matrix .mx-zero{background:var(--card)}
+table.matrix .mx-zero::after{content:'–';color:var(--fg3);font-size:var(--fs-3xs)}
+table.matrix tfoot th{padding-block:14px;background:var(--sub)}
+table.matrix tfoot .mx-lab{background:var(--sub)}
+table.matrix tr.mx-off{opacity:1}
+table.matrix tr.mx-off .mx-name,table.matrix tr.mx-off .mx-code{color:var(--fg3)}
+.matrix-guide{font-size:var(--fs-xs);line-height:1.5;color:var(--fg2);margin:0 0 14px;max-width:74ch}
+.screen th:first-child{box-shadow:1px 0 0 var(--line2)}
+.screen td:first-child{box-shadow:1px 0 0 var(--line2)}
+@media(max-width:600px){table.matrix{min-width:980px}table.matrix col.mx-layer-col{width:180px}.matrix-wrap{max-height:68vh;scroll-padding-left:180px}.mx-label{grid-template-columns:1fr;gap:3px}table.matrix .mx-lab{padding:10px 12px!important}table.matrix .mx-name{font-size:var(--fs-3xs)}}
+
+
+.view-explanation{margin:0 0 18px;font-size:var(--fs-xs);color:var(--fg2)}
+.view-explanation summary{cursor:pointer;padding:8px 0}
+.view-explanation p{max-width:74ch;line-height:1.6;margin:10px 0 20px}
+.screen-wrap{max-height:72vh;overflow:auto;isolation:isolate;scroll-padding-top:52px}
+table.screen{table-layout:fixed;border-collapse:separate;border-spacing:0;min-width:1245px}
+table.screen col.screen-company-col{width:220px}
+table.screen td,table.screen th{white-space:normal!important;overflow-wrap:break-word}
+table.screen th{height:52px;vertical-align:middle}
+table.screen .tn{white-space:normal;line-height:1.45}
+table.screen .tn button{text-align:left;line-height:1.45}
+table.screen .tbig{display:inline;letter-spacing:0;text-transform:none;font-family:var(--sans)}
+table.screen .tmono{line-height:1.45}
+@media(max-width:600px){table.screen col.screen-company-col{width:160px}table.screen{min-width:1185px}.screen-wrap{max-height:68vh}}
+@media(max-width:360px){table.matrix col.mx-layer-col{width:145px}.matrix-wrap{scroll-padding-left:145px}}
+
+table.screen th.sorted::after{position:absolute;right:12px;top:50%;transform:translateY(-50%)}
+table.screen th button{padding-right:18px;text-align:left;min-height:30px}
 </style>
 </head>
 <body>
@@ -579,7 +625,7 @@ nav.subtabs{gap:26px;background:var(--bg);border:0;border-bottom:1px solid var(-
   <div class="masthead"><span class="site-signature">Tony Kim <span>Independent research</span></span><button class="theme-control" id="theme-toggle" type="button" aria-label="Change color theme">Theme: system</button></div>
   <div class="hero"><div class="hero-copy"><h1>Physical AI<br> Market Map</h1><p class="sub">A buyer’s view of the companies turning intelligence into work in the physical world.</p><div class="hero-actions"><button type="button" id="hero-explore">Explore the companies</button><button type="button" data-goto="capital">Read the market thesis</button></div><p class="hero-byline">244 companies. 25 layers.<br> Organized by what the customer buys.</p></div>
   <figure class="atlas-cover"><div class="atlas-cover-title"><span>The market structure</span><span>252 roster entries</span></div><div id="hero-atlas"></div><figcaption><span class="cover-desktop-note">Bars use a shared 0–25 entry scale. </span><span class="cover-mobile-note">Largest layers by roster coverage in each plane, on a shared 0–25 entry scale. </span>Select a layer to explore its companies.</figcaption></figure></div>
-  <div class="hero-meta"><span>Updated October 11, 2026</span><span>September roster / selected October checks</span><details class="research-notes"><summary>Coverage &amp; sources</summary><p>V9-00. 244 distinct companies and 252 entries, including eight separately mapped products or business units. Financial records carry their own dates and sources. The full methodology explains classifications and coverage gaps.</p></details></div>
+  <div class="hero-meta"><span>Updated October 12, 2026</span><span>September roster / selected October checks</span><details class="research-notes"><summary>Coverage &amp; sources</summary><p>V9-01. 244 distinct companies and 252 entries, including eight separately mapped products or business units. Financial records carry their own dates and sources. The full methodology explains classifications and coverage gaps.</p></details></div>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Sections">
@@ -995,7 +1041,7 @@ nav.subtabs{gap:26px;background:var(--bg);border:0;border-bottom:1px solid var(-
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V9-00 · October 11, 2026 · compiled and written by Tony Kim<br>
+  <strong>Physical AI Market Map</strong> · V9-01 · October 12, 2026 · compiled and written by Tony Kim<br>
   Company roster is curated, not exhaustive — ~244 of an estimated 700+ companies in scope. Transaction marks in USD; 29 financial records reviewed October 11. Other private marks may be stale; rumors and announced-but-unclosed deals are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.<br>
   <span class="fineprint"><a href="https://www.linkedin.com/in/hagsoo-kim/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hagsoo-kim</a> · <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim</a></span>
@@ -2354,7 +2400,7 @@ function csvText(rows,notes){
 }
 function exportCsv(rows,notes){
   const url=URL.createObjectURL(new Blob([csvText(rows,notes)],{type:'text/csv;charset=utf-8'}));
-  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V9-00.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V9-01.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
 const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),lay:null,big:false,spans:false,val:false,fs:false,dep:false,q:""};
@@ -2599,9 +2645,6 @@ function viewGeo(host,shown){
 
 /* ---------- view: layer x business model ---------- */
 function viewMatrix(host,shown){
-  var note=document.createElement('div');note.className='vnote';
-  note.innerHTML='Rows show the product layer; columns show the business model. Multiple populated cells in a row reveal different commercial approaches within the same layer. Select a cell to see its entries. Counts follow the active filters.';
-  host.appendChild(note);
   var T=themeInk();
   var grid={},layTot={},bmTot={},max=1;
   shown.forEach(function(c){
@@ -2610,25 +2653,23 @@ function viewMatrix(host,shown){
     layTot[c.l]=(layTot[c.l]||0)+1; bmTot[b]=(bmTot[b]||0)+1;
   });
   var layers=[];PLANES.forEach(function(p){p.layers.forEach(function(L){layers.push(L);});});
-  var t=document.createElement('div');t.className='tablewrap';
-  var h='<table class="matrix"><thead><tr><th class="mx-corner">Layer</th>';
-  BMORDER.forEach(function(b){h+='<th title="'+esc(BMF[b])+' — '+esc(BMD[b])+'">'+esc(BMSHORT[b])+'</th>';});
+  var t=document.createElement('div');t.className='tablewrap matrix-wrap';t.setAttribute('role','region');
+  var guide=document.createElement('p');guide.className='matrix-guide';guide.id='matrix-guide';guide.textContent='Select a count to explore its companies. Dashes mean no matching entries. Scroll for more layers and models.';host.appendChild(guide);t.setAttribute('aria-describedby','matrix-guide');
+  var h='<table class="matrix" aria-label="Roster entries by layer and business model"><colgroup><col class="mx-layer-col"><col span="8"><col class="mx-total-col"></colgroup><thead><tr><th scope="col" class="mx-corner">Layer</th>';
+  BMORDER.forEach(function(b){h+='<th scope="col" title="'+esc(BMF[b])+' — '+esc(BMD[b])+'">'+esc(BMSHORT[b])+'</th>';});
   h+='<th class="mx-tot">Total</th></tr></thead><tbody>';
   layers.forEach(function(L){
-    var models=BMORDER.filter(function(b){return grid[L.c+'|'+b];});
-    var mono=models.length===1&&layTot[L.c]>1;
     h+='<tr class="'+(layTot[L.c]?'':'mx-off')+'">'+
-       '<td class="mx-lab '+L.c[0]+'"><span class="mx-code">'+L.c+'</span><span class="mx-name">'+esc(L.n)+'</span>'+
-       (mono?'<span class="mx-mono">single model</span>':'')+'</td>';
+       '<th scope="row" class="mx-lab '+L.c[0]+'"><div class="mx-label"><span class="mx-code">'+L.c+'</span><span class="mx-name">'+esc(L.n)+'</span></div></th>';
     BMORDER.forEach(function(b){
       var n=grid[L.c+'|'+b]||0;
       if(!n){h+='<td class="mx-c mx-zero"></td>';return;}
       var op=0.10+0.45*(n/max);   // ramp capped so the numeral clears 4.5:1 in both themes
       h+='<td class="mx-c '+L.c[0]+'" data-l="'+L.c+'" data-b="'+b+'" title="'+n+' in '+L.c+' selling as '+esc(BMF[b])+'">'+
          '<span class="mx-fill" style="opacity:'+op.toFixed(2)+'"></span>'+
-         '<button type="button" aria-label="'+n+' entries in '+L.c+' selling as '+esc(BMF[b])+'"><span class="mx-n" style="color:var('+cellInk(T,L.c[0],op)+')">'+n+'</span></button></td>';
+         '<button type="button" aria-label="'+n+(n===1?' entry in ':' entries in ')+L.c+' selling as '+esc(BMF[b])+'"><span class="mx-n" style="color:var('+cellInk(T,L.c[0],op)+')">'+n+'</span></button></td>';
     });
-    h+='<td class="mx-tot">'+(layTot[L.c]||'')+'</td></tr>';
+    h+='<td class="mx-tot">'+(layTot[L.c]||'0')+'</td></tr>';
   });
   h+='</tbody><tfoot><tr><th class="mx-lab">Total</th>';
   BMORDER.forEach(function(b){h+='<th>'+(bmTot[b]||'')+'</th>';});
@@ -2640,6 +2681,7 @@ function viewMatrix(host,shown){
       view='chain';
       syncViewSelect();
       render();
+      document.getElementById('view-select').focus();
     };
   });
   host.appendChild(t);
@@ -2647,8 +2689,8 @@ function viewMatrix(host,shown){
 
 var sortKey='n', sortDir=1;
 function viewTable(host,shown){
-  var note=document.createElement('div');note.className='vnote';
-  note.innerHTML='Business model and maturity are classifications, not sourced figures; the rules are in Method. Transaction marks are in USD; proposed deals and rumors are not completed rounds. Financial provenance is available for all displayed marks, including press-reported and historical records. A review does not establish freshness or independent audit. A blank means undisclosed, never small. Revenue is deliberately absent: it is not reliably available for private companies at this scale, and a column of estimates would be worse than no column.';
+  var note=document.createElement('details');note.className='view-explanation';
+  note.innerHTML='<summary>Reading this table</summary><p>Business model and maturity are classifications, not sourced figures; the rules are in Method. Transaction marks are in USD; proposed deals and rumors are not completed rounds. Financial provenance is available for all displayed marks, including press-reported and historical records. A review does not establish freshness or independent audit. A blank means undisclosed, never small. Revenue is deliberately absent: it is not reliably available for private companies at this scale, and a column of estimates would be worse than no column.</p>';
   host.appendChild(note);
   var cols=[["n","Company"],["l","Layer"],["g","HQ"],["bm","Business model"],["mat","Maturity"],["val","Valuation"],["v","Verticals"]];
   var val=function(c,k){
@@ -2663,8 +2705,8 @@ function viewTable(host,shown){
     if(typeof x==='string')return sortDir*x.localeCompare(y,'en',{sensitivity:'base'});
     return sortDir*(x-y);
   });
-  var t=document.createElement('div');t.className='tablewrap';
-  var html='<table class="screen"><thead><tr>';
+  var t=document.createElement('div');t.className='tablewrap screen-wrap';
+  var html='<table class="screen" aria-label="Company screening table"><colgroup><col class="screen-company-col"><col style="width:240px"><col style="width:90px"><col style="width:160px"><col style="width:105px"><col style="width:250px"><col style="width:180px"></colgroup><thead><tr>';
   cols.forEach(function(c){
     html+='<th data-k="'+c[0]+'" class="'+(sortKey===c[0]?'sorted '+(sortDir>0?'asc':'desc'):'')+'" aria-sort="'+(sortKey===c[0]?(sortDir>0?'ascending':'descending'):'none')+'"><button type="button">'+esc(c[1])+'</button></th>';
   });
@@ -2908,7 +2950,7 @@ function render(){
   else if(view==='shortlist')viewShortlist(host,shown);
   else viewTable(host,shown);
 
-  host.querySelectorAll('.tablewrap').forEach(el=>{el.tabIndex=0;el.setAttribute('aria-label','Scrollable company table');});
+  host.querySelectorAll('.tablewrap').forEach(el=>{el.tabIndex=0;el.setAttribute('aria-label',el.classList.contains('matrix-wrap')?'Scrollable layer and business model matrix':'Scrollable company table');});
   var distinct=shown.filter(function(c){return !c.prod;}).length;
   var totalDistinct=CO.filter(function(c){return !c.prod;}).length;
   var withVal=shown.filter(function(c){return c.val;}).length;
