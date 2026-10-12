@@ -34,8 +34,9 @@ Two distinctions this map draws that most others don't:
 
 Three sections, in the order a reader actually needs them.
 
-**Explore** — the companies, in seven views over one shared set of filters:
+**Explore** — the companies, in eight views over one shared set of filters:
 
+- *Overview* — four interactive charts for plane, headquarters, business model and commercial stage, plus an expandable 25-layer atlas
 - *Value chain* — the 25-layer map, every company in the one layer it sells
 - *By industry* — the same companies regrouped by the vertical they serve, for comparing who competes for the same buyer
 - *By geography* — headquarters, with the layer concentration of each region
@@ -49,6 +50,14 @@ Filter by plane, vertical, headquarters, business model, commercial maturity, an
 **Insights** — *Capital* (H1 2026 funding, the most valuable private companies, the capital/shipment inversion between the US and China) · *Value capture* (margin geography by layer) · *Investor view* (TAM disagreement, revenue reality, the exit window, incumbent response, six explicit positions) · *Ecosystem* (how NVIDIA, Schaeffler, Bosch and the Korean conglomerates built partnership ecosystems, where those become circular financing loops, and four tests for telling the two apart).
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
+
+## V8-00 — visual research overview, October 11, 2026
+
+The default view is now an interactive research overview. Four charts show plane composition, headquarters by plane, primary business model and commercial stage within each plane. All counts derive from the current filtered roster; bars open the corresponding detailed view. The expandable atlas compares all 25 layers on a common scale. Counts use entries rather than distinct companies and describe coverage, not market share; maturity remains an author classification.
+
+A conceptual system diagram introduces Body, Brain and Operations. The page uses IBM Plex Sans headings, Inter reading text, a navy/teal/blue/amber palette, calmer navigation, a shared chart canvas, shorter introductory copy and progressive disclosure of source context. Existing URLs, company profiles, decision tools and private shortlist notes remain available. The social preview follows the new visual identity. Validation includes 41 JavaScript checks and desktop/mobile review in both themes.
+
+Design references: [Dealroom ecosystem explorer](https://dealroom.co/ecosystems-network/?view=map) for overview-to-detail navigation; [Our World in Data Grapher](https://ourworldindata.org/redesigning-our-interactive-data-visualizations) for explicit chart context and controls. No runtime chart library is required.
 
 ## V7-01 — targeted financial refresh, October 11, 2026
 

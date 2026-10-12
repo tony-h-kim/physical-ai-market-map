@@ -22,7 +22,7 @@
 <title>Physical AI Market Map 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap">
 <style>
   :root{
     --bg:#f4f6f8; --card:#ffffff; --sub:#fafbfc;
@@ -578,18 +578,109 @@
   @media(max-width:820px){.wb-layout{grid-template-columns:1fr}.wb-partner dl{grid-template-columns:1fr;gap:3px}.wb-partner dd{margin-bottom:8px}.workload-launch{grid-template-columns:repeat(3,minmax(0,1fr))}.workload-launch #export-filtered{justify-self:start;grid-column:1/-1}}
   @media(max-width:480px){header{padding-top:6px}header .meta{line-height:1.6}.theme-control{float:none;display:block;margin:0 0 12px}.workload-launch{grid-template-columns:1fr}.workload-launch button[data-workload]{padding:10px 12px}.wb-partner,.wb-brief{padding:16px}.wb-partner dl{line-height:1.55}.wb-brief p,.wb-brief li{font-size:var(--fs-xs)}}
   @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+  header.compact .hero{display:block}header.compact .hero-figure,header.compact .sub{display:none}header.compact h1{font-size:var(--fs-h2);max-width:none;margin:0;letter-spacing:-.02em}header.compact h1 br{display:none}header.compact .masthead{margin-bottom:14px}header.compact .hero-meta{margin-top:14px;padding-top:10px}header.compact{padding-bottom:16px}
+  /* Research canvas: charts share a surface; the system diagram carries the identity. */
+  :root{--bg:#f2f5f9;--card:#ffffff;--sub:#f6f8fb;--fg:#142b45;--ink:#142b45;--fg2:#52647a;--fg3:#596b80;--line:#e0e7ef;--line2:#c9d4e1;--body:#147d76;--bodybg:#e7f4f1;--brain:#405fc7;--brainbg:#edf0fc;--ops:#aa6718;--opsbg:#fbf1e2;--info:#3156b5;--sans:Inter,"Segoe UI",Arial,sans-serif;--display:"IBM Plex Sans",Inter,"Segoe UI",sans-serif;--fs-display:clamp(34px,4vw + 10px,66px);--fs-metric:clamp(28px,1.4vw + 18px,42px)}
+  :root[data-theme="dark"]{--bg:#101c2a;--card:#172638;--sub:#1c2e43;--fg:#edf3fb;--ink:#edf3fb;--fg2:#b3c3d7;--fg3:#a2b5cd;--line:#30445d;--line2:#455d78;--body:#69c6ba;--bodybg:#1b393c;--brain:#9daff8;--brainbg:#263451;--ops:#efbb76;--opsbg:#3e3326;--info:#a7c2ff}
+  @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101c2a;--card:#172638;--sub:#1c2e43;--fg:#edf3fb;--ink:#edf3fb;--fg2:#b3c3d7;--fg3:#a2b5cd;--line:#30445d;--line2:#455d78;--body:#69c6ba;--bodybg:#1b393c;--brain:#9daff8;--brainbg:#263451;--ops:#efbb76;--opsbg:#3e3326;--info:#a7c2ff}}
+  .wrap{max-width:1440px;padding-top:24px}
+  h1,h2,h3,.oc-n,.pn{font-family:var(--display)}
+  header{padding:8px 0 22px;border-bottom:0}
+  .masthead{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px;color:var(--fg2);font-size:var(--fs-xs)}
+  .masthead .theme-control{float:none;border-radius:20px;padding:6px 14px;background:transparent}
+  .hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:48px;align-items:center}
+  h1{max-width:12ch;font-weight:600;letter-spacing:-.045em;line-height:1.02;margin:0 0 20px}
+  header .sub{max-width:54ch;font-size:var(--fs-lede);line-height:1.55}
+  .hero-figure{margin:0;background:var(--card);border-radius:20px;padding:20px 24px 10px;overflow:hidden}
+  .hero-figure svg{display:block;width:100%;height:auto;min-width:0;font-family:var(--sans)}
+  .hero-figure figcaption{font-size:var(--fs-3xs);color:var(--fg2);text-align:center;margin:5px 0 8px}
+  .system-line{stroke:var(--line2);fill:none;stroke-width:2}
+  .system-box{stroke:none;fill:var(--sub)}
+  .system-label{fill:var(--fg);font-size:var(--fs-lede);font-weight:600}
+  .system-detail{fill:var(--fg2);font-size:var(--fs-xs)}
+  .system-a{fill:var(--body)}.system-b{fill:var(--brain)}.system-c{fill:var(--ops)}
+  .hero-meta{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:24px;padding-top:16px;border-top:1px solid var(--line2);font-size:var(--fs-xs);color:var(--fg2)}
+  .hero-meta strong{font-weight:600;color:var(--fg)}
+  .research-notes{font-size:var(--fs-3xs);margin-left:auto;max-width:70ch}
+  .research-notes summary{cursor:pointer;color:var(--fg2)}.research-notes p{font-size:var(--fs-xs);margin:8px 0 0}
+  nav.tabs{background:var(--bg);border-bottom:1px solid var(--line2);padding:0;margin:0 0 22px;gap:28px}
+  .tab{border:0;border-bottom:3px solid transparent;border-radius:0;padding:12px 2px;background:transparent;box-shadow:none;font-size:var(--fs-sm);font-weight:600}
+  .tab[aria-selected="true"]{background:transparent;color:var(--fg);border-color:var(--body);box-shadow:none}
+  .tab:hover{border-bottom-color:var(--line2)}
+  .viewbar{gap:4px;flex-wrap:wrap;background:none;border:0;padding:0}
+  .vb{border:0!important;background:transparent;border-radius:6px;padding:8px 11px;font-size:var(--fs-xs);color:var(--fg2)}
+  .vb[aria-selected="true"]{background:var(--ink);color:var(--onink)}
+  .viewrow{align-items:flex-start;gap:18px}.vsearch input{min-width:230px;padding:9px 12px}
+  .viewhint{font-size:var(--fs-xs);margin-bottom:12px;max-width:78ch}
+  .count{font-family:var(--sans)}.count .csub{display:none}
+  .result-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.resultbar{margin-bottom:16px}.countrow{align-items:center}.count{margin-bottom:0}
+  .filter-disclosure{border-bottom:1px solid var(--line);padding-bottom:5px}.filter-disclosure>summary{padding:8px 0}
+  .overview-title{display:flex;justify-content:space-between;gap:20px;align-items:baseline;margin:16px 0}
+  .overview-title h2{margin:0}.overview-title p{font-size:var(--fs-xs);color:var(--fg2);margin:0;max-width:52ch}
+  .research-canvas{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+  .chart-section{padding:26px 30px;min-width:0}
+  .chart-section:nth-child(2n){border-left:1px solid var(--line)}.chart-section:nth-child(n+3){border-top:1px solid var(--line)}
+  .chart-section h3{font-family:var(--display);font-size:var(--fs-lede);margin:0 0 5px;font-weight:600}
+  .chart-caption{font-size:var(--fs-xs);color:var(--fg2);line-height:1.5;margin:0 0 20px;max-width:64ch}
+  .chart-foot{font-size:var(--fs-3xs);color:var(--fg2);margin:18px 0 0;max-width:72ch}
+  .stack-row{display:grid;grid-template-columns:120px minmax(0,1fr) 42px;gap:16px;align-items:center;width:100%;background:none;color:var(--fg);font:inherit;border:0;border-radius:5px;text-align:left;padding:12px 0;cursor:pointer}
+  .stack-row:hover,.plot-row:hover{background:var(--sub)}
+  .stack-row .stack-name{font-size:var(--fs-sm);font-weight:600}.stack-row .stack-value{font-family:var(--display);font-size:var(--fs-metric);text-align:right;line-height:1}
+  .plot-track{display:flex;background:var(--sub);height:12px;border-radius:3px;overflow:hidden}.plot-segment{height:100%;min-width:0}.plot-segment.A{background:var(--body)}.plot-segment.B{background:var(--brain)}.plot-segment.C{background:var(--ops)}
+  .stack-row .plot-track{height:20px}
+  .chart-key{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0;font-size:var(--fs-3xs);color:var(--fg2)}.chart-key span{display:inline-flex;align-items:center;gap:6px}.chart-dot{width:8px;height:8px;border-radius:50%;background:var(--body)}.chart-dot.B{background:var(--brain)}.chart-dot.C{background:var(--ops)}
+  .plot-row{display:grid;grid-template-columns:100px minmax(0,1fr) 32px;gap:12px;align-items:center;width:100%;border:0;background:none;border-radius:4px;font:inherit;color:var(--fg);text-align:left;padding:7px 0;cursor:pointer}
+  .plot-label{font-size:var(--fs-xs);line-height:1.3}.plot-value{font-size:var(--fs-xs);font-weight:600;text-align:right; font-variant-numeric:tabular-nums}
+  .plot-axis{display:flex;justify-content:space-between;margin:2px 44px 8px 112px;font-size:var(--fs-3xs);color:var(--fg2)}
+  .model-chart .plot-row{grid-template-columns:145px minmax(0,1fr) 32px}.model-chart .plot-axis{margin-left:157px}
+  .stage-row{margin:0 0 16px}.stage-heading{font-size:var(--fs-xs);display:flex;justify-content:space-between;margin:0 0 7px;color:var(--fg2)}.stage-heading b{color:var(--fg)}
+  .stage-track{height:32px;display:flex;border-radius:4px;overflow:hidden;background:var(--sub)}
+  .stage-cell{border:0;padding:0;min-width:0;cursor:pointer;background:var(--sub);color:var(--fg);font:inherit;font-size:var(--fs-3xs);font-weight:600;position:relative}
+  .stage-cell.res{background:var(--line2)}.stage-cell.pilot{background:var(--brainbg);box-shadow:inset 0 0 0 1px var(--brain)}.stage-cell.comm{background:var(--bodybg);box-shadow:inset 0 0 0 1px var(--body)}.stage-cell.scaled{background:var(--body);color:var(--card)}
+  .stage-cell:hover{filter:brightness(.92)}.stage-cell:focus-visible{outline-offset:-3px}.stage-legend span{display:flex;align-items:center;gap:6px}.stage-legend .stage-cell{width:12px;height:12px;display:inline-block;border-radius:2px;cursor:default;flex:none}
+  .stage-legend{display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;margin-top:20px;font-size:var(--fs-xs);color:var(--fg2)}.stage-legend b{color:var(--fg)}
+  .atlas{margin-top:26px;border-bottom:1px solid var(--line2);padding-bottom:22px}.atlas>summary{cursor:pointer;font-family:var(--display);font-size:var(--fs-lede);font-weight:600;color:var(--fg)}.atlas>p{color:var(--fg2);font-size:var(--fs-xs);margin:8px 0 20px}
+  .atlas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:20px}.atlas-plane h3{margin:0 0 12px}.atlas-row{display:grid;grid-template-columns:minmax(0,1fr) 66px 22px;gap:8px;align-items:center;background:none;border:0;border-bottom:1px solid var(--line);width:100%;font:inherit;font-size:var(--fs-3xs);text-align:left;color:var(--fg);padding:9px 0;cursor:pointer}.atlas-row:hover{color:var(--info)}
+  .atlas-row .plot-track{height:6px}.atlas-row .plot-value{font-size:var(--fs-3xs)}
+  .route-heading{margin:28px 0 14px!important}.overview-routes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.route-button{border:0;border-top:3px solid var(--line2);background:none;padding:18px 0;text-align:left;color:var(--fg);cursor:pointer;font:inherit}.route-button:hover{border-color:var(--body)}.route-button strong{display:block;font-family:var(--display);font-size:var(--fs-body);margin-bottom:5px}.route-button span{display:block;color:var(--fg2);font-size:var(--fs-xs);max-width:38ch}.route-button em{display:inline-block;font-style:normal;font-size:var(--fs-xs);color:var(--info);margin-top:12px}
+  .planehead{padding:18px 22px}.plane{border-radius:10px}.lmeta{background:var(--card)}.lcode{font-family:var(--sans);color:var(--fg2)}.grp{background:var(--sub)}.co .g{font-family:var(--sans)}
+  .ocard{border-radius:8px;background:var(--card)}.oc-b{font-family:var(--sans);letter-spacing:0;text-transform:none}
+  #t-insights .h2sub,#t-method .h2sub,#t-insights>div>p,#t-method>div>p,.noteblock p{max-width:78ch}
+  .lede{box-shadow:none;border-radius:6px;line-height:1.65}.tblwrap{box-shadow:none;border-radius:8px}.screen tbody tr:hover{background:var(--sub)}
+  .subtabs{gap:6px}.noteblock{margin-top:36px}footer{box-shadow:none;background:transparent;border:0;border-top:1px solid var(--line2);border-radius:0;padding:20px 0}
+  body:has(.vh-overview) .workload-launch{display:none}
+  @media(max-width:1050px){.hero{gap:24px;grid-template-columns:1.15fr 1fr}.viewrow{flex-direction:column}.vsearch{width:100%;max-width:none;flex:0 0 auto;margin-left:0}.vsearch input{width:100%}.chart-section{padding:22px}.research-notes{margin-left:0}}
+  @media(max-width:760px){.wrap{padding-top:16px}.hero{grid-template-columns:1fr;gap:20px}h1{max-width:18ch;--fs-display:clamp(34px,6vw,48px);margin-bottom:14px}.hero-figure{max-width:540px;padding:12px 20px 6px}.hero-figure svg{max-height:220px}.masthead{margin-bottom:18px}.hero-meta{gap:10px 20px;margin-top:18px}.research-canvas{grid-template-columns:1fr}.chart-section:nth-child(2n){border-left:0}.chart-section:nth-child(n+2){border-top:1px solid var(--line)}.overview-title{display:block}.overview-title p{margin-top:8px}.atlas-grid{grid-template-columns:1fr;gap:22px}.overview-routes{grid-template-columns:1fr;gap:0}.route-button{padding:16px 0}.stage-cell{font-size:var(--fs-3xs)}nav.tabs{gap:24px}.vb{padding:7px 9px}.filter-disclosure>summary span{display:none}.stack-row{grid-template-columns:110px minmax(0,1fr) 42px;gap:12px}}
+  @media(max-width:400px){.chart-section{padding:20px 16px}.model-chart .plot-row{grid-template-columns:118px minmax(0,1fr) 28px}.model-chart .plot-axis{margin-left:130px}.hero-figure{padding:8px 12px}.masthead{font-size:var(--fs-3xs)}.masthead .theme-control{font-size:var(--fs-3xs);padding:5px 9px}.hero-meta{font-size:var(--fs-3xs)}}
+
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <button class="theme-control" id="theme-toggle" type="button" aria-label="Change color theme">Theme: system</button>
-  <div class="eyebrow">Market landscape · September 2026 roster</div>
-  <h1>Physical AI Market Map</h1>
-  <div class="sub">Explore 244 companies by <strong>what the customer buys and how the seller gets paid</strong>. Start with a workload to evaluate partners, compare alternatives and define a deployment test.</div>
-  <div class="meta">V7-01 · Updated October 11, 2026 · September roster · selected financial checks October 11 · 25 layers across 3 planes · 244 companies · humanoid, industrial, AV, drone &amp; defense, construction, mining, agriculture<br>
-  Funding, valuation and revenue data: Crunchbase, PitchBook, CB Insights, Dealroom, TrendForce, Smart Analytics Global, TechCrunch, Bloomberg · Structural analysis: Goldman Sachs, Morgan Stanley, Roland Berger, Bullhound, McKinsey, IFR, The Robot Report</div>
+  <div class="masthead"><span>Research by Tony Kim</span><button class="theme-control" id="theme-toggle" type="button" aria-label="Change color theme">Theme: system</button></div>
+  <div class="hero">
+    <div><h1>Physical AI<br> Market Map</h1><div class="sub">From machines to deployed autonomy. Explore the companies, economics and partner choices behind physical AI.</div></div>
+    <figure class="hero-figure">
+      <svg viewBox="0 0 440 242" role="img" aria-labelledby="system-title system-desc">
+        <title id="system-title">The three planes of physical AI</title><desc id="system-desc">Body supplies the machine, Brain supplies perception and action, and Operations deploys and supports it. Deployment feedback informs improvements. This is a conceptual diagram, not a company relationship network.</desc>
+        <defs><marker id="system-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="var(--line2)"/></marker></defs>
+        <path class="system-line" d="M70 65 V98 H216 V112 M216 149 V169" marker-end="url(#system-arrow)"/>
+        <path class="system-line" d="M351 65 V98 H224 V112" marker-end="url(#system-arrow)"/>
+        <path class="system-line" d="M324 192 H415 V38 H391" marker-end="url(#system-arrow)"/>
+        <rect class="system-box" x="8" y="10" width="180" height="65" rx="8"/><rect class="system-box" x="232" y="10" width="168" height="65" rx="8"/>
+        <circle class="system-a" cx="26" cy="31" r="4"/><text class="system-label" x="38" y="38">Body</text><text class="system-detail" x="24" y="59">Machines &amp; components</text>
+        <circle class="system-b" cx="250" cy="31" r="4"/><text class="system-label" x="262" y="38">Brain</text><text class="system-detail" x="248" y="59">Perception &amp; action</text>
+        <rect x="113" y="113" width="210" height="39" rx="19" fill="var(--infobg)"/><text class="system-label" x="218" y="138" text-anchor="middle">Deployed autonomy</text>
+        <rect class="system-box" x="113" y="170" width="210" height="58" rx="8"/><circle class="system-c" cx="133" cy="192" r="4"/><text class="system-label" x="145" y="199">Operations</text><text class="system-detail" x="131" y="219">Deployment &amp; assurance</text>
+      </svg><figcaption>A system view, organized by what the customer buys</figcaption>
+    </figure>
+  </div>
+  <div class="hero-meta"><span><strong>244</strong> companies</span><span><strong>25</strong> layers</span><span>Updated October 11, 2026</span>
+    <details class="research-notes"><summary>Coverage &amp; sources</summary><p>V8-00. September 2026 roster; selected financial claims checked October 11. 252 entries include eight separately mapped products or business units. Covers humanoids, industrial robotics, AVs, drones and defense, construction, mining and agriculture.</p><p>Financial sources include PitchBook, Crunchbase, company announcements and cited reporting. Structural research includes IFR, Goldman Sachs, Morgan Stanley, Roland Berger and McKinsey. Dates and claim-level sources appear in profiles; classifications are explained in Method.</p></details>
+  </div>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Sections">
@@ -627,7 +718,8 @@
 
   <div class="viewrow">
     <div class="viewbar" role="tablist" aria-label="View">
-      <button class="vb" data-v="chain" role="tab" aria-selected="true" type="button">Value chain</button>
+      <button class="vb" data-v="overview" role="tab" aria-selected="true" type="button">Overview</button>
+      <button class="vb" data-v="chain" role="tab" aria-selected="false" type="button">Value chain</button>
       <button class="vb" data-v="industry" role="tab" aria-selected="false" type="button">By industry</button>
       <button class="vb" data-v="geo" role="tab" aria-selected="false" type="button">By geography</button>
       <button class="vb" data-v="matrix" role="tab" aria-selected="false" type="button">Layer &times; model</button>
@@ -642,7 +734,7 @@
     <button class="chip" data-workload="welding" type="button">Shipyard welding<span>Quality, access and safety</span></button>
     <button class="chip" data-workload="warehouse" type="button">Warehouse handling<span>Throughput and fleet economics</span></button>
     <button class="chip" data-workload="manipulation" type="button">Industrial manipulation<span>Dexterity, yield and changeover</span></button>
-    <button class="chip" id="export-filtered" type="button">Export filtered CSV</button>
+
   </div>
 
   <details id="filter-disclosure" class="filter-disclosure" open>
@@ -669,7 +761,7 @@
 
   </details>
   <div class="resultbar">
-    <div class="countrow"><div class="count" id="count" role="status" aria-live="polite"></div><button class="copylink" id="copylink" type="button" title="Copy a link that reopens this exact view">Copy link to this view</button></div>
+    <div class="countrow"><div class="count" id="count" role="status" aria-live="polite"></div><div class="result-actions"><button class="copylink" id="copylink" type="button" title="Copy a link that reopens this exact view">Copy link to this view</button><button class="copylink" id="export-filtered" type="button">Export filtered CSV</button></div></div>
     <div class="activef" id="activef"></div>
   </div>
 
@@ -1220,7 +1312,7 @@
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V7-01 · October 11, 2026 · compiled and written by Tony Kim<br>
+  <strong>Physical AI Market Map</strong> · V8-00 · October 11, 2026 · compiled and written by Tony Kim<br>
   Company roster is curated, not exhaustive — ~244 of an estimated 700+ companies in scope. Transaction marks in USD; 29 financial records reviewed October 11. Other private marks may be stale; rumors and announced-but-unclosed deals are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.<br>
   <span class="fineprint"><a href="https://www.linkedin.com/in/hagsoo-kim/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hagsoo-kim</a> · <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim</a></span>
@@ -2622,11 +2714,11 @@ function csvText(rows,notes){
 }
 function exportCsv(rows,notes){
   const url=URL.createObjectURL(new Blob([csvText(rows,notes)],{type:'text/csv;charset=utf-8'}));
-  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V7-01.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V8-00.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
 const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),lay:null,big:false,spans:false,val:false,fs:false,dep:false,q:""};
-let view="chain";
+let view="overview";
 let lastRenderedView=null;
 const collapsed=new Set();
 
@@ -2707,6 +2799,45 @@ function coEl(c,opts){
   e.innerHTML=h;
   e.addEventListener('click',function(ev){ev.stopPropagation();openPanel(c);});
   return e;
+}
+
+
+// Each chart counts primary roster entries, including separately mapped products.
+function landscapeStats(rows){
+  const planes=PLANES.map(p=>({id:p.id,name:p.name,count:rows.filter(c=>c.l[0]===p.id).length}));
+  const geos=GEOS.map(([id,name])=>({id,name,count:rows.filter(c=>c.g===id).length,planes:planes.map(p=>({id:p.id,count:rows.filter(c=>c.g===id&&c.l[0]===p.id).length}))})).sort((a,b)=>b.count-a.count);
+  const models=BMORDER.map(id=>({id,name:BMSHORT[id],count:rows.filter(c=>bmOf(c)===id).length})).sort((a,b)=>b.count-a.count);
+  const stages=planes.map(p=>({id:p.id,name:p.name,count:p.count,values:MATORDER.map(id=>({id,count:rows.filter(c=>c.l[0]===p.id&&matOf(c)===id).length}))}));
+  const layers=PLANES.flatMap(p=>p.layers.map(l=>({id:l.c,name:l.n,plane:p.id,count:rows.filter(c=>c.l===l.c).length})));
+  return {total:rows.length,planes,geos,models,stages,layers};
+}
+function entryLabel(count){return count===1?'entry':'entries';}
+function chartWidth(count,max){return max>0?100*count/max:0;}
+function overviewDrill(kind,id,plane){
+  if(kind==='plane'){state.p.clear();state.p.add(id);view='chain';}
+  if(kind==='geo'){state.g.clear();state.g.add(id);view='geo';}
+  if(kind==='model'){state.b.clear();state.b.add(id);view='table';}
+  if(kind==='stage'){state.p.clear();state.p.add(plane);state.m.clear();state.m.add(id);view='table';}
+  if(kind==='layer'){state.lay=id;view='chain';}
+  document.querySelectorAll('.vb').forEach(x=>x.setAttribute('aria-selected',String(x.dataset.v===view)));render();
+  document.querySelector('.vb[aria-selected="true"]').focus();
+}
+function viewOverview(host,rows){
+  const d=landscapeStats(rows),maxGeo=Math.max(0,...d.geos.map(g=>g.count)),maxModel=Math.max(0,...d.models.map(g=>g.count)),maxLayer=Math.max(0,...d.layers.map(g=>g.count));
+  const key='<div class="chart-key">'+d.planes.map(p=>'<span><i class="chart-dot '+p.id+'" aria-hidden="true"></i>'+p.name+'</span>').join('')+'</div>';
+  const segment=(p,max)=>'<span aria-hidden="true" class="plot-segment '+p.id+'" style="width:'+chartWidth(p.count,max)+'%"></span>';
+  const axis=max=>'<div class="plot-axis" aria-hidden="true"><span>0</span><span>'+max+' '+entryLabel(max)+'</span></div>';
+  host.innerHTML='<div class="overview-title"><h2>The landscape at a glance</h2><p>Roster composition, not market share. Counts reflect the '+d.total+' '+entryLabel(d.total)+' in your current selection.</p></div>'+
+  '<div class="research-canvas">'+
+  '<section class="chart-section" aria-labelledby="chart-stack"><h3 id="chart-stack">The physical AI stack</h3><p class="chart-caption">Three primary purchase categories connect the machine to its operating environment.</p>'+d.planes.map(p=>'<button type="button" class="stack-row" data-drill="plane" data-id="'+p.id+'" aria-label="Explore '+p.name+': '+p.count+' '+entryLabel(p.count)+'"><span class="stack-name">'+p.name+'</span><span class="plot-track">'+segment(p,d.total)+'</span><span class="stack-value">'+p.count+'</span></button>').join('')+'<p class="chart-foot">Bar lengths show each plane’s share of selected entries. Multiple products from one company can occupy different layers.</p></section>'+
+  '<section class="chart-section" aria-labelledby="chart-geo"><h3 id="chart-geo">Where companies are based</h3><p class="chart-caption">Headquarters distribution, split by primary plane.</p>'+key+axis(maxGeo)+d.geos.map(g=>'<button type="button" class="plot-row" data-drill="geo" data-id="'+g.id+'" aria-label="Explore '+g.name+': '+g.count+' '+entryLabel(g.count)+'; '+g.planes.map(p=>PLANEOF[p.id].name+' '+p.count).join(', ')+'"><span class="plot-label">'+esc(g.name)+'</span><span class="plot-track">'+g.planes.map(p=>segment(p,maxGeo)).join('')+'</span><span class="plot-value">'+g.count+'</span></button>').join('')+'<p class="chart-foot">Europe is grouped as a region; other labels are countries. Headquarters does not imply deployment location.</p></section>'+
+  '<section class="chart-section model-chart" aria-labelledby="chart-model"><h3 id="chart-model">How companies earn revenue</h3><p class="chart-caption">The primary business model assigned to each entry.</p>'+axis(maxModel)+d.models.map(g=>'<button type="button" class="plot-row" data-drill="model" data-id="'+g.id+'" aria-label="Explore '+BMF[g.id]+': '+g.count+' '+entryLabel(g.count)+'"><span class="plot-label">'+esc(BMF[g.id])+'</span><span class="plot-track"><span class="plot-segment B" aria-hidden="true" style="width:'+chartWidth(g.count,maxModel)+'%"></span></span><span class="plot-value">'+g.count+'</span></button>').join('')+'<p class="chart-foot">Counts describe this curated roster. They do not measure revenue, profitability or addressable market.</p></section>'+
+  '<section class="chart-section" aria-labelledby="chart-stage"><h3 id="chart-stage">Commercial stage across the stack</h3><p class="chart-caption">Each row shows the stage mix within one plane.</p>'+d.stages.map(p=>'<div class="stage-row"><div class="stage-heading"><b>'+p.name+'</b><span>'+p.count+' '+entryLabel(p.count)+'</span></div><div class="stage-track">'+p.values.filter(v=>v.count).map(v=>'<button type="button" class="stage-cell '+v.id+'" data-drill="stage" data-id="'+v.id+'" data-plane="'+p.id+'" style="width:'+chartWidth(v.count,p.count)+'%" aria-label="Explore '+p.name+', '+MATF[v.id]+': '+v.count+' of '+p.count+' '+entryLabel(p.count)+'" title="'+MATF[v.id]+': '+v.count+'">'+(v.count/p.count>=.12?v.count:'')+'</button>').join('')+'</div><div class="chart-foot" style="margin-top:6px">'+p.values.map(v=>MATF[v.id]+' '+v.count).join(' / ')+'</div></div>').join('')+'<div class="stage-legend">'+MATORDER.map(id=>'<span><i aria-hidden="true" class="stage-cell '+id+'"></i><b>'+MATF[id]+'</b>: '+d.stages.reduce((sum,p)=>sum+p.values.find(v=>v.id===id).count,0)+'</span>').join('')+'</div><p class="chart-foot">Author classifications based on the roster’s research baseline. Commercial status does not establish reliability for your workload.</p></section></div>'+
+  '<p class="chart-foot">Source: curated September 2026 roster with selected October 11 updates. <a href="#tab=method&s=method">Read the classification rules and sources</a>.</p>'+
+  '<details class="atlas"><summary>Explore the 25-layer atlas</summary><p>Compare coverage at a finer level. All mini bars share one scale, from 0 to '+maxLayer+' entries; select a layer to open its company map.</p><div class="atlas-grid">'+d.planes.map(p=>'<section class="atlas-plane"><h3>'+p.name+'</h3>'+d.layers.filter(l=>l.plane===p.id).map(l=>'<button type="button" class="atlas-row" data-drill="layer" data-id="'+l.id+'" aria-label="Explore '+l.id+' '+esc(l.name)+': '+l.count+' '+entryLabel(l.count)+'"><span>'+esc(l.name)+'</span><span class="plot-track">'+segment({id:p.id,count:l.count},maxLayer)+'</span><span class="plot-value">'+l.count+'</span></button>').join('')+'</section>').join('')+'</div></details>'+
+  '<h3 class="route-heading">Build a partner thesis around a real task</h3><div class="overview-routes">'+[['welding','Shipyard welding','Assess quality, physical access and the safety case.'],['warehouse','Warehouse handling','Compare throughput, intervention and fleet economics.'],['manipulation','Industrial manipulation','Evaluate dexterity, yield and changeover.']].map(([id,name,desc])=>'<button type="button" class="route-button" data-start-workload="'+id+'"><strong>'+name+'</strong><span>'+desc+'</span><em>Open partner workbench</em></button>').join('')+'</div>';
+  host.querySelectorAll('[data-drill]').forEach(b=>b.onclick=()=>overviewDrill(b.dataset.drill,b.dataset.id,b.dataset.plane));
+  host.querySelectorAll('[data-start-workload]').forEach(b=>b.onclick=()=>{resetAll();workload=b.dataset.startWorkload;view='workbench';document.querySelectorAll('.vb').forEach(x=>x.setAttribute('aria-selected',String(x.dataset.v===view)));render();document.querySelector('.vb[aria-selected="true"]').focus();});
 }
 
 function viewChain(host,shown){
@@ -2963,7 +3094,7 @@ function writeHash(){
     var sub=document.querySelector('#t-'+tab+' .subtabs button[aria-selected="true"]');
     if(sub) q.push('s='+sub.dataset.s);
   } else {
-    if(view!=='chain') q.push('view='+view);
+    if(view!=='overview') q.push('view='+view);
     if(view==='workbench')q.push('workload='+workload);
     if(sortKey!=='n'||sortDir!==1)q.push('sort='+sortKey+'&dir='+sortDir);
     if(state.p.size) q.push('p='+Array.from(state.p).join(','));
@@ -2999,9 +3130,9 @@ function readHash(){
   state.q = kv.q ? kv.q.toLowerCase().trim() : '';
   workload=WORKLOADS[kv.workload]?kv.workload:'welding';
   sortKey=['n','l','g','bm','mat','val','v'].includes(kv.sort)?kv.sort:'n';sortDir=kv.dir==='-1'?-1:1;
-  view='chain';
+  view='overview';
   var qEl=document.getElementById('q'); if(qEl) qEl.value = kv.q || '';
-  if(kv.view && ['chain','industry','geo','matrix','table','workbench','shortlist'].indexOf(kv.view)>=0){
+  if(kv.view && ['overview','chain','industry','geo','matrix','table','workbench','shortlist'].indexOf(kv.view)>=0){
     view=kv.view;
     document.querySelectorAll('.vb').forEach(function(x){x.setAttribute('aria-selected',String(x.dataset.v===view));});
   }
@@ -3082,6 +3213,7 @@ function resetAll(){
 }
 
 const VIEWHINT={
+  overview:"Read the landscape in four charts. Select a bar to inspect the companies behind it; all charts follow your roster filters.",
   chain:"Companies are grouped by their primary unit of sale. Expand or collapse a plane, filter the roster, or open a company profile.",
   industry:"The same companies regrouped by the industry they serve, for comparing who competes for the same buyer.",
   geo:"Where these companies are headquartered, and which layers each region concentrates in.",
@@ -3091,20 +3223,23 @@ const VIEWHINT={
   table:"Compare companies in a sortable table. Select a column to sort or a company to open its profile."
 };
 
+function syncHeader(){document.querySelector('header').classList.toggle('compact',view!=='overview'||document.getElementById('t-explore').hidden);}
 function render(){
-  if(view!==lastRenderedView){document.getElementById('filter-disclosure').open=(view!=='workbench'&&view!=='shortlist');lastRenderedView=view;}
+  syncHeader();
+  if(view!==lastRenderedView){document.getElementById('filter-disclosure').open=(view!=='overview'&&view!=='workbench'&&view!=='shortlist');lastRenderedView=view;}
   const focus=document.activeElement;
   const filterFocus=focus && focus.closest('.filters') ? focus.textContent : null;
   buildFilters();
   if(filterFocus){const replacement=Array.from(document.querySelectorAll('.filters button')).find(b=>b.textContent===filterFocus);if(replacement)replacement.focus();}
-  document.querySelector('.orient').hidden=(view==='workbench'||view==='shortlist');
+  document.querySelector('.orient').hidden=(view!=='chain');
   document.querySelectorAll('[data-workload]').forEach(b=>b.setAttribute('aria-pressed',String(view==='workbench'&&b.dataset.workload===workload)));
   document.getElementById('shortlist-count').textContent=shortlist.size;
   var shown=matched();
   var host=document.getElementById('viewhost');
   host.innerHTML='';
   host.className='vh-'+view;
-  if(view==='chain')viewChain(host,shown);
+  if(view==='overview')viewOverview(host,shown);
+  else if(view==='chain')viewChain(host,shown);
   else if(view==='industry')viewIndustry(host,shown);
   else if(view==='geo')viewGeo(host,shown);
   else if(view==='matrix')viewMatrix(host,shown);
@@ -3191,7 +3326,7 @@ function boot(){
   tabs.forEach(function(t){t.addEventListener('click',function(){
     tabs.forEach(function(x){x.setAttribute('aria-selected',String(x===t));document.getElementById(x.dataset.t).hidden=x!==t;});
     window.scrollTo({top:0,behavior:'smooth'});
-    writeHash();
+    syncHeader();writeHash();
   });});
   document.querySelectorAll('.subtabs').forEach(function(nav){
     var subs=[].slice.call(nav.querySelectorAll('button'));

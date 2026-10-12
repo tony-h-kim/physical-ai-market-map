@@ -49,9 +49,23 @@ check('matched().some(c=>c.n==="Persona AI")');
 vm.runInContext('location.hash="#view=workbench&workload=warehouse&g=CN,INVALID&sort=val&dir=-1";readHash()',context);
 check('view==="workbench"&&workload==="warehouse"&&state.g.size===1&&state.g.has("CN")&&sortKey==="val"&&sortDir===-1');
 vm.runInContext('location.hash="";readHash()',context);
-check('view==="chain"&&state.g.size===0&&state.q===""&&sortKey==="n"&&sortDir===1');
+check('view==="overview"&&state.g.size===0&&state.q===""&&sortKey==="n"&&sortDir===1');
 vm.runInContext('location.hash="#q=%E0%A4%A&s=missing&view=INVALID";readHash()',context);
-check('view==="chain"&&state.q===""');
+check('view==="overview"&&state.q===""');
+
+check('landscapeStats(CO).planes.map(p=>p.count).join(",")==="163,61,28"');
+check('landscapeStats(CO).geos.reduce((sum,g)=>sum+g.count,0)===CO.length && landscapeStats(CO).geos.every(g=>g.planes.reduce((sum,p)=>sum+p.count,0)===g.count)');
+check('landscapeStats(CO).models.reduce((sum,g)=>sum+g.count,0)===CO.length');
+check('landscapeStats(CO).stages.every(p=>p.values.reduce((sum,v)=>sum+v.count,0)===p.count)');
+check('landscapeStats(CO).layers.length===25 && landscapeStats(CO).layers.reduce((sum,l)=>sum+l.count,0)===CO.length');
+check('landscapeStats([]).total===0 && landscapeStats([]).planes.every(p=>p.count===0) && chartWidth(0,0)===0');
+check('chartWidth(3,12)===25 && chartWidth(12,12)===100');
+check('landscapeStats(CO.filter(c=>c.g==="KR")).geos.filter(g=>g.count).every(g=>g.id==="KR")');
+vm.runInContext('location.hash="#view=overview&p=B";readHash()',context);
+check('view==="overview" && state.p.has("B") && landscapeStats(matched()).planes.find(p=>p.id==="A").count===0');
+vm.runInContext('location.hash="#view=chain";readHash()',context);
+check('view==="chain" && state.p.size===0');
+
 // Simulate unavailable storage; browsing must still boot without an exception.
 const blocked = vm.createContext({ ...context, localStorage: { getItem(){ throw Error('blocked'); } } });
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), blocked);

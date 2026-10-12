@@ -14,24 +14,27 @@ try:
     def font(size, bold=False):
         name = ('segoeuib.ttf' if bold else 'segoeui.ttf') if windows_fonts.exists() else ('DejaVuSans-Bold.ttf' if bold else 'DejaVuSans.ttf')
         return ImageFont.truetype(str((windows_fonts if windows_fonts.exists() else linux_fonts) / name), size)
-    im = Image.new('RGB', (1200, 630), '#f4f6f8')
+    im = Image.new('RGB', (1200, 630), '#f2f5f9')
     draw = ImageDraw.Draw(im)
-    draw.text((58, 48), 'September 2026 roster • October 2026 decision tools', fill='#596373', font=font(23))
-    draw.text((54, 101), 'Physical AI Market Map', fill='#0f1729', font=font(68, True))
-    draw.text((58, 199), f'{total} companies. 25 layers. A buyer-first view of robotics.', fill='#596373', font=font(29))
-    colors = [('#0d8a6a', '#e9f7f2'), ('#6d43c4', '#f1ecfc'), ('#b06a05', '#fdf3e3')]
+    draw.text((58, 42), 'Research by Tony Kim', fill='#52647a', font=font(24))
+    draw.text((56, 101), 'Physical AI', fill='#142b45', font=font(67, True))
+    draw.text((56, 174), 'Market Map', fill='#142b45', font=font(67, True))
+    draw.text((58, 281), 'From machines to deployed autonomy.', fill='#52647a', font=font(26))
+    draw.text((58, 324), 'Companies, economics and partner choices.', fill='#52647a', font=font(24))
+    draw.rounded_rectangle((685, 103, 1140, 437), radius=18, fill='#ffffff')
+    colors = ['#147d76', '#405fc7', '#aa6718']
     for i, (plane, label) in enumerate([('A', 'Body'), ('B', 'Brain'), ('C', 'Operations')]):
-        x = 58 + i * 365
-        ink, bg = colors[i]
-        draw.rounded_rectangle((x, 278, x+345, 401), radius=10, fill=bg)
-        draw.rectangle((x, 289, x+4, 390), fill=ink)
-        draw.text((x+20, 292), f'{plane}  {label}', fill=ink, font=font(29, True))
+        y = 126 + i * 98
         count = sum(c['l'][0] == plane for c in co)
-        draw.text((x+20, 348), f'{count} entries', fill='#596373', font=font(23))
-    draw.line((58, 437, 1140, 437), fill='#d3d8e0', width=2)
-    draw.text((58, 468), 'Explore partners. Compare alternatives. Test deployment fit.', fill='#0f1729', font=font(28, True))
-    draw.text((58, 536), 'Tony Kim', fill='#0f1729', font=font(25, True))
-    draw.text((58, 574), 'tony-h-kim.github.io/physical-ai-market-map', fill='#596373', font=font(21))
+        draw.text((711, y), label, fill='#142b45', font=font(25, True))
+        draw.text((1046, y), str(count), fill='#142b45', font=font(27, True))
+        draw.rounded_rectangle((711, y+45, 1109, y+59), radius=3, fill='#f2f5f9')
+        draw.rounded_rectangle((711, y+45, 711+int(398*count/len(co)), y+59), radius=3, fill=colors[i])
+    draw.text((711, 403), 'Roster entries by primary plane', fill='#52647a', font=font(17))
+    draw.line((58, 476, 1140, 476), fill='#c9d4e1', width=2)
+    draw.text((58, 503), f'{total} companies    25 layers    3 planes', fill='#142b45', font=font(28, True))
+    draw.text((58, 552), 'September roster / Updated October 11, 2026', fill='#52647a', font=font(22))
+    draw.text((58, 590), 'tony-h-kim.github.io/physical-ai-market-map', fill='#52647a', font=font(18))
     im.save(root / 'og-image.png')
     print('Done — generated og-image.png from current roster')
 except (OSError, ValueError) as exc:
