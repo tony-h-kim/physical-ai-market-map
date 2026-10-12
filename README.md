@@ -34,14 +34,13 @@ Two distinctions this map draws that most others don't:
 
 Three sections, in the order a reader actually needs them.
 
-**Explore** — the companies, in eight views over one shared set of filters:
+**Market map** — the companies, in seven views over one shared set of filters:
 
-- *Overview* — four interactive charts for plane, headquarters, business model and commercial stage, plus an expandable 25-layer atlas
+- *Overview* — an interactive 25-layer cover atlas, headquarters and business-model charts, and commercial-stage composition
 - *Value chain* — the 25-layer map, every company in the one layer it sells
 - *By industry* — the same companies regrouped by the vertical they serve, for comparing who competes for the same buyer
 - *By geography* — headquarters, with the layer concentration of each region
 - *Layer × model* — cross-tabulate unit of sale and business model
-- *Partner workbench* — three workload briefs, sourced candidates, incentives, proposed deal terms and acceptance gates
 - *Shortlist* — save companies, compare them and keep private browser-local notes
 - *Screening table* — a flat, sortable list: layer, HQ, business model, maturity, valuation
 
@@ -50,6 +49,16 @@ Filter by plane, vertical, headquarters, business model, commercial maturity, an
 **Insights** — *Capital* (H1 2026 funding, the most valuable private companies, the capital/shipment inversion between the US and China) · *Value capture* (margin geography by layer) · *Investor view* (TAM disagreement, revenue reality, the exit window, incumbent response, six explicit positions) · *Ecosystem* (how NVIDIA, Schaeffler, Bosch and the Korean conglomerates built partnership ecosystems, where those become circular financing loops, and four tests for telling the two apart).
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
+
+## V9-00 — editorial atlas and rebuilt Insights, October 11, 2026
+
+This release replaces the schematic cover with the actual 25-layer market structure and entry counts. One view selector replaces the secondary tab strip. The three disconnected workload shortcuts and their data/renderer are retired; old workbench links open the company map. Profiles, shared filters, exports and private shortlist notes remain available.
+
+All four Insights chapters are rewritten around a thesis, a figure and inspectable evidence. Capital uses equal half-year windows and a Waymo-exclusion toggle. Value capture replaces precise-looking qualitative pressure bars with a categorical framework and adds a source-checked FY2025 revenue mix. Investor view separates forecast assumptions/horizons and types of commercial evidence. Ecosystem shows a conceptual capital/procurement loop and independent-demand tests. Method adds a learning-loop diagram and interactive first-order reliability arithmetic. Six chapters share one reading structure and in-chapter navigation; paragraphs and figures align consistently, and manual chapter-title line breaks are removed.
+
+Visual research included Bessemer Atlas, Lightspeed Frontier Tech and Insight Partners' robotics ecosystem research. Original figures use the map's data or explicitly labeled author frameworks. Source review corrected Roland Berger's OEM-level forecast label, dated the forecast panels, corrected the B2 data-rights reference and A11/A12 assignments in Method, and clarified pre-/post-money valuation language. Ctrl+Home no longer resets the active chapter tab.
+
+Validation: 55 checks for data, charts, arithmetic, URL migration, CSV, storage and chapter structure, plus desktop/mobile review in both themes. Company counts and financial marks remain unchanged; this release is not a comprehensive new company-data refresh.
 
 ## V8-00 — visual research overview, October 11, 2026
 
