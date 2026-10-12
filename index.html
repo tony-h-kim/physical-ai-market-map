@@ -522,6 +522,8 @@
   .wb-source{font-size:var(--fs-2xs);color:var(--fg2);margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
   .wb-source p{font-size:var(--fs-2xs)}
   .wb-disclaimer{font-size:var(--fs-xs);color:var(--fg2);background:var(--infobg);border-left:3px solid var(--info);padding:12px 16px;margin-bottom:16px}
+  .financial-profile{font:inherit;color:inherit;background:none;border:0;padding:0;text-align:left;cursor:pointer;text-decoration:underline;text-underline-offset:.18em;text-decoration-color:var(--line)}
+  .financial-profile:hover{text-decoration-color:var(--fg2)}
   .shortlist-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
   .wb-note{width:100%;font:inherit;font-size:var(--fs-xs);padding:9px;background:var(--sub);color:var(--fg);border:1px solid var(--line2);border-radius:6px;resize:vertical}
   .status-note{font-size:var(--fs-xs);color:var(--fg2)}
@@ -586,7 +588,7 @@
   <div class="eyebrow">Market landscape · September 2026 roster</div>
   <h1>Physical AI Market Map</h1>
   <div class="sub">Explore 244 companies by <strong>what the customer buys and how the seller gets paid</strong>. Start with a workload to evaluate partners, compare alternatives and define a deployment test.</div>
-  <div class="meta">V7-00 · Updated October 11, 2026 · September roster · 25 layers across 3 planes · 244 companies · humanoid, industrial, AV, drone &amp; defense, construction, mining, agriculture<br>
+  <div class="meta">V7-01 · Updated October 11, 2026 · September roster · selected financial checks October 11 · 25 layers across 3 planes · 244 companies · humanoid, industrial, AV, drone &amp; defense, construction, mining, agriculture<br>
   Funding, valuation and revenue data: Crunchbase, PitchBook, CB Insights, Dealroom, TrendForce, Smart Analytics Global, TechCrunch, Bloomberg · Structural analysis: Goldman Sachs, Morgan Stanley, Roland Berger, Bullhound, McKinsey, IFR, The Robot Report</div>
 </header>
 
@@ -657,7 +659,7 @@
         <div class="fgroup"><div class="flabel">Position</div><div class="chips">
           <button class="chip" data-special="spans" type="button">Vertical integrators</button>
           <button class="chip" data-special="big" type="button">Category leaders</button>
-          <button class="chip" data-special="val" type="button">Valuation disclosed</button>
+          <button class="chip" data-special="val" type="button">Financial mark available</button>
           <button class="chip" data-special="fs" type="button">Full-stack</button>
           <button class="chip" data-special="dep" type="button">Named deployments / programs</button>
         </div></div>
@@ -672,8 +674,8 @@
   </div>
 
   <div class="legend" id="legendbox">
-    <span><span class="swatch">$39B</span> last disclosed valuation</span>
-    <span><span class="swatch o">$11B</span> reported or target — not a closed round</span>
+    <span><span class="swatch">$39B</span> transaction mark in USD; see date and status in profile</span>
+    <span><span class="swatch o">~$8.2B</span> reported, estimated or unclosed; check the stated type</span>
     <span><span class="pill n">listed</span> publicly traded; market cap moves daily and is not shown</span>
     <span><i class="dash"></i> spans multiple planes</span>
     <span><span class="fsb">full-stack</span> no single layer dominates</span>
@@ -697,7 +699,7 @@
     <button data-s="ecosystem" role="tab" aria-selected="false" type="button">Ecosystem</button>
   </nav>
 <section id="capital">
-  <div class="lede">Funding grew sharply in the first half of 2026. Compare where capital went with commercial deployment and the layers that could retain pricing power. Figures below retain the September 2026 research cutoff.</div>
+  <div class="lede">Funding grew sharply in the first half of 2026. Compare where capital went with commercial deployment and the layers that could retain pricing power. Sector aggregates retain the September 2026 research cutoff; the transaction table was reviewed October 11.</div>
 
   <div class="metrics">
     <div class="metric"><div class="mlab">H1 2026 physical AI VC <a class="cit" href="https://news.crunchbase.com/venture/physical-ai-funding-startups-robotics-aerospace-h1-2026/" target="_blank" rel="noopener noreferrer" title="Crunchbase">Crunchbase</a></div><div class="keynum">$47.4B</div><div class="mfoot">across <b>521 deals</b></div></div>
@@ -715,46 +717,46 @@
     <figcaption>These figures use Crunchbase’s physical-AI definition, which is broader than this map: it includes surgical and medical devices, consumer robots and laboratory automation, none of which are mapped here. Read the totals as sector context, not as capital raised by the 244 companies shown. Note the deal counts: 470 → 521 deals while capital went $12B → $47.4B. Deal count rose about 11% while capital rose roughly fourfold, so <strong>average round size grew far faster than the number of companies being funded</strong>. On these figures the market is concentrating rather than broadening.</figcaption>
   </figure>
 
-  <h2>Largest disclosed and reported private valuations</h2>
-  <p class="h2sub">Last disclosed valuation, private companies only. Publicly listed companies are excluded because market caps move daily and would date the map immediately.</p>
+  <h2>Private transaction marks and their evidence</h2>
+  <p class="h2sub">Selected private transaction marks in USD. Completed rounds, company announcements, proposed acquisitions and rumors are labeled separately; they are not comparable clearing prices. All 29 previously displayed marks were reviewed October 11, 2026. Unitree is now listed and Atoms’ funding amount was removed, leaving 27 private/historical marks. Sources and transaction types differ; a review is not an independent audit.</p>
   <div class="tblwrap"><table class="valtable">
     <thead><tr><th>Company</th><th style="width:124px">Layer</th><th class="num" style="width:110px">Valuation</th><th style="width:100px">Status</th><th>Note</th></tr></thead>
     <tbody>
-      <tr><td>Waymo</td><td>A8 · full-stack</td><td class="num">$126B</td><td><span class="pill g">Closed</span></td><td>$16B Series D, Feb 2026 — largest private round in the sector</td></tr>
-      <tr><td>Anduril</td><td>A9 · full-stack</td><td class="num">$61B</td><td><span class="pill g">Closed</span></td><td>$5B growth round, May 2026</td></tr>
-      <tr><td>Figure AI</td><td>A6 · full-stack</td><td class="num">$39B</td><td><span class="pill a">Self-reported</span></td><td>Most valuable pure-play humanoid company. Figure announced the mark itself; no independent confirmation of terms.</td></tr>
-      <tr><td>Scale AI</td><td>B2</td><td class="num">$29B</td><td><span class="pill g">Closed</span></td><td>Meta holds a ~49% minority stake</td></tr>
-      <tr><td>Applied Intuition</td><td>B4</td><td class="num">$15B</td><td><span class="pill g">Closed</span></td><td>Toolchain vendor, not a robot maker</td></tr>
-      <tr><td>Skild AI</td><td>B6</td><td class="num">$14B</td><td><span class="pill g">Closed</span></td><td>Tripled in seven months from $4.5B</td></tr>
-      <tr><td>Shield AI</td><td>B8</td><td class="num">$12.7B</td><td><span class="pill g">Closed</span></td><td>Horizontal autonomy — Hivemind</td></tr>
-      <tr><td>Helsing</td><td>A9</td><td class="num">$12B</td><td><span class="pill g">Closed</span></td><td>$18B round reported in progress</td></tr>
-      <tr><td>1X</td><td>A6</td><td class="num">~$10B</td><td><span class="pill a">Reported</span></td><td>In talks; not confirmed closed</td></tr>
-      <tr><td>Saronic</td><td>A9</td><td class="num">$9.25B</td><td><span class="pill g">Closed</span></td><td>Maritime autonomy</td></tr>
-      <tr><td>Wayve</td><td>B7</td><td class="num">$8.6B</td><td><span class="pill g">Closed</span></td><td>Series D post-money, Feb 2026</td></tr>
-      <tr><td>Neura Robotics</td><td>A6</td><td class="num">~$7B</td><td><span class="pill g">Closed</span></td><td>Round led by Tether <a class="cit" href="https://neura-robotics.com/record-series-c/" target="_blank" rel="noopener noreferrer" title="NEURA">NEURA</a></td></tr>
-      <tr><td>Skydio</td><td>A9</td><td class="num">$6.2B</td><td><span class="pill b">S-1 filed</span></td><td>IPO filed June 2026</td></tr>
-      <tr><td>Nuro</td><td>B7</td><td class="num">$6B</td><td><span class="pill g">Closed</span></td><td>Pivoted from operator to licensor</td></tr>
-      <tr><td>Unitree</td><td>A6</td><td class="num">~$5.9B</td><td><span class="pill b">IPO cleared</span></td><td>China's first listed pure-play humanoid maker</td></tr>
-      <tr><td>Physical Intelligence</td><td>B6</td><td class="num">$5.6B</td><td><span class="pill g">Closed</span></td><td>~$11B reported in talks, not closed</td></tr>
-      <tr><td>AgiBot</td><td>A6</td><td class="num">$5.1–6.4B</td><td><span class="pill a">IPO target</span></td><td>Hong Kong listing target range</td></tr>
-      <tr><td>Apptronik</td><td>A6</td><td class="num">~$5.3B</td><td><span class="pill g">Closed</span></td><td>$935M Series A</td></tr>
-      <tr><td>AMI Labs</td><td>B5</td><td class="num">$3.5B</td><td><span class="pill g">Closed</span></td><td>$1.03B seed, Mar 2026, at a pre-money mark <a class="cit" href="https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/" target="_blank" rel="noopener noreferrer" title="TechCrunch">TechCrunch</a></td></tr>
-      <tr><td>World Labs</td><td>B5</td><td class="num">$5B</td><td><span class="pill g">Closed</span></td><td>Highest-valued pure world-model company</td></tr>
-      <tr><td>Zoox</td><td>A8 · full-stack</td><td class="num">$3.2B</td><td><span class="pill n">Pre-acq.</span></td><td>Last independent mark; now Amazon-owned</td></tr>
-      <tr><td>Generalist AI</td><td>B6</td><td class="num">$3B</td><td><span class="pill g">Closed</span></td><td>Ex-DeepMind founders</td></tr>
-      <tr><td>Agility Robotics</td><td>A6</td><td class="num">~$2.5B</td><td><span class="pill a">Announced</span></td><td>Agreed merger value with Churchill Capital XI. S-4 filed, deal not yet closed and no price struck.</td></tr>
-      <tr><td>Bedrock Robotics</td><td>A10</td><td class="num">$1.75B</td><td><span class="pill g">Closed</span></td><td>Most valuable construction-autonomy company</td></tr>
-      <tr><td>Humanoid</td><td>A6</td><td class="num">$1.35B</td><td><span class="pill g">Closed</span></td><td>$152M Series A, Jul 2026</td></tr>
-      <tr><td>Sunday Robotics</td><td>B6</td><td class="num">$1.15B</td><td><span class="pill g">Closed</span></td><td>Reported private valuation above USD 1B</td></tr>
-      <tr><td>Dyna Robotics</td><td>B6</td><td class="num">$600M</td><td><span class="pill g">Closed</span></td><td>Reported private valuation below USD 1B</td></tr>
+      <tr data-financial="Waymo"><td><button type="button" class="financial-profile" data-financial-profile="Waymo">Waymo</button></td><td>A8 · full-stack</td><td class="num">$126B</td><td><span class="pill g">Completed equity round</span></td><td>2026-02-02 · Company announcement <a class="cit" href="https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/" target="_blank" rel="noopener noreferrer">Waymo financing announcement</a></td></tr>
+      <tr data-financial="Anduril"><td><button type="button" class="financial-profile" data-financial-profile="Anduril">Anduril</button></td><td>A9 · full-stack</td><td class="num">$61B</td><td><span class="pill g">Completed equity round</span></td><td>2026-05-13 · Transaction adviser announcement <a class="cit" href="https://www.gunder.com/print/v2/content/26792/anduril-raises-5-billion-usd-series-h-at-61-billion-usd-valuation.pdf?lang=en" target="_blank" rel="noopener noreferrer">Gunderson Dettmer transaction announcement</a></td></tr>
+      <tr data-financial="Figure AI"><td><button type="button" class="financial-profile" data-financial-profile="Figure AI">Figure AI</button></td><td>A6 · full-stack</td><td class="num">$39B</td><td><span class="pill a">Company-announced round</span></td><td>2025-09-16 · Company announcement <a class="cit" href="https://www.figure.ai/news/series-c" target="_blank" rel="noopener noreferrer">Figure Series C announcement</a></td></tr>
+      <tr data-financial="Scale AI"><td><button type="button" class="financial-profile" data-financial-profile="Scale AI">Scale AI</button></td><td>B2</td><td class="num">$29B</td><td><span class="pill g">Strategic minority investment</span></td><td>2025-06-12 · Company announcement <a class="cit" href="https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution" target="_blank" rel="noopener noreferrer">Scale investment announcement</a></td></tr>
+      <tr data-financial="Helsing"><td><button type="button" class="financial-profile" data-financial-profile="Helsing">Helsing</button></td><td>A9</td><td class="num">$18B</td><td><span class="pill a">Issuer-announced round</span></td><td>2026-07-13 · Company announcement <a class="cit" href="https://helsing.ai/newsroom/helsing-raises-1-8bn-in-series-e" target="_blank" rel="noopener noreferrer">Helsing Series E announcement</a></td></tr>
+      <tr data-financial="Applied Intuition"><td><button type="button" class="financial-profile" data-financial-profile="Applied Intuition">Applied Intuition</button></td><td>B4</td><td class="num">$15B</td><td><span class="pill g">Completed equity round / tender</span></td><td>2025-06-17 · Company announcement <a class="cit" href="https://www.appliedintuition.com/press-releases/series-f" target="_blank" rel="noopener noreferrer">Applied Intuition closing announcement</a></td></tr>
+      <tr data-financial="Skild AI"><td><button type="button" class="financial-profile" data-financial-profile="Skild AI">Skild AI</button></td><td>B6</td><td class="num">$14B</td><td><span class="pill g">Completed round; rounded mark</span></td><td>2026-01-14 · Company announcement / deal date <a class="cit" href="https://www.skild.ai/blogs/series-c" target="_blank" rel="noopener noreferrer">Skild Series C announcement</a></td></tr>
+      <tr data-financial="Shield AI"><td><button type="button" class="financial-profile" data-financial-profile="Shield AI">Shield AI</button></td><td>B8</td><td class="num">$12.7B</td><td><span class="pill g">Completed equity round</span></td><td>2026-06-22 · Closing confirmation announcement <a class="cit" href="https://shield.ai/shield-ai-completes-acquisition-of-aechelon-technology/" target="_blank" rel="noopener noreferrer">Shield closing confirmation</a></td></tr>
+      <tr data-financial="Physical Intelligence"><td><button type="button" class="financial-profile" data-financial-profile="Physical Intelligence">Physical Intelligence</button></td><td>B6</td><td class="num">$11.7B</td><td><span class="pill g">Completed equity round</span></td><td>2026-05-21 · PitchBook deal date <a class="cit" href="https://my.pitchbook.com/profile/590542-30/company/profile" target="_blank" rel="noopener noreferrer">PitchBook deal history (subscription)</a></td></tr>
+      <tr data-financial="Saronic"><td><button type="button" class="financial-profile" data-financial-profile="Saronic">Saronic</button></td><td>A9</td><td class="num">$9.25B</td><td><span class="pill g">Completed equity round</span></td><td>2026-03-31 · Investor / issuer announcement <a class="cit" href="https://www.adventinternational.com/news/advent-advances-up-to-1-billion-defense-technology-commitment-with-investment-in-saronic/" target="_blank" rel="noopener noreferrer">Advent investment announcement</a></td></tr>
+      <tr data-financial="Wayve"><td><button type="button" class="financial-profile" data-financial-profile="Wayve">Wayve</button></td><td>B7</td><td class="num">$8.6B</td><td><span class="pill a">Issuer-announced round</span></td><td>2026-02-25 · Company announcement <a class="cit" href="https://wayve.ai/press/series-d/" target="_blank" rel="noopener noreferrer">Wayve Series D announcement</a></td></tr>
+      <tr data-financial="World Labs"><td><button type="button" class="financial-profile" data-financial-profile="World Labs">World Labs</button></td><td>B5</td><td class="num">~$8.2B</td><td><span class="pill a">Announced acquisition</span></td><td>2026-09-28 · Buyer announcement <a class="cit" href="https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute" target="_blank" rel="noopener noreferrer">AMD acquisition announcement</a></td></tr>
+      <tr data-financial="Neura Robotics"><td><button type="button" class="financial-profile" data-financial-profile="Neura Robotics">Neura Robotics</button></td><td>A6</td><td class="num">~$7B</td><td><span class="pill a">Reported financing mark</span></td><td>2026-06-11 · Press publication <a class="cit" href="https://www.eweek.com/news/neura-robotics-funding-humanoid-robots-emea-germany/" target="_blank" rel="noopener noreferrer">eWeek valuation report</a></td></tr>
+      <tr data-financial="1X"><td><button type="button" class="financial-profile" data-financial-profile="1X">1X</button></td><td>A6</td><td class="num">~$6B</td><td><span class="pill a">Acquisition rumor</span></td><td>2026-08-27 · PitchBook rumor record <a class="cit" href="https://my.pitchbook.com/profile/318913-03/company/profile" target="_blank" rel="noopener noreferrer">PitchBook deal history (subscription)</a></td></tr>
+      <tr data-financial="Nuro"><td><button type="button" class="financial-profile" data-financial-profile="Nuro">Nuro</button></td><td>B7</td><td class="num">$6B</td><td><span class="pill g">Completed equity round</span></td><td>2025-08-21 · Issuer closing announcement <a class="cit" href="https://finance.yahoo.com/news/nuro-closes-203-million-series-123000194.html" target="_blank" rel="noopener noreferrer">Issuer closing release, republished</a></td></tr>
+      <tr data-financial="Apptronik"><td><button type="button" class="financial-profile" data-financial-profile="Apptronik">Apptronik</button></td><td>A6</td><td class="num">~$5.3B</td><td><span class="pill g">Completed equity round</span></td><td>2026-02-11 · PitchBook deal date <a class="cit" href="https://my.pitchbook.com/profile/222785-47/company/profile" target="_blank" rel="noopener noreferrer">PitchBook deal history (subscription)</a></td></tr>
+      <tr data-financial="AgiBot"><td><button type="button" class="financial-profile" data-financial-profile="AgiBot">AgiBot</button></td><td>A6</td><td class="num">$5.1-6.4B</td><td><span class="pill a">Reported IPO target</span></td><td>2026-07-27 · Press publication <a class="cit" href="https://www.yicaiglobal.com/news/chinese-robotics-startup-agibot-kicks-off-ipo-process-source-says" target="_blank" rel="noopener noreferrer">Yicai IPO report</a></td></tr>
+      <tr data-financial="Skydio"><td><button type="button" class="financial-profile" data-financial-profile="Skydio">Skydio</button></td><td>A9</td><td class="num">$4.4B</td><td><span class="pill a">Issuer-announced round</span></td><td>2026-04-23 · Company announcement <a class="cit" href="https://www.skydio.com/blog/skydio-series-f" target="_blank" rel="noopener noreferrer">Skydio Series F announcement</a></td></tr>
+      <tr data-financial="AMI Labs"><td><button type="button" class="financial-profile" data-financial-profile="AMI Labs">AMI Labs</button></td><td>B5</td><td class="num">$3.5B</td><td><span class="pill g">Pre-money round mark</span></td><td>2026-03-10 · Financing announcement date <a class="cit" href="https://www.investing.com/news/stock-market-news/exmeta-ai-chief-yann-lecuns-ami-raises-103-billion-for-alternative-ai-approach-4551055" target="_blank" rel="noopener noreferrer">Reuters announcement report</a></td></tr>
+      <tr data-financial="Zoox"><td><button type="button" class="financial-profile" data-financial-profile="Zoox">Zoox</button></td><td>A8 · full-stack</td><td class="num">$3.2B</td><td><span class="pill a">Historical pre-acquisition mark</span></td><td>2018-07-17 · Press publication <a class="cit" href="https://www.axios.com/2018/07/17/self-driving-car-company-zoox" target="_blank" rel="noopener noreferrer">Axios historical financing report</a></td></tr>
+      <tr data-financial="Generalist AI"><td><button type="button" class="financial-profile" data-financial-profile="Generalist AI">Generalist AI</button></td><td>B6</td><td class="num">$3B</td><td><span class="pill a">Press-reported round mark</span></td><td>2026-08-25 · Press publication <a class="cit" href="https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/" target="_blank" rel="noopener noreferrer">TechCrunch financing report</a></td></tr>
+      <tr data-financial="Agility Robotics"><td><button type="button" class="financial-profile" data-financial-profile="Agility Robotics">Agility Robotics</button></td><td>A6</td><td class="num">~$2.5B</td><td><span class="pill a">Announced SPAC transaction</span></td><td>2026-06-24 · Transaction announcement <a class="cit" href="https://my.pitchbook.com/profile/171265-96/company/profile" target="_blank" rel="noopener noreferrer">PitchBook deal history (subscription)</a></td></tr>
+      <tr data-financial="Bedrock Robotics"><td><button type="button" class="financial-profile" data-financial-profile="Bedrock Robotics">Bedrock Robotics</button></td><td>A10</td><td class="num">$1.75B</td><td><span class="pill a">Issuer-announced round</span></td><td>2026-02-04 · Company announcement <a class="cit" href="https://www.prnewswire.com/news-releases/bedrock-robotics-raises-270-million-in-series-b-funding-to-accelerate-the-future-of-autonomous-construction-302679014.html" target="_blank" rel="noopener noreferrer">Bedrock financing announcement</a></td></tr>
+      <tr data-financial="Humanoid"><td><button type="button" class="financial-profile" data-financial-profile="Humanoid">Humanoid</button></td><td>A6</td><td class="num">$1.35B</td><td><span class="pill a">Issuer-announced round</span></td><td>2026-07-21 · Company announcement <a class="cit" href="https://thehumanoid.ai/humanoid-raises-152-million-at-1-35-billion-post-money-valuation-becoming-europes-first-pure-play-humanoid-robotics-unicorn/" target="_blank" rel="noopener noreferrer">Humanoid financing announcement</a></td></tr>
+      <tr data-financial="Sunday Robotics"><td><button type="button" class="financial-profile" data-financial-profile="Sunday Robotics">Sunday Robotics</button></td><td>B6</td><td class="num">$1.15B</td><td><span class="pill a">Issuer-announced round</span></td><td>2026-03-12 · Company announcement <a class="cit" href="https://www.sunday.ai/blog/series-b" target="_blank" rel="noopener noreferrer">Sunday Series B announcement</a></td></tr>
+      <tr data-financial="Dyna Robotics"><td><button type="button" class="financial-profile" data-financial-profile="Dyna Robotics">Dyna Robotics</button></td><td>B6</td><td class="num">&gt;$600M</td><td><span class="pill a">Press-reported round mark</span></td><td>2025-09-15 · Financing report date <a class="cit" href="https://news.bloomberglaw.com/privacy-and-data-security/dyna-robotics-raises-120-million-in-funding-from-nvidia-amazon" target="_blank" rel="noopener noreferrer">Bloomberg financing report</a></td></tr>
+      <tr data-financial="micro1"><td><button type="button" class="financial-profile" data-financial-profile="micro1">micro1</button></td><td>B2</td><td class="num">$500M</td><td><span class="pill g">Last issuer-disclosed mark</span></td><td>2025-09-12 · Company announcement <a class="cit" href="https://www.micro1.ai/series-a" target="_blank" rel="noopener noreferrer">micro1 Series A announcement</a></td></tr>
     </tbody>
   </table></div>
 
   <div class="callout w">
     <div class="lbl">Capital and shipments concentrate in different markets</div>
     <p>Western companies hold the overwhelming majority of disclosed capital. Chinese companies hold the overwhelming majority of units shipped. <strong>Chinese firms accounted for over 80% of global humanoid installations in 2025</strong> <a class="cit" href="https://counterpointresearch.com/en/insights/Global-Humanoid-Robot-Installations-Reach-16%2C000-Units-in-2025-as-Mass-Production-Picks-Pace" target="_blank" rel="noopener noreferrer" title="Counterpoint">Counterpoint</a>, and China took 54% of all industrial robot installations in 2024, 295,000 of 542,076 units <a class="cit" href="https://ifr.org/worldrobotics/report-2025" target="_blank" rel="noopener noreferrer" title="IFR">IFR</a>, with domestic manufacturers outselling foreign suppliers at home for the first time.</p>
-    <p>Unitree shipped more than 5,500 humanoids in 2025 <a class="cit" href="https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data" target="_blank" rel="noopener noreferrer" title="Unitree">Unitree</a> on roughly CNY 1.7B (about $235M) of revenue, at an IPO valuation near $5.9B. Figure has shipped a small fraction of that volume and is marked at $39B. AgiBot reported more than 5,100 units and over $140M of revenue against a listing target of $5.1–6.4B.</p>
-    <p style="margin-bottom:0"><strong>Valuation is being set in one hemisphere and volume in the other.</strong> The implication depends on what the durable advantage in this market turns out to be. If it is the density of real-world operating data, then capital is concentrated on the side of that trade currently generating less of it. If instead the advantage sits in model capability or in the ability to fund a long pre-revenue build, the allocation looks more defensible. We would not treat the inversion as self-evidently mispriced, but it is the clearest structural asymmetry on the map.</p>
+    <p>Unitree shipped more than 5,500 humanoids in 2025 <a class="cit" href="https://shop.unitree.com/blogs/news/clarification-regarding-unitrees-2025-sales-data" target="_blank" rel="noopener noreferrer" title="Unitree">Unitree</a> on roughly CNY 1.7B (about $235M) of revenue. It began public trading on August 19, 2026; this map omits its moving market cap. Figure has shipped a small fraction of that volume and is marked at $39B. AgiBot reported more than 5,100 units and over $140M of revenue against a listing target of $5.1–6.4B.</p>
+    <p style="margin-bottom:0"><strong>Funding and deployment evidence answer different questions.</strong> The shipment examples above and Skild’s reported revenue show why regional conclusions need a defined product scope and period. A financing mark does not establish deployed volume, autonomous uptime or a durable data advantage. Test those claims at the task and company level.</p>
   </div>
 
   <h2>By vertical</h2>
@@ -847,7 +849,7 @@
 
   <div class="callout w">
     <div class="lbl">How to read the spread</div>
-    <p>Before treating the range as disagreement, it is worth separating out what is simply definitional. The forecasts span different horizons, from 2030 to 2050, and different scopes, from humanoid hardware only to whole-ecosystem revenue. Much of the apparent gap is scope rather than conviction. The sharper evidence sits elsewhere. <strong>Agility Robotics has agreed a SPAC merger at roughly $2.5B and has the deepest deployment record in humanoids, while Figure is marked at $39B with no disclosed revenue.</strong> One of those is a number a market agreed to pay; the other is a number a small syndicate agreed to write down. A ~15× gap between them, in the same sub-sector in the same year, is the disagreement made concrete.</p>
+    <p>Before treating the range as disagreement, it is worth separating out what is simply definitional. The forecasts span different horizons, from 2030 to 2050, and different scopes, from humanoid hardware only to whole-ecosystem revenue. Much of the apparent gap is scope rather than conviction. The sharper evidence sits elsewhere. <strong>Agility Robotics has agreed a SPAC merger at roughly $2.5B and has the deepest deployment record in humanoids, while Figure is marked at USD 39B; no verified annual revenue figure is compiled here.</strong> These are different instruments: a proposed SPAC transaction and a private financing mark. The roughly 16× gap is a diligence prompt, not proof of a like-for-like market price.</p>
     <p>Read on its own, the forecast spread is weak evidence. It tells you that analysts differ on scope and adoption, not that anyone is underwriting off one house against another. The more instructive comparison is like-for-like: Goldman at $38B against Macquarie at $139B, both for humanoids in 2035, is a 3.7× gap on the same definition in the same year. That narrower figure is the one worth citing.</p>
     <p style="margin-bottom:0">Both readings point the same way, and neither is really about adoption rates. The open question is whether general-purpose capability reaches industrial reliability at all, which is where the Structure section arrives from a different direction. In practice an investor here is underwriting a technical outcome, with a market size attached to it rather than driving it.</p>
   </div>
@@ -855,24 +857,24 @@
   <h2>Revenue, orders and forecasts are different evidence</h2>
   <p class="h2sub">Valuation is negotiated; revenue is reported. Setting the two side by side is the quickest way to see which parts of the map can be checked.</p>
   <div class="tblwrap"><table class="valtable">
-    <thead><tr><th>Company</th><th style="width:124px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:190px">Latest disclosed revenue</th><th class="num" style="width:150px">Implied multiple <span style="font-weight:400;text-transform:none;letter-spacing:0">(basis)</span></th></tr></thead>
+    <thead><tr><th>Company</th><th style="width:124px">Layer</th><th class="num" style="width:110px">Valuation</th><th class="num" style="width:190px">Reported revenue or orders</th><th class="num" style="width:150px">Implied multiple <span style="font-weight:400;text-transform:none;letter-spacing:0">(basis)</span></th></tr></thead>
     <tbody>
       <tr><td>Waymo</td><td>A8</td><td class="num">$126B</td><td class="num">not separately disclosed</td><td class="num">n/m</td></tr>
-      <tr><td>Figure AI</td><td>A6</td><td class="num">$39B</td><td class="num">not disclosed</td><td class="num">n/m</td></tr>
-      <tr><td>Skild AI</td><td>B6</td><td class="num">$14B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
-      <tr><td>Physical Intelligence</td><td>B6</td><td class="num">$5.6B</td><td class="num">pre-revenue</td><td class="num">n/m</td></tr>
+      <tr><td>Figure AI</td><td>A6</td><td class="num">$39B</td><td class="num">no verified annual figure</td><td class="num">n/m</td></tr>
+      <tr><td>Skild AI</td><td>B6</td><td class="num">$14B</td><td class="num">USD 100M ARR <span class="pill a">company claim</span></td><td class="num">140× <span class="pill n">ARR</span></td></tr>
+      <tr><td>Physical Intelligence</td><td>B6</td><td class="num">$11.7B</td><td class="num">not compiled</td><td class="num">n/m</td></tr>
       <tr><td>Shield AI</td><td>B8</td><td class="num">$12.7B</td><td class="num">~$540M</td><td class="num">~24× <span class="pill n">fwd</span></td></tr>
       <tr><td>Agility Robotics</td><td>A6</td><td class="num">~$2.5B</td><td class="num">$300M+ <span class="pill a">booked orders</span></td><td class="num">n/m</td></tr>
-      <tr><td>Unitree</td><td>A6</td><td class="num">~$5.9B</td><td class="num">CNY 1.7B (~$235M)</td><td class="num">~25× <span class="pill n">trailing</span></td></tr>
+      <tr><td>Unitree</td><td>A6</td><td class="num">listed</td><td class="num">CNY 1.7B (~$235M)</td><td class="num">not shown</td></tr>
       <tr><td>AgiBot</td><td>A6</td><td class="num">$5.1–6.4B</td><td class="num">CNY 4.0B (~$594M)</td><td class="num">~9–11× <span class="pill n">fwd</span></td></tr>
       <tr><td>UBTech</td><td>A6</td><td class="num">listed</td><td class="num">CNY 2.0B (~$280M)</td><td class="num">— <span class="pill n">trailing</span></td></tr>
     </tbody>
   </table></div>
 
-  <p class="h2sub" style="margin:-8px 0 16px">Forward and trailing multiples are mixed by necessity — companies disclose on different bases — so each is labelled. Do not read down the column as like-for-like.</p>
-  <p>The nearest Western counterexample is worth stating before the claim, because it is the one a sceptical reader will reach for. <strong>Agility Robotics disclosed more than $300M in booked orders</strong> in its SPAC materials <a class="cit" href="https://www.stocktitan.net/sec-filings/CCXI/425-churchill-capital-corp-xi-business-combination-communication-d6087afb84f5.html" target="_blank" rel="noopener noreferrer" title="Form 425">Form 425</a>, alongside roughly 65,000 hours of operation across nine states and named customers including Amazon, GXO, Toyota Motor Manufacturing Canada and Schaeffler. Its chief executive was explicit that these are contracted orders rather than recognized revenue, and no unit-deployment count was disclosed. On a recognized-revenue basis the claim below therefore survives, but it is narrower than it first looks, and Agility is the datapoint most likely to overturn it as the deal proceeds.</p>
+  <p class="h2sub" style="margin:-8px 0 16px">Forward, trailing and ARR bases differ and are labeled; the column is not a like-for-like ranking. Skild’s USD 100M ARR and USD 50M recognized since deployments began are company claims from September 10, 2026, not audited annual revenue. <a class="cit" href="https://www.skild.ai/blogs/skild-crosses-100m-arr" target="_blank" rel="noopener noreferrer">Skild disclosure</a></p>
+  <p>The nearest Western counterexample is worth stating before the claim, because it is the one a sceptical reader will reach for. <strong>Agility Robotics disclosed more than $300M in booked orders</strong> in its SPAC materials <a class="cit" href="https://www.stocktitan.net/sec-filings/CCXI/425-churchill-capital-corp-xi-business-combination-communication-d6087afb84f5.html" target="_blank" rel="noopener noreferrer" title="Form 425">Form 425</a>, alongside roughly 65,000 hours of operation across nine states and named customers including Amazon, GXO, Toyota Motor Manufacturing Canada and Schaeffler. Its chief executive was explicit that these are contracted orders rather than recognized revenue, and no unit-deployment count was disclosed. Booked orders are not recognized revenue. Skild’s later company disclosure is a separate Western robot-model revenue datapoint and changes the geographic claim below.</p>
 
-  <p><strong>Among venture-backed humanoid and robot-foundation-model companies, those with materially disclosed recognized revenue are Chinese.</strong> That qualifier matters: the incumbents in A7, A11 and A12 — ABB, FANUC, Caterpillar, Komatsu, John Deere, Symbotic — all disclose substantial robotics and autonomy revenue. The point is not that nobody in the West earns money from robots. It is that <em>within the venture-funded frontier this map is mostly about</em>, the revenue is Chinese and the valuations are not. UBTech led humanoid revenue in 2025 at roughly CNY 2.0B (~$280M), selling 1,079 Walker S2 units for CNY 821M (~$115M) of humanoid-segment revenue. Unitree guided H1 2026 revenue of about CNY 1.1B (~$156M), up 36–45% year on year. AgiBot expects roughly CNY 4.0B (~$594M) for 2026. Global humanoid shipments reached 19,100 units in H1 2026, up 272% year on year <a class="cit" href="https://technode.com/2026/08/11/chinese-makers-accounted-for-more-than-97-of-global-humanoid-robot-shipments-in-h1-2026/" target="_blank" rel="noopener noreferrer" title="TechNode">TechNode</a>, with AgiBot overtaking Unitree for the top position and the two together holding close to 80% of Chinese output.</p>
+  <p><strong>Revenue evidence is uneven across companies and regions; it is not confined to China.</strong> Skild now reports recognized revenue alongside ARR, which invalidates a Chinese-only claim for robot foundation models. Chinese humanoid makers disclose more shipment and financial detail in the examples below, while established industrial vendors also report substantial revenue. Compare product scope, accounting period and source quality before drawing a regional conclusion. UBTech led humanoid revenue in 2025 at roughly CNY 2.0B (~$280M), selling 1,079 Walker S2 units for CNY 821M (~$115M) of humanoid-segment revenue. Unitree guided H1 2026 revenue of about CNY 1.1B (~$156M), up 36–45% year on year. AgiBot expects roughly CNY 4.0B (~$594M) for 2026. Global humanoid shipments reached 19,100 units in H1 2026, up 272% year on year <a class="cit" href="https://technode.com/2026/08/11/chinese-makers-accounted-for-more-than-97-of-global-humanoid-robot-shipments-in-h1-2026/" target="_blank" rel="noopener noreferrer" title="TechNode">TechNode</a>, with AgiBot overtaking Unitree for the top position and the two together holding close to 80% of Chinese output.</p>
 
   <p>Western leaders are valued largely on expected capability. Chinese leaders are valued on units shipped and revenue booked, at roughly <strong>9–25× revenue</strong>, which is demanding but within the range familiar from other hardware categories. The Western marks have no denominator to test against. That is not necessarily wrong, since early platform bets often look exactly like this. It does mean the two halves of the map are being underwritten to <em>different evidentiary standards</em>, and only one of them can currently be checked.</p>
 
@@ -886,15 +888,15 @@
   <div class="tblwrap"><table>
     <thead><tr><th style="width:190px">Event</th><th style="width:110px">Type</th><th>Significance</th></tr></thead>
     <tbody>
-      <tr><td>Unitree</td><td><span class="pill b">IPO priced</span></td><td>STAR Market, August 2026. China's first listed pure-play humanoid maker — and it listed <em>before</em> any Western humanoid company.</td></tr>
+      <tr><td>Unitree</td><td><span class="pill b">IPO priced</span></td><td>Shanghai STAR Market trading began August 19, 2026 (688836). <a class="cit" href="https://www.sse.com.cn/disclosure/announcement/listing/ipo/c/c_20260818_10829204.shtml" target="_blank" rel="noopener noreferrer">Exchange notice</a></td></tr>
       <tr><td>AgiBot</td><td><span class="pill a">IPO filed</span></td><td>Hong Kong. Second Chinese humanoid listing inside twelve months.</td></tr>
-      <tr><td>Skydio</td><td><span class="pill b">S-1 filed</span></td><td>June 2026, ~$6.2B. First major US autonomy IPO of the cycle.</td></tr>
+      <tr><td>Skydio</td><td><span class="pill g">Private financing</span></td><td>USD 4.4B Series F announced April 23, 2026. The prior S-1 statement was not corroborated and is removed. <a class="cit" href="https://www.skydio.com/blog/skydio-series-f" target="_blank" rel="noopener noreferrer">Skydio</a></td></tr>
       <tr><td>Agility Robotics</td><td><span class="pill a">SPAC announced</span></td><td>Agreed at ~$2.5B with Churchill Capital XI <a class="cit" href="https://www.agilityrobotics.com/content/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi" target="_blank" rel="noopener noreferrer" title="Agility">Agility</a>; S-4 filed July 2026. The deal has not closed, so this is a negotiated value rather than a market price. It sits below its private-market peers despite the deepest deployment record in humanoids.</td></tr>
       <tr><td>Mentee Robotics</td><td><span class="pill n">M&amp;A</span></td><td>Acquired by Mobileye for ~$900M <a class="cit" href="https://techcrunch.com/2026/01/06/mobileye-acquires-humanoid-robot-startup-mentee-robotics-for-900m/" target="_blank" rel="noopener noreferrer" title="TechCrunch">TechCrunch</a>, the first meaningful humanoid acquisition by a silicon incumbent.</td></tr>
       <tr><td>SpaceX</td><td><span class="pill b">IPO</span></td><td>June 2026, $1.77T. Adjacent, but it resets institutional risk appetite for capital-intensive hardware.</td></tr>
     </tbody>
   </table></div>
-  <p>Two things follow. First, <strong>liquidity is arriving through Asian exchanges and US defense-adjacent listings rather than through the humanoid companies carrying the highest private marks.</strong> Second, Agility has agreed to combine at roughly $2.5B despite the deepest deployment record in the category, while Figure is marked at $39B with no disclosed revenue. That is a negotiated value rather than a struck price, so it is suggestive rather than conclusive. If the deal closes near its agreed terms, it would be the first read on how these two halves of the map are priced when a buyer and seller actually have to agree.</p>
+  <p>Two things follow. First, <strong>liquidity is arriving through Asian exchanges and US defense-adjacent listings rather than through the humanoid companies carrying the highest private marks.</strong> Second, Agility has agreed to combine at roughly $2.5B despite the deepest deployment record in the category, while Figure is marked at USD 39B; no verified annual revenue figure is compiled here. That is a negotiated value rather than a struck price, so it is suggestive rather than conclusive. If the deal closes near its agreed terms, it would be the first read on how these two halves of the map are priced when a buyer and seller actually have to agree.</p>
 
   <h2>The roster understates incumbent advantages</h2>
   <p>ABB, FANUC, Yaskawa and KUKA appear only in A7. They hold the installed base: the industry shipped 542,076 industrial robots in 2024 alone, against an operational stock in the millions <a class="cit" href="https://ifr.org/worldrobotics/report-2025" target="_blank" rel="noopener noreferrer" title="IFR">IFR</a>. They also hold the service revenue, the distribution and the customer relationships that most startups on this map are effectively trying to rent.</p>
@@ -903,7 +905,7 @@
 
   <h2>Author theses and their failure conditions</h2>
   <p class="h2sub">These follow from the margin assessment in Value Capture. They are stated as positions, with the risk to each, so that a reader who disagrees knows exactly which claim to attack.</p>
-  <div class="grid2"><div class="card"><div class="pos-h"><span class="pos-t">A1 actuation</span><span class="pill g">Overweight</span></div><p>Supply-constrained, real revenue, priced as industrials rather than as AI. Goldman's supply-chain-over-OEM call.</p><p class="pos-r"><span class="pos-rl">Risk</span>Chinese entrants pricing 30–50% below incumbents compress the margin before the volume arrives.</p></div><div class="card"><div class="pos-h"><span class="pos-t">C3 certification</span><span class="pill g">Overweight</span></div><p>The highest margin durability on the map — and there is no venture-backed pure play in it. The only names are incumbent test houses and one vendor program. A gap in the market, not just in the map.</p><p class="pos-r"><span class="pos-rl">Risk</span>The layer may not be commercially separable at all, which would explain the absence.</p></div><div class="card"><div class="pos-h"><span class="pos-t">B2 with jurisdictional lock</span><span class="pill g">Overweight</span></div><p>Security restrictions and customer data rights can limit access to operational datasets. Test whether those rights create a durable advantage for the specific vendor.</p><p class="pos-r"><span class="pos-rl">Risk</span>The Ego-Scale result — if 21,000 hours of ordinary human video substitutes for robot data, this thesis weakens sharply.</p></div><div class="card"><div class="pos-h"><span class="pos-t">C5 RaaS in Tier 1</span><span class="pill a">Neutral</span></div><p>RaaS can monetize bounded, repeatable tasks. Its economics depend on utilization, financing, maintenance and remote supervision; recurring billing alone does not make it a software business.</p><p class="pos-r"><span class="pos-rl">Risk</span>A valuation may assume software margins while the operator bears hardware and service costs.</p></div><div class="card"><div class="pos-h"><span class="pos-t">Western A6 at current marks</span><span class="pill n">Underweight</span></div><p>Limited disclosed revenue, substantial potential price competition, and Chinese comparables shipping real units at 9–25× actual revenue. The bet requires general-purpose capability to arrive <em>before</em> the cost curve bites.</p><p class="pos-r"><span class="pos-rl">Risk</span>A disclosed Tier 2–3 deployment sustaining &gt;99% for a quarter would change this.</p></div><div class="card"><div class="pos-h"><span class="pos-t">B5 world models</span><span class="pill p">Watch</span></div><p>Too new to price, ~5× repricing in a year, and genuinely unresolved as to whether it is a layer or a feature of B6. The highest-variance position available. Treat its commercial role as an open diligence question.</p><p class="pos-r"><span class="pos-rl">Risk</span>If world models become a feature of simulation or robot policies, standalone providers may lose pricing power and investors may lose capital.</p></div></div>
+  <div class="grid2"><div class="card"><div class="pos-h"><span class="pos-t">A1 actuation</span><span class="pill g">Overweight</span></div><p>Supply-constrained, real revenue, priced as industrials rather than as AI. Goldman's supply-chain-over-OEM call.</p><p class="pos-r"><span class="pos-rl">Risk</span>Chinese entrants pricing 30–50% below incumbents compress the margin before the volume arrives.</p></div><div class="card"><div class="pos-h"><span class="pos-t">C3 certification</span><span class="pill g">Overweight</span></div><p>The highest margin durability on the map — and there is no venture-backed pure play in it. The only names are incumbent test houses and one vendor program. A gap in the market, not just in the map.</p><p class="pos-r"><span class="pos-rl">Risk</span>The layer may not be commercially separable at all, which would explain the absence.</p></div><div class="card"><div class="pos-h"><span class="pos-t">B2 with jurisdictional lock</span><span class="pill g">Overweight</span></div><p>Security restrictions and customer data rights can limit access to operational datasets. Test whether those rights create a durable advantage for the specific vendor.</p><p class="pos-r"><span class="pos-rl">Risk</span>The Ego-Scale result — if 21,000 hours of ordinary human video substitutes for robot data, this thesis weakens sharply.</p></div><div class="card"><div class="pos-h"><span class="pos-t">C5 RaaS in Tier 1</span><span class="pill a">Neutral</span></div><p>RaaS can monetize bounded, repeatable tasks. Its economics depend on utilization, financing, maintenance and remote supervision; recurring billing alone does not make it a software business.</p><p class="pos-r"><span class="pos-rl">Risk</span>A valuation may assume software margins while the operator bears hardware and service costs.</p></div><div class="card"><div class="pos-h"><span class="pos-t">Western A6 at current marks</span><span class="pill n">Underweight</span></div><p>Limited disclosed revenue, substantial potential price competition, and Chinese comparables shipping real units at 9–25× actual revenue. The bet requires general-purpose capability to arrive <em>before</em> the cost curve bites.</p><p class="pos-r"><span class="pos-rl">Risk</span>A disclosed Tier 2–3 deployment sustaining &gt;99% for a quarter would change this.</p></div><div class="card"><div class="pos-h"><span class="pos-t">B5 world models</span><span class="pill p">Watch</span></div><p>AMD’s pending World Labs acquisition shows a compute vendor seeking model expertise. It may accelerate development while changing standalone licensing incentives. Whether B5 persists as a separate commercial layer remains an open diligence question; the deal has not closed.</p><p class="pos-r"><span class="pos-rl">Risk</span>If world models become a feature of simulation or robot policies, standalone providers may lose pricing power and investors may lose capital.</p></div></div>
 
   <h2>Questions that require company-level diligence</h2>
   <p class="h2sub">The gaps that remain, each of which would change one of the conclusions above if it were resolved.</p>
@@ -1040,7 +1042,7 @@
       <li><strong>B4 physics simulation</strong> solves dynamics from specified equations. You author the world. Failure mode is the sim-to-real gap.</li>
       <li><strong>B5 world models</strong> <em>learn</em> dynamics generatively and predict future states. You sample the world rather than specify it. Failure mode is hallucinated physics — and per NVIDIA's own finding, when the video prediction fails the action fails with it.</li>
       <li><strong>B6 robot foundation models</strong> output motor commands. They consume B4 and B5 output but sell a policy, not an environment.</li>
-      <li><strong>The honest caveat on B5:</strong> the standalone commercial market is thin. Several entries — Cosmos, Genie — are internal tooling inside a larger platform rather than products sold on their own, and are tagged <code>internal</code> on the map. Independently funded pure plays do exist (World Labs at $5B, Decart, Odyssey), which is why the layer is kept separate rather than folded away — but it is the layer most likely to collapse into its neighbours.</li>
+      <li><strong>The honest caveat on B5:</strong> the standalone commercial market is thin. Several entries — Cosmos, Genie — are internal tooling inside a larger platform rather than products sold on their own, and are tagged <code>internal</code> on the map. Independently funded pure plays do exist (World Labs, Decart and Odyssey; AMD has announced a pending acquisition of World Labs), which is why the layer is kept separate rather than folded away — but it is the layer most likely to collapse into its neighbours.</li>
     </ul>
   </div>
 
@@ -1078,7 +1080,7 @@
   <p>The resolution is that the map reads on two axes rather than one. <strong>The layer says what the customer buys. The business model says how the seller gets paid.</strong> Eight values: component supply, machine sale, software license, robots-as-a-service, owned-fleet operations, integration and manufacturing, testing and certification, open source. Every entry on the map carries both, and the pair is cross-tabulated in the <strong>Layer &times; model</strong> view under Explore.</p>
   <p>The two axes turn out to be correlated without being identical, and both halves of that matter. <strong>Twelve of the twenty-five layers are a single business model.</strong> Every company in A1 through A5 sells components; every company in A6 sells machines; B1, B5, B7, B8 and C2 are wholly software. Where a layer is a monoculture the layer alone is a sufficient description, and the objection has no force there.</p>
   <p>Where the axes diverge is where the second one earns its place. <strong>A8 is barely a platform layer at all</strong>: fourteen of its fifteen companies are owned-fleet operators who never sell a vehicle to anyone. That is by convention rather than accident, but it means the layer is named for its machines while its economics are entirely services. B2 splits four software businesses against five services businesses, a margin distinction the layer hides completely. And full-stack turns out not to be one phenomenon but three. Waymo and Zoox span layers because an operator has to own its whole stack in order to sell the outcome. Figure, Tesla, Amazon and Anduril span for cost and capability while still selling a machine. NVIDIA spans by selling components into every layer at once. One tag, three unrelated economic reasons, legible only on the commercial axis.</p>
-  <p>The clearest single reading on the grid is A6. <strong>25 humanoid-platform entries, all classified here as machine sales.</strong> This is a crowded layer/model intersection. The shared classification does not imply identical pricing, service terms or capabilities. That concentration is the commoditization argument from the Value capture section, visible in a single square.</p>
+  <p>The clearest single reading on the grid is A6. <strong>24 humanoid-platform entries, all classified here as machine sales.</strong> This is a crowded layer/model intersection. The shared classification does not imply identical pricing, service terms or capabilities. That concentration is the commoditization argument from the Value capture section, visible in a single square.</p>
   <p style="margin-bottom:0">This does not rescue C4 and C5, and it is not meant to. Those two remain the layers where the axes very nearly coincide, kept as layers because the customer's procurement genuinely differs: you buy integration hours, or you buy robot-hours, and in both cases the commercial structure <em>is</em> the unit of sale. That is the one place where the taxonomy is answering two questions with one box, and it is stated here rather than hidden.</p>
 
   <h2>The temporal axis: deployment tier</h2>
@@ -1120,7 +1122,7 @@
   <ul>
     <li><strong>Valuations only — never round sizes.</strong> A $1.4B round and a $14B valuation are different facts, and showing both in one column invites misreading.</li>
     <li><strong>Publicly listed companies show no figure</strong>, only a <span class="pill n">listed</span> tag. Market caps move daily and would date the map within a week.</li>
-    <li><strong>Reported-but-unclosed marks are flagged in amber.</strong> 1X at ~$10B and AgiBot at $5.1–6.4B are talks and IPO targets, not completed rounds. Physical Intelligence is shown at its confirmed $5.6B, not the ~$11B reported in negotiation.</li>
+    <li><strong>Reported, estimated and unclosed marks are flagged in amber; amber does not always mean the round remains open.</strong> 1X at approximately USD 6B is an acquisition rumor; World Labs at approximately USD 8.2B is an announced acquisition; AgiBot at USD 5.1–6.4B is an IPO target. None is a completed equity round. Physical Intelligence is shown at PitchBook’s USD 11.7B completed May 2026 round.</li>
     <li><strong>Blank means undisclosed</strong>, not small. PitchBook shows no post-money for Waabi despite a $750M round — a disclosure gap, not an absence of value.</li>
     <li><strong>Headline marks are not market caps, and should not be read as one.</strong> Late-stage private valuations are pre-money headline numbers agreed between a company and a small number of investors. They routinely sit on top of liquidation preferences, participation rights and ratchets that mean common equity is worth materially less than the headline implies. Several rounds on this map also involve strategic or circular structure — compute commitments, supplier equity, or an infrastructure vendor investing in a customer that buys its hardware. Aggregating these figures overstates the sector's real market scale, and does so most in Plane B, where marks are highest and revenue is thinnest.</li>
   </ul>
@@ -1151,7 +1153,7 @@
       <tr><td>"A4 ignores real-time motor control; B2 buries teleoperation rigs."</td><td><span class="pill g">Accepted</span></td><td>Both are genuinely separate supply chains. Added A5 real-time control &amp; motor drive (TI, Microchip, ST, Lattice, AMD, Beckhoff) and B3 teleoperation &amp; human-in-the-loop (HaptX, Manus, Ottopia, DriveU).</td></tr>
       <tr><td>"Plane C mixes technical layers with financial structuring — RaaS is packaging, SI is services."</td><td><span class="pill g">Accepted</span></td><td>Plane C is now explicitly split into Operational software (C1–C3) and Commercial delivery (C4–C5), with the margin profiles stated: integration is headcount-heavy professional services, RaaS is off-balance-sheet financing. They stay on the map because they own the customer, but they are no longer implied to be technology.</td></tr>
       <tr><td>"Private valuations are taken at face value despite preference stacks and circular deals."</td><td><span class="pill g">Accepted</span></td><td>Caveat added to the valuation methodology above. No figures changed — the framing did.</td></tr>
-      <tr><td>"Merge B5 world models into B4 and B6 — there is no standalone vendor market."</td><td><span class="pill a">Declined</span></td><td>The strongest form of this is right and is now stated on the Structure tab: much of the layer is internal tooling, and those entries are tagged <code>internal</code>. But the premise overreaches — World Labs raised $1B at $5B specifically as a world-model company, alongside Decart, Odyssey and Runway. Collapsing a layer with billions in dedicated funding because its business model is unsettled would hide the open question rather than answer it. The layer stays, flagged as the least commercially proven on the map.</td></tr>
+      <tr><td>"Merge B5 world models into B4 and B6 — there is no standalone vendor market."</td><td><span class="pill a">Declined</span></td><td>The strongest form of this is right and is now stated on the Structure tab: much of the layer is internal tooling, and those entries are tagged <code>internal</code>. But the premise overreaches — World Labs raised USD 1B for spatial intelligence and now has a pending AMD acquisition, while Decart, Odyssey and Runway remain examples of separately funded providers. <a class="cit" href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener noreferrer">World Labs funding</a> <a class="cit" href="https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute" target="_blank" rel="noopener noreferrer">AMD announcement</a> Collapsing a layer with billions in dedicated funding because its business model is unsettled would hide the open question rather than answer it. The layer stays, flagged as the least commercially proven on the map.</td></tr>
     </tbody>
   </table></div>
 
@@ -1168,7 +1170,7 @@
 
   <h2>Decision tools and evidence</h2>
   <p>The Partner workbench starts with a workload, its buyer, technical constraints and acceptance gates. Candidate fit, incentives and deal terms are <strong>author hypotheses</strong>, not existing relationships or endorsements. Linked evidence supports only the fact stated next to it. Company claims have not been independently audited. The workbench is a curated starting set, not a ranking or an exhaustive supplier search; it uses the same filters as Explore.</p>
-  <p>Evidence cards were reviewed October 11, 2026. The broader roster and capital analysis retain their September 2026 research cutoff; this release is not a complete financial refresh. Profiles without a claim-level source explicitly say so. No evidence card verifies a valuation unless it explicitly states that claim.</p>
+  <p>Claim evidence and all 29 previously displayed financial marks were reviewed October 11, 2026. Other company claims and sector funding aggregates retain their original research periods. Financial cards state the mark, date basis, transaction type and source; conflicting dates and estimates remain explicit. PitchBook’s modeled current valuations are excluded. A missing financial card means the record was not refreshed, not that its mark is current.</p>
   <p>Shortlists and notes stay in this browser's local storage. They are excluded from copied links and from the filtered-roster export. The shortlist CSV includes your notes. Private browsing, disabled storage or clearing browser data can remove them; export a copy when needed.</p>
   <p>Corrections in this release: Leaderdrive and Suzhou Green Harmonic consolidated as one supplier, using its own product manual; RLWRLD moved from A6 to B6 and its model updated to software, with US headquarters per its website. Korea and Japan are office locations. Persona's announced welding program is distinguished from production deployment. Intrinsic's generic deployment placeholder is replaced with its named Comau collaboration.</p>
   <h2>Known weaknesses</h2>
@@ -1218,8 +1220,8 @@
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V7-00 · October 11, 2026 · compiled and written by Tony Kim<br>
-  Company roster is curated, not exhaustive — ~244 of an estimated 700+ companies in scope. Valuations as last disclosed; private marks may be stale, and reported-but-unclosed figures are flagged in amber.<br>
+  <strong>Physical AI Market Map</strong> · V7-01 · October 11, 2026 · compiled and written by Tony Kim<br>
+  Company roster is curated, not exhaustive — ~244 of an estimated 700+ companies in scope. Transaction marks in USD; 29 financial records reviewed October 11. Other private marks may be stale; rumors and announced-but-unclosed deals are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.<br>
   <span class="fineprint"><a href="https://www.linkedin.com/in/hagsoo-kim/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hagsoo-kim</a> · <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim</a></span>
 </footer>
@@ -1275,9 +1277,9 @@ const CO = [
 {n:"NXP",l:"A4",g:"EU",v:["av","ind"],pub:1},
 {n:"Figure AI",fs:1,l:"A6",g:"US",v:["hum"],span:["B2","B6"],big:1,val:"$39B",note:"Helix 2 · end-to-end neural · most valuable pure-play humanoid"},
 {n:"Tesla",fs:1,l:"A6",g:"US",v:["hum","av"],pub:1,span:["A4","A8","B4","B2","B6","B7","C1"],big:1,note:"Optimus · FSD"},
-{n:"1X",l:"A6",g:"EU",v:["hum"],span:["B5","B6"],big:1,val:"~$10B",est:1,note:"NEO · reported in talks, not closed"},
-{n:"Neura Robotics",l:"A6",g:"EU",v:["hum","ind"],val:"~$7B",note:"round led by Tether"},
-{n:"Unitree",l:"A6",g:"CN",v:["hum"],big:1,val:"~$5.9B",note:"5,500+ units in 2025 · CNY 1.7B FY25 revenue · STAR Market IPO cleared"},
+{n:"1X",l:"A6",g:"US",v:["hum"],span:["B5","B6"],big:1,val:"~$6B",est:1,note:"NEO · acquisition rumor, not a closed transaction · Palo Alto HQ"},
+{n:"Neura Robotics",l:"A6",g:"EU",v:["hum","ind"],val:"~$7B",est:1,note:"round led by Tether"},
+{n:"Unitree",l:"A6",g:"CN",v:["hum"],big:1,pub:1,note:"5,500+ units in 2025 · CNY 1.7B FY25 revenue · listed Shanghai STAR Market August 19, 2026"},
 {n:"AgiBot",l:"A6",g:"CN",v:["hum"],span:["B6"],big:1,val:"$5.1-6.4B",est:1,note:"Hong Kong IPO target range · 10,000th robot early 2026"},
 {n:"Apptronik",l:"A6",g:"US",v:["hum"],val:"~$5.3B",note:"Apollo · $935M Series A"},
 {n:"Agility Robotics",l:"A6",g:"US",v:["hum","ind"],span:["C2"],big:1,val:"~$2.5B",est:1,note:"Digit · 100K+ totes at GXO · SPAC merger with Churchill Capital XI announced, S-4 filed, not yet closed"},
@@ -1336,9 +1338,9 @@ const CO = [
 {n:"WeRide",l:"A8",g:"CN",v:["av"],pub:1,span:["B7"]},
 {n:"Baidu Apollo",prod:1,l:"A8",g:"CN",v:["av"],pub:1,span:["B7"],big:1},
 {n:"Anduril",fs:1,l:"A9",g:"US",v:["def"],span:["A1","A2","B8","C1"],big:1,val:"$61B",note:"Lattice · vertical integration thesis"},
-{n:"Helsing",l:"A9",g:"EU",v:["def"],span:["B8"],big:1,val:"$12B",note:"$18B round reported in progress"},
+{n:"Helsing",l:"A9",g:"EU",v:["def"],span:["B8"],big:1,val:"$18B",note:"USD 18B Series E announced July 2026 · $18B round reported in progress"},
 {n:"Saronic",l:"A9",g:"US",v:["def"],big:1,val:"$9.25B",note:"maritime uncrewed surface vessels"},
-{n:"Skydio",l:"A9",g:"US",v:["def"],span:["B8"],big:1,val:"$6.2B",note:"autonomous drones · S-1 filed June 2026"},
+{n:"Skydio",l:"A9",g:"US",v:["def"],span:["B8"],big:1,val:"$4.4B",note:"autonomous drones · Series F announced April 2026"},
 {n:"Bedrock Robotics",l:"A10",g:"US",v:["con"],big:1,val:"$1.75B",note:"retrofit autonomy kit · operator-less excavators targeted 2026"},
 {n:"Zipline",l:"A9",g:"US",v:["def"],note:"logistics drones"},
 {n:"Wing",l:"A9",g:"US",v:["def"],note:"Alphabet"},
@@ -1368,7 +1370,7 @@ const CO = [
 {n:"dSPACE",l:"B4",g:"EU",v:["av"],note:"hardware-in-loop validation"},
 {n:"Unity",l:"B4",g:"US",v:["ind"],pub:1,note:"rendering & sim runtime"},
 {n:"NVIDIA Cosmos",prod:1,intn:1,l:"B5",g:"US",v:["hum","av"],pub:1,big:1,note:"world foundation model for physical AI"},
-{n:"World Labs",l:"B5",g:"US",v:["hum"],big:1,val:"$5B",note:"spatial intelligence · Fei-Fei Li · Marble"},
+{n:"World Labs",l:"B5",g:"US",v:["hum"],big:1,val:"~$8.2B",est:1,note:"spatial intelligence · AMD acquisition announced; closing pending"},
 {n:"DeepMind Genie",prod:1,intn:1,l:"B5",g:"EU",v:["hum"],note:"generative interactive environments"},
 {n:"Genesis AI",l:"B5",g:"US",v:["hum","ind"],note:"generative physics engine"},
 {n:"Decart",l:"B5",g:"IL",v:["hum"],note:"real-time world generation"},
@@ -1391,11 +1393,11 @@ const CO = [
 {n:"Reflex Robotics",l:"B3",g:"US",v:["hum"],note:"teleoperation rigs"},
 {n:"Dexmate",l:"B3",g:"US",v:["hum"]},
 {n:"Meta Project Aria",prod:1,l:"B2",g:"US",v:["hum"],pub:1,note:"egocentric capture at scale"},
-{n:"Skild AI",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$14B",note:"omni-bodied · tripled from $4.5B in seven months"},
-{n:"Physical Intelligence",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$5.6B",note:"pi-zero / pi-0.7 · ~$11B reported in talks, not closed"},
-{n:"Generalist AI",l:"B6",g:"US",v:["hum"],big:1,val:"$3B",note:"GEN-1 · trained from scratch · ex-DeepMind founders"},
+{n:"Skild AI",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$14B",note:"omni-bodied · USD 100M ARR reported September 2026; unaudited"},
+{n:"Physical Intelligence",l:"B6",g:"US",v:["hum","ind"],big:1,val:"$11.7B",note:"pi-zero / pi-0.7 · completed Series C, May 2026, per PitchBook"},
+{n:"Generalist AI",l:"B6",g:"US",v:["hum"],big:1,val:"$3B",est:1,note:"GEN-1 · trained from scratch · ex-DeepMind founders"},
 {n:"Sunday Robotics",l:"B6",g:"US",v:["hum"],val:"$1.15B",note:"Memo household robot"},
-{n:"Dyna Robotics",l:"B6",g:"US",v:["hum","ind"],val:"$600M"},
+{n:"Dyna Robotics",l:"B6",g:"US",v:["hum","ind"],val:">$600M",est:1},
 {n:"NVIDIA GR00T",prod:1,l:"B6",g:"US",v:["hum"],pub:1,big:1,note:"N1.7 shipped · N2 announced"},
 {n:"Gemini Robotics",prod:1,l:"B6",g:"EU",v:["hum"],pub:1,big:1,note:"Google DeepMind · ER planner"},
 {n:"Field AI",l:"B6",g:"US",v:["con","def","ind"],note:"field robot brains"},
@@ -1477,7 +1479,7 @@ const CO = [
 {n:"Burro",l:"A12",g:"US",v:["ag"],note:"autonomous field carts"},
 {n:"Naio Technologies",l:"A12",g:"EU",v:["ag"],note:"autonomous weeding robots"},
 {n:"Verdant Robotics",l:"A12",g:"US",v:["ag"]},
-{n:"Atoms",l:"A6",g:"US",v:["hum"],val:"$1.7B",note:"Kalanick-backed · stealth until 2026"},
+{n:"Atoms",l:"A11",g:"US",v:["min","av"],span:["A8"],note:"industrial automation group · mining/haulage primary placement is an author assessment; not a humanoid OEM"},
 {n:"Serve Robotics",l:"A8",g:"US",v:["av"],pub:1,note:"sidewalk delivery"},
 {n:"Starship Technologies",l:"A8",g:"EU",v:["av"],note:"sidewalk delivery at campus scale"},
 {n:"Cartken",l:"A8",g:"US",v:["av","ind"],note:"sidewalk & indoor delivery"},
@@ -1536,7 +1538,7 @@ const INFO={
 "Tesla":["tesla.com","Builds the Optimus humanoid and the FSD driving stack on in-house silicon — the most vertically integrated position in physical AI."],
 "1X":["1x.tech","Norwegian-American humanoid developer behind the NEO home robot, pursuing an in-house world model alongside the hardware."],
 "Neura Robotics":["neura-robotics.com","German developer of cognitive collaborative robots and the 4NE-1 humanoid, targeting industrial and service deployment."],
-"Unitree":["unitree.com","Chinese quadruped and humanoid manufacturer; the volume leader by shipments and the first pure-play humanoid maker to list publicly."],
+"Unitree":["unitree.com","Chinese quadruped and humanoid manufacturer, listed on Shanghai’s STAR Market in August 2026."],
 "AgiBot":["zhiyuan-robot.com","Chinese humanoid manufacturer founded in 2023 that reached its 10,000th robot in early 2026, competing with Unitree for shipment leadership."],
 "Apptronik":["apptronik.com","US humanoid developer behind Apollo, designed to work in environments built for humans without facility redesign."],
 "Agility Robotics":["agilityrobotics.com","US maker of the Digit bipedal robot and the deepest commercial deployment record in humanoids, including 100,000+ totes moved at GXO."],
@@ -1627,13 +1629,13 @@ const INFO={
 "dSPACE":["dspace.com","German supplier of hardware-in-the-loop simulation and validation systems for automotive and autonomy development."],
 "Unity":["unity.com","Real-time 3D engine widely used as a rendering and simulation runtime for robotics and synthetic data generation."],
 "NVIDIA Cosmos":["nvidia.com","A world foundation model platform that generates physically plausible future video states for training and evaluating physical AI systems."],
-"World Labs":["worldlabs.ai","Fei-Fei Li's spatial intelligence company, building large world models that generate and reason about persistent 3D environments."],
+"World Labs":["worldlabs.ai","Fei-Fei Li's spatial intelligence company, offering Marble for persistent 3D world generation. Commercial product availability does not establish industrial robotics reliability."],
 "DeepMind Genie":["deepmind.google","Google DeepMind's generative interactive environment models, which produce playable, controllable worlds from prompts or video."],
 "Genesis AI":["genesis-ai.company","Developer of a generative physics engine and robotics foundation model aimed at unifying simulation and policy learning."],
 "Decart":["decart.ai","Israeli-American company building real-time generative world models and interactive video generation."],
 "Odyssey":["odyssey.ml","Developer of generative world models for interactive video and simulated environments."],
 "Runway":["runwayml.com","Generative video research company whose general world models underpin controllable video and simulation applications."],
-"AMI Labs":["ami.inc","Yann LeCun's venture pursuing JEPA-style world models as an alternative to autoregressive architectures for physical reasoning."],
+"AMI Labs":["amilabs.xyz","Yann LeCun's venture pursuing JEPA-style world models as an alternative to autoregressive architectures for physical reasoning."],
 "Parallel Domain":["paralleldomain.com","Generates synthetic training data at scale for autonomous vehicle and robotics perception systems."],
 "Duality AI":["duality.ai","Builds the Falcon digital-twin platform for generating labelled synthetic data for defense and industrial autonomy."],
 "Cognata":["cognata.com","Israeli provider of simulation and synthetic data for autonomous vehicle validation and ADAS testing."],
@@ -1652,8 +1654,8 @@ const INFO={
 "Meta Project Aria":["projectaria.com","Meta's egocentric research glasses program, producing large-scale first-person sensor data used for embodied AI research."],
 "Skild AI":["skild.ai","Building an omni-bodied robot foundation model intended to control many different robot morphologies from a single set of weights."],
 "Physical Intelligence":["physicalintelligence.company","Developer of the pi-series vision-language-action models, partly released openly, aiming at a general-purpose robot control layer."],
-"Generalist AI":["generalist.ai","Founded by former DeepMind researchers; trains robot foundation models from scratch rather than fine-tuning language models."],
-"Sunday Robotics":["","Builds the Memo household robot, using a skill-learning approach aimed at general domestic manipulation."],
+"Generalist AI":["generalistai.com","Founded by former DeepMind researchers; trains robot foundation models from scratch rather than fine-tuning language models."],
+"Sunday Robotics":["sunday.ai","Builds the Memo household robot, using a skill-learning approach aimed at general domestic manipulation."],
 "Dyna Robotics":["dyna.co","Develops task-specialised robot foundation models targeting commercially deployable manipulation in services and light industry."],
 "NVIDIA GR00T":["developer.nvidia.com","NVIDIA's open humanoid foundation model family, trained on a mix of human video, synthetic data and teleoperation."],
 "Gemini Robotics":["deepmind.google","Google DeepMind's robotics models, pairing an embodied-reasoning planner with an on-robot action model for manipulation."],
@@ -1736,7 +1738,7 @@ const INFO={
 "Burro":["burro.ai","Builds autonomous wheeled carts that carry harvested produce, among the highest-volume field robots deployed in agriculture."],
 "Naio Technologies":["naio-technologies.com","French manufacturer of autonomous weeding robots for vegetable and vineyard operations."],
 "Verdant Robotics":["verdantrobotics.com","Provides robotic precision treatment for specialty crops, targeting per-plant intervention."],
-"Atoms":["atoms.com","Humanoid company founded by Travis Kalanick, operating largely in stealth until its 2026 round."],
+"Atoms":["atoms.co","Travis Kalanick’s industrial automation group, including mining/haulage, transport and food businesses. A11 represents its in-scope mining offer; the group is not a humanoid OEM."],
 "Serve Robotics":["serverobotics.com","Operates sidewalk delivery robots in US cities, spun out of Uber and now publicly listed."],
 "Starship Technologies":["starship.xyz","Runs one of the largest sidewalk delivery fleets globally, concentrated on university campuses."],
 "Cartken":["cartken.com","Builds sidewalk and indoor delivery robots, with deployments spanning campuses and factory logistics."],
@@ -1796,7 +1798,7 @@ const BIZ={
 "Tesla":["plat","scaled","Optimus in Tesla's own plants; FSD shipping to the customer fleet"],
 "1X":["plat","pilot"],
 "Neura Robotics":["plat","pilot"],
-"Unitree":["plat","comm","Research, education and entertainment fleets; first pure-play humanoid listing"],
+"Unitree":["plat","comm","Research, education and entertainment fleets"],
 "AgiBot":["plat","comm","10,000th unit shipped in early 2026"],
 "Apptronik":["plat","pilot","Mercedes-Benz manufacturing pilot; GXO warehouse trials"],
 "Agility Robotics":["plat","pilot","GXO Logistics (100,000+ totes moved); Schaeffler"],
@@ -1887,7 +1889,7 @@ const BIZ={
 "dSPACE":["soft","scaled"],
 "Unity":["soft","scaled"],
 "NVIDIA Cosmos":["soft","res"],
-"World Labs":["soft","res"],
+"World Labs":["soft","comm"],
 "DeepMind Genie":["soft","res"],
 "Genesis AI":["soft","res"],
 "Decart":["soft","res"],
@@ -1910,7 +1912,7 @@ const BIZ={
 "Reflex Robotics":["plat","pilot"],
 "Dexmate":["plat","pilot"],
 "Meta Project Aria":["soft","res"],
-"Skild AI":["soft","res"],
+"Skild AI":["soft","comm"],
 "Physical Intelligence":["soft","res","pi-series models, partly released openly"],
 "Generalist AI":["soft","res"],
 "Sunday Robotics":["soft","res"],
@@ -1993,7 +1995,7 @@ const BIZ={
 "Burro":["plat","comm"],
 "Naio Technologies":["plat","comm"],
 "Verdant Robotics":["plat","pilot"],
-"Atoms":["plat","res"],
+"Atoms":["plat","pilot"],
 "Serve Robotics":["ops","comm","Uber Eats in US cities"],
 "Starship Technologies":["ops","scaled","University campuses; Bolt Food"],
 "Cartken":["ops","comm","Campus delivery and factory logistics; Mitsubishi in Japan"],
@@ -2046,6 +2048,8 @@ const LAYER={};PLANES.forEach(function(p){p.layers.forEach(function(L){LAYER[L.c
 const PLANEOF={};PLANES.forEach(function(p){PLANEOF[p.id]=p;});
 
 const EVIDENCE = {
+  "World Labs": {url:"https://www.worldlabs.ai/",title:"World Labs product portfolio",claim:"World Labs offers Marble, a public product for generating and editing persistent 3D worlds. Product availability does not establish production robotics reliability.",kind:"Primary product documentation",checked:"2026-10-11"},
+  "Atoms": {url:"https://atoms.co/",title:"Atoms business portfolio",claim:"Atoms lists mining/haulage, transport and food businesses, including Pronto AI autonomous haulage. It is not presented as a humanoid OEM.",kind:"Primary company documentation",checked:"2026-10-11"},
   "Leaderdrive": {url:"https://www.leaderdrive.com/images/PDF/Strain%20Wave%20Gears/LHS%20Product%20Introduction%20Manual.pdf",title:"Leaderdrive product manual",claim:"The product manual identifies the Leaderdrive brand with Suzhou Green Harmonic (苏州绿的谐波).",kind:"Primary product documentation",checked:"2026-10-11"},
   "RLWRLD": {url:"https://www.rlwrld.ai/en/rldx-1",title:"RLDX-1 technical report",claim:"RLWRLD describes RLDX-1 as a dexterity-first foundation model for robot hands.",kind:"Company technical claim",checked:"2026-10-11"},
   "Persona AI": {url:"https://www.prnewswire.com/news-releases/hd-hyundai-and-persona-ai-sign-agreement-to-deploy-humanoid-welding-robots-for-shipbuilding-automation-302449282.html",title:"Persona / HD Hyundai MOU, May 7, 2025",claim:"The parties announced a shipyard welding development program, with field testing targeted for 2027. This does not verify production autonomy.",kind:"Company announcement",checked:"2026-10-11"},
@@ -2056,6 +2060,470 @@ const EVIDENCE = {
   "Locus Robotics": {url:"https://group.dhl.com/content/dam/deutschepostdhl/en/media-relations/press-releases/2024/pr-dsc-locus-robotics-20240614.pdf",title:"DHL / Locus announcement, June 14, 2024",claim:"DHL reports using Locus autonomous mobile robots in fulfillment operations.",kind:"Customer announcement",checked:"2026-10-11"},
   "Universal Robots": {url:"https://www.universal-robots.com/products/",title:"Universal Robots product portfolio",claim:"Universal Robots markets collaborative robot arms across multiple payload classes.",kind:"Primary product documentation",checked:"2026-10-11"},
   "Pilz": {url:"https://www.pilz.com/en-INT/products",title:"Pilz products and services",claim:"Pilz offers industrial safety automation products and services.",kind:"Primary product documentation",checked:"2026-10-11"}
+};
+const VALUATIONS = {
+  "Figure AI": {
+    "value": "$39B",
+    "status": "Company-announced round",
+    "date": "2025-09-16",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "Figure announced USD 39B post-money and more than USD 1B in committed capital. PitchBook records a completed Series C at the same mark dated May 22, 2025; the financing dates and amounts differ and are not reconciled here. This is not PitchBook’s modeled current valuation.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/521074-54/company/profile"
+      },
+      {
+        "label": "Figure Series C announcement",
+        "url": "https://www.figure.ai/news/series-c"
+      }
+    ]
+  },
+  "Agility Robotics": {
+    "value": "~$2.5B",
+    "status": "Announced SPAC transaction",
+    "date": "2026-06-24",
+    "dateBasis": "Transaction announcement",
+    "checked": "2026-10-11",
+    "detail": "PitchBook marks the reverse merger Announced and the associated PIPE In Progress. The last completed private round is USD 2.15B post-money on June 25, 2025. The displayed USD 2.5B is the proposed transaction value, not a public market cap.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/171265-96/company/profile"
+      },
+      {
+        "label": "Agility merger announcement",
+        "url": "https://www.agilityrobotics.com/content/agility-robotics-to-go-public-through-merger-with-churchill-capital-corp-xi"
+      }
+    ]
+  },
+  "1X": {
+    "value": "~$6B",
+    "status": "Acquisition rumor",
+    "date": "2026-08-27",
+    "dateBasis": "PitchBook rumor record",
+    "checked": "2026-10-11",
+    "detail": "PitchBook records a rumored SoftBank acquisition at USD 6B, not a completed round or sale. Recent completed rounds have no disclosed valuation in the reviewed history. Its historical January 2023 post-money mark is estimated and stale; the earlier USD 10B fundraising target is not used as a closed mark.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/318913-03/company/profile"
+      }
+    ]
+  },
+  "Skild AI": {
+    "value": "$14B",
+    "status": "Completed round; rounded mark",
+    "date": "2026-01-14",
+    "dateBasis": "Company announcement / deal date",
+    "checked": "2026-10-11",
+    "detail": "The company announced a USD 1.4B Series C at over USD 14B; the display rounds to USD 14B. PitchBook marks the round Completed and its transaction valuation estimated. Separately, Skild reports USD 100M ARR and USD 50M recognized since deployments began; these are company claims, not audited annual revenue.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/608340-52/company/profile"
+      },
+      {
+        "label": "Skild Series C announcement",
+        "url": "https://www.skild.ai/blogs/series-c"
+      },
+      {
+        "label": "Skild revenue disclosure, September 10, 2026",
+        "url": "https://www.skild.ai/blogs/skild-crosses-100m-arr"
+      }
+    ]
+  },
+  "Physical Intelligence": {
+    "value": "$11.7B",
+    "status": "Completed equity round",
+    "date": "2026-05-21",
+    "dateBasis": "PitchBook deal date",
+    "checked": "2026-10-11",
+    "detail": "PitchBook records a completed USD 1B Series C at USD 11.7B post-money. This supersedes the earlier USD 5.6B display and the reported USD 11B negotiations. The transaction mark is distinct from PitchBook’s modeled valuation.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/590542-30/company/profile"
+      }
+    ]
+  },
+  "World Labs": {
+    "value": "~$8.2B",
+    "status": "Announced acquisition",
+    "date": "2026-09-28",
+    "dateBasis": "Buyer announcement",
+    "checked": "2026-10-11",
+    "detail": "AMD announced an approximately USD 8.2B all-stock acquisition, expected to close by year-end subject to approvals and customary conditions. PitchBook dates the agreement September 26. Its prior completed secondary transaction mark is USD 7B on March 4, 2026, and its Series C mark is USD 5.4B on February 20. These are different transaction types.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/608754-43/company/profile"
+      },
+      {
+        "label": "AMD acquisition announcement",
+        "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+      }
+    ]
+  },
+  "Apptronik": {
+    "value": "~$5.3B",
+    "status": "Completed equity round",
+    "date": "2026-02-11",
+    "dateBasis": "PitchBook deal date",
+    "checked": "2026-10-11",
+    "detail": "PitchBook records USD 5.3B post-money. The company’s release confirms a USD 520M extension and more than USD 935M across the combined Series A; its release does not state this exact valuation. Public reports differ, so the displayed approximation follows the cited PitchBook record.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/222785-47/company/profile"
+      },
+      {
+        "label": "Apptronik Series A extension announcement",
+        "url": "https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a"
+      }
+    ]
+  },
+  "Waymo": {
+    "value": "$126B",
+    "status": "Completed equity round",
+    "date": "2026-02-02",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "Waymo announced a USD 16B round at USD 126B post-money on February 2. PitchBook dates its completed Series D April 22; the display uses the public announcement date and records the difference. An October 8 debt financing does not establish a new equity valuation.",
+    "sources": [
+      {
+        "label": "PitchBook deal history (subscription)",
+        "url": "https://my.pitchbook.com/profile/169143-76/company/profile"
+      },
+      {
+        "label": "Waymo financing announcement",
+        "url": "https://waymo.com/blog/2026/02/waymo-raises-usd16-billion-investment-round/"
+      }
+    ]
+  },
+  "Neura Robotics": {
+    "value": "~$7B",
+    "status": "Reported financing mark",
+    "date": "2026-06-11",
+    "dateBasis": "Press publication",
+    "checked": "2026-10-11",
+    "detail": "The issuer announces financing of up to USD 1.4B but does not state this exact valuation. The approximate USD 7B mark follows the cited press report; round size and valuation are separate facts.",
+    "sources": [
+      {
+        "label": "Issuer financing announcement",
+        "url": "https://neura-robotics.com/record-series-c/"
+      },
+      {
+        "label": "eWeek valuation report",
+        "url": "https://www.eweek.com/news/neura-robotics-funding-humanoid-robots-emea-germany/"
+      }
+    ]
+  },
+  "Unitree": {
+    "value": "",
+    "status": "Listed",
+    "date": "2026-08-19",
+    "dateBasis": "First trading day",
+    "checked": "2026-10-11",
+    "detail": "Shanghai Stock Exchange confirms trading began August 19, 2026, under code 688836. The obsolete private valuation is removed; this map does not publish a moving market cap.",
+    "sources": [
+      {
+        "label": "Shanghai Stock Exchange listing notice",
+        "url": "https://www.sse.com.cn/disclosure/announcement/listing/ipo/c/c_20260818_10829204.shtml"
+      }
+    ]
+  },
+  "AgiBot": {
+    "value": "$5.1-6.4B",
+    "status": "Reported IPO target",
+    "date": "2026-07-27",
+    "dateBasis": "Press publication",
+    "checked": "2026-10-11",
+    "detail": "Yicai reports a proposed Hong Kong listing range; its source did not confirm the size or valuation. This is an indicative target, not a completed financing or live market cap.",
+    "sources": [
+      {
+        "label": "Yicai IPO report",
+        "url": "https://www.yicaiglobal.com/news/chinese-robotics-startup-agibot-kicks-off-ipo-process-source-says"
+      }
+    ]
+  },
+  "Humanoid": {
+    "value": "$1.35B",
+    "status": "Issuer-announced round",
+    "date": "2026-07-21",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer announces USD 152M Series A financing at USD 1.35B post-money. The financing mark does not establish production maturity.",
+    "sources": [
+      {
+        "label": "Humanoid financing announcement",
+        "url": "https://thehumanoid.ai/humanoid-raises-152-million-at-1-35-billion-post-money-valuation-becoming-europes-first-pure-play-humanoid-robotics-unicorn/"
+      }
+    ]
+  },
+  "Nuro": {
+    "value": "$6B",
+    "status": "Completed equity round",
+    "date": "2025-08-21",
+    "dateBasis": "Issuer closing announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer’s closing release states USD 203M Series E at USD 6B. Its April announcement covered the initial tranche of the same round.",
+    "sources": [
+      {
+        "label": "Issuer closing release, republished",
+        "url": "https://finance.yahoo.com/news/nuro-closes-203-million-series-123000194.html"
+      },
+      {
+        "label": "Nuro initial Series E announcement",
+        "url": "https://www.prnewswire.com/news-releases/nuro-announces-series-e-financing-at-6b-valuation-backed-by-leading-financial-and-strategic-investors-302424082.html"
+      }
+    ]
+  },
+  "Zoox": {
+    "value": "$3.2B",
+    "status": "Historical pre-acquisition mark",
+    "date": "2018-07-17",
+    "dateBasis": "Press publication",
+    "checked": "2026-10-11",
+    "detail": "This is a reported 2018 private-round mark. Zoox is now Amazon-owned; it is neither the acquisition price nor a current independent-company valuation.",
+    "sources": [
+      {
+        "label": "Axios historical financing report",
+        "url": "https://www.axios.com/2018/07/17/self-driving-car-company-zoox"
+      }
+    ]
+  },
+  "Anduril": {
+    "value": "$61B",
+    "status": "Completed equity round",
+    "date": "2026-05-13",
+    "dateBasis": "Transaction adviser announcement",
+    "checked": "2026-10-11",
+    "detail": "The company’s transaction counsel confirms USD 5B Series H at USD 61B. Reported later fundraising talks are not substituted for this completed-round mark.",
+    "sources": [
+      {
+        "label": "Gunderson Dettmer transaction announcement",
+        "url": "https://www.gunder.com/print/v2/content/26792/anduril-raises-5-billion-usd-series-h-at-61-billion-usd-valuation.pdf?lang=en"
+      }
+    ]
+  },
+  "Helsing": {
+    "value": "$18B",
+    "status": "Issuer-announced round",
+    "date": "2026-07-13",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer announces USD 1.8B Series E at USD 18B. This replaces the older USD 12B mark and outdated in-progress wording.",
+    "sources": [
+      {
+        "label": "Helsing Series E announcement",
+        "url": "https://helsing.ai/newsroom/helsing-raises-1-8bn-in-series-e"
+      }
+    ]
+  },
+  "Saronic": {
+    "value": "$9.25B",
+    "status": "Completed equity round",
+    "date": "2026-03-31",
+    "dateBasis": "Investor / issuer announcement",
+    "checked": "2026-10-11",
+    "detail": "Investor Advent confirms its participation in USD 1.75B Series D at USD 9.25B; the issuer announces the round closed.",
+    "sources": [
+      {
+        "label": "Advent investment announcement",
+        "url": "https://www.adventinternational.com/news/advent-advances-up-to-1-billion-defense-technology-commitment-with-investment-in-saronic/"
+      },
+      {
+        "label": "Issuer closing announcement",
+        "url": "https://www.prnewswire.co.uk/news-releases/saronic-closes-1-75b-series-d-at-9-25b-valuation-to-accelerate-a-new-era-of-maritime-autonomy-302729298.html"
+      }
+    ]
+  },
+  "Skydio": {
+    "value": "$4.4B",
+    "status": "Issuer-announced round",
+    "date": "2026-04-23",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer announces USD 110M Series F at USD 4.4B. The older USD 6.2B/S-1 statement was not corroborated and is removed; no IPO status is inferred.",
+    "sources": [
+      {
+        "label": "Skydio Series F announcement",
+        "url": "https://www.skydio.com/blog/skydio-series-f"
+      }
+    ]
+  },
+  "Bedrock Robotics": {
+    "value": "$1.75B",
+    "status": "Issuer-announced round",
+    "date": "2026-02-04",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer announces USD 270M Series B at USD 1.75B. Funding is not deployed-equipment revenue or evidence of unsupervised reliability.",
+    "sources": [
+      {
+        "label": "Bedrock financing announcement",
+        "url": "https://www.prnewswire.com/news-releases/bedrock-robotics-raises-270-million-in-series-b-funding-to-accelerate-the-future-of-autonomous-construction-302679014.html"
+      }
+    ]
+  },
+  "Applied Intuition": {
+    "value": "$15B",
+    "status": "Completed equity round / tender",
+    "date": "2025-06-17",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer states its USD 600M Series F fundraise and tender offer closed at USD 15B. This combines financing and shareholder liquidity, not a robot-hardware valuation.",
+    "sources": [
+      {
+        "label": "Applied Intuition closing announcement",
+        "url": "https://www.appliedintuition.com/press-releases/series-f"
+      }
+    ]
+  },
+  "AMI Labs": {
+    "value": "$3.5B",
+    "status": "Pre-money round mark",
+    "date": "2026-03-10",
+    "dateBasis": "Financing announcement date",
+    "checked": "2026-10-11",
+    "detail": "The USD 3.5B figure is explicitly pre-money. Its investor records USD 1.03B funding closed in March; the announcement date is reported March 10. It is not comparable to a post-money mark without adjustment.",
+    "sources": [
+      {
+        "label": "Partech portfolio / financing record",
+        "url": "https://cdn-website.partechpartners.com/companies/ami-labs"
+      },
+      {
+        "label": "Reuters announcement report",
+        "url": "https://www.investing.com/news/stock-market-news/exmeta-ai-chief-yann-lecuns-ami-raises-103-billion-for-alternative-ai-approach-4551055"
+      }
+    ]
+  },
+  "Scale AI": {
+    "value": "$29B",
+    "status": "Strategic minority investment",
+    "date": "2025-06-12",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer states Meta’s investment valued Scale at over USD 29B; the display rounds to USD 29B. This strategic minority investment also provided shareholder liquidity.",
+    "sources": [
+      {
+        "label": "Scale investment announcement",
+        "url": "https://scale.com/blog/scale-ai-announces-next-phase-of-company-evolution"
+      }
+    ]
+  },
+  "micro1": {
+    "value": "$500M",
+    "status": "Last issuer-disclosed mark",
+    "date": "2025-09-12",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer states USD 35M financing at USD 500M. Later financing reports have not established an issuer-disclosed replacement in this review; this older mark may be stale.",
+    "sources": [
+      {
+        "label": "micro1 Series A announcement",
+        "url": "https://www.micro1.ai/series-a"
+      }
+    ]
+  },
+  "Generalist AI": {
+    "value": "$3B",
+    "status": "Press-reported round mark",
+    "date": "2026-08-25",
+    "dateBasis": "Press publication",
+    "checked": "2026-10-11",
+    "detail": "Press reports USD 3B after an extension. Counsel confirmed the earlier USD 2B round.",
+    "sources": [
+      {
+        "label": "TechCrunch financing report",
+        "url": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/"
+      },
+      {
+        "label": "Fenwick prior-round announcement",
+        "url": "https://www.fenwick.com/insights/experience/fenwick-represents-generalist-ai-in-400m-funding"
+      }
+    ]
+  },
+  "Sunday Robotics": {
+    "value": "$1.15B",
+    "status": "Issuer-announced round",
+    "date": "2026-03-12",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer states USD 165M Series B at USD 1.15B. A financing announcement does not establish autonomous household deployment at scale.",
+    "sources": [
+      {
+        "label": "Sunday Series B announcement",
+        "url": "https://www.sunday.ai/blog/series-b"
+      }
+    ]
+  },
+  "Dyna Robotics": {
+    "value": ">$600M",
+    "status": "Press-reported round mark",
+    "date": "2025-09-15",
+    "dateBasis": "Financing report date",
+    "checked": "2026-10-11",
+    "detail": "Bloomberg reports a mark above USD 600M. The issuer confirms USD 120M funding but not the precise valuation. The lower bound is not an exact clearing price.",
+    "sources": [
+      {
+        "label": "Bloomberg financing report",
+        "url": "https://news.bloomberglaw.com/privacy-and-data-security/dyna-robotics-raises-120-million-in-funding-from-nvidia-amazon"
+      },
+      {
+        "label": "DYNA financing announcement",
+        "url": "https://www.dyna.co/news/series-a"
+      }
+    ]
+  },
+  "Wayve": {
+    "value": "$8.6B",
+    "status": "Issuer-announced round",
+    "date": "2026-02-25",
+    "dateBasis": "Company announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer announces USD 1.2B Series D at USD 8.6B post-money. Additional milestone-linked capital is distinct from the priced round.",
+    "sources": [
+      {
+        "label": "Wayve Series D announcement",
+        "url": "https://wayve.ai/press/series-d/"
+      }
+    ]
+  },
+  "Shield AI": {
+    "value": "$12.7B",
+    "status": "Completed equity round",
+    "date": "2026-06-22",
+    "dateBasis": "Closing confirmation announcement",
+    "checked": "2026-10-11",
+    "detail": "The issuer confirms successful closing of its financing package at USD 12.7B. The package includes Series G and preferred equity; it is not USD 2B of common equity alone.",
+    "sources": [
+      {
+        "label": "Shield closing confirmation",
+        "url": "https://shield.ai/shield-ai-completes-acquisition-of-aechelon-technology/"
+      }
+    ]
+  },
+  "Atoms": {
+    "value": "",
+    "status": "Valuation not disclosed",
+    "date": "2026-07-22",
+    "dateBasis": "Funding report date",
+    "checked": "2026-10-11",
+    "detail": "USD 1.7B was fundraising, not valuation. No valuation shown.",
+    "sources": [
+      {
+        "label": "Funding report",
+        "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/"
+      },
+      {
+        "label": "Investor interview with founder",
+        "url": "https://a16z.com/podcast/building-the-physical-ai-stack-travis-kalanick-on-tbpn/"
+      }
+    ]
+  }
 };
 const WORKLOADS = {
   welding:{name:"Shipyard welding",buyer:"Shipyard production and welding engineering; quality and safety teams control acceptance.",need:"Deliver accepted welds in constrained spaces without assuming humanoid dexterity equals qualified welding.",constraints:["Reach, torch pose and seam tracking under occlusion", "Arc heat, spatter, fumes, grounding and payload", "Weld procedure, inspection, rework and safe recovery"],gate:"Compare a fixed arm, mobile manipulator and humanoid on the same seams. Measure accepted weld length per shift, first-pass quality, intervention minutes and fully loaded cost. Agree thresholds with the buyer before a paid pilot.",partners:[
@@ -2092,9 +2560,15 @@ function toggleShortlist(c){
   saveShortlist();render();
   if(openCo===c.n){var b=panel.querySelector('.save-company');if(b){b.textContent=shortlist.has(c.n)?'Remove from shortlist':'Save to shortlist';b.setAttribute('aria-pressed',String(shortlist.has(c.n)));}}
 }
+function valuationStatus(c){return VALUATIONS[c.n]?VALUATIONS[c.n].status:(c.val?(c.est?"Reported / target":"Baseline mark; not refreshed"):(c.pub?"Listed":"Undisclosed"));}
+function financialHtml(c){
+  const f=VALUATIONS[c.n];
+  if(!f)return c.val?'<div class="wb-source">Financial mark retains the September baseline. No mark date or source was individually reverified for this company in this refresh.</div>':'';
+  return '<div class="wb-source"><strong>Financial provenance · USD</strong><p>'+esc(f.value||'No valuation shown')+' · '+esc(f.status)+'<br>'+esc(f.date)+' · '+esc(f.dateBasis)+' · Reviewed '+esc(f.checked)+'</p><p>'+esc(f.detail)+'</p>'+f.sources.map(x=>'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">'+esc(x.label)+'</a>').join(' · ')+'</div>';
+}
 function evidenceHtml(c){
   const e=EVIDENCE[c.n];
-  if(!e)return '<div class="wb-source">No claim-level evidence card compiled. Profile and financial figures have not been individually reverified in this release.</div>';
+  if(!e)return '<div class="wb-source">No nonfinancial claim-evidence card compiled. Financial provenance, when available, is shown separately below.</div>';
   return '<div class="wb-source"><strong>'+esc(e.kind)+'</strong> · Reviewed '+esc(e.checked)+'<p>'+esc(e.claim)+'</p><a href="'+esc(e.url)+'" target="_blank" rel="noopener noreferrer">'+esc(e.title)+'</a><p>This source supports the claim above, not the valuation or proposed partner fit. Company claims are not independently audited.</p></div>';
 }
 function actionButton(label,fn){const b=document.createElement('button');b.type='button';b.className='chip';b.textContent=label;b.onclick=fn;return b;}
@@ -2141,14 +2615,14 @@ function csvCell(value){
   return '"'+s.replace(/"/g,'""')+'"';
 }
 function csvText(rows,notes){
-  const fields=['Company','Layer','Headquarters','Business model','Maturity','Valuation (USD; last disclosed)','Valuation status','Reported deployment or program','Evidence claim','Evidence URL','Evidence reviewed'];
+  const fields=['Company','Layer','Headquarters','Business model','Maturity','Transaction mark (USD)','Valuation status','Mark date','Date basis','Financial reviewed','Financial source URLs','Financial note','Reported deployment or program','Evidence claim','Evidence URL','Evidence reviewed'];
   if(notes)fields.push('Private note');
-  const values=rows.map(c=>{const e=EVIDENCE[c.n]||{};const row=[c.n,c.l,GEOFULL[c.g]||c.g,BMF[bmOf(c)],MATF[matOf(c)],c.val||'',c.val?(c.est?'Reported / target':'Last disclosed'):(c.pub?'Listed':'Undisclosed'),depOf(c)||'',e.claim||'Not individually verified',e.url||'',e.checked||''];if(notes)row.push(privateNotes[c.n]||'');return row;});
+  const values=rows.map(c=>{const e=EVIDENCE[c.n]||{},f=VALUATIONS[c.n]||{};const row=[c.n,c.l,GEOFULL[c.g]||c.g,BMF[bmOf(c)],MATF[matOf(c)],c.val||'',valuationStatus(c),f.date||'',f.dateBasis||'',f.checked||'',(f.sources||[]).map(x=>x.url).join(' | '),f.detail||'Not individually refreshed',depOf(c)||'',e.claim||'Not individually verified',e.url||'',e.checked||''];if(notes)row.push(privateNotes[c.n]||'');return row;});
   return '\ufeff'+[fields,...values].map(row=>row.map(csvCell).join(',')).join('\r\n');
 }
 function exportCsv(rows,notes){
   const url=URL.createObjectURL(new Blob([csvText(rows,notes)],{type:'text/csv;charset=utf-8'}));
-  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V7-00.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V7-01.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
 const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),lay:null,big:false,spans:false,val:false,fs:false,dep:false,q:""};
@@ -2380,7 +2854,7 @@ function viewMatrix(host,shown){
 var sortKey='n', sortDir=1;
 function viewTable(host,shown){
   var note=document.createElement('div');note.className='vnote';
-  note.innerHTML='Business model and maturity are classifications, not sourced figures; the rules are in Method. Valuation is last disclosed; a blank means undisclosed, never small. Revenue is deliberately absent: it is not reliably available for private companies at this scale, and a column of estimates would be worse than no column.';
+  note.innerHTML='Business model and maturity are classifications, not sourced figures; the rules are in Method. Transaction marks are in USD; proposed deals and rumors are not completed rounds. Financial provenance is available for all displayed marks, including press-reported and historical records. A review does not establish freshness or independent audit. A blank means undisclosed, never small. Revenue is deliberately absent: it is not reliably available for private companies at this scale, and a column of estimates would be worse than no column.';
   host.appendChild(note);
   var cols=[["n","Company"],["l","Layer"],["g","HQ"],["bm","Business model"],["mat","Maturity"],["val","Valuation"],["v","Verticals"]];
   var val=function(c,k){
@@ -2409,7 +2883,7 @@ function viewTable(host,shown){
       '<td>'+esc(GEOFULL[c.g]||c.g)+'</td>'+
       '<td>'+esc(BMF[bmOf(c)]||'—')+'</td>'+
       '<td><span class="mpill '+m+'">'+esc(MATF[m]||'-')+'</span></td>'+
-      '<td class="tval">'+(c.val?'<span class="val'+(c.est?' est':'')+'">'+esc(c.val)+'</span>':(c.pub?'<span class="pub">listed</span>':'<span class="tdash">&mdash;</span>'))+'</td>'+
+      '<td class="tval">'+(c.val?'<span class="val'+(c.est?' est':'')+'">'+esc(c.val)+'</span><span class="tsub"> '+esc(valuationStatus(c))+(VALUATIONS[c.n]?' · '+esc(VALUATIONS[c.n].date):'')+'</span>':(c.pub?'<span class="pub">listed</span>':'<span class="tdash">&mdash;</span>'))+'</td>'+
       '<td class="tv">'+(c.v||[]).map(function(x){return esc(VERTS[x]||x);}).join(', ')+'</td>'+
     '</tr>';
   });
@@ -2435,7 +2909,7 @@ function openPanel(c){
   var bm=bmOf(c),mat=matOf(c),dep=depOf(c),about=aboutOf(c),url=urlOf(c);
   var L=LAYER[c.l]||{},P=PLANEOF[c.l[0]]||{};
   var valHtml;
-  if(c.val) valHtml='<span class="val'+(c.est?' est':'')+'">'+esc(c.val)+'</span> <span class="pfn">'+(c.est?'reported or target, not a closed round':'last disclosed')+'</span>';
+  if(c.val) valHtml='<span class="val'+(c.est?' est':'')+'">'+esc(c.val)+'</span> <span class="pfn">'+esc(valuationStatus(c))+(VALUATIONS[c.n]?' · '+esc(VALUATIONS[c.n].date):'')+'</span>';
   else if(c.pub) valHtml='<span class="pub">Publicly listed</span> <span class="pfn">market cap moves daily and is not shown</span>';
   else valHtml='<span class="tdash">Not disclosed</span> <span class="pfn">a blank means undisclosed, not small</span>';
   var tags='';
@@ -2446,15 +2920,15 @@ function openPanel(c){
   panel.innerHTML=
     '<div class="ph"><div class="ph-l"><div class="ph-n">'+esc(c.n)+'</div><div class="ph-t">'+tags+'</div></div>'+
       '<button class="pclose" aria-label="Close">&times;</button></div>'+
-    '<div class="pbody"><button type="button" class="chip save-company" aria-pressed="'+String(shortlist.has(c.n))+'">'+(shortlist.has(c.n)?'Remove from shortlist':'Save to shortlist')+'</button>'+evidenceHtml(c)+
+    '<div class="pbody"><button type="button" class="chip save-company" aria-pressed="'+String(shortlist.has(c.n))+'">'+(shortlist.has(c.n)?'Remove from shortlist':'Save to shortlist')+'</button>'+
       '<div class="ploc '+c.l[0]+'"><span class="plcode">'+esc(c.l)+'</span><span class="plname">'+esc(L.n||'')+'</span><span class="plplane">'+esc(P.id+' · '+P.name)+'</span></div>'+
       (about?'<p class="pabout">'+esc(about)+'</p>':'')+
       '<div class="pgrid">'+
         field('Headquarters',esc(GEOFULL[c.g]||c.g))+
         field('Business model',bm?'<b>'+esc(BMF[bm])+'</b><span class="pfn">'+esc(BMD[bm])+'</span>':'')+
         field('Commercial maturity',mat?'<span class="mpill '+mat+'">'+esc(MATF[mat])+'</span><span class="pfn">'+esc(MATD[mat])+'</span>':'')+
-        field('Valuation',valHtml)+
-      '</div>'+
+        field('Transaction mark (USD)',valHtml)+
+      '</div>'+financialHtml(c)+evidenceHtml(c)+
       (dep?'<div class="pdep"><div class="pfl">Reported deployments & programs</div><div class="pdepv">'+esc(dep)+'</div></div>':'')+
       (c.note?'<div class="pnote">'+esc(c.note)+'</div>':'')+
       (c.fs?'<div class="pnote">No single layer dominates. The primary layer shown is the unit of sale; the company operates meaningfully across its spans.</div>':'')+
@@ -2595,7 +3069,7 @@ function activeChips(){
   state.g.forEach(function(k){out.push([GEOFULL[k],function(){state.g.delete(k);}]);});
   state.b.forEach(function(k){out.push([BMF[k],function(){state.b.delete(k);}]);});
   state.m.forEach(function(k){out.push([MATF[k],function(){state.m.delete(k);}]);});
-  [["spans","Vertical integrators"],["big","Category leaders"],["val","Valuation disclosed"],["fs","Full-stack"],["dep","Named deployments / programs"]].forEach(function(x){
+  [["spans","Vertical integrators"],["big","Category leaders"],["val","Financial mark available"],["fs","Full-stack"],["dep","Named deployments / programs"]].forEach(function(x){
     if(state[x[0]])out.push([x[1],function(){state[x[0]]=false;}]);
   });
   if(state.q)out.push(['“'+state.q+'”',function(){state.q='';document.getElementById('q').value='';}]);
@@ -2645,7 +3119,7 @@ function render(){
   var filtered=shown.length!==CO.length;
   document.getElementById('count').innerHTML=
     ((view==='workbench'||view==='shortlist')?'Roster filters: ':'')+'<b>'+shown.length+'</b> of '+CO.length+' entries'+(filtered?' match':'')+
-    ' <span class="csub">· '+distinct+' of '+totalDistinct+' distinct companies · '+withVal+' with a disclosed valuation · '+withDep+' with named deployments / programs</span>';
+    ' <span class="csub">· '+distinct+' of '+totalDistinct+' distinct companies · '+withVal+' with a financial mark · '+withDep+' with named deployments / programs</span>';
 
   var af=document.getElementById('activef');af.innerHTML='';
   var chips=activeChips();
@@ -2675,6 +3149,7 @@ function boot(){
   applyTheme();themeButton.onclick=()=>{theme=['system','light','dark'][(['system','light','dark'].indexOf(theme)+1)%3];applyTheme();try{localStorage.setItem('physical-ai-theme',theme);}catch(e){}render();};
   document.querySelectorAll('[data-workload]').forEach(b=>b.onclick=()=>{resetAll();workload=b.dataset.workload;view='workbench';document.querySelectorAll('.vb').forEach(x=>x.setAttribute('aria-selected',String(x.dataset.v===view)));render();});
   document.getElementById('export-filtered').onclick=()=>exportCsv(matched(),false);
+  document.querySelectorAll('[data-financial-profile]').forEach(b=>b.onclick=()=>{const c=CO.find(c=>c.n===b.dataset.financialProfile);if(c)openPanel(c);});
 
   document.getElementById('q').oninput=function(e){state.q=e.target.value.toLowerCase().trim();render();};
   document.querySelectorAll('.vb').forEach(function(b){

@@ -14,6 +14,7 @@ import json
 import re
 import sys
 from collections import Counter
+from html import unescape
 from pathlib import Path
 
 GEOS = {"US", "CN", "EU", "KR", "JP", "TW", "IL", "other"}
@@ -280,6 +281,34 @@ def main(path):
         actual = sum(c["l"] == "A6" for c in co)
         if int(quoted) != actual:
             err(f"A6 prose says {quoted} entries, data has {actual}")
+
+    # A dated financial card must describe the same displayed mark as the roster.
+    try:
+        marks = json.loads(slice_between(js, "const VALUATIONS = ", "\n};").removeprefix("const VALUATIONS = ") + "\n}")
+    except (ValueError, json.JSONDecodeError) as exc:
+        err(f"invalid financial provenance data: {exc}")
+        marks = {}
+    for name, mark in marks.items():
+        company = next((c for c in co if c["n"] == name), None)
+        value = re.search(r'val:"([^"]+)"', company["_raw"]) if company else None
+        if not company or (value.group(1) if value else "") != mark["value"]:
+            err(f"{name}: financial provenance does not match the roster mark")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", mark["date"]) or mark["date"] > mark["checked"]:
+            err(f"{name}: invalid financial mark/review date")
+        if not mark["status"] or not mark["dateBasis"] or not mark["sources"]:
+            err(f"{name}: incomplete financial provenance")
+        for source in mark["sources"]:
+            if not source["url"].startswith("https://") or re.search(r'[\s"<>]', source["url"]):
+                err(f"{name}: unsafe financial source URL")
+        if mark["status"] in {"Announced acquisition", "Acquisition rumor", "Announced SPAC transaction"} and company and not company["est"]:
+            err(f"{name}: unclosed transaction must retain the amber flag")
+    for company in co:
+        if 'val:"' in company["_raw"] and company["n"] not in marks:
+            err(f"{company['n']}: displayed financial mark has no source record")
+    capital_rows = {unescape(name): unescape(value) for name, value in re.findall(r'<tr data-financial="([^"]+)">.*?<td class="num">([^<]+)</td>', head)}
+    expected_rows = {name: mark["value"] for name, mark in marks.items() if mark["value"]}
+    if capital_rows != expected_rows:
+        err("capital table does not match sourced financial marks")
 
     print(f"ERRORS   {len(errors)}")
     for e in errors:

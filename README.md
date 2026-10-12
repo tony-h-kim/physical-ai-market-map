@@ -50,7 +50,17 @@ Filter by plane, vertical, headquarters, business model, commercial maturity, an
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
 
-## V7-00 — October 11, 2026
+## V7-01 — targeted financial refresh, October 11, 2026
+
+All 29 previously displayed financial marks were reviewed using eight authenticated PitchBook deal histories, issuer and investor announcements, transaction advisers, exchange notices and labeled press reports. Profiles, the screening table and CSV expose financial status and dates; profiles and exports include source URLs, review dates and conflicting records. PitchBook's modeled current valuations are excluded.
+
+Physical Intelligence moves to USD 11.7B for its completed May 2026 round. World Labs shows AMD's approximately USD 8.2B announced acquisition, with closing pending and earlier round/secondary marks distinguished in the profile. 1X shows a USD 6B acquisition rumor, with an amber flag and no implication of a completed sale. Skild's research/pre-revenue labels are corrected using its company revenue disclosure; ARR is kept distinct from recognized annual revenue. Figure and Waymo retain their marks, with differing database and announcement dates explained.
+
+Helsing moves to USD 18B and Skydio to USD 4.4B. Unitree is now marked listed, with its private valuation removed. Atoms' USD 1.7B funding amount is removed from the valuation field; its website, description and primary placement are corrected to its industrial/mining offer. The roster still has 244 companies and 252 entries, with 24 humanoid-platform entries and 27 private/historical financial marks. All retained marks have source records; reported values, lower bounds, pre-money marks and historical values remain explicitly distinguished. A source review is not an independent audit or assurance that no newer undisclosed deal exists.
+
+The follow-up adds financial provenance and state checks; the JavaScript suite now has 31 checks. Company operational claims and sector funding aggregates retain their original research periods.
+
+## V7-00 — decision tools, October 11, 2026
 
 The decision tools are designed for robotics partnerships and commercial diligence. Start with shipyard welding, warehouse handling or industrial manipulation. Each brief states the buyer, technical constraints, candidate incentive, proposed deal shape and a measurable acceptance gate. Partner fit and deal terms are author hypotheses; ten linked evidence cards support only their stated claims.
 
@@ -113,7 +123,7 @@ python validate.py index.html
 node check.js
 ```
 
-`build.py` preserves social metadata and derives its company count from the roster. `check.js` checks full JavaScript syntax plus data references, filtering, malformed/empty URL state, sort restoration, CSV escaping/formula handling, note exclusion and blocked storage. GitHub Actions runs both validators on pushes and pull requests.
+`build.py` preserves social metadata and derives its company count from the roster. `check.js` checks full JavaScript syntax plus data references, financial provenance, filtering, malformed/empty URL state, sort restoration, CSV escaping/formula handling, note exclusion and blocked storage. GitHub Actions runs both validators on pushes and pull requests.
 
 After count changes, regenerate the social card with `python make_social_card.py` (Pillow, Segoe UI or DejaVu Sans). Normal site use requires no Python, Node or build dependencies.
 
