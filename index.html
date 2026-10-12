@@ -566,6 +566,10 @@ nav.subtabs{gap:26px;background:var(--bg);border:0;border-bottom:1px solid var(-
 
 .cover-mobile-note{display:none}
 @media(max-width:520px){.cover-layer:not(.mobile-feature){display:none}.cover-desktop-note{display:none}.cover-mobile-note{display:inline}.cover-layer{min-height:44px}.atlas-cover figcaption{line-height:1.5}}
+
+/* Axis labels share the bars' origin; footer height is constant when the toggle wraps. */
+.funding-axis{position:relative;display:block;margin-bottom:calc(10px + var(--fs-xs)*1.35 + var(--fs-3xs)*2.8)}.funding-axis span{position:absolute;left:0;transform:translateY(-50%)}.funding-axis span:nth-child(1){top:0}.funding-axis span:nth-child(2){top:50%}.funding-axis span:nth-child(3){top:100%}.funding-period{height:calc(var(--fs-xs)*1.35)}.funding-deals{height:calc(var(--fs-3xs)*2.8)}
+
 </style>
 </head>
 <body>
