@@ -51,9 +51,11 @@ Filter by plane, vertical, headquarters, business model, commercial maturity, an
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
 
-## V9-05 — consistent page frames, October 12, 2026
+## V10-00 — rebuilt editorial reading flow, October 12, 2026
 
-Insights and Method share the market map's outer page edges. Their headings, charts and tables use the shared frame, with the contents sidebar on the right. Paragraphs and captions retain comfortable reading widths. All six chapters were checked in both themes at five viewport widths; their outer edges matched the navigation exactly, with no page overflow.
+All six Insights and Method chapters now use one article column, with titles, introductions, charts and notes aligned. Larger body and supporting text replace inconsistent paragraph widths and small captions. A contents rail sits beside the title on desktop; a collapsible chapter menu preserves reading space on smaller screens.
+
+Value capture follows a vertical three-test framework, a concise worked example and a labeled revenue-mix chart. Shared spacing and typography carry the same reading rhythm across the remaining chapters.
 
 ## V9-04 — clearer value-capture framework and chart labels, October 12, 2026
 
