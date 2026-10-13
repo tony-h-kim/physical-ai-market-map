@@ -4,6 +4,7 @@ An interactive landscape of **244 companies across 25 layers** in physical AI, s
 
 **[→ View the live map](https://tony-h-kim.github.io/physical-ai-market-map/)**
 
+**How to use:** Choose a view, filter or search the roster, and select a company for its profile. Insights explains the thesis; Method explains the classifications.
 
 ---
 
