@@ -616,6 +616,43 @@ table.screen .tmono{line-height:1.45}
 
 table.screen th.sorted::after{position:absolute;right:12px;top:50%;transform:translateY(-50%)}
 table.screen th button{padding-right:18px;text-align:left;min-height:30px}
+
+/* Form controls share a spacing rhythm; labels stay separate from their values. */
+.viewrow{align-items:center}
+.view-control{position:relative;min-width:0}
+.view-control select{appearance:none;width:260px;min-width:0;min-height:44px;padding:10px 40px 10px 14px;line-height:1.45}
+.view-control::after{content:'';position:absolute;right:16px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--fg2);border-bottom:1.5px solid var(--fg2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.vsearch input[type=search]{min-height:44px;padding:10px 14px;line-height:1.45;border-color:var(--line2)}
+.filters,.mfrow{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.filters{padding:18px 0 22px;background:transparent}
+.fgroup{display:grid;grid-template-columns:136px minmax(0,1fr);gap:10px 20px;min-width:0;align-items:start}
+.flabel{color:var(--fg2);line-height:1.45;padding-top:12px}
+.chips{gap:8px;align-items:stretch;min-width:0}
+.filters .chip{display:inline-flex;align-items:center;justify-content:center;min-height:44px;max-width:100%;padding:10px 14px;line-height:1.4;text-align:center;white-space:normal;overflow-wrap:break-word}
+.filter-disclosure>summary{display:flex;align-items:flex-start;gap:10px;list-style:none;line-height:1.5;padding:14px 0}
+.filter-disclosure>summary::-webkit-details-marker{display:none}
+.filter-disclosure>summary::before{content:'\25B8';flex:none;width:12px;line-height:1.5;transition:transform .15s}
+.filter-disclosure[open]>summary::before{transform:rotate(90deg)}
+.filter-disclosure>summary .filter-heading{display:flex;flex-wrap:wrap;gap:3px 12px;margin:0;font-weight:600;color:var(--fg)}
+.filter-disclosure>summary .filter-hint{display:block;margin:0;font-weight:400;color:var(--fg2)}
+.morefilters{margin:2px 0 0;padding-top:16px}
+.morefilters>summary{align-items:flex-start;font-family:var(--sans);font-size:var(--fs-xs);text-transform:none;letter-spacing:0;line-height:1.5;gap:10px;color:var(--fg2);min-height:32px}
+.morefilters>summary::before{flex:none;width:12px;font-size:var(--fs-xs)}
+.mfrow{margin-top:18px}
+.activef{gap:8px}
+.aflabel{font-family:var(--sans);letter-spacing:0;text-transform:none;font-size:var(--fs-xs)}
+.afchip{min-height:36px;padding:7px 12px;line-height:1.4;gap:10px;border-radius:5px;max-width:100%;text-align:left;overflow-wrap:break-word}
+.afx{flex:none}
+.afreset{min-height:36px;padding:7px 10px;font-size:var(--fs-xs);line-height:1.4}
+.wb-partner>label{display:block;font-size:var(--fs-xs);font-weight:600;line-height:1.5;margin-bottom:10px}
+.wb-note{padding:12px 14px;line-height:1.55;min-height:96px;border-radius:5px;font-size:var(--fs-sm)}
+.view-control select:focus-visible,.vsearch input[type=search]:focus-visible,.wb-note:focus-visible{outline:2px solid var(--info);outline-offset:2px;border-color:var(--info);box-shadow:none}
+@media(max-width:600px){.fgroup{grid-template-columns:minmax(0,1fr)}.flabel{padding-top:0}.filters,.mfrow{gap:22px}.filters .chip{flex:0 1 auto}.filter-disclosure>summary .filter-hint{flex-basis:100%}.view-control select{flex:1;width:auto}}
+@media(prefers-reduced-motion:reduce){.filter-disclosure>summary::before{transition:none}}
+
+.shortlist-tools .chip,.wb-partner .chip,.panel .chip{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;line-height:1.4;max-width:100%;white-space:normal;text-align:center}
+.pclose{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;padding:0;border-radius:5px}
+.aftext{min-width:0;overflow-wrap:anywhere}
 </style>
 </head>
 <body>
@@ -625,7 +662,7 @@ table.screen th button{padding-right:18px;text-align:left;min-height:30px}
   <div class="masthead"><span class="site-signature">Tony Kim <span>Independent research</span></span><button class="theme-control" id="theme-toggle" type="button" aria-label="Change color theme">Theme: system</button></div>
   <div class="hero"><div class="hero-copy"><h1>Physical AI<br> Market Map</h1><p class="sub">A buyer’s view of the companies turning intelligence into work in the physical world.</p><div class="hero-actions"><button type="button" id="hero-explore">Explore the companies</button><button type="button" data-goto="capital">Read the market thesis</button></div><p class="hero-byline">244 companies. 25 layers.<br> Organized by what the customer buys.</p></div>
   <figure class="atlas-cover"><div class="atlas-cover-title"><span>The market structure</span><span>252 roster entries</span></div><div id="hero-atlas"></div><figcaption><span class="cover-desktop-note">Bars use a shared 0–25 entry scale. </span><span class="cover-mobile-note">Largest layers by roster coverage in each plane, on a shared 0–25 entry scale. </span>Select a layer to explore its companies.</figcaption></figure></div>
-  <div class="hero-meta"><span>Updated October 12, 2026</span><span>September roster / selected October checks</span><details class="research-notes"><summary>Coverage &amp; sources</summary><p>V9-01. 244 distinct companies and 252 entries, including eight separately mapped products or business units. Financial records carry their own dates and sources. The full methodology explains classifications and coverage gaps.</p></details></div>
+  <div class="hero-meta"><span>Updated October 12, 2026</span><span>September roster / selected October checks</span><details class="research-notes"><summary>Coverage &amp; sources</summary><p>V9-02. 244 distinct companies and 252 entries, including eight separately mapped products or business units. Financial records carry their own dates and sources. The full methodology explains classifications and coverage gaps.</p></details></div>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Sections">
@@ -669,7 +706,7 @@ table.screen th button{padding-right:18px;text-align:left;min-height:30px}
   <div class="viewhint" id="viewhint"></div>
 
   <details id="filter-disclosure" class="filter-disclosure" open>
-  <summary>Filter roster <span>Plane, industry, headquarters and commercial stage</span></summary>
+  <summary><span class="filter-heading">Filter roster<span class="filter-hint">Plane, industry, headquarters and commercial stage</span></span></summary>
   <div class="filters">
     <div class="fgroup"><div class="flabel">Plane</div><div class="chips" id="f-p"></div></div>
     <div class="fgroup"><div class="flabel">Vertical</div><div class="chips" id="f-v"></div></div>
@@ -1042,7 +1079,7 @@ table.screen th button{padding-right:18px;text-align:left;min-height:30px}
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V9-01 · October 12, 2026 · compiled and written by Tony Kim<br>
+  <strong>Physical AI Market Map</strong> · V9-02 · October 12, 2026 · compiled and written by Tony Kim<br>
   Company roster is curated, not exhaustive — ~244 of an estimated 700+ companies in scope. Transaction marks in USD; 29 financial records reviewed October 11. Other private marks may be stale; rumors and announced-but-unclosed deals are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.<br>
   <span class="fineprint"><a href="https://www.linkedin.com/in/hagsoo-kim/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hagsoo-kim</a> · <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim</a></span>
@@ -2401,7 +2438,7 @@ function csvText(rows,notes){
 }
 function exportCsv(rows,notes){
   const url=URL.createObjectURL(new Blob([csvText(rows,notes)],{type:'text/csv;charset=utf-8'}));
-  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V9-01.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V9-02.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
 const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),lay:null,big:false,spans:false,val:false,fs:false,dep:false,q:""};
@@ -2967,7 +3004,7 @@ function render(){
     var lab=document.createElement('span');lab.className='aflabel';lab.textContent='Filtering by';af.appendChild(lab);
     chips.forEach(function(x){
       var b=document.createElement('button');b.className='afchip';
-      b.innerHTML=esc(x[0])+' <span class="afx">&times;</span>';
+      b.innerHTML='<span class="aftext">'+esc(x[0])+'</span> <span class="afx">&times;</span>';
       b.onclick=function(){x[1]();render();};
       af.appendChild(b);
     });

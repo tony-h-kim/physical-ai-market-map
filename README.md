@@ -51,6 +51,10 @@ Filter by plane, vertical, headquarters, business model, commercial maturity, an
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
 
+## V9-02 — form-control spacing, October 12, 2026
+
+Search and view controls share a 44-pixel height and consistent text insets. Filter options use even padding, with aligned labels on desktop and stacked labels on phones. Advanced-filter headings use the site's reading typography. Selected-filter tags wrap long search text without overflowing, and private notes have consistent padding and focus outlines. Profile and shortlist actions use the same control height. Reviewed in both themes at 320, 390, 600, 800 and 1280 pixels.
+
 ## V9-01 — comparison-table corrections, October 12, 2026
 
 The layer × business model matrix now uses explicit column widths, indented wrapping labels, centered counts and full-cell controls. Redundant badges and patterned empty cells are removed. Column headings and layer labels stay visible during table scrolling. Row headers identify the layer for assistive technology, and cell selection returns focus to the view control.
