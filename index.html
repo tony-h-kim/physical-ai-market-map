@@ -530,7 +530,7 @@
   .shortlist-count{font-size:var(--fs-2xs);font-weight:500}
   .wb-empty{padding:20px;border:1px dashed var(--line2);border-radius:8px}
   .theme-control{float:right;font:inherit;font-size:var(--fs-xs);background:var(--sub);color:var(--fg);border:1px solid var(--line2);padding:6px 10px;border-radius:7px}
-:root{--bg:#fff;--card:#fff;--sub:#eff3f8;--fg:#0a2742;--ink:#0a2742;--fg2:#4a6075;--fg3:#536a80;--line:#dce5ee;--line2:#bdccd9;--body:#007d72;--bodybg:#e6f5f0;--brain:#234fe8;--brainbg:#edf1ff;--ops:#aa6a13;--opsbg:#faf1df;--info:#234fe8;--sans:"Source Sans 3","Segoe UI",Arial,sans-serif;--display:Manrope,"Segoe UI",Arial,sans-serif;--hero-bg:#0a2742;--hero-fg:#fff;--hero-muted:#bed1e2;--hero-a:#55ceba;--hero-b:#a5b9ff;--hero-c:#f1c17a;--fs-display:clamp(42px,5.4vw + 8px,82px);--fs-h2:clamp(25px,1vw + 16px,34px);--fs-chapter:clamp(34px,3vw + 12px,54px);--fs-lede:clamp(18px,.6vw + 13px,22px);--fs-body:clamp(16px,.3vw + 13px,18px);--fs-metric:clamp(28px,1.4vw + 17px,40px)}
+:root{--bg:#fff;--card:#fff;--sub:#eff3f8;--fg:#0a2742;--ink:#0a2742;--fg2:#4a6075;--fg3:#536a80;--line:#dce5ee;--line2:#bdccd9;--body:#007d72;--bodybg:#e6f5f0;--brain:#234fe8;--brainbg:#edf1ff;--ops:#aa6a13;--opsbg:#faf1df;--info:#234fe8;--sans:"Source Sans 3","Segoe UI",Arial,sans-serif;--display:Manrope,"Segoe UI",Arial,sans-serif;--hero-bg:var(--sub);--hero-fg:var(--fg);--hero-muted:var(--fg2);--hero-a:var(--body);--hero-b:var(--brain);--hero-c:var(--ops);--fs-display:clamp(42px,5.4vw + 8px,82px);--fs-h2:clamp(25px,1vw + 16px,34px);--fs-chapter:clamp(34px,3vw + 12px,54px);--fs-lede:clamp(18px,.6vw + 13px,22px);--fs-body:clamp(16px,.3vw + 13px,18px);--fs-metric:clamp(28px,1.4vw + 17px,40px)}
 :root[data-theme="dark"]{--bg:#0c1e30;--card:#10283e;--sub:#18334c;--fg:#f2f6fb;--ink:#f2f6fb;--fg2:#bdd0e3;--fg3:#aec2d8;--line:#2c4862;--line2:#456580;--body:#62ceba;--bodybg:#183e40;--brain:#a5b9ff;--brainbg:#263c62;--ops:#f1c17a;--opsbg:#433927;--info:#b0c3ff}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1e30;--card:#10283e;--sub:#18334c;--fg:#f2f6fb;--ink:#f2f6fb;--fg2:#bdd0e3;--fg3:#aec2d8;--line:#2c4862;--line2:#456580;--body:#62ceba;--bodybg:#183e40;--brain:#a5b9ff;--brainbg:#263c62;--ops:#f1c17a;--opsbg:#433927;--info:#b0c3ff}}
 body{line-height:1.6;letter-spacing:0;overflow-x:visible}h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-.035em}p,ul,ol,.h2sub{max-width:none;text-wrap:wrap}p{margin-bottom:20px}h2,h3{line-height:1.25;text-wrap:balance}h3{margin:36px 0 14px}h4{font-size:var(--fs-sm);margin:0 0 12px}button,input,select,textarea{font:inherit}button,a,input,select{touch-action:manipulation}button{cursor:pointer}
@@ -662,7 +662,7 @@ table.screen th button{padding-right:18px;text-align:left;min-height:30px}
   <div class="masthead"><span class="site-signature">Tony Kim <span>Independent research</span></span><button class="theme-control" id="theme-toggle" type="button" aria-label="Change color theme">Theme: system</button></div>
   <div class="hero"><div class="hero-copy"><h1>Physical AI<br> Market Map</h1><p class="sub">A buyer’s view of the companies turning intelligence into work in the physical world.</p><div class="hero-actions"><button type="button" id="hero-explore">Explore the companies</button><button type="button" data-goto="capital">Read the market thesis</button></div><p class="hero-byline">244 companies. 25 layers.<br> Organized by what the customer buys.</p></div>
   <figure class="atlas-cover"><div class="atlas-cover-title"><span>The market structure</span><span>252 roster entries</span></div><div id="hero-atlas"></div><figcaption><span class="cover-desktop-note">Bars use a shared 0–25 entry scale. </span><span class="cover-mobile-note">Largest layers by roster coverage in each plane, on a shared 0–25 entry scale. </span>Select a layer to explore its companies.</figcaption></figure></div>
-  <div class="hero-meta"><span>Updated October 12, 2026</span><span>September roster / selected October checks</span><details class="research-notes"><summary>Coverage &amp; sources</summary><p>V9-02. 244 distinct companies and 252 entries, including eight separately mapped products or business units. Financial records carry their own dates and sources. The full methodology explains classifications and coverage gaps.</p></details></div>
+  <div class="hero-meta"><span>Updated October 12, 2026</span><span>September roster / selected October checks</span><details class="research-notes"><summary>Coverage &amp; sources</summary><p>V9-03. 244 distinct companies and 252 entries, including eight separately mapped products or business units. Financial records carry their own dates and sources. The full methodology explains classifications and coverage gaps.</p></details></div>
 </header>
 
 <nav class="tabs" role="tablist" aria-label="Sections">
@@ -1079,7 +1079,7 @@ table.screen th button{padding-right:18px;text-align:left;min-height:30px}
 </section>
 
 <footer>
-  <strong>Physical AI Market Map</strong> · V9-02 · October 12, 2026 · compiled and written by Tony Kim<br>
+  <strong>Physical AI Market Map</strong> · V9-03 · October 12, 2026 · compiled and written by Tony Kim<br>
   Company roster is curated, not exhaustive — ~244 of an estimated 700+ companies in scope. Transaction marks in USD; 29 financial records reviewed October 11. Other private marks may be stale; rumors and announced-but-unclosed deals are flagged in amber.<br>
   The reliability arithmetic in Structure is the author's own estimate with all assumptions stated inline; it is not a sourced figure.<br>
   <span class="fineprint"><a href="https://www.linkedin.com/in/hagsoo-kim/" target="_blank" rel="noopener noreferrer">linkedin.com/in/hagsoo-kim</a> · <a href="https://github.com/tony-h-kim" target="_blank" rel="noopener noreferrer">github.com/tony-h-kim</a></span>
@@ -2438,7 +2438,7 @@ function csvText(rows,notes){
 }
 function exportCsv(rows,notes){
   const url=URL.createObjectURL(new Blob([csvText(rows,notes)],{type:'text/csv;charset=utf-8'}));
-  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V9-02.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const a=document.createElement('a');a.href=url;a.download='physical_ai_'+(notes?'shortlist':'screen')+'_'+new Date().toLocaleDateString('en-CA',{timeZone:'America/Los_Angeles'})+'_V9-03.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 
 const state={v:new Set(),g:new Set(),p:new Set(),b:new Set(),m:new Set(),lay:null,big:false,spans:false,val:false,fs:false,dep:false,q:""};

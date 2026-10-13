@@ -51,6 +51,10 @@ Filter by plane, vertical, headquarters, business model, commercial maturity, an
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
 
+## V9-03 — market-structure theme support, October 12, 2026
+
+The opening market-structure panel follows the selected theme: a light silver surface with dark text in light mode, and a navy surface with light text in dark mode. Layer bars use the same theme colors as the rest of the map.
+
 ## V9-02 — form-control spacing, October 12, 2026
 
 Search and view controls share a 44-pixel height and consistent text insets. Filter options use even padding, with aligned labels on desktop and stacked labels on phones. Advanced-filter headings use the site's reading typography. Selected-filter tags wrap long search text without overflowing, and private notes have consistent padding and focus outlines. Profile and shortlist actions use the same control height. Reviewed in both themes at 320, 390, 600, 800 and 1280 pixels.
