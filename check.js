@@ -71,7 +71,28 @@ check('Math.abs(fundingStats().other-31.4)<1e-9 && Math.abs(fundingStats().growt
 check('Math.abs(fundingStats().share-33.755274261603375)<1e-9 && Math.abs(fundingStats().adjustedGrowth-2.6166666666666667)<1e-9');
 check('FUNDING.periods.map(p=>p.deals).join(",")==="436,470,521" && FUNDING.periods.every(p=>p.label.startsWith("H"))');
 check('Math.abs(revenueStats().total-10.0647)<1e-9 && Math.abs(REVENUE_MIX.items.reduce((sum,x)=>sum+x.value/revenueStats().total*100,0)-100)<1e-9');
-check('revenueStats().recurringShare>75.42 && revenueStats().recurringShare<75.43');
+check('revenueStats().nonSystemShare>75.42 && revenueStats().nonSystemShare<75.43');
+// Check the rendered association of category, amount, share and bar length.
+const revenueHost={innerHTML:''};
+const previousGetElement=context.document.getElementById;
+context.document.getElementById=id=>id==='revenue-mix'?revenueHost:null;
+vm.runInContext('drawRevenueMix()',context);
+context.document.getElementById=previousGetElement;
+const revenueRows=revenueHost.innerHTML.split('<div class="revenue-row"').slice(1);
+assert.equal(revenueRows.length,3);checks++;
+const expectedRevenue=[
+  ['instruments','Instruments &amp; accessories',6.0189,'59.8'],
+  ['systems','Systems',2.4737,'24.6'],
+  ['services','Services',1.5721,'15.6'],
+];
+expectedRevenue.forEach(([id,label,value,share],index)=>{
+  const row=revenueRows[index];
+  assert.ok(row.includes(`data-revenue="${id}"`)&&row.includes(label));
+  assert.ok(row.includes(`USD ${value.toFixed(4)}B`)&&row.includes(`${share}% of total`));
+  const width=Number(row.match(/style="width:([\d.]+)%"/)[1]);
+  assert.ok(Math.abs(width-value/10.0647*100)<1e-9,'Bar length matches its own category value');
+  checks++;
+});
 check('Math.abs(reliabilityCase(.98,450,4,480).events-9)<1e-9 && Math.abs(reliabilityCase(.98,450,4,480).minutes-36)<1e-9 && Math.abs(reliabilityCase(.98,450,4,480).share-7.5)<1e-9');
 check('Math.abs(reliabilityCase(.999,450,4,480).minutes-1.8)<1e-9 && Math.abs(reliabilityCase(.98,450,4,480).minutes/reliabilityCase(.999,450,4,480).minutes-20)<1e-9');
 check('reliabilityCase(1,450,4,480).events===0 && reliabilityCase(.98,0,4,480).minutes===0');

@@ -47,9 +47,15 @@ Three sections, in the order a reader actually needs them.
 
 Filter by plane, vertical, headquarters, business model, commercial maturity, and position (category leaders, full-stack, vertical integrators, disclosed valuation, named deployments). Active filters are shown as dismissible chips with a live count. Click any company for a profile panel: what it sells, how it charges, how far along it is, publicly reported deployments, spans and verticals.
 
-**Insights** — *Capital* (comparable half-year funding and transaction evidence) · *Value capture* (pricing power and an adjacent revenue-mix example) · *Investor view* (forecast scope, deployment evidence and four commercial questions) · *Ecosystem* (capital and product flows, partnership incentives and four demand tests).
+**Insights** — *Capital* (comparable half-year funding and transaction evidence) · *Value capture* (customer value, competitive position and delivery economics, with a worked example and revenue-mix chart) · *Investor view* (forecast scope, deployment evidence and four commercial questions) · *Ecosystem* (capital and product flows, partnership incentives and four demand tests).
 
 **Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
+
+## V9-04 — clearer value-capture framework and chart labels, October 12, 2026
+
+Value capture now uses three explicit tests: customer value, competitive position and delivery economics. Each test states the evidence to seek and what a failure would mean. A worked example connects the framework to a company offer rather than assigning pricing-power assumptions to whole layers.
+
+The Intuitive revenue example uses one row per category, with its label, bar, USD amount and share kept together. All bars share a 0–100% scale. Values were rechecked against the issuer's FY2025 release. Revenue mix is distinguished from recurring contract revenue and category margins. Cross-chapter edits remove categorical margin/accounting claims and unsupported superlatives. Regression checks cover rendered label/value/bar associations; the suite has 59 checks.
 
 ## V9-03 — market-structure theme support, October 12, 2026
 
