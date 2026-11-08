@@ -17,3 +17,9 @@ ResizeObserver watches both the board and the company columns. Resize, font comp
 The fixed 760px article column is replaced with a fluid main column and bounded chapter navigation. Large screens use a wider container, figures, tables and comparison grids. Prose retains a readable measure. Comparison grids stack on phones; the chapter menu moves above the article on narrower screens.
 
 Run `python build.py`, `python validate.py index.html`, and `node check.js`. Route geometry regression checks accompany the existing roster, filter, URL and relationship checks. Screenshots and numeric viewport observations are retained as local review outputs.
+
+## Directional arrow review
+
+Destination markers now use a visible fixed-size arrowhead; intermediate chevrons are deduplicated where routes share a gutter. Named direction labels appear on pointer hover or keyboard focus. The legend defines investor to company, customer to provider, owner/proposed acquirer to company, and technology actor to counterpart. Technology direction follows the announcement and is not a claim of measured one-way dependency.
+
+Reviewed NVIDIA's 11 routes in charcoal at desktop and phone widths, and Schaeffler's customer/equity routes in light mode. Keyboard focus exposed the expected NVIDIA to ABB Robotics label. Measured endpoint errors remained below 0.001 CSS pixel with no page overflow. The existing 75 validation checks pass.
