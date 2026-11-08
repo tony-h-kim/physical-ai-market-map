@@ -16,11 +16,11 @@ function check(expression) {
   assert.equal(vm.runInContext(expression, context), true, expression);
   checks++;
 }
-check('CO.length===252 && CO.filter(c=>!c.prod).length===244');
+check('CO.length===428 && CO.filter(c=>!c.prod).length===420');
 check('!CO.some(c=>c.n==="Suzhou Green Harmonic")');
 check('CO.find(c=>c.n==="RLWRLD").l==="B6" && bmOf(CO.find(c=>c.n==="RLWRLD"))==="soft"');
-check('CO.filter(c=>c.l==="A6").length===24 && CO.filter(c=>c.l==="A6").every(c=>bmOf(c)==="plat")');
-check('Object.values(EVIDENCE).every(e=>e.url.startsWith("https://") && e.checked==="2026-10-11" && e.claim && e.kind)');
+check('CO.filter(c=>c.l==="A6").length>24 && roleOf(CO.find(c=>c.n==="Sunday Robotics"))==="S"');
+check('Object.values(EVIDENCE).every(e=>e.url.startsWith("https://") && ["2026-10-11","2026-11-08"].includes(e.checked) && e.claim && e.kind)');
 check('Object.keys(VALUATIONS).length===29 && Object.entries(VALUATIONS).every(([n,f])=>CO.some(c=>c.n===n&&(c.val||"")===f.value))');
 check('Object.values(VALUATIONS).every(f=>/^\\d{4}-\\d{2}-\\d{2}$/.test(f.date)&&f.date<=f.checked&&f.checked==="2026-10-11"&&f.sources.length&&f.sources.every(x=>x.url.startsWith("https://")))');
 check('CO.find(c=>c.n==="Physical Intelligence").val==="$11.7B" && !CO.find(c=>c.n==="Physical Intelligence").est');
@@ -39,7 +39,7 @@ assert.equal(vm.runInContext('csvCell(`a"b,c\n`)', context), '"a""b,c\n"');
 checks += 3;
 check('csvText([CO[0]],false).startsWith("\ufeff")');
 check('!csvText([CO[0]],false).includes("Private note") && csvText([CO[0]],true).includes("Private note")');
-check('matched().length===252');
+check('matched().length===428');
 vm.runInContext('state.g.add("KR")', context);
 check('matched().length>0 && matched().every(c=>c.g==="KR")');
 vm.runInContext('state.g.clear();state.q="welding"', context);
@@ -51,22 +51,22 @@ check('view==="relationships"&&state.g.size===0&&state.q===""&&sortKey==="n"&&so
 vm.runInContext('location.hash="#q=%E0%A4%A&s=missing&view=INVALID";readHash()',context);
 check('view==="relationships"&&state.q===""');
 
-check('landscapeStats(CO).planes.map(p=>p.count).join(",")==="163,61,28"');
+check('landscapeStats(CO).planes.length===5 && landscapeStats(CO).planes.reduce((s,p)=>s+p.count,0)===CO.length');
 check('landscapeStats(CO).geos.reduce((sum,g)=>sum+g.count,0)===CO.length && landscapeStats(CO).geos.every(g=>g.planes.reduce((sum,p)=>sum+p.count,0)===g.count)');
 check('landscapeStats(CO).models.reduce((sum,g)=>sum+g.count,0)===CO.length');
 check('landscapeStats(CO).stages.every(p=>p.values.reduce((sum,v)=>sum+v.count,0)===p.count)');
-check('landscapeStats(CO).layers.length===25 && landscapeStats(CO).layers.reduce((sum,l)=>sum+l.count,0)===CO.length');
+check('landscapeStats(CO).layers.length===22 && landscapeStats(CO).layers.reduce((sum,l)=>sum+l.count,0)===CO.length');
 check('landscapeStats([]).total===0 && landscapeStats([]).planes.every(p=>p.count===0) && chartWidth(0,0)===0');
 check('chartWidth(3,12)===25 && chartWidth(12,12)===100');
 check('landscapeStats(CO.filter(c=>c.g==="KR")).geos.filter(g=>g.count).every(g=>g.id==="KR")');
 vm.runInContext('location.hash="#view=overview&p=B";readHash()',context);
-check('view==="overview" && state.p.has("B") && landscapeStats(matched()).planes.find(p=>p.id==="A").count===0');
+check('view==="overview" && state.p.has("B") && matched().every(c=>c.l[0]==="B")');
 vm.runInContext('location.hash="#view=chain";readHash()',context);
 check('view==="chain" && state.p.size===0');
 
 
 check('typeof WORKLOADS==="undefined" && typeof viewWorkbench==="undefined"');
-check('Object.keys(COVER_NAMES).length===25 && Object.keys(LAYER).every(id=>COVER_NAMES[id])');
+check('Object.keys(COVER_NAMES).length===22 && PLANES.every(p=>p.layers.every(l=>COVER_NAMES[l.c]))');
 check('Math.abs(fundingStats().other-31.4)<1e-9 && Math.abs(fundingStats().growth-3.95)<1e-9');
 check('Math.abs(fundingStats().share-33.755274261603375)<1e-9 && Math.abs(fundingStats().adjustedGrowth-2.6166666666666667)<1e-9');
 check('FUNDING.periods.map(p=>p.deals).join(",")==="436,470,521" && FUNDING.periods.every(p=>p.label.startsWith("H"))');
@@ -112,7 +112,7 @@ const blocked = vm.createContext({ ...context, localStorage: { getItem(){ throw 
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), blocked);
 assert.equal(vm.runInContext('storageAvailable', blocked), false);
 // Relationship data must not silently expand the canonical roster or conflate roles.
-check('CO.length===252 && RA_DATA.edges.length===117 && RA_DATA.edges.filter(e=>e.reviewed).length===30');
+check('CO.length===428 && RA_DATA.edges.length===128 && RA_DATA.edges.filter(e=>e.reviewed).length===41');
 check('!RA_NODES.has("Uber") && !RA_DATA.edges.some(e=>e.a==="Uber"||e.b==="Uber")');
 check('RA_DATA.edges.every(e=>RA_NODES.has(e.a)&&RA_NODES.has(e.b)&&e.s.startsWith("https://"))');
 check('new Set(RA_DATA.edges.map(e=>e.a+"|"+e.b+"|"+e.t)).size===RA_DATA.edges.length');
@@ -123,7 +123,7 @@ check('view==="dependencies"&&ra.company==="Apptronik"&&ra.scope==="all"&&!ra.co
 check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!=="X"&&RA_NODES.get(e.b).p!=="X")');
 vm.runInContext('location.hash="";readHash()',context);
 check('view==="relationships"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===4&&ra.context');
-check('raEdges(CO).length===30&&raEdges([]).length===0');
+check('raEdges(CO).length===41&&raEdges([]).length===0');
 // Routes preserve actual station endpoints, including reverse, same-column and long routes.
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).startsWith("M50 80 ")');
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).endsWith("220 H450")');
@@ -154,4 +154,21 @@ assert.equal(countedRecords,vm.runInContext('raEdges(CO).filter(e=>e.a===ra.comp
 vm.runInContext('ra.edge=RA_DATA.edges.findIndex(e=>e.t==="tech"&&e.reviewed);ra.types.delete("tech");viewRelationships(reviewHost,CO)',context);
 check('ra.edge===null && ra.company==="NVIDIA" && !reviewHost.innerHTML.includes("<small>Relationship evidence</small>")');
 context.raBind=realBind;
+check('CO.some(c=>c.n==="Eka Robotics") && CO.some(c=>c.n==="Dream Labs") && roleOf(CO.find(c=>c.n==="Dream Labs"))==="I"');
+check('CO.every(c=>ROLE_AUDIT[c.n] && LAYER[posOf(c)] && INFO[c.n] && BIZ[c.n])');
+check('roleOf(CO.find(c=>c.n==="NVIDIA"))==="H" && roleOf(CO.find(c=>c.n==="Figure AI"))==="S" && roleOf(CO.find(c=>c.n==="Waymo"))==="O"');
+check('roleOf(CO.find(c=>c.n==="Foxglove"))==="D" && roleOf(CO.find(c=>c.n==="Pilz"))==="H" && roleOf(CO.find(c=>c.n==="Formic"))==="O"');
+vm.runInContext('location.hash="#p=I&view=chain";readHash()',context);
+check('matched().length>0 && matched().every(c=>roleOf(c)==="I")');
+vm.runInContext('location.hash="#lay=A6";readHash()',context);
+check('matched().length>0 && matched().every(c=>c.l==="A6")');
+vm.runInContext('location.hash="#lay=I1";readHash()',context);
+check('matched().length>0 && matched().every(c=>posOf(c)==="I1")');
+check('matOf(CO.find(c=>c.n==="Dream Labs"))==="unknown" && FINANCING["Eka Robotics"].source.startsWith("https://my.pitchbook.com/")');
+check('CO.filter(c=>c.n==="Ultra").length===1 && !CO.some(c=>c.n==="Ultra Robotics")');
+check('CO.every(c=>formsOf(c).length && formsOf(c).every(f=>FORM_LABELS[f]))');
+vm.runInContext('location.hash="#form=humanoid&view=chain";readHash()',context);
+check('matched().length>0 && matched().every(c=>formsOf(c).includes("humanoid"))');
+check('RA_DATA.edges.filter(e=>e.a==="Dream Labs").length===5 && RA_DATA.edges.filter(e=>e.a==="Dream Labs").every(e=>e.t==="tech"&&e.caveat.includes("beta"))');
+check('CO.every(c=>RA_NODES.get(c.n).p===roleOf(c) && RA_NODES.get(c.n).l===posOf(c))');
 console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);

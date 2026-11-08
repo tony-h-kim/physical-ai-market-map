@@ -1,0 +1,5072 @@
+{
+  "reviewed": "2026-11-08",
+  "rules": "Author classification by mapped offering; secondary capabilities are not separate company entries.",
+  "entries": {
+    "Harmonic Drive Systems": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Nabtesco": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Leaderdrive": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Sumitomo Drive": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "SKF": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Schaeffler": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Sanhua Intelligent Controls": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Tuopu Group": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Regal Rexnord": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Moog": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "maxon": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Kollmorgen": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Tesollo": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Shadow Robot": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "WIRobotics": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Hesai": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "RoboSense": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Ouster": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Luminar": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Innoviz": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Aeva": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Teradar": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Sony Semiconductor": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Bosch": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Continental": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Keyence": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Cognex": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Basler": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "CATL": {
+      "section": "H3",
+      "secondary": [],
+      "technicalCategory": "A3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "BYD": {
+      "section": "H3",
+      "secondary": [],
+      "technicalCategory": "A3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Samsung SDI": {
+      "section": "H3",
+      "secondary": [],
+      "technicalCategory": "A3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "LG Energy Solution": {
+      "section": "H3",
+      "secondary": [],
+      "technicalCategory": "A3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Panasonic Energy": {
+      "section": "H3",
+      "secondary": [],
+      "technicalCategory": "A3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Infineon": {
+      "section": "H3",
+      "secondary": [],
+      "technicalCategory": "A3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "NVIDIA": {
+      "section": "H4",
+      "secondary": [
+        "D",
+        "I",
+        "O"
+      ],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Qualcomm": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Arm": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Mobileye": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Ambarella": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Hailo": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Axelera AI": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Horizon Robotics": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Black Sesame": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "SiMa.ai": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Renesas": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "NXP": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Figure AI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Tesla": {
+      "section": "S1",
+      "secondary": [
+        "I",
+        "O"
+      ],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "1X": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Neura Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Unitree": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "mobile"
+      ]
+    },
+    "AgiBot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Apptronik": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Agility Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Boston Dynamics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "mobile"
+      ]
+    },
+    "Sanctuary AI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Persona AI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "Humanoid": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Mentee Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "UBTech": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Fourier Intelligence": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Galbot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "EngineAI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Booster Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Astribot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "Robot Era": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "Kepler Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Leju Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Galaxy Bot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "RLWRLD": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Honda": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "FANUC": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Yaskawa": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "ABB Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "KUKA": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Kawasaki": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Universal Robots": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Doosan Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Amazon Robotics": {
+      "section": "S2",
+      "secondary": [
+        "I",
+        "O"
+      ],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Symbotic": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "AutoStore": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Exotec": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Locus Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Geek+": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Hai Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Quicktron": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Dexterity": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm",
+        "vehicle"
+      ]
+    },
+    "RightHand Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Ambi Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Plus One Robotics": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Nimble Robotics": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Osaro": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "GreyOrange": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Attabotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Diligent Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm",
+        "mobile"
+      ]
+    },
+    "Relay Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Waymo": {
+      "section": "O3",
+      "secondary": [
+        "I",
+        "S"
+      ],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Nuro": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Zoox": {
+      "section": "O3",
+      "secondary": [
+        "I",
+        "S"
+      ],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Aurora": {
+      "section": "O3",
+      "secondary": [
+        "I",
+        "S"
+      ],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Kodiak Robotics": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Gatik": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "May Mobility": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Motional": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Einride": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Pony.ai": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "WeRide": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Baidu Apollo": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Anduril": {
+      "section": "S4",
+      "secondary": [
+        "I",
+        "O"
+      ],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Helsing": {
+      "section": "S4",
+      "secondary": [
+        "I"
+      ],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Saronic": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Skydio": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Bedrock Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Zipline": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Wing": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Quantum Systems": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Tekever": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air",
+        "marine"
+      ]
+    },
+    "Mach Industries": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Castelion": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Neros": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Firestorm Labs": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Percepto": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Saildrone": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Bubble Robotics": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Built Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Dusty Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Canvas": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Gravis Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Monumental": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Toggle": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "SafeAI": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Teleo": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Rugged Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "NVIDIA Isaac Sim / Omniverse": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Applied Intuition": {
+      "section": "D2",
+      "secondary": [
+        "I"
+      ],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "MuJoCo": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Open Robotics / Gazebo": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "CoppeliaSim": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "dSPACE": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Unity": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "NVIDIA Cosmos": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "World Labs": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "DeepMind Genie": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Genesis AI": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Decart": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Odyssey": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Runway": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "AMI Labs": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Parallel Domain": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Duality AI": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Cognata": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Foretellix": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Rendered.ai": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Scale AI": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "micro1": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "General Intuition": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Encord": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Roboflow": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Mercor": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Surge AI": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Turing": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Reflex Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm",
+        "mobile"
+      ]
+    },
+    "Dexmate": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm",
+        "mobile"
+      ]
+    },
+    "Meta Project Aria": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Skild AI": {
+      "section": "I1",
+      "secondary": [
+        "D"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Physical Intelligence": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Generalist AI": {
+      "section": "I1",
+      "secondary": [
+        "D"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Sunday Robotics": {
+      "section": "S1",
+      "secondary": [
+        "I"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Dyna Robotics": {
+      "section": "S2",
+      "secondary": [
+        "I"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "NVIDIA GR00T": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Gemini Robotics": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Field AI": {
+      "section": "I1",
+      "secondary": [
+        "O"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Rhoda AI": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Intrinsic": {
+      "section": "I3",
+      "secondary": [
+        "D"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Ineffable Intelligence": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "X Square Robot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Spirit AI": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Huawei": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "DeepSeek": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Hugging Face": {
+      "section": "D4",
+      "secondary": [
+        "I",
+        "S"
+      ],
+      "technicalCategory": "B6",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Wayve": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Waabi": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Momenta": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Plus.ai": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Bot Auto": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "B7",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Shield AI": {
+      "section": "S4",
+      "secondary": [
+        "I"
+      ],
+      "technicalCategory": "B8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Auterion": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Exyn Technologies": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Isaac ROS": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "ROS 2 / OSRF": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Viam": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Polymath Robotics": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Transitive Robotics": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Formant": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "C2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "InOrbit": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "C2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Foxglove": {
+      "section": "D1",
+      "secondary": [
+        "O"
+      ],
+      "technicalCategory": "C2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Freedom Robotics": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "C2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Rapyuta Robotics": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "C2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "NVIDIA Halos": {
+      "section": "O4",
+      "secondary": [],
+      "technicalCategory": "C3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "TUV SUD": {
+      "section": "O4",
+      "secondary": [],
+      "technicalCategory": "C3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "TUV Rheinland": {
+      "section": "O4",
+      "secondary": [],
+      "technicalCategory": "C3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "UL Solutions": {
+      "section": "O4",
+      "secondary": [],
+      "technicalCategory": "C3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Pilz": {
+      "section": "H5",
+      "secondary": [
+        "O"
+      ],
+      "technicalCategory": "C3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "SICK AG": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Fort Robotics": {
+      "section": "H5",
+      "secondary": [
+        "O"
+      ],
+      "technicalCategory": "C3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Foxconn": {
+      "section": "S5",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Jabil": {
+      "section": "S5",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Flex": {
+      "section": "S5",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Accenture Industry X": {
+      "section": "O2",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Ocado Technology": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Hanwha Systems": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Cobot": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Formic": {
+      "section": "O2",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Rapid Robotics": {
+      "section": "O2",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Chef Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Sereact": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "inVia Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Texas Instruments": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Microchip Technology": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "STMicroelectronics": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Analog Devices": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Lattice Semiconductor": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "AMD": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Beckhoff": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Elmo Motion Control": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "HaptX": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Manus": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Ottopia": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "DriveU.auto": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Caterpillar": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Komatsu": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Sandvik": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Epiroc": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Hitachi Construction Machinery": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Liebherr": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Pronto.ai": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "John Deere": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "AGCO": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "CNH Industrial": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Kubota": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Monarch Tractor": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Carbon Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Bluewhite": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Agtonomy": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Burro": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Naio Technologies": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Verdant Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Atoms": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "humanoid",
+        "vehicle"
+      ]
+    },
+    "Serve Robotics": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile",
+        "vehicle"
+      ]
+    },
+    "Starship Technologies": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile",
+        "vehicle"
+      ]
+    },
+    "Cartken": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile",
+        "vehicle"
+      ]
+    },
+    "Coco Robotics": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from the mapped offering; original source profile retained.",
+      "reviewed": "2026-11-08",
+      "embodiments": [
+        "mobile",
+        "vehicle"
+      ]
+    },
+    "AI2 Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/731959-39/company/profile",
+        "https://www.ai2robotics.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Sharpa": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/844660-36/company/profile",
+        "https://www.sharpa.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "RealSense": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/732215-08/company/profile",
+        "https://www.realsenseai.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "UFORCE": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1325156-77/company/profile",
+        "https://www.uforce.com"
+      ],
+      "embodiments": [
+        "air",
+        "marine"
+      ]
+    },
+    "TARS": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/756812-62/company/profile"
+      ],
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "D-Robotics": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/739655-83/company/profile",
+        "https://www.d-robotics.cc"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Mind Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.mindrobotics.com/",
+        "https://my.pitchbook.com/profile/1158747-31/company/profile",
+        "https://www.mindrobotics.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Walden Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.waldenrobotics.com/",
+        "https://my.pitchbook.com/profile/1314565-84/company/profile",
+        "https://www.waldenrobotics.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Galaxea Dynamics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/540003-61/company/profile",
+        "https://galaxea-ai.com"
+      ],
+      "embodiments": [
+        "humanoid",
+        "arm",
+        "mobile"
+      ]
+    },
+    "The Bot Company": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/597464-92/company/profile",
+        "https://www.bot.co"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Robbyant": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1459095-13/company/profile",
+        "https://www.robbyant.com"
+      ],
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "HavocAI": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/596597-86/company/profile",
+        "https://www.havocai.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Arda Industries": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1325104-21/company/profile",
+        "https://www.arda.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Eka Robotics": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world",
+        "https://my.pitchbook.com/profile/1326584-71/company/profile",
+        "https://www.ekarobotics.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Sudu Technology": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1377923-95/company/profile",
+        "https://sudo.ai"
+      ],
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "Lightwheel": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/523027-72/company/profile",
+        "https://www.lightwheel.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Seahi": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/539212-24/company/profile",
+        "https://www.seahi.com"
+      ],
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Noetix Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/550917-82/company/profile",
+        "https://noetixrobotics.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "NestAI": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1162811-89/company/profile",
+        "https://www.nestai.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "XYZ Embodied AI": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/973030-51/company/profile",
+        "https://xyz-eai.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Holiday Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/639871-30/company/profile",
+        "https://www.holiday-robotics.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Beijing Humanoid Robot Innovation Center": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/539828-02/company/profile",
+        "https://www.x-humanoid.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Foundation Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/601822-99/company/profile",
+        "https://www.foundation.bot"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Foundry Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1242051-85/company/profile",
+        "https://www.foundryrobotics.ai"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "GenRobot.AI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1161173-35/company/profile",
+        "https://cn.genrobot.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Maven Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/641781-28/company/profile",
+        "https://www.mavenrobotics.ai"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "TerraFirma": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/756079-75/company/profile",
+        "https://www.terrafirma.inc"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Dream Labs": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://dreamlabs.ai/research/dream-1/",
+        "https://my.pitchbook.com/profile/1500997-15/company/profile",
+        "https://www.dreamlabs.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Veeda AI": {
+      "section": "D3",
+      "secondary": [],
+      "technicalCategory": "B5",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1480584-79/company/profile",
+        "https://www.veeda.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Hillbot": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/601892-11/company/profile",
+        "https://www.hillbot.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "LMD Robot": {
+      "section": "S6",
+      "secondary": [],
+      "technicalCategory": "A13",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1566937-63/company/profile",
+        "https://www.lmdrobot.com"
+      ],
+      "embodiments": [
+        "specialist"
+      ]
+    },
+    "Kinetix AI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1180540-72/company/profile",
+        "https://www.kinetixai.tech"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Motion Brain": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1232705-62/company/profile",
+        "https://www.moushen.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Zerith Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/742423-87/company/profile",
+        "https://www.zerith.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Xynova": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1239831-73/company/profile",
+        "https://www.xynova.com.cn"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "MagicLab": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/722739-61/company/profile",
+        "https://magiclab.top"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Diden Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A11",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/674198-29/company/profile",
+        "https://www.didenrobotics.com"
+      ],
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "ZJ-Humanoid": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/620886-25/company/profile",
+        "https://www.zj-humanoid.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Mecka AI": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/607289-59/company/profile",
+        "https://www.mecka.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Poseidon Aerospace": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/770528-80/company/profile",
+        "https://www.poseidonaero.com"
+      ],
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Noble Machines": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/664287-58/company/profile",
+        "https://www.noblemachines.ai"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Flexion": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://flexion.ai/",
+        "https://my.pitchbook.com/profile/752618-17/company/profile",
+        "https://www.flexion.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Humble Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1305658-72/company/profile",
+        "https://www.humblerobotics.ai"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Powerus": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1325912-05/company/profile",
+        "https://www.power.us"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Ultra": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://ultra.tech/",
+        "https://my.pitchbook.com/profile/650328-31/company/profile",
+        "https://www.ultra.tech"
+      ],
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "CarbonSix": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/741442-60/company/profile",
+        "https://www.carbon6robotics.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Vbot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/740992-69/company/profile",
+        "https://www.vbot.cn"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Grafton Sciences": {
+      "section": "S6",
+      "secondary": [],
+      "technicalCategory": "A13",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/697234-24/company/profile",
+        "https://www.graftonsciences.com"
+      ],
+      "embodiments": [
+        "specialist"
+      ]
+    },
+    "Familiar Machines & Magic": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/718320-43/company/profile",
+        "https://www.familiarmachines.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Machenta": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1173002-05/company/profile",
+        "https://www.machenta.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Kaikaku": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/532575-01/company/profile",
+        "https://www.kaikaku.ai"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "VinMotion": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1242723-61/company/profile",
+        "https://vinmotion.net"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Config": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/865820-44/company/profile",
+        "https://www.config.inc"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Antioch": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1078708-42/company/profile",
+        "https://www.antioch.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Trener Robotics": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/608967-91/company/profile",
+        "https://www.trener.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Enact Intelligence": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1566252-28/company/profile",
+        "https://www.enact-intelligence.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Ropedia": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1358936-47/company/profile",
+        "https://ropedia.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "URobotics": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/968395-15/company/profile",
+        "https://www.urobotics.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Gritt": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/593764-66/company/profile",
+        "https://www.gritt.ai"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "All3": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/732085-48/company/profile",
+        "https://www.all3.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Foundational Industries": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1167920-11/company/profile",
+        "https://www.foundational.industries"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Magic Atom": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/734039-74/company/profile"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "OpenMind": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/753063-94/company/profile",
+        "https://www.openmind.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Origin Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A10",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/770013-10/company/profile",
+        "https://www.origin.tech"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Rendezvous Robotics": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/792005-23/company/profile",
+        "https://www.rdvrobotics.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "SiFly": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/631789-48/company/profile",
+        "https://www.sifly.co"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Atom Humanoid": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1405082-35/company/profile",
+        "https://www.atom-humanoid.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "AndrenaM": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/539361-28/company/profile",
+        "https://www.andrenam.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Podium Automation": {
+      "section": "H5",
+      "secondary": [],
+      "technicalCategory": "A5",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/711748-27/company/profile",
+        "https://www.podiumautomation.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Manav Robotics": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1375678-18/company/profile",
+        "https://www.manav.co"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Midcentury": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/821422-63/company/profile",
+        "https://midcentury.xyz"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Swarmer": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/539999-74/company/profile",
+        "https://swarmer.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Towards AGI": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1322316-55/company/profile",
+        "https://www.zhicheng-robot.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Infiforce": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/593309-98/company/profile",
+        "https://infiforce.cn"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "MoSense": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1459485-10/company/profile",
+        "https://mosensetech.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "EIR Technology": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/845832-07/company/profile",
+        "https://www.eir.com.cn"
+      ],
+      "embodiments": [
+        "humanoid",
+        "mobile"
+      ]
+    },
+    "Ruoyu": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/591407-92/company/profile",
+        "https://www.ruoyutech.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "LivSyn": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/706542-94/company/profile",
+        "https://www.lingrobotics.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Synapath": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/718369-03/company/profile",
+        "https://www.synapath.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Yincheng Intelligent": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1375511-05/company/profile",
+        "https://www.shyincheng.cn"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "BridgeDP Robotics": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/731375-29/company/profile",
+        "https://www.bridgedp.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Nous Robotics": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/718374-16/company/profile",
+        "https://www.nousbot.tech"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "YITA Dynamics": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1562526-10/company/profile",
+        "https://www.yitadynamics.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Lingjing Zhiyuan": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1458170-47/company/profile",
+        "https://www.mscapetech.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "NeoteAI": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1405081-45/company/profile",
+        "https://www.neoteai.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "XpaceFire": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1405816-57/company/profile",
+        "https://www.xpacefire.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "TermiTech": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1381272-85/company/profile",
+        "https://www.termitech.cn"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Dexcel Robotics": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/753310-18/company/profile",
+        "https://www.dexcelbot.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Sentigent Technology": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/894516-58/company/profile",
+        "https://www.sentigent.cn"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Oceanic Constellations": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/742011-76/company/profile",
+        "https://www.oceanic-constellations.com"
+      ],
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Axis Robotics": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1442234-80/company/profile",
+        "https://www.axisrobotics.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Bone Robotics": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/895492-18/company/profile",
+        "https://www.bonerobotics.ai"
+      ],
+      "embodiments": [
+        "marine"
+      ]
+    },
+    "Juno Industries": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1241571-43/company/profile",
+        "https://www.junoindustries.ca"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Reflection Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1365897-16/company/profile",
+        "https://www.reflectionrobotics.co"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "SafeWorld": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1380866-32/company/profile",
+        "https://www.safeworld.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Unit Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1366183-81/company/profile",
+        "https://www.unitai.co"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Loki Robotics": {
+      "section": "S6",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/688738-24/company/profile",
+        "https://www.lokirobotics.co"
+      ],
+      "embodiments": [
+        "mobile",
+        "specialist"
+      ]
+    },
+    "24 Industries": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1241983-63/company/profile",
+        "https://www.twentyfour.industries"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Arondite": {
+      "section": "I2",
+      "secondary": [],
+      "technicalCategory": "B8",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/607185-19/company/profile",
+        "https://www.arondite.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Atlas Motion": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1478372-41/company/profile",
+        "https://www.atlasmotion.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "SWARM Biotactics": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/708171-31/company/profile",
+        "https://www.swarm-biotactics.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Westmag": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/988921-63/company/profile",
+        "https://www.westmag.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Austin Sensing Company": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1566273-79/company/profile",
+        "https://www.austinsensing.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Proception": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/732096-37/company/profile",
+        "https://www.proception.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Syncere": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/902506-42/company/profile",
+        "https://www.syncere.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Askari Defense": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/641949-67/company/profile",
+        "https://www.askaridefense.com"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "Isengard Industries": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1441887-58/company/profile",
+        "https://www.isengardindustries.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Minerva Humanoids": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1192018-69/company/profile",
+        "https://www.minervahumanoids.com"
+      ],
+      "embodiments": [
+        "humanoid",
+        "arm"
+      ]
+    },
+    "Robocurve": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1456002-28/company/profile",
+        "https://www.robocurve.org"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "eternal.ag": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/544722-58/company/profile",
+        "https://www.eternal.ag"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Lute": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/961066-00/company/profile",
+        "https://lute.one"
+      ],
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "XcanBot": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/863405-29/company/profile",
+        "https://www.xcanbot.net"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Agency Tool": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "C2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1461567-97/company/profile",
+        "https://www.agencytool.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "ROAI": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/820744-75/company/profile",
+        "https://www.roai.im"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Valstad": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/894432-52/company/profile",
+        "https://www.valstad.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Cyberwave": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/903151-90/company/profile",
+        "https://cyberwave.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Voltrac": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A12",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/615356-29/company/profile",
+        "https://www.voltrac.eu"
+      ],
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Alloy Technologies": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1080629-11/company/profile",
+        "https://www.usealloy.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Destro AI": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "C2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/606966-85/company/profile",
+        "https://www.destroai.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Hadrian": {
+      "section": "O3",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/465088-60/company/profile",
+        "https://www.hadrian.co"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "XPeng Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1482443-11/company/profile"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Cardinal Robotics": {
+      "section": "O2",
+      "secondary": [],
+      "technicalCategory": "C5",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/502973-92/company/profile",
+        "https://www.cardinalrobot.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Clearpath Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/54608-59/company/profile",
+        "https://www.clearpathrobotics.com"
+      ],
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "STARK": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/687886-57/company/profile",
+        "https://www.stark-defence.com"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "CHAOS Industries": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/521225-83/company/profile",
+        "https://www.chaosinc.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Endeavor Robotics": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/153143-92/company/profile",
+        "https://www.endeavorrobotics.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Quantum Space": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/506771-65/company/profile",
+        "https://www.quantumspaceinc.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Wonik Robotics": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/1390403-35/company/profile",
+        "https://www.wonikrobotics.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Mujin": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/65614-15/company/profile",
+        "https://www.mujin.co.jp"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Standard Bots": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/181798-03/company/profile",
+        "https://www.standardbots.com"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Rainbow Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/264621-25/company/profile",
+        "https://www.rainbow-robotics.com"
+      ],
+      "embodiments": [
+        "humanoid",
+        "mobile"
+      ]
+    },
+    "ANYbotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/234137-44/company/profile",
+        "https://www.anybotics.com"
+      ],
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "Allen Control Systems": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/589878-37/company/profile",
+        "https://www.allencontrolsystems.com"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "CloudMinds": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/159299-11/company/profile",
+        "https://www.cloudminds.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "Gecko Robotics": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/155872-18/company/profile",
+        "https://www.geckorobotics.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Machina Labs": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/437872-78/company/profile",
+        "https://www.machinalabs.ai"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Atomic Machines": {
+      "section": "S5",
+      "secondary": [],
+      "technicalCategory": "C4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/461907-37/company/profile",
+        "https://www.atomicmachines.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Wandelbots": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/225802-72/company/profile",
+        "https://www.wandelbots.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Watney Robotics": {
+      "section": "O1",
+      "secondary": [],
+      "technicalCategory": "B3",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/677994-40/company/profile",
+        "https://www.watney.com"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Matternet": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/58370-32/company/profile",
+        "https://www.matternet.com"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "DEEPX": {
+      "section": "H4",
+      "secondary": [],
+      "technicalCategory": "A4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/466596-82/company/profile",
+        "https://www.deepx.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Path Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/233402-23/company/profile",
+        "https://www.path-robotics.com"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "XYZ Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/233314-57/company/profile",
+        "https://www.xyzrobotics.com.cn"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Linkerbot": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/772609-69/company/profile",
+        "https://www.linkerbot.cn"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Siemens": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/10464-31/company/profile",
+        "https://www.siemens.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Agile Robots": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/268568-47/company/profile",
+        "https://www.agile-robots.com"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Covariant": {
+      "section": "I1",
+      "secondary": [],
+      "technicalCategory": "B6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/222161-32/company/profile",
+        "https://www.covariant.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Ghost Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/172463-77/company/profile",
+        "https://www.ghostrobotics.io"
+      ],
+      "embodiments": [
+        "humanoid",
+        "mobile"
+      ]
+    },
+    "Zelostech": {
+      "section": "S3",
+      "secondary": [],
+      "technicalCategory": "A8",
+      "basis": "Author classification from PitchBook profile discovery; commercial maturity not assessed.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://my.pitchbook.com/profile/520868-53/company/profile",
+        "https://zelostech.com.cn"
+      ],
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Pudu Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.pudurobotics.com/en",
+        "https://www.pudurobotics.com/en"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Keenon Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.keenon.com/en/",
+        "https://www.keenon.com/en/"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Bear Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.bearrobotics.ai",
+        "https://www.bearrobotics.ai"
+      ],
+      "embodiments": [
+        "mobile"
+      ]
+    },
+    "LimX Dynamics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.limxdynamics.com/en/about",
+        "https://www.limxdynamics.com/en/about"
+      ],
+      "embodiments": [
+        "humanoid",
+        "mobile"
+      ]
+    },
+    "Pickle Robot": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.picklerobot.com",
+        "https://www.picklerobot.com"
+      ],
+      "embodiments": [
+        "vehicle"
+      ]
+    },
+    "Tutor Intelligence": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://tutorintelligence.com",
+        "https://tutorintelligence.com"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "RoboForce": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.roboforce.ai",
+        "https://www.roboforce.ai"
+      ],
+      "embodiments": [
+        "unspecified"
+      ]
+    },
+    "Rerun": {
+      "section": "D1",
+      "secondary": [],
+      "technicalCategory": "B2",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://rerun.io",
+        "https://rerun.io"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Realtime Robotics": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://rtr.ai",
+        "https://rtr.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Robotiq": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://robotiq.com",
+        "https://robotiq.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "OnRobot": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://onrobot.com/en",
+        "https://onrobot.com/en"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "SCHUNK": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://schunk.com/us/en",
+        "https://schunk.com/us/en"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Festo": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.festo.com/us/en",
+        "https://www.festo.com/us/en"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "ROBOTIS": {
+      "section": "H1",
+      "secondary": [],
+      "technicalCategory": "A1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.robotis.com/en/",
+        "https://www.robotis.com/en/"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "MathWorks": {
+      "section": "D2",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.mathworks.com/solutions/robotics.html",
+        "https://www.mathworks.com/solutions/robotics.html"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "DJI": {
+      "section": "S4",
+      "secondary": [],
+      "technicalCategory": "A9",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.dji.com",
+        "https://www.dji.com"
+      ],
+      "embodiments": [
+        "air"
+      ]
+    },
+    "OMRON Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://robotics.omron.com",
+        "https://robotics.omron.com"
+      ],
+      "embodiments": [
+        "arm",
+        "mobile"
+      ]
+    },
+    "Franka Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://franka.de",
+        "https://franka.de"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Kinova": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.kinovarobotics.com",
+        "https://www.kinovarobotics.com"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "Orbbec": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.orbbec.com",
+        "https://www.orbbec.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Stereolabs": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.stereolabs.com",
+        "https://www.stereolabs.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Zivid": {
+      "section": "H2",
+      "secondary": [],
+      "technicalCategory": "A2",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.zivid.com",
+        "https://www.zivid.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "PickNik Robotics": {
+      "section": "I3",
+      "secondary": [],
+      "technicalCategory": "C1",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://picknik.ai",
+        "https://picknik.ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Pollen Robotics": {
+      "section": "S1",
+      "secondary": [],
+      "technicalCategory": "A6",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://pollen-robotics.com",
+        "https://pollen-robotics.com"
+      ],
+      "embodiments": [
+        "humanoid"
+      ]
+    },
+    "CoreWeave": {
+      "section": "D4",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://coreweave.com/industries/physical-ai",
+        "https://coreweave.com/industries/physical-ai"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Nebius": {
+      "section": "D4",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://nebius.com/solutions/physical-ai-and-robotics",
+        "https://nebius.com/solutions/physical-ai-and-robotics"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    },
+    "Amazon Web Services": {
+      "section": "D4",
+      "secondary": [],
+      "technicalCategory": "B4",
+      "basis": "Author classification checked against primary product documentation and PitchBook discovery.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://aws.amazon.com",
+        "https://aws.amazon.com"
+      ],
+      "embodiments": [
+        "enabler"
+      ]
+    }
+  }
+}

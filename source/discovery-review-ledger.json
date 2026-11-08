@@ -1,0 +1,2334 @@
+{
+  "reviewed": "2026-11-08",
+  "note": "Discovery decisions only. No licensed profile descriptions, investment notes or account data are included. Financing observations carry separate source dates.",
+  "records": [
+    {
+      "discoveredName": "World Labs",
+      "canonicalName": "World Labs",
+      "source": "https://my.pitchbook.com/profile/608754-43/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Flapping Airplanes",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1258138-45/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Physical Intelligence",
+      "canonicalName": "Physical Intelligence",
+      "source": "https://my.pitchbook.com/profile/590542-30/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "AI2 Robotics",
+      "canonicalName": "AI2 Robotics",
+      "source": "https://my.pitchbook.com/profile/731959-39/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Sharpa",
+      "canonicalName": "Sharpa",
+      "source": "https://my.pitchbook.com/profile/844660-36/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Bedrock Robotics",
+      "canonicalName": "Bedrock Robotics",
+      "source": "https://my.pitchbook.com/profile/506698-21/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Generalist",
+      "canonicalName": "Generalist AI",
+      "source": "https://my.pitchbook.com/profile/763029-37/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Xingdao Intelligent",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/846826-39/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "RealSense",
+      "canonicalName": "RealSense",
+      "source": "https://my.pitchbook.com/profile/732215-08/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "UFORCE",
+      "canonicalName": "UFORCE",
+      "source": "https://my.pitchbook.com/profile/1325156-77/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Rhoda AI",
+      "canonicalName": "Rhoda AI",
+      "source": "https://my.pitchbook.com/profile/893763-46/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "TARS (China)",
+      "canonicalName": "TARS",
+      "source": "https://my.pitchbook.com/profile/756812-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "D-Robotics",
+      "canonicalName": "D-Robotics",
+      "source": "https://my.pitchbook.com/profile/739655-83/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Mind Robotics",
+      "canonicalName": "Mind Robotics",
+      "source": "https://my.pitchbook.com/profile/1158747-31/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Source Foundry",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1478587-96/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "GalBot",
+      "canonicalName": "Galbot",
+      "source": "https://my.pitchbook.com/profile/539056-63/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Roark (Aerospace and Defense)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/896069-80/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Humanoid (Hardware)",
+      "canonicalName": "Humanoid",
+      "source": "https://my.pitchbook.com/profile/654681-52/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Walden Robotics",
+      "canonicalName": "Walden Robotics",
+      "source": "https://my.pitchbook.com/profile/1314565-84/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Cambridge Aerospace",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/762675-04/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Galaxea AI",
+      "canonicalName": "Galaxea Dynamics",
+      "source": "https://my.pitchbook.com/profile/540003-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "The Bot Company",
+      "canonicalName": "The Bot Company",
+      "source": "https://my.pitchbook.com/profile/597464-92/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Robbyant",
+      "canonicalName": "Robbyant",
+      "source": "https://my.pitchbook.com/profile/1459095-13/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Spirit AI Robotics",
+      "canonicalName": "Spirit AI",
+      "source": "https://my.pitchbook.com/profile/591051-25/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Boundless Power",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1161226-72/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Mingkong Aerospace Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/607339-45/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "HavocAI",
+      "canonicalName": "HavocAI",
+      "source": "https://my.pitchbook.com/profile/596597-86/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Sunday (Computer Hardware)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1162820-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Arda Industries",
+      "canonicalName": "Arda Industries",
+      "source": "https://my.pitchbook.com/profile/1325104-21/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Eka Robotics",
+      "canonicalName": "Eka Robotics",
+      "source": "https://my.pitchbook.com/profile/1326584-71/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Sudu Technology",
+      "canonicalName": "Sudu Technology",
+      "source": "https://my.pitchbook.com/profile/1377923-95/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Antigravity Tech",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1381588-75/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "LightWheel AI",
+      "canonicalName": "Lightwheel",
+      "source": "https://my.pitchbook.com/profile/523027-72/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Robotera",
+      "canonicalName": "Robot Era",
+      "source": "https://my.pitchbook.com/profile/541133-29/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Seahi",
+      "canonicalName": "Seahi",
+      "source": "https://my.pitchbook.com/profile/539212-24/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Noetix",
+      "canonicalName": "Noetix Robotics",
+      "source": "https://my.pitchbook.com/profile/550917-82/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Zhuifeng Intelligent Tech (Guangzhou)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/621849-97/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Dulo",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1585697-23/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Dyna Robotics",
+      "canonicalName": "Dyna Robotics",
+      "source": "https://my.pitchbook.com/profile/664017-49/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "NestAI",
+      "canonicalName": "NestAI",
+      "source": "https://my.pitchbook.com/profile/1162811-89/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "XYZ Embodied AI",
+      "canonicalName": "XYZ Embodied AI",
+      "source": "https://my.pitchbook.com/profile/973030-51/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Holiday Robotics",
+      "canonicalName": "Holiday Robotics",
+      "source": "https://my.pitchbook.com/profile/639871-30/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Humanoid Robot Innovation Center",
+      "canonicalName": "Beijing Humanoid Robot Innovation Center",
+      "source": "https://my.pitchbook.com/profile/539828-02/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Feimo Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1493557-93/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Foundation Robotics Labs",
+      "canonicalName": "Foundation Robotics",
+      "source": "https://my.pitchbook.com/profile/601822-99/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Foundry Robotics",
+      "canonicalName": "Foundry Robotics",
+      "source": "https://my.pitchbook.com/profile/1242051-85/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Gen Robot AI",
+      "canonicalName": "GenRobot.AI",
+      "source": "https://my.pitchbook.com/profile/1161173-35/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Maven",
+      "canonicalName": "Maven Robotics",
+      "source": "https://my.pitchbook.com/profile/641781-28/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Rainmaker",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/539824-51/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "TerraFirma (Machinery (B2B))",
+      "canonicalName": "TerraFirma",
+      "source": "https://my.pitchbook.com/profile/756079-75/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Zaofu Intelligent",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/268027-57/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Dream Labs (Business/Productivity Software)",
+      "canonicalName": "Dream Labs",
+      "source": "https://my.pitchbook.com/profile/1500997-15/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Veeda AI",
+      "canonicalName": "Veeda AI",
+      "source": "https://my.pitchbook.com/profile/1480584-79/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Hillbot",
+      "canonicalName": "Hillbot",
+      "source": "https://my.pitchbook.com/profile/601892-11/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "LMD ROBOT",
+      "canonicalName": "LMD Robot",
+      "source": "https://my.pitchbook.com/profile/1566937-63/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Kinetix AI",
+      "canonicalName": "Kinetix AI",
+      "source": "https://my.pitchbook.com/profile/1180540-72/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Motion Brain",
+      "canonicalName": "Motion Brain",
+      "source": "https://my.pitchbook.com/profile/1232705-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Zero Square Robotics",
+      "canonicalName": "Zerith Robotics",
+      "source": "https://my.pitchbook.com/profile/742423-87/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Lexiang Intelligent",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/731377-81/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Octopus Power Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1352709-64/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Xynova",
+      "canonicalName": "Xynova",
+      "source": "https://my.pitchbook.com/profile/1239831-73/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "MagicLab ( Electrical Equipment)",
+      "canonicalName": "MagicLab",
+      "source": "https://my.pitchbook.com/profile/722739-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Persona AI",
+      "canonicalName": "Persona AI",
+      "source": "https://my.pitchbook.com/profile/639133-75/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Diden Robotics",
+      "canonicalName": "Diden Robotics",
+      "source": "https://my.pitchbook.com/profile/674198-29/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "ZJ-Humanoid",
+      "canonicalName": "ZJ-Humanoid",
+      "source": "https://my.pitchbook.com/profile/620886-25/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Mecka AI",
+      "canonicalName": "Mecka AI",
+      "source": "https://my.pitchbook.com/profile/607289-59/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Poseidon Aerospace",
+      "canonicalName": "Poseidon Aerospace",
+      "source": "https://my.pitchbook.com/profile/770528-80/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Seneca (Hardware)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1153627-66/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "FAW Qiyi",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/922196-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Noble Machines",
+      "canonicalName": "Noble Machines",
+      "source": "https://my.pitchbook.com/profile/664287-58/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Rivet (Aerospace and Defense)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/627974-47/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Siasun Semiconductor",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/597282-94/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Flexion Robotics",
+      "canonicalName": "Flexion",
+      "source": "https://my.pitchbook.com/profile/752618-17/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Humble Robotics",
+      "canonicalName": "Humble Robotics",
+      "source": "https://my.pitchbook.com/profile/1305658-72/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Powerus (Aerospace and Defense) (NAS: PUSA)",
+      "canonicalName": "Powerus",
+      "source": "https://my.pitchbook.com/profile/1325912-05/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Ultra Robotics",
+      "canonicalName": "Ultra",
+      "source": "https://my.pitchbook.com/profile/650328-31/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "CarbonSix (Hardware)",
+      "canonicalName": "CarbonSix",
+      "source": "https://my.pitchbook.com/profile/741442-60/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Vbot (Computers, Parts and Peripherals)",
+      "canonicalName": "Vbot",
+      "source": "https://my.pitchbook.com/profile/740992-69/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Keplerbot",
+      "canonicalName": "Kepler Robotics",
+      "source": "https://my.pitchbook.com/profile/596725-93/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Grafton Sciences",
+      "canonicalName": "Grafton Sciences",
+      "source": "https://my.pitchbook.com/profile/697234-24/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Aurelius Systems",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/608769-73/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Familiar Machines & Magic",
+      "canonicalName": "Familiar Machines & Magic",
+      "source": "https://my.pitchbook.com/profile/718320-43/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Machenta",
+      "canonicalName": "Machenta",
+      "source": "https://my.pitchbook.com/profile/1173002-05/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Kaikaku",
+      "canonicalName": "Kaikaku",
+      "source": "https://my.pitchbook.com/profile/532575-01/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Vinmotion",
+      "canonicalName": "VinMotion",
+      "source": "https://my.pitchbook.com/profile/1242723-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Sanlayan",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/740220-22/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Skapion",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1442061-46/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Yaoxing Power",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1381035-88/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Config",
+      "canonicalName": "Config",
+      "source": "https://my.pitchbook.com/profile/865820-44/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Chariot Defense",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/731913-67/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Fortastra",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/878781-79/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Antioch",
+      "canonicalName": "Antioch",
+      "source": "https://my.pitchbook.com/profile/1078708-42/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Trener Robotics",
+      "canonicalName": "Trener Robotics",
+      "source": "https://my.pitchbook.com/profile/608967-91/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Enact Intelligence",
+      "canonicalName": "Enact Intelligence",
+      "source": "https://my.pitchbook.com/profile/1566252-28/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Ropedia",
+      "canonicalName": "Ropedia",
+      "source": "https://my.pitchbook.com/profile/1358936-47/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Wild West Systems",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/791750-98/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "URobotics",
+      "canonicalName": "URobotics",
+      "source": "https://my.pitchbook.com/profile/968395-15/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Gritt",
+      "canonicalName": "Gritt",
+      "source": "https://my.pitchbook.com/profile/593764-66/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "All3",
+      "canonicalName": "All3",
+      "source": "https://my.pitchbook.com/profile/732085-48/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Foundational Industries",
+      "canonicalName": "Foundational Industries",
+      "source": "https://my.pitchbook.com/profile/1167920-11/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Traysar Industries",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1168849-81/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Anpu Intelligent",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1167791-32/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Magic Atom",
+      "canonicalName": "Magic Atom",
+      "source": "https://my.pitchbook.com/profile/734039-74/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "LINE5",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/893673-55/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Looki (Hardware)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/897232-60/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Openmind (Operating Systems Software)",
+      "canonicalName": "OpenMind",
+      "source": "https://my.pitchbook.com/profile/753063-94/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Origin",
+      "canonicalName": "Origin Robotics",
+      "source": "https://my.pitchbook.com/profile/770013-10/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Rendezvous Robotics",
+      "canonicalName": "Rendezvous Robotics",
+      "source": "https://my.pitchbook.com/profile/792005-23/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "SiFly",
+      "canonicalName": "SiFly",
+      "source": "https://my.pitchbook.com/profile/631789-48/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Atom Humanoid",
+      "canonicalName": "Atom Humanoid",
+      "source": "https://my.pitchbook.com/profile/1405082-35/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Konnex",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1241683-93/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "AndrenaM",
+      "canonicalName": "AndrenaM",
+      "source": "https://my.pitchbook.com/profile/539361-28/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Magnendo",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/664346-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Podium Automation",
+      "canonicalName": "Podium Automation",
+      "source": "https://my.pitchbook.com/profile/711748-27/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Hades Mining",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/894848-14/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Aventra Defense Systems",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/681061-87/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Manav Robotics",
+      "canonicalName": "Manav Robotics",
+      "source": "https://my.pitchbook.com/profile/1375678-18/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "SIASUN (Machinery)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1581439-78/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Midcentury",
+      "canonicalName": "Midcentury",
+      "source": "https://my.pitchbook.com/profile/821422-63/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Prime Minute",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1325918-17/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Swarmer (NAS: SWMR)",
+      "canonicalName": "Swarmer",
+      "source": "https://my.pitchbook.com/profile/539999-74/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Towards AGI (Computers, Parts and Peripherals)",
+      "canonicalName": "Towards AGI",
+      "source": "https://my.pitchbook.com/profile/1322316-55/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Infiforce",
+      "canonicalName": "Infiforce",
+      "source": "https://my.pitchbook.com/profile/593309-98/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "MoSense",
+      "canonicalName": "MoSense",
+      "source": "https://my.pitchbook.com/profile/1459485-10/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "EIR Technology",
+      "canonicalName": "EIR Technology",
+      "source": "https://my.pitchbook.com/profile/845832-07/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Gewutongzhi",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1560273-13/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Ruoyu",
+      "canonicalName": "Ruoyu",
+      "source": "https://my.pitchbook.com/profile/591407-92/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "LivSyn",
+      "canonicalName": "LivSyn",
+      "source": "https://my.pitchbook.com/profile/706542-94/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Synapath",
+      "canonicalName": "Synapath",
+      "source": "https://my.pitchbook.com/profile/718369-03/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Yincheng Intelligent",
+      "canonicalName": "Yincheng Intelligent",
+      "source": "https://my.pitchbook.com/profile/1375511-05/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Zhongyi Embroidered",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1504386-55/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Weifan Intelligent",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1404689-95/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Digital China (Computers, Parts and Peripherals)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/640353-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Yuanshengxianda",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/863404-84/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "BridgeDP Robotics",
+      "canonicalName": "BridgeDP Robotics",
+      "source": "https://my.pitchbook.com/profile/731375-29/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Nous Robotics",
+      "canonicalName": "Nous Robotics",
+      "source": "https://my.pitchbook.com/profile/718374-16/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Huilun Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1479362-59/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "YITA Dynamics",
+      "canonicalName": "YITA Dynamics",
+      "source": "https://my.pitchbook.com/profile/1562526-10/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Lingjing Zhiyuan",
+      "canonicalName": "Lingjing Zhiyuan",
+      "source": "https://my.pitchbook.com/profile/1458170-47/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Robopoet",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/707217-58/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "NeoteAI",
+      "canonicalName": "NeoteAI",
+      "source": "https://my.pitchbook.com/profile/1405081-45/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "XpaceFire",
+      "canonicalName": "XpaceFire",
+      "source": "https://my.pitchbook.com/profile/1405816-57/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Junao Rock Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1239841-36/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Zhenbao Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1394534-89/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "TermiTech",
+      "canonicalName": "TermiTech",
+      "source": "https://my.pitchbook.com/profile/1381272-85/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "DexcelRobotics",
+      "canonicalName": "Dexcel Robotics",
+      "source": "https://my.pitchbook.com/profile/753310-18/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Dongyi Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/638697-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Shouxin Semiconductor",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/535301-38/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Sentigent Technology",
+      "canonicalName": "Sentigent Technology",
+      "source": "https://my.pitchbook.com/profile/894516-58/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Flyber",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/664796-71/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Oceanic Constellations",
+      "canonicalName": "Oceanic Constellations",
+      "source": "https://my.pitchbook.com/profile/742011-76/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "EchoTwin AI",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/749153-53/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "American Advanced Materials",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1414851-40/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Axis Robotics",
+      "canonicalName": "Axis Robotics",
+      "source": "https://my.pitchbook.com/profile/1442234-80/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Bone",
+      "canonicalName": "Bone Robotics",
+      "source": "https://my.pitchbook.com/profile/895492-18/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Juno Industries",
+      "canonicalName": "Juno Industries",
+      "source": "https://my.pitchbook.com/profile/1241571-43/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Reflection Robotics",
+      "canonicalName": "Reflection Robotics",
+      "source": "https://my.pitchbook.com/profile/1365897-16/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "SafeWorld (Business/Productivity Software)",
+      "canonicalName": "SafeWorld",
+      "source": "https://my.pitchbook.com/profile/1380866-32/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Unit",
+      "canonicalName": "Unit Robotics",
+      "source": "https://my.pitchbook.com/profile/1366183-81/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Loki Robotics",
+      "canonicalName": "Loki Robotics",
+      "source": "https://my.pitchbook.com/profile/688738-24/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "24 Industries",
+      "canonicalName": "24 Industries",
+      "source": "https://my.pitchbook.com/profile/1241983-63/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Arondite",
+      "canonicalName": "Arondite",
+      "source": "https://my.pitchbook.com/profile/607185-19/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Nuojia Smart Health Pharmaceutical Group",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/720169-30/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Atlas Motion",
+      "canonicalName": "Atlas Motion",
+      "source": "https://my.pitchbook.com/profile/1478372-41/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Qoly",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1305634-42/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "SWARM Biotactics",
+      "canonicalName": "SWARM Biotactics",
+      "source": "https://my.pitchbook.com/profile/708171-31/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Westmag",
+      "canonicalName": "Westmag",
+      "source": "https://my.pitchbook.com/profile/988921-63/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Flying Records",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/897401-35/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Austin Sensing Company",
+      "canonicalName": "Austin Sensing Company",
+      "source": "https://my.pitchbook.com/profile/1566273-79/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Hop Aero",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/740595-70/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Proception",
+      "canonicalName": "Proception",
+      "source": "https://my.pitchbook.com/profile/732096-37/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Syncere",
+      "canonicalName": "Syncere",
+      "source": "https://my.pitchbook.com/profile/902506-42/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Advanced Unmanned Aerial Vehicle Manufacturing (Magellanic Cloud / Rayonix Tech / Xtend Defense)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1392558-58/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Askari Defense",
+      "canonicalName": "Askari Defense",
+      "source": "https://my.pitchbook.com/profile/641949-67/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Umiaile",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1153105-84/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Jingshuo Data Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1585687-51/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Cospectral",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1457677-27/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Isengard Industries",
+      "canonicalName": "Isengard Industries",
+      "source": "https://my.pitchbook.com/profile/1441887-58/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Minerva Humanoids",
+      "canonicalName": "Minerva Humanoids",
+      "source": "https://my.pitchbook.com/profile/1192018-69/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Robocurve",
+      "canonicalName": "Robocurve",
+      "source": "https://my.pitchbook.com/profile/1456002-28/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Valent Algorithms",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/754071-85/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Visko",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1319912-47/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Kohtari",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1257919-30/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Egide (Aerospace and Defense)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1364905-81/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "eternal.ag",
+      "canonicalName": "eternal.ag",
+      "source": "https://my.pitchbook.com/profile/544722-58/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "ScratchMobile",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/707897-08/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Lute",
+      "canonicalName": "Lute",
+      "source": "https://my.pitchbook.com/profile/961066-00/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Diffraqtion",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/844420-96/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "XcanBot",
+      "canonicalName": "XcanBot",
+      "source": "https://my.pitchbook.com/profile/863405-29/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Pit In",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/535870-45/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Agency Tool",
+      "canonicalName": "Agency Tool",
+      "source": "https://my.pitchbook.com/profile/1461567-97/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "ROAI",
+      "canonicalName": "ROAI",
+      "source": "https://my.pitchbook.com/profile/820744-75/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Valstad",
+      "canonicalName": "Valstad",
+      "source": "https://my.pitchbook.com/profile/894432-52/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Vernius",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1489316-14/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Aishirui Medical",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/731378-44/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Cyberwave (Business/Productivity Software)",
+      "canonicalName": "Cyberwave",
+      "source": "https://my.pitchbook.com/profile/903151-90/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Voltrac",
+      "canonicalName": "Voltrac",
+      "source": "https://my.pitchbook.com/profile/615356-29/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Gallium Defense",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1594050-49/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Alloy Technologies",
+      "canonicalName": "Alloy Technologies",
+      "source": "https://my.pitchbook.com/profile/1080629-11/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Destro AI",
+      "canonicalName": "Destro AI",
+      "source": "https://my.pitchbook.com/profile/606966-85/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "recent founders",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "1X",
+      "canonicalName": "1X",
+      "source": "https://my.pitchbook.com/profile/318913-03/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Foxconn Industrial Internet (SHG: 601138)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/226670-77/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "DigitalGlobe",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/14771-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Shield AI",
+      "canonicalName": "Shield AI",
+      "source": "https://my.pitchbook.com/profile/126184-96/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "ABB (Robotics Division)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/820715-23/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Helsing",
+      "canonicalName": "Helsing",
+      "source": "https://my.pitchbook.com/profile/481513-60/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Saronic",
+      "canonicalName": "Saronic",
+      "source": "https://my.pitchbook.com/profile/510655-60/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Hadrian",
+      "canonicalName": "Hadrian",
+      "source": "https://my.pitchbook.com/profile/465088-60/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Mazor Robotics",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/54975-25/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Zipline",
+      "canonicalName": "Zipline",
+      "source": "https://my.pitchbook.com/profile/53944-57/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Neura Robotics",
+      "canonicalName": "Neura Robotics",
+      "source": "https://my.pitchbook.com/profile/459542-98/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Skild AI",
+      "canonicalName": "Skild AI",
+      "source": "https://my.pitchbook.com/profile/608340-52/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Tesla (NAS: TSLA)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/10377-37/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Quantum Systems",
+      "canonicalName": "Quantum Systems",
+      "source": "https://my.pitchbook.com/profile/124218-73/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Skydio",
+      "canonicalName": "Skydio",
+      "source": "https://my.pitchbook.com/profile/107147-08/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Iceye",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/129020-68/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Edge Autonomy",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/391620-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Figure",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/521074-54/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Physical Intelligence",
+      "canonicalName": "Physical Intelligence",
+      "source": "https://my.pitchbook.com/profile/590542-30/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Apptronik",
+      "canonicalName": "Apptronik",
+      "source": "https://my.pitchbook.com/profile/222785-47/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Unitree (SHG: 688836)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/398902-78/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Mentee Robotics",
+      "canonicalName": "Mentee Robotics",
+      "source": "https://my.pitchbook.com/profile/542381-95/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "XPeng Robotics",
+      "canonicalName": "XPeng Robotics",
+      "source": "https://my.pitchbook.com/profile/1482443-11/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Cardinal Robotics",
+      "canonicalName": "Cardinal Robotics",
+      "source": "https://my.pitchbook.com/profile/502973-92/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Amazon Robotics",
+      "canonicalName": "Amazon Robotics",
+      "source": "https://my.pitchbook.com/profile/52807-60/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Hanwha Aerospace (KRX: 012450)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/92013-85/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "AI2 Robotics",
+      "canonicalName": "AI2 Robotics",
+      "source": "https://my.pitchbook.com/profile/731959-39/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "FieldAI",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/527019-76/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Sharpa",
+      "canonicalName": "Sharpa",
+      "source": "https://my.pitchbook.com/profile/844660-36/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "AVIC (Chengdu) (SHG: 688297)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/157335-49/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Clearpath Robotics",
+      "canonicalName": "Clearpath Robotics",
+      "source": "https://my.pitchbook.com/profile/54608-59/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Horizon Robotics (HKG: 09660)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/156723-13/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Generalist",
+      "canonicalName": "Generalist AI",
+      "source": "https://my.pitchbook.com/profile/763029-37/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "STARK",
+      "canonicalName": "STARK",
+      "source": "https://my.pitchbook.com/profile/687886-57/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Jingwei Hirain (SHG: 688326)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/436612-24/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Symbotic (NAS: SYM)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/90462-79/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "CHAOS ( Aerospace and Defense)",
+      "canonicalName": "CHAOS Industries",
+      "source": "https://my.pitchbook.com/profile/521225-83/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Rhoda AI",
+      "canonicalName": "Rhoda AI",
+      "source": "https://my.pitchbook.com/profile/893763-46/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Mind Robotics",
+      "canonicalName": "Mind Robotics",
+      "source": "https://my.pitchbook.com/profile/1158747-31/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Source Foundry",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1478587-96/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "UBTECH (HKG: 09880)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/139892-68/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Endeavor Robotics",
+      "canonicalName": "Endeavor Robotics",
+      "source": "https://my.pitchbook.com/profile/153143-92/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Geek+ (HKG: 02590)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/178737-94/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Boston Dynamics",
+      "canonicalName": "Boston Dynamics",
+      "source": "https://my.pitchbook.com/profile/62145-82/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Walden Robotics",
+      "canonicalName": "Walden Robotics",
+      "source": "https://my.pitchbook.com/profile/1314565-84/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Quantum Space",
+      "canonicalName": "Quantum Space",
+      "source": "https://my.pitchbook.com/profile/506771-65/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Galaxea AI",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/540003-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Adept Technology",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/41176-81/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Neros",
+      "canonicalName": "Neros",
+      "source": "https://my.pitchbook.com/profile/556989-31/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "The Bot Company",
+      "canonicalName": "The Bot Company",
+      "source": "https://my.pitchbook.com/profile/597464-92/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Wonik Robotics",
+      "canonicalName": "Wonik Robotics",
+      "source": "https://my.pitchbook.com/profile/1390403-35/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Mujin",
+      "canonicalName": "Mujin",
+      "source": "https://my.pitchbook.com/profile/65614-15/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Agility Robotics",
+      "canonicalName": "Agility Robotics",
+      "source": "https://my.pitchbook.com/profile/171265-96/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Standard Bots",
+      "canonicalName": "Standard Bots",
+      "source": "https://my.pitchbook.com/profile/181798-03/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Rainbow Robotics (KRX: 277810)",
+      "canonicalName": "Rainbow Robotics",
+      "source": "https://my.pitchbook.com/profile/264621-25/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Sunday (Computer Hardware)",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1162820-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "ANYbotics",
+      "canonicalName": "ANYbotics",
+      "source": "https://my.pitchbook.com/profile/234137-44/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "KUKA SE",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/25197-94/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Allen Control Systems",
+      "canonicalName": "Allen Control Systems",
+      "source": "https://my.pitchbook.com/profile/589878-37/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "CloudMinds Robotics",
+      "canonicalName": "CloudMinds",
+      "source": "https://my.pitchbook.com/profile/159299-11/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Gecko Robotics",
+      "canonicalName": "Gecko Robotics",
+      "source": "https://my.pitchbook.com/profile/155872-18/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Machina Labs",
+      "canonicalName": "Machina Labs",
+      "source": "https://my.pitchbook.com/profile/437872-78/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Dyna Robotics",
+      "canonicalName": "Dyna Robotics",
+      "source": "https://my.pitchbook.com/profile/664017-49/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Nimble Robotics",
+      "canonicalName": "Nimble Robotics",
+      "source": "https://my.pitchbook.com/profile/399536-92/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Atomic Machines",
+      "canonicalName": "Atomic Machines",
+      "source": "https://my.pitchbook.com/profile/461907-37/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Holiday Robotics",
+      "canonicalName": "Holiday Robotics",
+      "source": "https://my.pitchbook.com/profile/639871-30/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Wandelbots",
+      "canonicalName": "Wandelbots",
+      "source": "https://my.pitchbook.com/profile/225802-72/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Coco Robotics",
+      "canonicalName": "Coco Robotics",
+      "source": "https://my.pitchbook.com/profile/459776-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Watney Robotics",
+      "canonicalName": "Watney Robotics",
+      "source": "https://my.pitchbook.com/profile/677994-40/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Diden Robotics",
+      "canonicalName": "Diden Robotics",
+      "source": "https://my.pitchbook.com/profile/674198-29/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Locus Robotics",
+      "canonicalName": "Locus Robotics",
+      "source": "https://my.pitchbook.com/profile/160277-86/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Matternet (OTCM: MTTN)",
+      "canonicalName": "Matternet",
+      "source": "https://my.pitchbook.com/profile/58370-32/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "DeepX",
+      "canonicalName": "DEEPX",
+      "source": "https://my.pitchbook.com/profile/466596-82/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Path Robotics",
+      "canonicalName": "Path Robotics",
+      "source": "https://my.pitchbook.com/profile/233402-23/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "XYZ Robotics",
+      "canonicalName": "XYZ Robotics",
+      "source": "https://my.pitchbook.com/profile/233314-57/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Linkerbot",
+      "canonicalName": "Linkerbot",
+      "source": "https://my.pitchbook.com/profile/772609-69/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Siemens (ETR: SIE)",
+      "canonicalName": "Siemens",
+      "source": "https://my.pitchbook.com/profile/10464-31/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Advanced Machine Intelligence",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/1232257-78/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Agile Robots",
+      "canonicalName": "Agile Robots",
+      "source": "https://my.pitchbook.com/profile/268568-47/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Atoms",
+      "canonicalName": "Atoms",
+      "source": "https://my.pitchbook.com/profile/226937-62/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Automation Anywhere",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/95733-46/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Cobot",
+      "canonicalName": "Cobot",
+      "source": "https://my.pitchbook.com/profile/498336-13/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Covariant",
+      "canonicalName": "Covariant",
+      "source": "https://my.pitchbook.com/profile/222161-32/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Flock Safety",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/185188-06/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Genesis AI",
+      "canonicalName": "Genesis AI",
+      "source": "https://my.pitchbook.com/profile/752588-38/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Ghost Robotics",
+      "canonicalName": "Ghost Robotics",
+      "source": "https://my.pitchbook.com/profile/172463-77/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Google DeepMind",
+      "canonicalName": null,
+      "source": "https://my.pitchbook.com/profile/60887-17/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Not included in this edition; identity, physical AI scope or placement requires further review."
+    },
+    {
+      "discoveredName": "Gravis Robotics",
+      "canonicalName": "Gravis Robotics",
+      "source": "https://my.pitchbook.com/profile/516081-61/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Robotiq",
+      "canonicalName": "Robotiq",
+      "source": "https://my.pitchbook.com/profile/232594-75/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "X Square Robot",
+      "canonicalName": "X Square Robot",
+      "source": "https://my.pitchbook.com/profile/592534-54/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    },
+    {
+      "discoveredName": "Zelostech",
+      "canonicalName": "Zelostech",
+      "source": "https://my.pitchbook.com/profile/520868-53/company/profile",
+      "reviewed": "2026-11-08",
+      "screen": "saved long list",
+      "decision": "Mapped / existing canonical entry"
+    }
+  ]
+}

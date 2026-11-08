@@ -17,10 +17,10 @@ from collections import Counter
 from html import unescape
 from pathlib import Path
 
-GEOS = {"US", "CN", "EU", "KR", "JP", "TW", "IL", "other"}
+GEOS = {"US", "CN", "EU", "KR", "JP", "TW", "IL", "CA", "IN", "SG", "AU", "other"}
 BIZ_MODELS = {"comp", "plat", "soft", "raas", "ops", "svc", "cert", "oss"}
-MATURITIES = {"res", "pilot", "comm", "scaled"}
-VERTS = {"hum", "ind", "av", "def", "con", "min", "ag"}
+MATURITIES = {"unknown", "res", "pilot", "comm", "scaled"}
+VERTS = {"hum", "ind", "av", "def", "con", "min", "ag", "log", "consumer", "health", "lab", "marine", "space", "inspection", "food"}
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -86,7 +86,14 @@ def main(path):
     head, js = t.split("<script>", 1)
 
     co = parse_companies(slice_between(js, "const CO = [", "\n];"))
-    layers = parse_layers(slice_between(js, "const PLANES=[", "\n];"))
+    layers = parse_layers(slice_between(js, "const TECH_PLANES=[", "\n];"))
+    roles = json.loads(slice_between(js, "const ROLE_AUDIT=", ";\n").removeprefix("const ROLE_AUDIT="))
+    sections = set(re.findall(r'\{c:"([HDISO]\d+)"', slice_between(js, "const PLANES=[", "\n];")))
+    if set(roles) != {c['n'] for c in co}:
+        err("role register must cover every roster entry exactly once")
+    for name, assignment in roles.items():
+        if assignment['section'] not in sections or assignment['reviewed'] != '2026-11-08':
+            err(f"{name}: unresolved or unreviewed functional role")
     info = dict(re.findall(r'^"((?:[^"\\]|\\.)*)":\["([^"]*)"', slice_between(js, "const INFO={", "\n};"), re.M))
 
     print(f"parsed  {len(co)} entries · {len(layers)} layers · {len(info)} profiles\n")
@@ -176,10 +183,10 @@ def main(path):
     # 12b — the taxonomy figure must name every layer that exists
     fig = re.search(r'<div class="fig" id="fig-taxonomy">.*?\n', head, re.S)
     if fig:
-        shown = set(re.findall(r"\b([A-C]\d+)\b", fig.group(0)))
-        for code in layers:
+        shown = set(re.findall(r"\b([HDISO]\d+)\b", fig.group(0)))
+        for code in sections:
             if code not in shown:
-                err(f"Fig. 1 does not show layer {code} ({layers[code]['n']})")
+                err(f"Taxonomy figure does not show role section {code}")
     else:
         warn("could not locate the taxonomy figure to check layer coverage")
 

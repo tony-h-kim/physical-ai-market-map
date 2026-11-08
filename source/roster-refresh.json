@@ -1,0 +1,2607 @@
+{
+  "reviewed": "2026-11-08",
+  "screen": {
+    "vertical": "Robotics and Drones",
+    "foundedWithinDays": 1400,
+    "totalResults": 2249,
+    "reviewedResults": 200,
+    "savedListReviewed": 91
+  },
+  "additions": [
+    {
+      "name": "AI2 Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Builds wheeled humanoid robots with vision-language-action control for industrial and commercial tasks.",
+      "website": "www.ai2robotics.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/731959-39/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Sharpa",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops tactile dexterous hands and manipulation hardware, with broader robot-system capabilities.",
+      "website": "www.sharpa.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/844660-36/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "RealSense",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "ind",
+        "hum"
+      ],
+      "description": "Supplies depth cameras and embedded vision hardware for robot perception.",
+      "website": "www.realsenseai.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/732215-08/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "UFORCE",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops unmanned aerial and maritime systems with integrated autonomy and mission control.",
+      "website": "www.uforce.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/1325156-77/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "TARS",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embodied-intelligence robots for physical manipulation and industrial tasks.",
+      "website": "",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/756812-62/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "D-Robotics",
+      "section": "H4",
+      "technicalCategory": "A4",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Provides embedded robotics computing and development platforms for intelligent machines.",
+      "website": "www.d-robotics.cc",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/739655-83/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Mind Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Builds industrial robotic systems and foundation models, using manufacturing data from its Rivian partnership.",
+      "website": "www.mindrobotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1158747-31/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Walden Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "raas",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Builds integrated robot hardware, physical AI and application software for manufacturing and logistics work.",
+      "website": "www.waldenrobotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1314565-84/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Galaxea Dynamics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops mobile manipulation robots and embodied AI models as an integrated robotics platform.",
+      "website": "galaxea-ai.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/540003-61/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "The Bot Company",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "consumer"
+      ],
+      "description": "Develops household robots and the AI systems needed to perform everyday physical tasks.",
+      "website": "www.bot.co",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/597464-92/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Robbyant",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "consumer"
+      ],
+      "description": "Develops embodied-intelligence service robots with multimodal perception and manipulation capabilities.",
+      "website": "www.robbyant.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1459095-13/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "HavocAI",
+      "section": "I2",
+      "technicalCategory": "B8",
+      "model": "soft",
+      "applications": [
+        "def",
+        "marine"
+      ],
+      "description": "Develops autonomy and control software for collaborative, heterogeneous vehicle fleets.",
+      "website": "www.havocai.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/596597-86/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Arda Industries",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops AI-driven manufacturing orchestration software connecting production instructions and factory execution.",
+      "website": "www.arda.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1325104-21/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Eka Robotics",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops robot intelligence grounded in vision and force for dexterous physical manipulation.",
+      "website": "www.ekarobotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1326584-71/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Sudu Technology",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops integrated manipulation robots and robot models trained using simulation.",
+      "website": "sudo.ai",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1377923-95/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Lightwheel",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind",
+        "av"
+      ],
+      "description": "Provides simulation, synthetic data and evaluation infrastructure for physical AI development.",
+      "website": "www.lightwheel.ai",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/523027-72/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Seahi",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "marine",
+        "ind"
+      ],
+      "description": "Builds surface and underwater robotic equipment for marine and industrial operations.",
+      "website": "www.seahi.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/539212-24/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Noetix Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum"
+      ],
+      "description": "Develops humanoid robots combining bionic hardware and embodied control systems.",
+      "website": "noetixrobotics.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/550917-82/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "NestAI",
+      "section": "I2",
+      "technicalCategory": "B8",
+      "model": "soft",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops modular AI and autonomy software for unmanned platforms and command systems.",
+      "website": "www.nestai.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/1162811-89/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "XYZ Embodied AI",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embodied intelligence combining robotic perception, motion planning and spatial models.",
+      "website": "xyz-eai.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/973030-51/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Holiday Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid robotic hardware and AI for manufacturing applications.",
+      "website": "www.holiday-robotics.com",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/639871-30/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Beijing Humanoid Robot Innovation Center",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid robot platforms and embodied-intelligence software, including research and industrial applications.",
+      "website": "www.x-humanoid.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/539828-02/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Foundation Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind",
+        "def"
+      ],
+      "description": "Develops humanoid robotic systems for industrial and defense work.",
+      "website": "www.foundation.bot",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/601822-99/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Foundry Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops AI-native robotic assembly cells for industrial manufacturing.",
+      "website": "www.foundryrobotics.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1242051-85/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "GenRobot.AI",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops intelligent robot hardware and modular platforms for service and industrial automation.",
+      "website": "cn.genrobot.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1161173-35/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Maven Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Develops autonomous robotic systems for manipulation, palletizing and logistics workflows.",
+      "website": "www.mavenrobotics.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/641781-28/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "TerraFirma",
+      "section": "S3",
+      "technicalCategory": "A10",
+      "model": "plat",
+      "applications": [
+        "con"
+      ],
+      "description": "Develops remote and autonomous control systems for fleets of construction machinery.",
+      "website": "www.terrafirma.inc",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/756079-75/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Dream Labs",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops Dream-1, a robot-control world action model offered through a public API.",
+      "website": "www.dreamlabs.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1500997-15/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Veeda AI",
+      "section": "D3",
+      "technicalCategory": "B5",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops learned physical-world simulation software for robot training.",
+      "website": "www.veeda.ai",
+      "geography": "CA",
+      "profile": "https://my.pitchbook.com/profile/1480584-79/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Hillbot",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops simulation-trained robot intelligence for manipulation and generalizable skill acquisition.",
+      "website": "www.hillbot.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/601892-11/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "LMD Robot",
+      "section": "S6",
+      "technicalCategory": "A13",
+      "model": "plat",
+      "applications": [
+        "lab",
+        "ind"
+      ],
+      "description": "Develops laboratory, semiconductor-handling and industrial robotic systems.",
+      "website": "www.lmdrobot.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1566937-63/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Kinetix AI",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "consumer",
+        "ind"
+      ],
+      "description": "Develops humanoid robot systems integrating tactile sensing, dexterous hands and control models.",
+      "website": "www.kinetixai.tech",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1180540-72/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Motion Brain",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embodied AI models for robotic perception, decision-making and motion control.",
+      "website": "www.moushen.ai",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1232705-62/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Zerith Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "consumer"
+      ],
+      "description": "Develops wheeled and bipedal service robots for autonomous task execution.",
+      "website": "www.zerith.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/742423-87/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Xynova",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum"
+      ],
+      "description": "Develops dexterous hands, integrated joints and compact linear actuators for robots.",
+      "website": "www.xynova.com.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1239831-73/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "MagicLab",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind",
+        "consumer"
+      ],
+      "description": "Develops embodied-intelligence robots for industrial, commercial and household applications.",
+      "website": "magiclab.top",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/722739-61/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Diden Robotics",
+      "section": "S3",
+      "technicalCategory": "A11",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops legged and adhesion-capable robots for industrial inspection and shipbuilding environments.",
+      "website": "www.didenrobotics.com",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/674198-29/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "ZJ-Humanoid",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops general-purpose humanoid robot hardware and control systems.",
+      "website": "www.zj-humanoid.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/620886-25/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Mecka AI",
+      "section": "D1",
+      "technicalCategory": "B2",
+      "model": "svc",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops infrastructure for collecting and structuring real-world activity data for robot training.",
+      "website": "www.mecka.ai",
+      "geography": "CA",
+      "profile": "https://my.pitchbook.com/profile/607289-59/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Poseidon Aerospace",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def",
+        "marine"
+      ],
+      "description": "Develops autonomous aerospace and maritime systems for cargo and contested logistics.",
+      "website": "www.poseidonaero.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/770528-80/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Noble Machines",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops industrial robotic systems for demanding physical work.",
+      "website": "www.noblemachines.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/664287-58/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Flexion",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops unified foundation-model software for motion and control across robot morphologies.",
+      "website": "www.flexion.ai",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/752618-17/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Humble Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "log",
+        "ind"
+      ],
+      "description": "Develops autonomous industrial and logistics robotic systems.",
+      "website": "www.humblerobotics.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1305658-72/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Powerus",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops and integrates autonomous drone and defense technologies.",
+      "website": "www.power.us",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1325912-05/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Ultra",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "raas",
+      "applications": [
+        "log",
+        "ind"
+      ],
+      "description": "Builds OP1 robot workers for warehouse packing, sorting and kitting workflows.",
+      "website": "www.ultra.tech",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/650328-31/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "CarbonSix",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops imitation-learning software and robotics AI for manufacturing automation.",
+      "website": "www.carbon6robotics.com",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/741442-60/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Vbot",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "consumer"
+      ],
+      "description": "Develops embodied AI robots for autonomous interaction and assistance in living spaces.",
+      "website": "www.vbot.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/740992-69/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Grafton Sciences",
+      "section": "S6",
+      "technicalCategory": "A13",
+      "model": "plat",
+      "applications": [
+        "lab"
+      ],
+      "description": "Develops autonomous systems and platforms for biotechnology experimentation.",
+      "website": "www.graftonsciences.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/697234-24/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Familiar Machines & Magic",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "consumer"
+      ],
+      "description": "Develops interactive companion robots using multimodal AI and physical robotic hardware.",
+      "website": "www.familiarmachines.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/718320-43/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Machenta",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops robot-learning models that acquire physical tasks from demonstrations.",
+      "website": "www.machenta.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/1173002-05/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Kaikaku",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "food"
+      ],
+      "description": "Develops robotic systems and AI for food and beverage operations.",
+      "website": "www.kaikaku.ai",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/532575-01/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "VinMotion",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid robots and infrastructure for deploying them in real-world work.",
+      "website": "vinmotion.net",
+      "geography": "other",
+      "profile": "https://my.pitchbook.com/profile/1242723-61/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Config",
+      "section": "D1",
+      "technicalCategory": "B2",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops data infrastructure and collection tools for bimanual robot learning.",
+      "website": "www.config.inc",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/865820-44/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Antioch",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "def",
+        "ind"
+      ],
+      "description": "Develops simulation software for designing and testing autonomous physical systems.",
+      "website": "www.antioch.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1078708-42/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Trener Robotics",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops robot-programming software that translates natural-language instructions into robot tasks.",
+      "website": "www.trener.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/608967-91/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Enact Intelligence",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops physical AI methods for robotic force, touch and proprioceptive control.",
+      "website": "www.enact-intelligence.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/1566252-28/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Ropedia",
+      "section": "D1",
+      "technicalCategory": "B2",
+      "model": "svc",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops infrastructure that turns recorded human physical experience into robot-training data.",
+      "website": "ropedia.com",
+      "geography": "SG",
+      "profile": "https://my.pitchbook.com/profile/1358936-47/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "URobotics",
+      "section": "I2",
+      "technicalCategory": "B8",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops spatial perception, locomotion and navigation intelligence for robotic systems.",
+      "website": "www.urobotics.ai",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/968395-15/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Gritt",
+      "section": "S3",
+      "technicalCategory": "A10",
+      "model": "plat",
+      "applications": [
+        "con"
+      ],
+      "description": "Develops robotic automation for labor-intensive solar construction tasks.",
+      "website": "www.gritt.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/593764-66/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "All3",
+      "section": "S3",
+      "technicalCategory": "A10",
+      "model": "plat",
+      "applications": [
+        "con"
+      ],
+      "description": "Develops AI-enabled construction technology and robotic building systems.",
+      "website": "www.all3.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/732085-48/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Foundational Industries",
+      "section": "O3",
+      "technicalCategory": "C4",
+      "model": "svc",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops and operates AI-native manufacturing facilities for industrial supply chains.",
+      "website": "www.foundational.industries",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1167920-11/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Magic Atom",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind",
+        "consumer"
+      ],
+      "description": "Develops humanoid and embodied-intelligence robotic systems.",
+      "website": "",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/734039-74/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "OpenMind",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "oss",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops a cross-platform robot operating system and software infrastructure for intelligent machines.",
+      "website": "www.openmind.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/753063-94/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Origin Robotics",
+      "section": "S3",
+      "technicalCategory": "A10",
+      "model": "plat",
+      "applications": [
+        "con"
+      ],
+      "description": "Develops general-purpose robots for interior construction and finishing work.",
+      "website": "www.origin.tech",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/770013-10/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Rendezvous Robotics",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "space"
+      ],
+      "description": "Develops modular robotic systems for autonomous assembly in space.",
+      "website": "www.rdvrobotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/792005-23/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "SiFly",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def",
+        "inspection"
+      ],
+      "description": "Develops autonomous electric drones for long-endurance inspection and cargo applications.",
+      "website": "www.sifly.co",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/631789-48/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Atom Humanoid",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum"
+      ],
+      "description": "Develops humanoid robot platforms and supporting engineering systems.",
+      "website": "www.atom-humanoid.com",
+      "geography": "JP",
+      "profile": "https://my.pitchbook.com/profile/1405082-35/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "AndrenaM",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "marine",
+        "def"
+      ],
+      "description": "Develops acoustic sensing systems and AI-enabled maritime monitoring infrastructure.",
+      "website": "www.andrenam.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/539361-28/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Podium Automation",
+      "section": "H5",
+      "technicalCategory": "A5",
+      "model": "comp",
+      "applications": [
+        "ind"
+      ],
+      "description": "Builds industrial control panels and automation systems for deployed equipment.",
+      "website": "www.podiumautomation.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/711748-27/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Manav Robotics",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops robotic hands, haptic devices and manipulation hardware.",
+      "website": "www.manav.co",
+      "geography": "IN",
+      "profile": "https://my.pitchbook.com/profile/1375678-18/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Midcentury",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops data and simulation infrastructure for robotics development and evaluation.",
+      "website": "midcentury.xyz",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/821422-63/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Swarmer",
+      "section": "I2",
+      "technicalCategory": "B8",
+      "model": "soft",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops vendor-agnostic autonomy software for coordinating drone swarms.",
+      "website": "swarmer.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/539999-74/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Towards AGI",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum"
+      ],
+      "description": "Develops humanoid robots for embodied physical intelligence.",
+      "website": "www.zhicheng-robot.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1322316-55/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Infiforce",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embodied AI technology for robot perception and physical interaction.",
+      "website": "infiforce.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/593309-98/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "MoSense",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops flexible tactile sensors and electronic skin for robot perception.",
+      "website": "mosensetech.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1459485-10/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "EIR Technology",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid and mobile robotic platforms for industrial and research applications.",
+      "website": "www.eir.com.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/845832-07/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Ruoyu",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid robot systems and supporting embodied intelligence.",
+      "website": "www.ruoyutech.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/591407-92/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "LivSyn",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid robot platforms with coordinated perception and action systems.",
+      "website": "www.lingrobotics.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/706542-94/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Synapath",
+      "section": "D1",
+      "technicalCategory": "B2",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops tools for converting human activity video into structured robot-training data.",
+      "website": "www.synapath.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/718369-03/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Yincheng Intelligent",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "log",
+        "ind"
+      ],
+      "description": "Develops intelligent sorting and material-handling robots.",
+      "website": "www.shyincheng.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1375511-05/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "BridgeDP Robotics",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops robot operating-system and motion-control software for legged robots.",
+      "website": "www.bridgedp.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/731375-29/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Nous Robotics",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops precision linear actuation and roller-screw components for robots.",
+      "website": "www.nousbot.tech",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/718374-16/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "YITA Dynamics",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops integrated joint modules and force-controlled robotic motion hardware.",
+      "website": "www.yitadynamics.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1562526-10/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Lingjing Zhiyuan",
+      "section": "H4",
+      "technicalCategory": "A4",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embedded computing platforms and robot control infrastructure.",
+      "website": "www.mscapetech.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1458170-47/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "NeoteAI",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embodied AI systems for autonomous machine perception and execution.",
+      "website": "www.neoteai.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1405081-45/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "XpaceFire",
+      "section": "S3",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "inspection"
+      ],
+      "description": "Develops autonomous firefighting robots and integrated fire-monitoring systems.",
+      "website": "www.xpacefire.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1405816-57/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "TermiTech",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops embodied AI models and robotics technology for autonomous physical tasks.",
+      "website": "www.termitech.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1381272-85/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Dexcel Robotics",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops tactile sensors, robotic hands and manipulation components.",
+      "website": "www.dexcelbot.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/753310-18/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Sentigent Technology",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops robotic systems and intelligent agents for physical tasks.",
+      "website": "www.sentigent.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/894516-58/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Oceanic Constellations",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "marine"
+      ],
+      "description": "Develops uncrewed surface-vessel networks for ocean monitoring and data collection.",
+      "website": "www.oceanic-constellations.com",
+      "geography": "JP",
+      "profile": "https://my.pitchbook.com/profile/742011-76/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Axis Robotics",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops browser-based simulation and training-data tools for robot learning.",
+      "website": "www.axisrobotics.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1442234-80/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Bone Robotics",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops integrated autonomous systems across air, ground and maritime domains.",
+      "website": "www.bonerobotics.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/895492-18/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Juno Industries",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops AI-enabled defense systems integrating sensors, autonomy and robotic platforms.",
+      "website": "www.junoindustries.ca",
+      "geography": "CA",
+      "profile": "https://my.pitchbook.com/profile/1241571-43/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Reflection Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops adaptable robotic work cells for manufacturing automation.",
+      "website": "www.reflectionrobotics.co",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1365897-16/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "SafeWorld",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "av",
+        "hum",
+        "ind"
+      ],
+      "description": "Develops scenario-generation and safety-testing software for autonomous systems.",
+      "website": "www.safeworld.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1380866-32/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Unit Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "log"
+      ],
+      "description": "Develops modular robotic storage and retrieval systems for fulfillment operations.",
+      "website": "www.unitai.co",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1366183-81/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Loki Robotics",
+      "section": "S6",
+      "technicalCategory": "A7",
+      "model": "raas",
+      "applications": [
+        "consumer",
+        "inspection"
+      ],
+      "description": "Develops autonomous mobile cleaning robots for commercial buildings.",
+      "website": "www.lokirobotics.co",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/688738-24/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "24 Industries",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops modular drones and supporting manufacturing systems.",
+      "website": "www.twentyfour.industries",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/1241983-63/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Arondite",
+      "section": "I2",
+      "technicalCategory": "B8",
+      "model": "soft",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops software connecting defense sensors, autonomous systems and operational workflows.",
+      "website": "www.arondite.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/607185-19/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Atlas Motion",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "def"
+      ],
+      "description": "Develops electric motors and actuation hardware for robotics and defense systems.",
+      "website": "www.atlasmotion.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1478372-41/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "SWARM Biotactics",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops bio-robotic sensing and control systems for remote surveillance.",
+      "website": "www.swarm-biotactics.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/708171-31/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Westmag",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "def"
+      ],
+      "description": "Develops motors and integrated actuators for drones and robotic platforms.",
+      "website": "www.westmag.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/988921-63/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Austin Sensing Company",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops sensing and edge-processing systems for multi-domain airspace awareness.",
+      "website": "www.austinsensing.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1566273-79/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Proception",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops dexterous robotic hands and manipulation technology.",
+      "website": "www.proception.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/732096-37/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Syncere",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "consumer"
+      ],
+      "description": "Develops domestic robotic hardware for household physical tasks.",
+      "website": "www.syncere.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/902506-42/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Askari Defense",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops automated counter-drone systems combining sensing and physical response.",
+      "website": "www.askaridefense.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/641949-67/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Isengard Industries",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops autonomous defense platforms with integrated sensing, navigation and control.",
+      "website": "www.isengardindustries.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1441887-58/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Minerva Humanoids",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid telepresence robots with dexterous sensing and manipulation.",
+      "website": "www.minervahumanoids.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1192018-69/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Robocurve",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "oss",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops open-source evaluation infrastructure for measuring robotics capabilities.",
+      "website": "www.robocurve.org",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1456002-28/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "eternal.ag",
+      "section": "S3",
+      "technicalCategory": "A12",
+      "model": "plat",
+      "applications": [
+        "ag"
+      ],
+      "description": "Develops autonomous agricultural robots for crop-work and harvesting tasks.",
+      "website": "www.eternal.ag",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/544722-58/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Lute",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Develops mobile industrial robots trained through human demonstrations.",
+      "website": "lute.one",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/961066-00/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "XcanBot",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "consumer",
+        "health"
+      ],
+      "description": "Develops embodied AI robots for assistance in residential and healthcare environments.",
+      "website": "www.xcanbot.net",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/863405-29/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Agency Tool",
+      "section": "O1",
+      "technicalCategory": "C2",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops robot deployment software, over-the-air update tools and embedded-compute infrastructure.",
+      "website": "www.agencytool.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/1461567-97/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "ROAI",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops AI-based robot programming and automation technology for manufacturing.",
+      "website": "www.roai.im",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/820744-75/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Valstad",
+      "section": "O3",
+      "technicalCategory": "C4",
+      "model": "svc",
+      "applications": [
+        "ind",
+        "marine"
+      ],
+      "description": "Develops robotic manufacturing systems and automation for ship production and repair.",
+      "website": "www.valstad.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/894432-52/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Cyberwave",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops digital-twin, robot-training and equipment-integration software for industrial automation.",
+      "website": "cyberwave.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/903151-90/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Voltrac",
+      "section": "S3",
+      "technicalCategory": "A12",
+      "model": "plat",
+      "applications": [
+        "ag",
+        "def"
+      ],
+      "description": "Develops autonomous electric vehicles for agriculture and logistics tasks.",
+      "website": "www.voltrac.eu",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/615356-29/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Alloy Technologies",
+      "section": "D1",
+      "technicalCategory": "B2",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops search and analysis tools for robot mission, sensor and log data.",
+      "website": "www.usealloy.ai",
+      "geography": "AU",
+      "profile": "https://my.pitchbook.com/profile/1080629-11/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Destro AI",
+      "section": "O1",
+      "technicalCategory": "C2",
+      "model": "soft",
+      "applications": [
+        "log",
+        "ind"
+      ],
+      "description": "Develops AI orchestration software for robot fleets in warehouses and factories.",
+      "website": "www.destroai.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/606966-85/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Hadrian",
+      "section": "O3",
+      "technicalCategory": "C4",
+      "model": "svc",
+      "applications": [
+        "ind",
+        "def"
+      ],
+      "description": "Builds and operates automated manufacturing facilities for aerospace and defense production.",
+      "website": "www.hadrian.co",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/465088-60/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "XPeng Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid robots and embodied AI hardware for industrial and service applications.",
+      "website": "",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/1482443-11/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Cardinal Robotics",
+      "section": "O2",
+      "technicalCategory": "C5",
+      "model": "raas",
+      "applications": [
+        "health",
+        "consumer"
+      ],
+      "description": "Provides deployed robot fleets and operational support for commercial facilities.",
+      "website": "www.cardinalrobot.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/502973-92/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Clearpath Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Develops mobile robot platforms and autonomous material-handling systems.",
+      "website": "www.clearpathrobotics.com",
+      "geography": "CA",
+      "profile": "https://my.pitchbook.com/profile/54608-59/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "STARK",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops autonomous aerial systems for defense applications.",
+      "website": "www.stark-defence.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/687886-57/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "CHAOS Industries",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops sensing and decision-support systems for defense and security applications.",
+      "website": "www.chaosinc.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/521225-83/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Endeavor Robotics",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops unmanned ground robots for defense and hazardous-environment missions.",
+      "website": "www.endeavorrobotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/153143-92/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Quantum Space",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "space"
+      ],
+      "description": "Develops spacecraft and autonomous infrastructure for space operations.",
+      "website": "www.quantumspaceinc.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/506771-65/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Wonik Robotics",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops robotic hands, manipulation hardware and intelligent robotic systems.",
+      "website": "www.wonikrobotics.com",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/1390403-35/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Mujin",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Develops robot-control technology and integrated automation solutions for industrial and logistics tasks.",
+      "website": "www.mujin.co.jp",
+      "geography": "JP",
+      "profile": "https://my.pitchbook.com/profile/65614-15/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Standard Bots",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Builds industrial robot arms and AI-enabled automation systems.",
+      "website": "www.standardbots.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/181798-03/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Rainbow Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops humanoid, collaborative and mobile robot platforms.",
+      "website": "www.rainbow-robotics.com",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/264621-25/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "ANYbotics",
+      "section": "S3",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "inspection",
+        "ind"
+      ],
+      "description": "Builds autonomous legged inspection robots for industrial sites.",
+      "website": "www.anybotics.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/234137-44/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Allen Control Systems",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "def"
+      ],
+      "description": "Develops autonomous counter-drone robotic defense systems.",
+      "website": "www.allencontrolsystems.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/589878-37/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "CloudMinds",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "consumer"
+      ],
+      "description": "Develops cloud-connected service robots and embodied intelligence systems.",
+      "website": "www.cloudminds.com",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/159299-11/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Gecko Robotics",
+      "section": "S3",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "inspection",
+        "ind"
+      ],
+      "description": "Develops robotic inspection systems and industrial asset-intelligence software.",
+      "website": "www.geckorobotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/155872-18/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Machina Labs",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "def"
+      ],
+      "description": "Develops AI-enabled robotic systems for metal forming and industrial manufacturing.",
+      "website": "www.machinalabs.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/437872-78/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Atomic Machines",
+      "section": "S5",
+      "technicalCategory": "C4",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops automated micromanufacturing platforms combining robotics and production technology.",
+      "website": "www.atomicmachines.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/461907-37/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Wandelbots",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops hardware-independent industrial robot programming and orchestration software.",
+      "website": "www.wandelbots.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/225802-72/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Watney Robotics",
+      "section": "O1",
+      "technicalCategory": "B3",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops robot-control and remote-assistance systems for physical work.",
+      "website": "www.watney.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/677994-40/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Matternet",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "health",
+        "log"
+      ],
+      "description": "Develops autonomous drone-delivery systems and supporting logistics infrastructure.",
+      "website": "www.matternet.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/58370-32/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "DEEPX",
+      "section": "H4",
+      "technicalCategory": "A4",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops low-power AI processors for embedded inference in robots and intelligent devices.",
+      "website": "www.deepx.ai",
+      "geography": "KR",
+      "profile": "https://my.pitchbook.com/profile/466596-82/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Path Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops autonomous robotic welding systems for manufacturing.",
+      "website": "www.path-robotics.com",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/233402-23/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "XYZ Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "log",
+        "ind"
+      ],
+      "description": "Develops robotic picking and material-handling systems for warehouses and factories.",
+      "website": "www.xyzrobotics.com.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/233314-57/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Linkerbot",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Develops dexterous robotic hands and manipulation technology.",
+      "website": "www.linkerbot.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/772609-69/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Siemens",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Provides industrial simulation, digital-twin and automation engineering platforms.",
+      "website": "www.siemens.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/10464-31/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Agile Robots",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops force-sensitive robot arms and AI-enabled industrial automation systems.",
+      "website": "www.agile-robots.com",
+      "geography": "EU",
+      "profile": "https://my.pitchbook.com/profile/268568-47/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Covariant",
+      "section": "I1",
+      "technicalCategory": "B6",
+      "model": "soft",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Develops robot-learning software for industrial picking and manipulation.",
+      "website": "www.covariant.ai",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/222161-32/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Ghost Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "def",
+        "inspection"
+      ],
+      "description": "Develops legged robotic platforms for inspection, security and defense applications.",
+      "website": "www.ghostrobotics.io",
+      "geography": "US",
+      "profile": "https://my.pitchbook.com/profile/172463-77/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Zelostech",
+      "section": "S3",
+      "technicalCategory": "A8",
+      "model": "plat",
+      "applications": [
+        "log",
+        "av"
+      ],
+      "description": "Develops autonomous logistics vehicles and supporting driving technology.",
+      "website": "zelostech.com.cn",
+      "geography": "CN",
+      "profile": "https://my.pitchbook.com/profile/520868-53/company/profile",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Pudu Robotics",
+      "section": "S1",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "consumer",
+        "ind",
+        "log"
+      ],
+      "description": "Builds commercial cleaning, delivery and service robots.",
+      "website": "www.pudurobotics.com/en",
+      "geography": "CN",
+      "profile": "https://www.pudurobotics.com/en",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Keenon Robotics",
+      "section": "S1",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "consumer",
+        "health",
+        "log"
+      ],
+      "description": "Builds service robots for delivery, hospitality and commercial cleaning.",
+      "website": "www.keenon.com/en/",
+      "geography": "CN",
+      "profile": "https://www.keenon.com/en/",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Bear Robotics",
+      "section": "S1",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "consumer",
+        "health",
+        "log"
+      ],
+      "description": "Builds autonomous mobile robots for service delivery, cleaning and material handling.",
+      "website": "www.bearrobotics.ai",
+      "geography": "US",
+      "profile": "https://www.bearrobotics.ai",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "LimX Dynamics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Builds humanoid and modular legged robot platforms.",
+      "website": "www.limxdynamics.com/en/about",
+      "geography": "CN",
+      "profile": "https://www.limxdynamics.com/en/about",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Pickle Robot",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "log",
+        "ind"
+      ],
+      "description": "Builds robotic truck-unloading systems and the autonomy software that operates them.",
+      "website": "www.picklerobot.com",
+      "geography": "US",
+      "profile": "https://www.picklerobot.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Tutor Intelligence",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "raas",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Provides intelligent robot workers for palletizing, picking and industrial material handling.",
+      "website": "tutorintelligence.com",
+      "geography": "US",
+      "profile": "https://tutorintelligence.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "RoboForce",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind"
+      ],
+      "description": "Develops industrial robotic workers and integrated physical AI systems.",
+      "website": "www.roboforce.ai",
+      "geography": "US",
+      "profile": "https://www.roboforce.ai",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Rerun",
+      "section": "D1",
+      "technicalCategory": "B2",
+      "model": "oss",
+      "applications": [
+        "ind",
+        "hum",
+        "av"
+      ],
+      "description": "Provides multimodal robot-data recording, visualization and data-loop infrastructure.",
+      "website": "rerun.io",
+      "geography": "EU",
+      "profile": "https://rerun.io",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Realtime Robotics",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind"
+      ],
+      "description": "Provides collision-free motion planning and optimization software for industrial robot cells.",
+      "website": "rtr.ai",
+      "geography": "US",
+      "profile": "https://rtr.ai",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Robotiq",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "ind"
+      ],
+      "description": "Provides grippers, tooling and automation packages for collaborative robots.",
+      "website": "robotiq.com",
+      "geography": "CA",
+      "profile": "https://robotiq.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "OnRobot",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "ind"
+      ],
+      "description": "Supplies end-of-arm tools, grippers, sensors and deployment software for collaborative robots.",
+      "website": "onrobot.com/en",
+      "geography": "EU",
+      "profile": "https://onrobot.com/en",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "SCHUNK",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "ind",
+        "hum"
+      ],
+      "description": "Supplies gripping, workholding and automation components.",
+      "website": "schunk.com/us/en",
+      "geography": "EU",
+      "profile": "https://schunk.com/us/en",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Festo",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "ind"
+      ],
+      "description": "Supplies pneumatic and electric motion and automation components.",
+      "website": "www.festo.com/us/en",
+      "geography": "EU",
+      "profile": "https://www.festo.com/us/en",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "ROBOTIS",
+      "section": "H1",
+      "technicalCategory": "A1",
+      "model": "comp",
+      "applications": [
+        "hum",
+        "ind"
+      ],
+      "description": "Supplies DYNAMIXEL smart actuators and robotics development hardware.",
+      "website": "www.robotis.com/en/",
+      "geography": "KR",
+      "profile": "https://www.robotis.com/en/",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "MathWorks",
+      "section": "D2",
+      "technicalCategory": "B4",
+      "model": "soft",
+      "applications": [
+        "ind",
+        "av",
+        "hum"
+      ],
+      "description": "Provides MATLAB and Simulink tools for robotics modeling, control design, simulation and deployment.",
+      "website": "www.mathworks.com/solutions/robotics.html",
+      "geography": "US",
+      "profile": "https://www.mathworks.com/solutions/robotics.html",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "DJI",
+      "section": "S4",
+      "technicalCategory": "A9",
+      "model": "plat",
+      "applications": [
+        "ag",
+        "inspection"
+      ],
+      "description": "Builds aerial robotic systems for imaging, inspection, surveying and agricultural work.",
+      "website": "www.dji.com",
+      "geography": "CN",
+      "profile": "https://www.dji.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "OMRON Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Provides industrial and collaborative arms and autonomous mobile robots for manufacturing and logistics.",
+      "website": "robotics.omron.com",
+      "geography": "JP",
+      "profile": "https://robotics.omron.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Franka Robotics",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "lab"
+      ],
+      "description": "Builds force-sensitive robotic arms for research and industrial manipulation.",
+      "website": "franka.de",
+      "geography": "EU",
+      "profile": "https://franka.de",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Kinova",
+      "section": "S2",
+      "technicalCategory": "A7",
+      "model": "plat",
+      "applications": [
+        "ind",
+        "health",
+        "lab"
+      ],
+      "description": "Builds robotic arms for industrial, research and assistive applications.",
+      "website": "www.kinovarobotics.com",
+      "geography": "CA",
+      "profile": "https://www.kinovarobotics.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Orbbec",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "ind",
+        "hum"
+      ],
+      "description": "Supplies depth cameras, lidar and robot vision hardware.",
+      "website": "www.orbbec.com",
+      "geography": "CN",
+      "profile": "https://www.orbbec.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Stereolabs",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "ind",
+        "hum",
+        "ag"
+      ],
+      "description": "Provides stereo cameras, embedded perception hardware and vision software for automation.",
+      "website": "www.stereolabs.com",
+      "geography": "US",
+      "profile": "https://www.stereolabs.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Zivid",
+      "section": "H2",
+      "technicalCategory": "A2",
+      "model": "comp",
+      "applications": [
+        "ind",
+        "log"
+      ],
+      "description": "Builds industrial 3D cameras and vision software for robotic manipulation.",
+      "website": "www.zivid.com",
+      "geography": "EU",
+      "profile": "https://www.zivid.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "PickNik Robotics",
+      "section": "I3",
+      "technicalCategory": "C1",
+      "model": "soft",
+      "applications": [
+        "ind",
+        "log",
+        "space"
+      ],
+      "description": "Provides MoveIt motion-planning software and robot application development services.",
+      "website": "picknik.ai",
+      "geography": "US",
+      "profile": "https://picknik.ai",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Pollen Robotics",
+      "section": "S1",
+      "technicalCategory": "A6",
+      "model": "plat",
+      "applications": [
+        "hum",
+        "consumer",
+        "lab"
+      ],
+      "description": "Builds open robotics platforms for AI development within the Hugging Face ecosystem.",
+      "website": "pollen-robotics.com",
+      "geography": "EU",
+      "profile": "https://pollen-robotics.com",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "CoreWeave",
+      "section": "D4",
+      "technicalCategory": "B4",
+      "model": "svc",
+      "applications": [
+        "ind",
+        "av",
+        "hum"
+      ],
+      "description": "Provides GPU cloud infrastructure and packaged development workloads for physical AI teams.",
+      "website": "coreweave.com/industries/physical-ai",
+      "geography": "US",
+      "profile": "https://coreweave.com/industries/physical-ai",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Nebius",
+      "section": "D4",
+      "technicalCategory": "B4",
+      "model": "svc",
+      "applications": [
+        "ind",
+        "av",
+        "hum"
+      ],
+      "description": "Provides physical AI cloud infrastructure for robot simulation, training and deployment.",
+      "website": "nebius.com/solutions/physical-ai-and-robotics",
+      "geography": "EU",
+      "profile": "https://nebius.com/solutions/physical-ai-and-robotics",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "name": "Amazon Web Services",
+      "section": "D4",
+      "technicalCategory": "B4",
+      "model": "svc",
+      "applications": [
+        "ind",
+        "hum"
+      ],
+      "description": "Provides cloud training, data processing and deployment infrastructure for robotics teams.",
+      "website": "aws.amazon.com",
+      "geography": "US",
+      "profile": "https://aws.amazon.com",
+      "reviewed": "2026-11-08"
+    }
+  ]
+}
