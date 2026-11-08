@@ -124,4 +124,11 @@ check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!==
 vm.runInContext('location.hash="";readHash()',context);
 check('view==="relationships"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===4&&ra.context');
 check('raEdges(CO).length===30&&raEdges([]).length===0');
-console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship and storage checks passed; full JavaScript syntax valid.`);
+// Routes preserve actual station endpoints, including reverse, same-column and long routes.
+check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).startsWith("M50 80 ")');
+check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).endsWith("220 H450")');
+check('raRouteGeometry({x:450,y:220},{x:50,y:80},{left:400,right:500},{left:0,right:100}).endsWith("80 H50")');
+check('raRouteGeometry({x:50,y:80},{x:60,y:220},{left:0,right:100},{left:0,right:100}).endsWith("220 H60")');
+check('raRouteGeometry({x:50,y:80},{x:850,y:220},{left:0,right:100},{left:800,right:900},{long:true,bottom:1000}).includes(" V1000 ")');
+check('raRouteGeometry({x:50,y:80},{x:850,y:220},{left:0,right:100},{left:800,right:900},{long:true,bottom:1000}).endsWith(" V220 H850")');
+console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);
