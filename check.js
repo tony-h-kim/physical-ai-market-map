@@ -11,6 +11,7 @@ const context = vm.createContext({
   location: { hash: '' },
 });
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), context);
+vm.runInContext('view="relationships"', context); // Existing database regression checks.
 let checks = 0;
 function check(expression) {
   assert.equal(vm.runInContext(expression, context), true, expression);
@@ -47,9 +48,9 @@ check('matched().some(c=>c.n==="Persona AI")');
 vm.runInContext('location.hash="#view=workbench&workload=warehouse&g=CN,INVALID&sort=val&dir=-1";readHash()',context);
 check('view==="chain"&&state.g.size===1&&state.g.has("CN")&&sortKey==="val"&&sortDir===-1');
 vm.runInContext('location.hash="";readHash()',context);
-check('view==="relationships"&&state.g.size===0&&state.q===""&&sortKey==="n"&&sortDir===1');
+check('view==="summary"&&state.g.size===0&&state.q===""&&sortKey==="n"&&sortDir===1');
 vm.runInContext('location.hash="#q=%E0%A4%A&s=missing&view=INVALID";readHash()',context);
-check('view==="relationships"&&state.q===""');
+check('view==="summary"&&state.q===""');
 
 check('landscapeStats(CO).planes.length===5 && landscapeStats(CO).planes.reduce((s,p)=>s+p.count,0)===CO.length');
 check('landscapeStats(CO).geos.reduce((sum,g)=>sum+g.count,0)===CO.length && landscapeStats(CO).geos.every(g=>g.planes.reduce((sum,p)=>sum+p.count,0)===g.count)');
@@ -122,7 +123,7 @@ vm.runInContext('location.hash="#view=dependencies&follow=Apptronik&evidence=all
 check('view==="dependencies"&&ra.company==="Apptronik"&&ra.scope==="all"&&!ra.context&&ra.matrix==="plane"&&ra.types.size===2');
 check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!=="X"&&RA_NODES.get(e.b).p!=="X")');
 vm.runInContext('location.hash="";readHash()',context);
-check('view==="relationships"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===4&&ra.context');
+check('view==="summary"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===4&&ra.context');
 check('raEdges(CO).length===41&&raEdges([]).length===0');
 // Routes preserve actual station endpoints, including reverse, same-column and long routes.
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).startsWith("M50 80 ")');
@@ -171,4 +172,19 @@ vm.runInContext('location.hash="#form=humanoid&view=chain";readHash()',context);
 check('matched().length>0 && matched().every(c=>formsOf(c).includes("humanoid"))');
 check('RA_DATA.edges.filter(e=>e.a==="Dream Labs").length===5 && RA_DATA.edges.filter(e=>e.a==="Dream Labs").every(e=>e.t==="tech"&&e.caveat.includes("beta"))');
 check('CO.every(c=>RA_NODES.get(c.n).p===roleOf(c) && RA_NODES.get(c.n).l===posOf(c))');
+check('TOP100.length===100 && new Set(TOP100.map(x=>x.n)).size===100 && new Set(TOP100.map(x=>x.label)).size===100');
+check('TOP100.every(x=>CO.some(c=>c.n===x.n&&roleOf(c)===x.role)&&x.why&&x.offer&&x.segment)');
+check('TOP100.filter(x=>x.role==="H").length===20 && TOP100.filter(x=>x.role==="D").length===13 && TOP100.filter(x=>x.role==="I").length===18 && TOP100.filter(x=>x.role==="S").length===38 && TOP100.filter(x=>x.role==="O").length===11');
+vm.runInContext('location.hash="#view=summary&spotlight=Eka%20Robotics";readHash()',context);
+check('view==="summary" && summaryCompany==="Eka Robotics" && matched().length===100');
+check('matched().some(c=>c.n==="Eka Robotics")&&matched().some(c=>c.n==="Dream Labs")&&!matched().some(c=>c.n==="Walden Robotics")');
+vm.runInContext('location.hash="#view=table&q=walden";readHash()',context);
+check('matched().some(c=>c.n==="Walden Robotics")');
+vm.runInContext('location.hash="#view=summary";readHash()',context);
+check('summaryConnections("Dream Labs",summaryRows()).every(e=>e.reviewed&&TOP100_BY_NAME.has(e.a)&&TOP100_BY_NAME.has(e.b))');
+check('summaryConnections("Dream Labs",summaryRows()).length===3');
+check('TOP100.filter(x=>x.label==="Google DeepMind").length===1 && TOP100_BY_NAME.get("Gemini Robotics").label==="Google DeepMind"');
+const poster=vm.runInContext('summarySvg(summaryRows())',context);
+assert.equal((poster.match(/<a xlink:href=/g)||[]).length,100,'SVG contains exactly 100 company links');checks++;
+assert.ok(poster.includes('Editorial selection')&&poster.includes('Google DeepMind')&&!poster.includes('undefined'));checks++;
 console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);

@@ -1,0 +1,810 @@
+{
+  "reviewed": "2026-11-08",
+  "basis": "Editorial selection by enabling technology, industrial reach, deployment relevance and frontier capabilities; not a numerical or valuation ranking.",
+  "parentConsolidation": {
+    "Gemini Robotics": "Google DeepMind",
+    "ROS 2 / OSRF": "Open Robotics / OSRF"
+  },
+  "companies": [
+    {
+      "n": "Harmonic Drive Systems",
+      "label": "Harmonic Drive",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Precision reducers",
+      "why": "Precision gearing connects robot-joint performance to a specialist component supply chain."
+    },
+    {
+      "n": "Nabtesco",
+      "label": "Nabtesco",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Precision reducers",
+      "why": "Represents the established precision-reducer supply base behind industrial robot motion."
+    },
+    {
+      "n": "Schaeffler",
+      "label": "Schaeffler",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Motion components",
+      "why": "Connects bearings, actuators and manufacturing expertise with robot-system builders."
+    },
+    {
+      "n": "maxon",
+      "label": "maxon",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Precision motors",
+      "why": "Represents high-performance motors used inside compact robotic mechanisms."
+    },
+    {
+      "n": "Moog",
+      "label": "Moog",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Motion control",
+      "why": "Links demanding industrial and aerospace motion requirements with robotic actuation."
+    },
+    {
+      "n": "Tesollo",
+      "label": "Tesollo",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Dexterous hands",
+      "why": "Makes the dexterous-hand subsystem visible as a distinct enabling technology."
+    },
+    {
+      "n": "Shadow Robot",
+      "label": "Shadow Robot",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Dexterous hands",
+      "why": "Represents research-oriented dexterous manipulation hardware."
+    },
+    {
+      "n": "ROBOTIS",
+      "label": "ROBOTIS",
+      "role": "H",
+      "segment": "Motion & manipulation",
+      "offer": "Smart actuators",
+      "why": "Connects modular actuation with the robotics developer and research ecosystem."
+    },
+    {
+      "n": "Hesai",
+      "label": "Hesai",
+      "role": "H",
+      "segment": "Sensing & perception",
+      "offer": "Lidar",
+      "why": "Represents lidar supply into autonomous vehicles and robotic perception."
+    },
+    {
+      "n": "RoboSense",
+      "label": "RoboSense",
+      "role": "H",
+      "segment": "Sensing & perception",
+      "offer": "Lidar & perception",
+      "why": "Connects Chinese perception hardware with vehicle and robotics applications."
+    },
+    {
+      "n": "Ouster",
+      "label": "Ouster",
+      "role": "H",
+      "segment": "Sensing & perception",
+      "offer": "Digital lidar",
+      "why": "Represents lidar across industrial, vehicle and robotic deployments."
+    },
+    {
+      "n": "RealSense",
+      "label": "RealSense",
+      "role": "H",
+      "segment": "Sensing & perception",
+      "offer": "Depth cameras",
+      "why": "Provides a recognizable depth-vision building block for robot developers."
+    },
+    {
+      "n": "SICK AG",
+      "label": "SICK",
+      "role": "H",
+      "segment": "Sensing & perception",
+      "offer": "Industrial sensing",
+      "why": "Connects industrial sensing and safety requirements to deployed automation."
+    },
+    {
+      "n": "Cognex",
+      "label": "Cognex",
+      "role": "H",
+      "segment": "Sensing & perception",
+      "offer": "Machine vision",
+      "why": "Represents the established industrial machine-vision layer."
+    },
+    {
+      "n": "CATL",
+      "label": "CATL",
+      "role": "H",
+      "segment": "Energy",
+      "offer": "Batteries & power",
+      "why": "Makes energy storage and duty-cycle constraints visible alongside intelligence."
+    },
+    {
+      "n": "NVIDIA",
+      "label": "NVIDIA",
+      "role": "H",
+      "segment": "Compute & control",
+      "offer": "Robot compute & tooling",
+      "why": "Connects edge compute with simulation, training and robot-model tooling."
+    },
+    {
+      "n": "Qualcomm",
+      "label": "Qualcomm",
+      "role": "H",
+      "segment": "Compute & control",
+      "offer": "Edge AI platforms",
+      "why": "Represents integrated edge-compute platforms for robotics and autonomous systems."
+    },
+    {
+      "n": "Arm",
+      "label": "Arm",
+      "role": "H",
+      "segment": "Compute & control",
+      "offer": "Processor architecture",
+      "why": "Makes the underlying processor architecture ecosystem visible."
+    },
+    {
+      "n": "Mobileye",
+      "label": "Mobileye",
+      "role": "H",
+      "segment": "Compute & control",
+      "offer": "Vehicle compute & autonomy",
+      "why": "Connects vehicle computing hardware with applied autonomy software."
+    },
+    {
+      "n": "Beckhoff",
+      "label": "Beckhoff",
+      "role": "H",
+      "segment": "Compute & control",
+      "offer": "Industrial control",
+      "why": "Represents the deterministic control infrastructure required by industrial machines."
+    },
+    {
+      "n": "Applied Intuition",
+      "label": "Applied Intuition",
+      "role": "D",
+      "segment": "Simulation & engineering",
+      "offer": "Autonomy development",
+      "why": "Connects simulation and validation with vehicle-autonomy development."
+    },
+    {
+      "n": "MathWorks",
+      "label": "MathWorks",
+      "role": "D",
+      "segment": "Simulation & engineering",
+      "offer": "Modeling & simulation",
+      "why": "Represents engineering tools spanning control design, simulation and deployment."
+    },
+    {
+      "n": "Siemens",
+      "label": "Siemens",
+      "role": "D",
+      "segment": "Simulation & engineering",
+      "offer": "Industrial digital twins",
+      "why": "Connects industrial engineering, digital twins and factory automation."
+    },
+    {
+      "n": "World Labs",
+      "label": "World Labs",
+      "role": "D",
+      "segment": "World models",
+      "offer": "Spatial world models",
+      "why": "Represents learned spatial representations used to create and reason about environments."
+    },
+    {
+      "n": "Genesis AI",
+      "label": "Genesis AI",
+      "role": "D",
+      "segment": "World models",
+      "offer": "World & robot models",
+      "why": "Represents the frontier between learned environments and robot behavior."
+    },
+    {
+      "n": "Decart",
+      "label": "Decart",
+      "role": "D",
+      "segment": "World models",
+      "offer": "Generative simulation",
+      "why": "Makes generative world simulation distinct from authored physics engines."
+    },
+    {
+      "n": "Scale AI",
+      "label": "Scale AI",
+      "role": "D",
+      "segment": "Data & developer tools",
+      "offer": "Training data",
+      "why": "Represents data curation and annotation infrastructure supporting model development."
+    },
+    {
+      "n": "Encord",
+      "label": "Encord",
+      "role": "D",
+      "segment": "Data & developer tools",
+      "offer": "Data curation",
+      "why": "Makes training-data quality and curation visible as a separate developer workflow."
+    },
+    {
+      "n": "Rerun",
+      "label": "Rerun",
+      "role": "D",
+      "segment": "Data & developer tools",
+      "offer": "Multimodal robot data",
+      "why": "Connects robot recordings and visualization to the development feedback loop."
+    },
+    {
+      "n": "Hugging Face",
+      "label": "Hugging Face",
+      "role": "D",
+      "segment": "Learning platforms & cloud",
+      "offer": "Open robot learning",
+      "why": "Connects open models, datasets, learning libraries and accessible robot hardware."
+    },
+    {
+      "n": "CoreWeave",
+      "label": "CoreWeave",
+      "role": "D",
+      "segment": "Learning platforms & cloud",
+      "offer": "Physical AI cloud",
+      "why": "Represents specialist cloud infrastructure and packaged physical AI workloads."
+    },
+    {
+      "n": "Nebius",
+      "label": "Nebius",
+      "role": "D",
+      "segment": "Learning platforms & cloud",
+      "offer": "Robot training cloud",
+      "why": "Connects cloud compute with robotics simulation, training and deployment workflows."
+    },
+    {
+      "n": "Amazon Web Services",
+      "label": "AWS",
+      "role": "D",
+      "segment": "Learning platforms & cloud",
+      "offer": "Cloud infrastructure",
+      "why": "Represents hyperscale cloud infrastructure supporting physical AI development."
+    },
+    {
+      "n": "Gemini Robotics",
+      "label": "Google DeepMind",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "Robot models & research",
+      "why": "Represents robot intelligence alongside the same organization's simulation and world-model research."
+    },
+    {
+      "n": "Physical Intelligence",
+      "label": "Physical Intelligence",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "General robot policies",
+      "why": "Represents general-purpose robot-policy development across tasks and hardware."
+    },
+    {
+      "n": "Skild AI",
+      "label": "Skild AI",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "Cross-embodiment models",
+      "why": "Represents intelligence designed to operate across different robot forms."
+    },
+    {
+      "n": "Generalist AI",
+      "label": "Generalist AI",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "General-purpose robot AI",
+      "why": "Represents a frontier approach to general-purpose physical intelligence."
+    },
+    {
+      "n": "Eka Robotics",
+      "label": "Eka Robotics",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "Vision-force-action models",
+      "why": "Makes force-aware dexterous manipulation visible alongside vision-language-action approaches."
+    },
+    {
+      "n": "Dream Labs",
+      "label": "Dream Labs",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "World action models",
+      "why": "Represents a world-action-model approach with a documented robot-control API."
+    },
+    {
+      "n": "RLWRLD",
+      "label": "RLWRLD",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "Dexterity models",
+      "why": "Adds a Korean dexterity-focused model developer to the intelligence landscape."
+    },
+    {
+      "n": "Field AI",
+      "label": "Field AI",
+      "role": "I",
+      "segment": "Robot intelligence",
+      "offer": "Field autonomy",
+      "why": "Connects robot intelligence with variable industrial and outdoor environments."
+    },
+    {
+      "n": "Intrinsic",
+      "label": "Intrinsic",
+      "role": "I",
+      "segment": "Manipulation & runtime",
+      "offer": "Robot programming",
+      "why": "Connects motion, perception, application development and robot deployment software."
+    },
+    {
+      "n": "Covariant",
+      "label": "Covariant",
+      "role": "I",
+      "segment": "Manipulation & runtime",
+      "offer": "AI manipulation",
+      "why": "Represents model-based manipulation in industrial and logistics workflows."
+    },
+    {
+      "n": "Sereact",
+      "label": "Sereact",
+      "role": "I",
+      "segment": "Manipulation & runtime",
+      "offer": "AI picking software",
+      "why": "Represents robot intelligence sold into practical picking and handling workflows."
+    },
+    {
+      "n": "PickNik Robotics",
+      "label": "PickNik",
+      "role": "I",
+      "segment": "Manipulation & runtime",
+      "offer": "Motion planning",
+      "why": "Connects robot motion-planning infrastructure with application engineering."
+    },
+    {
+      "n": "ROS 2 / OSRF",
+      "label": "Open Robotics / OSRF",
+      "role": "I",
+      "segment": "Manipulation & runtime",
+      "offer": "Open robotics middleware",
+      "why": "Represents the shared open middleware foundation used across the robotics ecosystem."
+    },
+    {
+      "n": "Wayve",
+      "label": "Wayve",
+      "role": "I",
+      "segment": "Vehicle & coordinated autonomy",
+      "offer": "Driving intelligence",
+      "why": "Represents a learned driving-intelligence approach separate from fleet ownership."
+    },
+    {
+      "n": "Waabi",
+      "label": "Waabi",
+      "role": "I",
+      "segment": "Vehicle & coordinated autonomy",
+      "offer": "Trucking autonomy",
+      "why": "Connects learned driving and simulation with autonomous trucking."
+    },
+    {
+      "n": "Momenta",
+      "label": "Momenta",
+      "role": "I",
+      "segment": "Vehicle & coordinated autonomy",
+      "offer": "Driving software",
+      "why": "Represents the Chinese driving-software ecosystem and automotive partnerships."
+    },
+    {
+      "n": "Nuro",
+      "label": "Nuro",
+      "role": "I",
+      "segment": "Vehicle & coordinated autonomy",
+      "offer": "Autonomy platform",
+      "why": "Represents autonomy technology offered beyond a single delivery-vehicle embodiment."
+    },
+    {
+      "n": "Auterion",
+      "label": "Auterion",
+      "role": "I",
+      "segment": "Vehicle & coordinated autonomy",
+      "offer": "Autonomous systems software",
+      "why": "Connects operating software and coordinated autonomy across uncrewed systems."
+    },
+    {
+      "n": "Figure AI",
+      "label": "Figure",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Humanoid systems",
+      "why": "Represents an integrated humanoid system and in-house robot-intelligence strategy."
+    },
+    {
+      "n": "Tesla",
+      "label": "Tesla",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Humanoids & autonomy",
+      "why": "Connects an integrated humanoid program with manufacturing and autonomy capabilities."
+    },
+    {
+      "n": "1X",
+      "label": "1X",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Home humanoids",
+      "why": "Represents the household and human-environment branch of humanoid development."
+    },
+    {
+      "n": "Apptronik",
+      "label": "Apptronik",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Industrial humanoids",
+      "why": "Connects humanoid development with industrial manufacturing partners."
+    },
+    {
+      "n": "Agility Robotics",
+      "label": "Agility Robotics",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Digit robot workers",
+      "why": "Represents humanoid-style systems with named commercial logistics deployments."
+    },
+    {
+      "n": "Boston Dynamics",
+      "label": "Boston Dynamics",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Legged robots",
+      "why": "Connects established legged robotics with inspection and humanoid development."
+    },
+    {
+      "n": "Unitree",
+      "label": "Unitree",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Humanoids & quadrupeds",
+      "why": "Represents accessible legged platforms and the Chinese humanoid supply ecosystem."
+    },
+    {
+      "n": "AgiBot",
+      "label": "AgiBot",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Embodied AI systems",
+      "why": "Represents integrated robot hardware and embodied-intelligence development in China."
+    },
+    {
+      "n": "UBTech",
+      "label": "UBTech",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Industrial humanoids",
+      "why": "Represents a listed Chinese humanoid-platform developer with industrial programs."
+    },
+    {
+      "n": "Neura Robotics",
+      "label": "NEURA Robotics",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Cognitive robots",
+      "why": "Connects humanoids and industrial robots with a broader software ecosystem."
+    },
+    {
+      "n": "Galbot",
+      "label": "Galbot",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "General-purpose robots",
+      "why": "Represents mobile manipulation and integrated embodied-intelligence development."
+    },
+    {
+      "n": "Sunday Robotics",
+      "label": "Sunday Robotics",
+      "role": "S",
+      "segment": "Humanoid & general-purpose",
+      "offer": "Household robots",
+      "why": "Represents integrated robot hardware and models aimed at household work."
+    },
+    {
+      "n": "FANUC",
+      "label": "FANUC",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Industrial robots",
+      "why": "Represents the established industrial robot and factory-automation base."
+    },
+    {
+      "n": "Yaskawa",
+      "label": "Yaskawa",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Industrial robots",
+      "why": "Connects industrial robots with motion-control and manufacturing expertise."
+    },
+    {
+      "n": "ABB Robotics",
+      "label": "ABB Robotics",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Industrial automation",
+      "why": "Represents a broad industrial robotics portfolio and installed automation base."
+    },
+    {
+      "n": "KUKA",
+      "label": "KUKA",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Industrial robots",
+      "why": "Represents integrated industrial robots and production automation."
+    },
+    {
+      "n": "Universal Robots",
+      "label": "Universal Robots",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Collaborative arms",
+      "why": "Represents collaborative arms and the surrounding tooling and integration ecosystem."
+    },
+    {
+      "n": "Amazon Robotics",
+      "label": "Amazon Robotics",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Warehouse systems",
+      "why": "Represents robotics integrated into a large operator's logistics network."
+    },
+    {
+      "n": "Symbotic",
+      "label": "Symbotic",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Warehouse automation",
+      "why": "Represents integrated warehouse automation tied to large distribution customers."
+    },
+    {
+      "n": "AutoStore",
+      "label": "AutoStore",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Storage & retrieval",
+      "why": "Represents a distinctive automated storage architecture and partner ecosystem."
+    },
+    {
+      "n": "Exotec",
+      "label": "Exotec",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Warehouse robotics",
+      "why": "Represents integrated goods-to-person warehouse systems."
+    },
+    {
+      "n": "Locus Robotics",
+      "label": "Locus Robotics",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Warehouse mobile robots",
+      "why": "Represents mobile robotics delivered into fulfillment operations."
+    },
+    {
+      "n": "Dexterity",
+      "label": "Dexterity",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Robotic manipulation",
+      "why": "Represents integrated manipulation systems for demanding industrial logistics work."
+    },
+    {
+      "n": "Dyna Robotics",
+      "label": "Dyna Robotics",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Robot workcells",
+      "why": "Represents a newer integrated system-builder approach combining models and hardware."
+    },
+    {
+      "n": "Mind Robotics",
+      "label": "Mind Robotics",
+      "role": "S",
+      "segment": "Industrial & logistics",
+      "offer": "Industrial robot systems",
+      "why": "Connects robot hardware and foundation models with manufacturing-data access."
+    },
+    {
+      "n": "Anduril",
+      "label": "Anduril",
+      "role": "S",
+      "segment": "Air, marine & defense",
+      "offer": "Autonomous defense systems",
+      "why": "Connects integrated autonomous platforms with defense software and manufacturing."
+    },
+    {
+      "n": "Helsing",
+      "label": "Helsing",
+      "role": "S",
+      "segment": "Air, marine & defense",
+      "offer": "Defense AI systems",
+      "why": "Represents European defense intelligence and integrated autonomous systems."
+    },
+    {
+      "n": "Shield AI",
+      "label": "Shield AI",
+      "role": "S",
+      "segment": "Air, marine & defense",
+      "offer": "Autonomous aircraft",
+      "why": "Connects autonomy software with complete defense aircraft systems."
+    },
+    {
+      "n": "Saronic",
+      "label": "Saronic",
+      "role": "S",
+      "segment": "Air, marine & defense",
+      "offer": "Autonomous vessels",
+      "why": "Makes autonomous maritime systems visible alongside aerial platforms."
+    },
+    {
+      "n": "Skydio",
+      "label": "Skydio",
+      "role": "S",
+      "segment": "Air, marine & defense",
+      "offer": "Autonomous drones",
+      "why": "Represents integrated autonomous aerial platforms for enterprise and government use."
+    },
+    {
+      "n": "DJI",
+      "label": "DJI",
+      "role": "S",
+      "segment": "Air, marine & defense",
+      "offer": "Enterprise aerial systems",
+      "why": "Represents the established drone ecosystem across inspection, surveying and agriculture."
+    },
+    {
+      "n": "Caterpillar",
+      "label": "Caterpillar",
+      "role": "S",
+      "segment": "Field & production",
+      "offer": "Mining autonomy",
+      "why": "Represents established autonomous heavy equipment and mining operations."
+    },
+    {
+      "n": "John Deere",
+      "label": "John Deere",
+      "role": "S",
+      "segment": "Field & production",
+      "offer": "Agricultural autonomy",
+      "why": "Connects agricultural equipment, perception and autonomous field work."
+    },
+    {
+      "n": "Bedrock Robotics",
+      "label": "Bedrock Robotics",
+      "role": "S",
+      "segment": "Field & production",
+      "offer": "Construction autonomy",
+      "why": "Represents newer autonomy development for heavy construction equipment."
+    },
+    {
+      "n": "Carbon Robotics",
+      "label": "Carbon Robotics",
+      "role": "S",
+      "segment": "Field & production",
+      "offer": "Precision agricultural robots",
+      "why": "Represents task-specific robotic automation in crop production."
+    },
+    {
+      "n": "Foxconn",
+      "label": "Foxconn",
+      "role": "S",
+      "segment": "Field & production",
+      "offer": "Production partner",
+      "why": "Makes contract manufacturing and physical production capacity visible in the system layer."
+    },
+    {
+      "n": "Pudu Robotics",
+      "label": "Pudu Robotics",
+      "role": "S",
+      "segment": "Service & healthcare",
+      "offer": "Service robots",
+      "why": "Represents commercial service, cleaning and delivery robots beyond the factory."
+    },
+    {
+      "n": "Diligent Robotics",
+      "label": "Diligent Robotics",
+      "role": "S",
+      "segment": "Service & healthcare",
+      "offer": "Hospital logistics robots",
+      "why": "Makes healthcare workflow robotics visible without conflating it with surgical teleoperation."
+    },
+    {
+      "n": "Waymo",
+      "label": "Waymo",
+      "role": "O",
+      "segment": "Operated mobility",
+      "offer": "Robotaxi operations",
+      "why": "Represents a company operating an autonomous passenger service rather than only licensing software."
+    },
+    {
+      "n": "Aurora",
+      "label": "Aurora",
+      "role": "O",
+      "segment": "Operated mobility",
+      "offer": "Autonomous trucking",
+      "why": "Connects a driving stack with current operated trucking and future licensing plans."
+    },
+    {
+      "n": "WeRide",
+      "label": "WeRide",
+      "role": "O",
+      "segment": "Operated mobility",
+      "offer": "Autonomous mobility",
+      "why": "Represents autonomous mobility programs across vehicle types and deployment markets."
+    },
+    {
+      "n": "Pony.ai",
+      "label": "Pony.ai",
+      "role": "O",
+      "segment": "Operated mobility",
+      "offer": "Robotaxi operations",
+      "why": "Represents the Chinese robotaxi and autonomous-mobility operating ecosystem."
+    },
+    {
+      "n": "Zipline",
+      "label": "Zipline",
+      "role": "O",
+      "segment": "Operated physical services",
+      "offer": "Drone delivery",
+      "why": "Represents an autonomous system operated as a physical delivery service."
+    },
+    {
+      "n": "Wing",
+      "label": "Wing",
+      "role": "O",
+      "segment": "Operated physical services",
+      "offer": "Drone delivery",
+      "why": "Represents aerial delivery integrated with commercial logistics workflows."
+    },
+    {
+      "n": "Saildrone",
+      "label": "Saildrone",
+      "role": "O",
+      "segment": "Operated physical services",
+      "offer": "Ocean data services",
+      "why": "Represents autonomous marine platforms operated to deliver data and mission outcomes."
+    },
+    {
+      "n": "Nimble Robotics",
+      "label": "Nimble",
+      "role": "O",
+      "segment": "Operated physical services",
+      "offer": "Robotic fulfillment",
+      "why": "Represents robotic fulfillment capacity sold as an operating service."
+    },
+    {
+      "n": "Formic",
+      "label": "Formic",
+      "role": "O",
+      "segment": "Deployment & assurance",
+      "offer": "Automation as a service",
+      "why": "Represents the deployment and commercial packaging of third-party industrial automation."
+    },
+    {
+      "n": "Formant",
+      "label": "Formant",
+      "role": "O",
+      "segment": "Deployment & assurance",
+      "offer": "Robot fleet operations",
+      "why": "Represents the observability, intervention and operational layer around deployed robots."
+    },
+    {
+      "n": "TUV SUD",
+      "label": "TÜV SÜD",
+      "role": "O",
+      "segment": "Deployment & assurance",
+      "offer": "Testing & certification",
+      "why": "Makes independent assurance and deployment assessment visible as a separate role."
+    }
+  ]
+}
