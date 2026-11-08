@@ -1,6 +1,6 @@
 """Wrap the original artifact fragment in the tracked GitHub Pages shell.
 
-Usage: python build.py path/to/physical_ai_market_map_artifact.html
+Usage: python build.py [path/to/physical_ai_market_map_artifact.html]
 Edits index.html. Keep the artifact as source of truth; preserves social metadata.
 """
 from pathlib import Path
@@ -8,7 +8,7 @@ import re
 import sys
 
 try:
-    source_path = Path(sys.argv[1])
+    source_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).parent / 'source' / 'physical_ai_market_map_artifact.html'
     target_path = Path(__file__).parent / 'index.html'
     source = source_path.read_text(encoding='utf-8')
     current = target_path.read_text(encoding='utf-8')

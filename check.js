@@ -47,9 +47,9 @@ check('matched().some(c=>c.n==="Persona AI")');
 vm.runInContext('location.hash="#view=workbench&workload=warehouse&g=CN,INVALID&sort=val&dir=-1";readHash()',context);
 check('view==="chain"&&state.g.size===1&&state.g.has("CN")&&sortKey==="val"&&sortDir===-1');
 vm.runInContext('location.hash="";readHash()',context);
-check('view==="overview"&&state.g.size===0&&state.q===""&&sortKey==="n"&&sortDir===1');
+check('view==="relationships"&&state.g.size===0&&state.q===""&&sortKey==="n"&&sortDir===1');
 vm.runInContext('location.hash="#q=%E0%A4%A&s=missing&view=INVALID";readHash()',context);
-check('view==="overview"&&state.q===""');
+check('view==="relationships"&&state.q===""');
 
 check('landscapeStats(CO).planes.map(p=>p.count).join(",")==="163,61,28"');
 check('landscapeStats(CO).geos.reduce((sum,g)=>sum+g.count,0)===CO.length && landscapeStats(CO).geos.every(g=>g.planes.reduce((sum,p)=>sum+p.count,0)===g.count)');
@@ -111,4 +111,17 @@ assert.equal((staticMarkup.match(/class="essay-body"/g)||[]).length,6,'All Insig
 const blocked = vm.createContext({ ...context, localStorage: { getItem(){ throw Error('blocked'); } } });
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), blocked);
 assert.equal(vm.runInContext('storageAvailable', blocked), false);
-console.log(`Done — ${checks + 1} data, filter, URL, CSV and storage checks passed; full JavaScript syntax valid.`);
+// Relationship data must not silently expand the canonical roster or conflate roles.
+check('CO.length===252 && RA_DATA.edges.length===117 && RA_DATA.edges.filter(e=>e.reviewed).length===30');
+check('!RA_NODES.has("Uber") && !RA_DATA.edges.some(e=>e.a==="Uber"||e.b==="Uber")');
+check('RA_DATA.edges.every(e=>RA_NODES.has(e.a)&&RA_NODES.has(e.b)&&e.s.startsWith("https://"))');
+check('new Set(RA_DATA.edges.map(e=>e.a+"|"+e.b+"|"+e.t)).size===RA_DATA.edges.length');
+check('RA_DATA.edges.filter(e=>e.a==="Mercedes-Benz"&&e.b==="Apptronik").map(e=>e.t).sort().join(",")==="cust,inv"');
+check('RA_DATA.edges.find(e=>e.a==="NVIDIA"&&e.b==="Hugging Face").st==="pending"');
+vm.runInContext('location.hash="#view=dependencies&follow=Apptronik&evidence=all&ties=inv,cust&context=0&compare=plane";readHash()',context);
+check('view==="dependencies"&&ra.company==="Apptronik"&&ra.scope==="all"&&!ra.context&&ra.matrix==="plane"&&ra.types.size===2');
+check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!=="X"&&RA_NODES.get(e.b).p!=="X")');
+vm.runInContext('location.hash="";readHash()',context);
+check('view==="relationships"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===4&&ra.context');
+check('raEdges(CO).length===30&&raEdges([]).length===0');
+console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship and storage checks passed; full JavaScript syntax valid.`);
