@@ -14,7 +14,7 @@ ResizeObserver watches both the board and the company columns. Resize, font comp
 
 ## Editorial changes
 
-The fixed 760px article column is replaced with a fluid main column and bounded chapter navigation. Large screens use a wider container, figures, tables and comparison grids. Prose retains a readable measure. Comparison grids stack on phones; the chapter menu moves above the article on narrower screens.
+The fixed 760px article column is replaced with a fluid main column and bounded chapter navigation. Large screens use a wider container, figures, tables and comparison grids. Prose fills the main article column; residual character-width caps were removed in the subsequent full-width pass. Comparison grids stack on phones; the chapter menu moves above the article on narrower screens.
 
 Run `python build.py`, `python validate.py index.html`, and `node check.js`. Route geometry regression checks accompany the existing roster, filter, URL and relationship checks. Screenshots and numeric viewport observations are retained as local review outputs.
 
@@ -27,3 +27,7 @@ Reviewed NVIDIA's 11 routes in charcoal at desktop and phone widths, and Schaeff
 ## Full-width prose and matrix legend
 
 Removed residual character-width caps from Insights and Method paragraphs, lists and chapter introductions at every breakpoint. All six chapters were measured at a wide viewport: the main paragraphs match the 1556px article width, with no page overflow. Phone layout also remains contained. The relationship matrix symbol legend now precedes the grid, with row-to-column reading instructions and distinct explanations for company symbols and plane counts. Company and plane modes were reviewed, including mobile legend wrapping.
+
+## Document-wide consistency pass
+
+See QUALITY_REVIEW.md for the reader-facing corrections and verification boundary. The review covers 79 layout states, all eleven exploration modes and all six chapters. The suite now has 91 checks, including view-specific encodings, explicit dependency selection, focused plane counts and stale evidence removal. Matrix symbols are the type filters; arrow samples and arrowhead guidance are limited to routed atlas lines.

@@ -19,3 +19,7 @@ The core roster stays at 252 entries / 244 distinct companies. The relationship 
 The previously referenced external artifact was unavailable. The editable source now lives in `source/physical_ai_market_map_artifact.html`. Run `python build.py`, `python validate.py index.html`, and `node check.js`. The builder preserves social metadata. The validation suite includes relationship endpoint integrity, distinct equity/customer roles, transaction status, exclusion rules and URL restoration alongside the original market-map checks.
 
 No JavaScript runtime dependencies or network data fetches are introduced. The page remains self-contained, with optional remote typography and external source links.
+
+## Legends and reader state
+
+The relationship-type filter row doubles as the legend: line patterns for routed atlas lines, cell symbols for the company matrix, plain labels for plane counts, dependency cards and industry territories. There is no shared footer legend. Direction guidance appears only with routed lines; other views explain their own encoding. Company selection is explicit in Dependencies. Matrix totals, cells and opened evidence use the same focused company and evidence scope. Shared roster count, filter chips, copy link and roster export stay available in relationship modes.

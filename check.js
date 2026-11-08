@@ -131,4 +131,27 @@ check('raRouteGeometry({x:450,y:220},{x:50,y:80},{left:400,right:500},{left:0,ri
 check('raRouteGeometry({x:50,y:80},{x:60,y:220},{left:0,right:100},{left:0,right:100}).endsWith("220 H60")');
 check('raRouteGeometry({x:50,y:80},{x:850,y:220},{left:0,right:100},{left:800,right:900},{long:true,bottom:1000}).includes(" V1000 ")');
 check('raRouteGeometry({x:50,y:80},{x:850,y:220},{left:0,right:100},{left:800,right:900},{long:true,bottom:1000}).endsWith(" V220 H850")');
+// Reader-facing encodings must match the current view, not leak from the atlas.
+const realBind=vm.runInContext('raBind',context);
+context.raBind=()=>{};
+context.requestAnimationFrame=()=>0;
+context.document.body={classList:{contains:()=>false}};
+context.reviewHost={innerHTML:''};
+vm.runInContext('ra.company=null;ra.edge=null;ra.scope="checked";ra.types=new Set(Object.keys(RA_TYPES));ra.matrix="company"',context);
+for(const mode of ['relationships','territories','dependencies','connections']){
+  vm.runInContext(`view=${JSON.stringify(mode)};viewRelationships(reviewHost,CO)`,context);
+  const markup=context.reviewHost.innerHTML;
+  assert.equal((markup.match(/class="ra-direction-guide"/g)||[]).length,mode==='relationships'?1:0,'Arrowhead guidance is specific to routed lines');checks++;
+  assert.equal((markup.match(/class="ra-line /g)||[]).length,mode==='relationships'?4:0,'Only atlas filters use line-pattern samples');checks++;
+  assert.equal((markup.match(/class="ra-symbol /g)||[]).length,mode==='connections'?4:0,'Only company-matrix filters use cell symbols');checks++;
+}
+check('raDependencies(raEdges(CO)).includes("Choose a company to inspect") && !raDependencies(raEdges(CO)).includes("ra-focus")');
+vm.runInContext('view="connections";ra.company="NVIDIA";ra.matrix="plane";viewRelationships(reviewHost,CO)',context);
+assert.ok(!context.reviewHost.innerHTML.includes('class="ra-symbol '),'Plane counts do not use a symbol legend');checks++;
+const matrixMarkup=vm.runInContext('raMatrix(raEdges(CO))',context);
+const countedRecords=[...matrixMarkup.matchAll(/data-ra-pair="[A-Z]+"[^>]*>(\d+)</g)].reduce((sum,m)=>sum+Number(m[1]),0);
+assert.equal(countedRecords,vm.runInContext('raEdges(CO).filter(e=>e.a===ra.company||e.b===ra.company).length',context),'Follow applies to both matrix levels and counts');checks++;
+vm.runInContext('ra.edge=RA_DATA.edges.findIndex(e=>e.t==="tech"&&e.reviewed);ra.types.delete("tech");viewRelationships(reviewHost,CO)',context);
+check('ra.edge===null && ra.company==="NVIDIA" && !reviewHost.innerHTML.includes("<small>Relationship evidence</small>")');
+context.raBind=realBind;
 console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);
