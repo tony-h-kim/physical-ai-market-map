@@ -23,3 +23,7 @@ Run `python build.py`, `python validate.py index.html`, and `node check.js`. Rou
 Destination markers now use a visible fixed-size arrowhead; intermediate chevrons are deduplicated where routes share a gutter. Named direction labels appear on pointer hover or keyboard focus. The legend defines investor to company, customer to provider, owner/proposed acquirer to company, and technology actor to counterpart. Technology direction follows the announcement and is not a claim of measured one-way dependency.
 
 Reviewed NVIDIA's 11 routes in charcoal at desktop and phone widths, and Schaeffler's customer/equity routes in light mode. Keyboard focus exposed the expected NVIDIA to ABB Robotics label. Measured endpoint errors remained below 0.001 CSS pixel with no page overflow. The existing 75 validation checks pass.
+
+## Full-width prose and matrix legend
+
+Removed residual character-width caps from Insights and Method paragraphs, lists and chapter introductions at every breakpoint. All six chapters were measured at a wide viewport: the main paragraphs match the 1556px article width, with no page overflow. Phone layout also remains contained. The relationship matrix symbol legend now precedes the grid, with row-to-column reading instructions and distinct explanations for company symbols and plane counts. Company and plane modes were reviewed, including mobile legend wrapping.
