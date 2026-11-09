@@ -28,7 +28,11 @@ node check.js
 python validate.py index.html
 ```
 
-The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 145 dependency-free checks and the artifact validator with zero errors or warnings.
+The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 160 dependency-free checks and the artifact validator with zero errors or warnings.
+
+## V14-00 — product review and ecosystem redesign, November 8, 2026
+
+Rebuilt Ecosystem around three explicit exchanges between a strategic partner and a robot/model company. Solid payment arrows and dashed return arrows distinguish investment, supplier spending and customer revenue. Investor view now reads the same seven-case disclosure register as Capital. Corrected product/project treatment, expanded followed-company matrix coverage, compacted the taxonomy catalog, and improved keyboard navigation. Reviewed all 12 market views and six analytical chapters at 390, 768, 1440 and 2752 pixels in both themes. See [the review record](PRODUCT_REVIEW.md) for changes, verification and limits.
 
 ## V13-01 — Q3 capital and operating disclosures, November 8, 2026
 
