@@ -6,6 +6,7 @@ const html = fs.readFileSync('index.html', 'utf8');
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
 new vm.Script(script); // Parse the entire script, including boot and render paths.
 const context = vm.createContext({
+  URLSearchParams,
   localStorage: { getItem: () => null },
   document: { querySelector: () => null, querySelectorAll: () => [], getElementById: () => null },
   location: { hash: '' },
@@ -113,7 +114,7 @@ const blocked = vm.createContext({ ...context, localStorage: { getItem(){ throw 
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), blocked);
 assert.equal(vm.runInContext('storageAvailable', blocked), false);
 // Relationship data must not silently expand the canonical roster or conflate roles.
-check('CO.length===430 && RA_DATA.edges.length===145 && RA_DATA.edges.filter(e=>e.reviewed).length===65');
+check('CO.length===430 && RA_DATA.edges.length===150 && RA_DATA.edges.filter(e=>e.reviewed).length===70');
 check('!RA_NODES.has("Uber") && !RA_DATA.edges.some(e=>e.a==="Uber"||e.b==="Uber")');
 check('RA_DATA.edges.every(e=>RA_NODES.has(e.a)&&RA_NODES.has(e.b)&&e.s.startsWith("https://"))');
 check('new Set(RA_DATA.edges.map(e=>e.a+"|"+e.b+"|"+e.t)).size===RA_DATA.edges.length');
@@ -124,7 +125,7 @@ check('view==="dependencies"&&ra.company==="Apptronik"&&ra.scope==="all"&&!ra.co
 check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!=="X"&&RA_NODES.get(e.b).p!=="X")');
 vm.runInContext('location.hash="";readHash()',context);
 check('view==="summary"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===5&&ra.context');
-check('raEdges(CO).length===65&&raEdges([]).length===0');
+check('raEdges(CO).length===70&&raEdges([]).length===0');
 // Routes preserve actual station endpoints, including reverse, same-column and long routes.
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).startsWith("M50 80 ")');
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).endsWith("220 H450")');
@@ -257,4 +258,16 @@ assert.equal(reviewStaticIds.length,new Set(reviewStaticIds).size,'Static IDs mu
 assert.ok([...staticHtml.matchAll(/data-scroll-target="([^"]+)"/g)].every(m=>reviewStaticIds.includes(m[1])),'Every chapter jump must resolve');checks++;
 assert.ok(staticHtml.includes('<main id="main-content"')&&staticHtml.includes('Skip to content')&&staticHtml.includes('data-scroll-target="method-summary"'));checks++;
 assert.equal((staticHtml.match(/class="role-tax-sections"/g)||[]).length,5);checks++;
-console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);
+
+check('friendlyHash("view=summary&ties=platform,own,inv,tech,cust&rels=2").startsWith("#overview")');
+check('friendlyHash("view=relationships&follow=NVIDIA")==="#atlas?company=NVIDIA"');
+check('friendlyHash("tab=insights&s=ecosystem")==="#insights/ecosystem" && friendlyHash("tab=method&s=method")==="#method/sources"');
+check('parseLinkHash("#atlas?company=AMD&relationships=technology,customers&roles=hardware,intelligence").ties==="tech,cust" && parseLinkHash("#atlas?company=AMD&relationships=technology,customers&roles=hardware,intelligence").p==="H,I"');
+check('parseLinkHash("#overview?profile=Isaac%20ROS").co==="Isaac ROS" && parseLinkHash("#relationship-matrix?compare=roles").compare==="plane"');
+check('parseLinkHash("#overview?relationships=").ties==="" && parseLinkHash("#overview?relationships=").rels==="2"');
+check('RA_DATA.edges.filter(e=>e.a==="AMD"&&e.reviewed).length===5 && RA_DATA.edges.some(e=>e.a==="AMD"&&e.b==="Kodiak Robotics"&&e.reviewed)');
+check('summaryFocusHtml(CO).includes("Research coverage:") || summaryCompany===null');
+check('Object.entries(VIEW_ROUTES).every(([view,route])=>parseLinkHash(friendlyHash("view="+view)).view===view)');
+check('parseLinkHash(friendlyHash("view=table&q=robot%20%26%20vision&g=KR,US&sort=val&dir=-1")).q==="robot & vision"');
+check('parseLinkHash(friendlyHash("view=relationships&ties=own,inv,tech,cust")).rels==="2" && !parseLinkHash(friendlyHash("view=relationships&ties=own,inv,tech,cust")).ties.includes("platform")');
+console.log(`Done — ${checks} checks passed; JavaScript syntax valid.`);

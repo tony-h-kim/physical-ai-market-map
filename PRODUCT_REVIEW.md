@@ -30,3 +30,12 @@ This is a bounded product and consistency review, not a fresh independent audit 
 CSV serialization and formula protection pass automated checks, and its browser control was exercised. The browser automation bridge did not capture a download event in the bounded download check, so browser file delivery is not reported as independently verified. SVG generation is covered by the existing automated export checks.
 
 The responsive pass targets the listed widths and current Chrome; it does not certify every browser, device, zoom level or assistive-technology combination.
+
+
+## V14-01 follow-up — November 8, 2026
+
+Retained H/D/I/S/O with an early role key and export legend. Replaced generated query-style state with readable destination routes and explicit non-default filter names; legacy links remain supported. Added measured two-row sticky navigation across all three sections, a focus-aware back-to-top button and a compact single-paragraph footer caveat. Consolidated typography into shared body, control, label and metadata sizes; heading and metric hierarchy remains intentional.
+
+AMD previously had two inherited records and no checked-primary records, so its default checked-primary view was empty. Added five narrow, primary-source records: Kodiak platform use, Foundation Robotics demonstration, and three explicitly labeled partner-directory entries. This is a targeted gap repair; directory membership does not establish procurement or economic dependence. Research selection and unequal coverage are now explained in Method and company coverage notes.
+
+The follow-up passes 170 automated checks and the artifact validator. Reviewed another 144 combinations of route, width and appearance (390/768/1440/2752, light/dark), with no page overflow or clipped visible button text detected. Scrolled all three main sections at phone and desktop sizes to verify that the secondary row sits directly below the primary row. Tested the back-to-top action and its heading focus. New route round-trips, legacy relationship-filter semantics, malformed inputs and named company filters are covered by regression checks.

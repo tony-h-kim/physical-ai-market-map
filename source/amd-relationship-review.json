@@ -1,0 +1,66 @@
+{
+  "reviewed": "2026-11-08",
+  "scope": "Targeted AMD physical AI coverage; not an exhaustive company audit",
+  "records": [
+    {
+      "a": "AMD",
+      "b": "Kodiak Robotics",
+      "t": "tech",
+      "d": "2026-08-26",
+      "s": "https://www.amd.com/en/blogs/2026/amd-accelerates-kodiak-ais-new-autonomous-driving.html",
+      "note": "AMD reports EPYC processors power Kodiak AI’s seventh-generation autonomous truck platform.",
+      "st": "documented",
+      "reviewed": true,
+      "checked": "2026-11-08",
+      "caveat": "Reported platform use; no disclosed purchase value, exclusivity or fleet-wide deployment count."
+    },
+    {
+      "a": "AMD",
+      "b": "Foundation Robotics",
+      "t": "tech",
+      "d": "2026-09-21",
+      "s": "https://newsroom.amd.com/news/media-alert-amd-roscon-2026/",
+      "note": "AMD describes a ROSCon demonstration of Phantom MKI full-body control on Ryzen AI Embedded.",
+      "st": "documented",
+      "reviewed": true,
+      "checked": "2026-11-08",
+      "caveat": "Demonstration evidence, not proof of production deployment, recurring revenue or exclusivity."
+    },
+    {
+      "a": "AMD",
+      "b": "Analog Devices",
+      "t": "tech",
+      "d": "",
+      "s": "https://www.amd.com/en/partner/partner-network/robotics-partners.html",
+      "note": "AMD lists Analog Devices among its featured Robotics Partner Network participants.",
+      "st": "documented",
+      "reviewed": true,
+      "checked": "2026-11-08",
+      "caveat": "Directory membership only; it does not establish a purchase, investment, exclusive integration or certified end system."
+    },
+    {
+      "a": "AMD",
+      "b": "SICK AG",
+      "t": "tech",
+      "d": "",
+      "s": "https://www.amd.com/en/partner/partner-network/robotics-partners.html",
+      "note": "AMD lists SICK AG among its featured Robotics Partner Network participants.",
+      "st": "documented",
+      "reviewed": true,
+      "checked": "2026-11-08",
+      "caveat": "Directory membership only; it does not establish a purchase, investment, exclusive integration or certified end system."
+    },
+    {
+      "a": "AMD",
+      "b": "Open Robotics / OSRF",
+      "t": "tech",
+      "d": "",
+      "s": "https://www.amd.com/en/partner/partner-network/robotics-partners.html",
+      "note": "AMD lists Open Robotics / OSRF among its featured Robotics Partner Network participants.",
+      "st": "documented",
+      "reviewed": true,
+      "checked": "2026-11-08",
+      "caveat": "Directory membership only; it does not establish a purchase, investment, exclusive integration or certified end system."
+    }
+  ]
+}

@@ -12,7 +12,7 @@ The atlas arranges five functional roles across three broad lanes: enablers, int
 
 ## Data boundary
 
-The database represents 422 organizations through 430 records, including 12 product/project records consolidated into their responsible organization for company counts. The relationship edition contains 145 directed records: 65 checked against primary sources and 80 inherited records available through an explicit evidence selector. This is a design and integration update, not a new audit of every roster valuation or company claim. September / October data baselines and financial-review dates remain visible in the original research.
+The database represents 422 organizations through 430 records, including 12 product/project records consolidated into their responsible organization for company counts. The relationship edition contains 150 directed records: 70 checked against primary sources and 80 inherited records available through an explicit evidence selector. This is a design and integration update, not a new audit of every roster valuation or company claim. September / October data baselines and financial-review dates remain visible in the original research.
 
 ## Rebuild and validation
 
@@ -29,3 +29,9 @@ The relationship-type filter row doubles as the legend: line patterns for routed
 Ecosystem uses a two-party exchange diagram with three role-specific rows. Solid payment/capital arrows and dashed consideration arrows have an explicit key. Supplier payments run in the opposite direction to investment and customer payments. The illustration does not assert a measured recycling of capital or a named commercial arrangement. Mobile layouts repeat the party direction as text.
 
 Capital and Investor view share one operating-disclosure register. Method uses compact full-width role rows with 22 functional sections; technical A/B/C categories remain a compatibility crosswalk. A focused company matrix includes all counterparties in the active evidence scope; an unselected overview states its coverage cap.
+
+## Navigation, labels and typography
+
+Readable fragment routes name the destination, such as `#overview`, `#atlas?company=AMD` and `#insights/ecosystem`. Only non-default relationship settings are serialized; the original query-style fragments remain supported. H/D/I/S/O are retained with an early Hardware/Development/Intelligence/Systems/Operations key.
+
+Primary section tabs and secondary view selectors form a measured two-row sticky stack. The page contents offsets follow the measured heights. Phones use horizontally scrollable secondary selectors to preserve reading space. A keyboard-accessible back-to-top control appears after scrolling. Body, control, label and metadata text use one shared type scale across chapters; only headings and metrics retain larger levels.

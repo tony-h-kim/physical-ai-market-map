@@ -28,7 +28,11 @@ node check.js
 python validate.py index.html
 ```
 
-The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 160 dependency-free checks and the artifact validator with zero errors or warnings.
+The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 170 dependency-free checks and the artifact validator with zero errors or warnings.
+
+## V14-01 — readable navigation and coverage clarity, November 8, 2026
+
+Added readable shared URLs with backward compatibility, an early H/D/I/S/O role key, two-row frozen navigation, a back-to-top control, a unified type scale and a compact footer. Added five source-scoped AMD robotics relationships and documented the selective nature of relationship research. These include platform use, a demonstration and directory membership; their different evidence limits remain visible.
 
 ## V14-00 — product review and ecosystem redesign, November 8, 2026
 
