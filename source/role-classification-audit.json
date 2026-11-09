@@ -5067,6 +5067,32 @@
       "embodiments": [
         "enabler"
       ]
+    },
+    "Dobot": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from public issuer/customer disclosures; integrated robot systems.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0824/2026082400904.pdf"
+      ],
+      "embodiments": [
+        "arm"
+      ]
+    },
+    "GrayMatter Robotics": {
+      "section": "S2",
+      "secondary": [],
+      "technicalCategory": "A7",
+      "basis": "Author classification from public issuer/customer disclosures; integrated robot systems.",
+      "reviewed": "2026-11-08",
+      "sources": [
+        "https://www.hii.com/news/hii-signs-performance-based-production-agreements-with-path-robotics-and-graymatter-robotics"
+      ],
+      "embodiments": [
+        "arm"
+      ]
     }
   }
 }

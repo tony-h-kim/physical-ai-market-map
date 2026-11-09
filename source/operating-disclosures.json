@@ -1,0 +1,239 @@
+{
+  "Agility Robotics": {
+    "label": "Agility Robotics",
+    "tier": "filing",
+    "status": "Listed via SPAC · Nasdaq AGLT",
+    "period": "H1 2026; FY2025 context",
+    "basis": "Legacy Agility historical columns in the November 6 closing exhibit; H1 unaudited, FY2025 derived from audited historical statements. The combined pro forma results are not used.",
+    "metrics": [
+      {
+        "label": "Net sales",
+        "value": "USD 0.175M",
+        "period": "Jan–Jun 2026"
+      },
+      {
+        "label": "Gross loss",
+        "value": "USD 3.714M",
+        "period": "Jan–Jun 2026"
+      },
+      {
+        "label": "Related-party share of sales",
+        "value": "69.1%",
+        "period": "H1 / calculated: 121 ÷ 175"
+      }
+    ],
+    "detail": "FY2025 sales were USD 1.782M, including USD 1.132M from related parties (63.5%, calculated). Closing occurred November 4; the November 6 filing identifies AGLT on Nasdaq.",
+    "takeaway": "Author interpretation: early recognized revenue and related-party concentration call for separate evidence of repeatable third-party demand. Orders and factory capacity do not resolve that test.",
+    "sources": [
+      {
+        "label": "Historical columns, pp. 7–8",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026116898/ea031120401ex99-1.htm"
+      },
+      {
+        "label": "Closing and listing status",
+        "url": "https://www.sec.gov/Archives/edgar/data/2074973/000121390026116898/ea0311204-8k_churchill11.htm"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "Unitree": {
+    "label": "Unitree",
+    "tier": "filing",
+    "status": "Listed · Shanghai STAR 688836",
+    "period": "Q3 and nine months to Sep 30, 2026",
+    "basis": "Unaudited issuer Q3 report, pp. 1–4 and 9. RMB retained; group results include multiple robot product lines.",
+    "metrics": [
+      {
+        "label": "Quarterly revenue",
+        "value": "RMB 665.0M",
+        "period": "Jul–Sep 2026 / +69.93% YoY"
+      },
+      {
+        "label": "Quarterly attributable net profit",
+        "value": "RMB 112.7M",
+        "period": "Jul–Sep 2026 / −17.37% YoY"
+      },
+      {
+        "label": "Operating cash inflow",
+        "value": "RMB 193.7M",
+        "period": "Jan–Sep 2026 / −54.69% YoY"
+      }
+    ],
+    "detail": "Nine-month revenue: RMB 1,817.3M. Gross margin: 54.0%, calculated as (1,817.290 − 835.566) ÷ 1,817.290. Q3 R&D intensity: 19.10%. Nine-month profit excluding non-recurring items fell 18.78%.",
+    "takeaway": "Author interpretation: revenue scale is visible, but quarterly profit and cash conversion still need scrutiny. Group sales do not establish autonomous industrial productivity.",
+    "sources": [
+      {
+        "label": "Q3 report: actuals and cash flow",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-10-29/1225637442.PDF"
+      },
+      {
+        "label": "August 19 listing notice",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478658.PDF"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "AgiBot": {
+    "label": "AgiBot",
+    "tier": "statement",
+    "status": "Public prospectus / listing not verified",
+    "period": "H1 2026; September production milestone",
+    "basis": "Revenue is a company statement reported by Pacific Technology on October 29, not an audited filing. The production milestone appears in the company’s October 30 release.",
+    "metrics": [
+      {
+        "label": "Reported revenue",
+        "value": "Nearly RMB 2B",
+        "period": "Jan–Jun 2026 / company claim"
+      },
+      {
+        "label": "Cumulative robots produced",
+        "value": "20,000",
+        "period": "September 2026 / all mapped forms"
+      }
+    ],
+    "detail": "No audited margin or cash-flow figure is established here. Production is not shipments, customer acceptance or paid autonomous operating hours. Shipment estimates from research firms use differing definitions and are not substituted for company sales.",
+    "takeaway": "Author interpretation: use as a directional scale indicator, with lower comparability than exchange-filed financial statements. Do not treat IPO ambitions as a completed listing.",
+    "sources": [
+      {
+        "label": "Reported management revenue statement",
+        "url": "https://zhikeji.pconline.com.cn/article/1670825"
+      },
+      {
+        "label": "Company production milestone and scope",
+        "url": "https://www.agibot.com/article/231/detail/132.html"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "UBTech": {
+    "label": "UBTECH",
+    "tier": "filing",
+    "status": "Listed · HKEX 9880",
+    "period": "Six months ended June 30, 2026",
+    "basis": "Unaudited interim results. Group financials and full-size humanoid products/services are different scopes.",
+    "metrics": [
+      {
+        "label": "Group revenue",
+        "value": "RMB 1,269.1M",
+        "period": "H1 2026"
+      },
+      {
+        "label": "Group gross margin",
+        "value": "44.7%",
+        "period": "H1 2026"
+      },
+      {
+        "label": "Group net loss",
+        "value": "RMB 338.8M",
+        "period": "H1 2026"
+      }
+    ],
+    "detail": "Full-size humanoid products and services: RMB 590.3M revenue and 921 units sold. This category spans industrial, commercial, education/research and consumer applications; it is not solely factory labor replacement.",
+    "takeaway": "Author interpretation: positive gross margin can coexist with a group net loss. Test the mix and support costs behind scale, rather than treating every humanoid sale as an industrial deployment.",
+    "sources": [
+      {
+        "label": "Interim results, pp. 2–3, 12 and 22",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801691.pdf"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "Dobot": {
+    "label": "Dobot",
+    "tier": "filing",
+    "status": "Listed · HKEX 2432",
+    "period": "Six months ended June 30, 2026",
+    "basis": "Unaudited interim results; group scope covers cobots and other robot products.",
+    "metrics": [
+      {
+        "label": "Group revenue",
+        "value": "RMB 316.3M",
+        "period": "H1 2026 / +106.6% YoY"
+      },
+      {
+        "label": "Group gross margin",
+        "value": "47.4%",
+        "period": "H1 2026"
+      },
+      {
+        "label": "Group net loss",
+        "value": "RMB 107.9M",
+        "period": "H1 2026"
+      }
+    ],
+    "detail": "Embodied AI robot revenue was RMB 45.2M, or 14.3% of group revenue. The category includes multiple forms; group sales should not be relabeled humanoid revenue.",
+    "takeaway": "Author interpretation: compare the emerging embodied AI business with the established cobot base. Gross margin alone does not cover R&D and other operating costs.",
+    "sources": [
+      {
+        "label": "Interim results, pp. 1–4",
+        "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0824/2026082400904.pdf"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "FANUC": {
+    "label": "FANUC",
+    "tier": "filing",
+    "status": "Listed · Tokyo 6954",
+    "period": "April–September 2026",
+    "basis": "Issuer interim results, not subject to audit. Fiscal half-year ends September 30; not calendar H1.",
+    "metrics": [
+      {
+        "label": "ROBOT division sales",
+        "value": "JPY 194.3B",
+        "period": "Apr–Sep 2026 / +12.6% YoY"
+      },
+      {
+        "label": "Group operating margin",
+        "value": "24.6%",
+        "period": "Apr–Sep 2026"
+      },
+      {
+        "label": "Service division sales",
+        "value": "JPY 76.2B",
+        "period": "Apr–Sep 2026"
+      }
+    ],
+    "detail": "Group sales: JPY 473.7B. Service covers machine tools and robots; the group operating margin is not a separately disclosed ROBOT division margin.",
+    "takeaway": "Author interpretation: an established automation supplier provides a commercialization benchmark, not a direct humanoid peer or a universal margin target.",
+    "sources": [
+      {
+        "label": "Interim results, pp. 1–4",
+        "url": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/financialresult202609_e.pdf"
+      },
+      {
+        "label": "Margin presentation, p. 3",
+        "url": "https://www.fanuc.co.jp/en/ir/announce/pdf/2026/reference202609_e.pdf"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  },
+  "GrayMatter Robotics": {
+    "label": "GrayMatter Robotics",
+    "tier": "statement",
+    "status": "SPAC / public listing not verified",
+    "period": "Agreement announced August 6, 2026",
+    "basis": "HII customer announcement; a performance-based opportunity shared with Path Robotics.",
+    "metrics": [
+      {
+        "label": "Combined potential work",
+        "value": "Up to USD 900M",
+        "period": "GrayMatter + Path / seven years"
+      },
+      {
+        "label": "GrayMatter allocation",
+        "value": "Not disclosed",
+        "period": "No company revenue inferred"
+      }
+    ],
+    "detail": "HII intends to award work contingent on technology, manufacturing-readiness and performance milestones. The ceiling is not guaranteed backlog, booked revenue or GrayMatter’s individual contract value.",
+    "takeaway": "Author interpretation: customer-backed commercial potential is useful evidence, but realized revenue, margin and cash collection remain separate tests.",
+    "sources": [
+      {
+        "label": "HII agreement and conditions",
+        "url": "https://www.hii.com/news/hii-signs-performance-based-production-agreements-with-path-robotics-and-graymatter-robotics"
+      }
+    ],
+    "reviewed": "2026-11-08"
+  }
+}

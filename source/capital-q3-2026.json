@@ -1,0 +1,23 @@
+{
+  "unit": "USD billions",
+  "scope": "Global robotics venture funding, excluding defense-related companies",
+  "periods": [
+    {
+      "label": "Q3 2025",
+      "start": "2025-07-01",
+      "end": "2025-09-30",
+      "value": 4.3
+    },
+    {
+      "label": "Q3 2026",
+      "start": "2026-07-01",
+      "end": "2026-09-30",
+      "value": 9.9
+    }
+  ],
+  "ytdGrowthPctApprox": 185,
+  "ytdComparison": "January\u2013September 2026 versus January\u2013September 2025",
+  "source": "https://news.crunchbase.com/venture/q3-2026-us-china-robotics-startup-funding-jumps-physical-ai-push/",
+  "published": "2026-10-27",
+  "reviewed": "2026-11-08"
+}

@@ -17,13 +17,13 @@ function check(expression) {
   assert.equal(vm.runInContext(expression, context), true, expression);
   checks++;
 }
-check('CO.length===428 && CO.filter(c=>!c.prod).length===416 && organizationCount(CO)===420');
+check('CO.length===430 && CO.filter(c=>!c.prod).length===418 && organizationCount(CO)===422');
 check('!CO.some(c=>c.n==="Suzhou Green Harmonic")');
 check('CO.find(c=>c.n==="RLWRLD").l==="B6" && bmOf(CO.find(c=>c.n==="RLWRLD"))==="soft"');
 check('CO.filter(c=>c.l==="A6").length>24 && roleOf(CO.find(c=>c.n==="Sunday Robotics"))==="S"');
 check('Object.values(EVIDENCE).every(e=>e.url.startsWith("https://") && ["2026-10-11","2026-11-08"].includes(e.checked) && e.claim && e.kind)');
 check('Object.keys(VALUATIONS).length===29 && Object.entries(VALUATIONS).every(([n,f])=>CO.some(c=>c.n===n&&(c.val||"")===f.value))');
-check('Object.values(VALUATIONS).every(f=>/^\\d{4}-\\d{2}-\\d{2}$/.test(f.date)&&f.date<=f.checked&&f.checked==="2026-10-11"&&f.sources.length&&f.sources.every(x=>x.url.startsWith("https://")))');
+check('Object.values(VALUATIONS).every(f=>/^\\d{4}-\\d{2}-\\d{2}$/.test(f.date)&&f.date<=f.checked&&["2026-10-11","2026-11-08"].includes(f.checked)&&f.sources.length&&f.sources.every(x=>x.url.startsWith("https://")))');
 check('CO.find(c=>c.n==="Physical Intelligence").val==="$11.7B" && !CO.find(c=>c.n==="Physical Intelligence").est');
 check('CO.find(c=>c.n==="World Labs").est===1 && valuationStatus(CO.find(c=>c.n==="World Labs"))==="Announced acquisition"');
 check('CO.find(c=>c.n==="1X").g==="US" && valuationStatus(CO.find(c=>c.n==="1X"))==="Acquisition rumor" && matOf(CO.find(c=>c.n==="Skild AI"))==="comm"');
@@ -40,7 +40,7 @@ assert.equal(vm.runInContext('csvCell(`a"b,c\n`)', context), '"a""b,c\n"');
 checks += 3;
 check('csvText([CO[0]],false).startsWith("\ufeff")');
 check('!csvText([CO[0]],false).includes("Private note") && csvText([CO[0]],true).includes("Private note")');
-check('matched().length===428');
+check('matched().length===430');
 vm.runInContext('state.g.add("KR")', context);
 check('matched().length>0 && matched().every(c=>c.g==="KR")');
 vm.runInContext('state.g.clear();state.q="welding"', context);
@@ -113,7 +113,7 @@ const blocked = vm.createContext({ ...context, localStorage: { getItem(){ throw 
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), blocked);
 assert.equal(vm.runInContext('storageAvailable', blocked), false);
 // Relationship data must not silently expand the canonical roster or conflate roles.
-check('CO.length===428 && RA_DATA.edges.length===143 && RA_DATA.edges.filter(e=>e.reviewed).length===63');
+check('CO.length===430 && RA_DATA.edges.length===145 && RA_DATA.edges.filter(e=>e.reviewed).length===65');
 check('!RA_NODES.has("Uber") && !RA_DATA.edges.some(e=>e.a==="Uber"||e.b==="Uber")');
 check('RA_DATA.edges.every(e=>RA_NODES.has(e.a)&&RA_NODES.has(e.b)&&e.s.startsWith("https://"))');
 check('new Set(RA_DATA.edges.map(e=>e.a+"|"+e.b+"|"+e.t)).size===RA_DATA.edges.length');
@@ -124,7 +124,7 @@ check('view==="dependencies"&&ra.company==="Apptronik"&&ra.scope==="all"&&!ra.co
 check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!=="X"&&RA_NODES.get(e.b).p!=="X")');
 vm.runInContext('location.hash="";readHash()',context);
 check('view==="summary"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===5&&ra.context');
-check('raEdges(CO).length===63&&raEdges([]).length===0');
+check('raEdges(CO).length===65&&raEdges([]).length===0');
 // Routes preserve actual station endpoints, including reverse, same-column and long routes.
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).startsWith("M50 80 ")');
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).endsWith("220 H450")');
@@ -188,7 +188,7 @@ const poster=vm.runInContext('summarySvg(summaryRows())',context);
 assert.equal((poster.match(/<a xlink:href=/g)||[]).length,100,'SVG contains exactly 100 company links');checks++;
 assert.ok(poster.includes('Editorial selection')&&poster.includes('Google DeepMind')&&!poster.includes('undefined'));checks++;
 // Parent-company views retain projects without inflating company counts or manufacturing ownership claims.
-check('Object.keys(PRODUCT_CATALOG).length===12 && CO.filter(c=>c.prod).length===12 && organizationCount(CO)===420');
+check('Object.keys(PRODUCT_CATALOG).length===12 && CO.filter(c=>c.prod).length===12 && organizationCount(CO)===422');
 check('Object.entries(PRODUCT_CATALOG).every(([n,p])=>CO.find(c=>c.n===n).prod && RA_DATA.edges.filter(e=>e.a===p.owner&&e.b===n&&e.t==="platform"&&e.reviewed&&e.s===p.url).length===1)');
 check('!RA_DATA.edges.some(e=>e.t==="own"&&PRODUCT_CATALOG[e.b])');
 check('organizationCount(CO.filter(c=>organizationOf(c)==="NVIDIA"))===1 && CO.filter(c=>organizationOf(c)==="NVIDIA").length===6');
@@ -211,4 +211,23 @@ assert.ok(googleDependencies.includes('Products &amp; governed projects')&&googl
 check('csvText([CO.find(c=>c.n==="Isaac ROS")],false).includes("Organization identity") && csvText([CO.find(c=>c.n==="Isaac ROS")],false).includes("Open-source robotics software")');
 vm.runInContext('location.hash="#view=summary&spotlight=NVIDIA";readHash()',context);
 check('summaryFocusHtml(summaryRows()).includes(`data-platform-product="Isaac ROS"`) && summaryFocusHtml(summaryRows()).includes(`data-platform-product="NVIDIA Halos"`)');
+check('Math.abs(quarterlyFundingStats().growthPct-130.2325581395349)<1e-9 && Math.abs(quarterlyFundingStats().increase-5.6)<1e-9');
+check('QUARTERLY_FUNDING.periods.every(p=>p.start.slice(5)==="07-01"&&p.end.slice(5)==="09-30") && QUARTERLY_FUNDING.scope.includes("excluding defense")');
+check('QUARTERLY_FUNDING.ytdGrowthPctApprox===185 && QUARTERLY_FUNDING.ytdComparison.startsWith("January–September")');
+const quarterlyHost={innerHTML:''};
+context.document.getElementById=id=>id==='quarterly-funding-chart'?quarterlyHost:null;
+vm.runInContext('drawFunding()',context);
+assert.ok(quarterlyHost.innerHTML.includes('+130%') && quarterlyHost.innerHTML.includes('+USD 5.6B') && !quarterlyHost.innerHTML.includes('185%') && !/\d+ deals/.test(quarterlyHost.innerHTML));checks++;
+context.document.getElementById=previousGetElement;
+check('Object.keys(OPERATING_DISCLOSURES).length===7 && Object.keys(OPERATING_DISCLOSURES).every(n=>CO.some(c=>c.n===n))');
+check('OPERATING_DISCLOSURES["Agility Robotics"].status.includes("Listed via SPAC") && CO.find(c=>c.n==="Agility Robotics").pub===1 && VALUATIONS["Agility Robotics"].date==="2026-11-04"');
+check('OPERATING_DISCLOSURES["GrayMatter Robotics"].tier==="statement" && OPERATING_DISCLOSURES["GrayMatter Robotics"].detail.includes("not guaranteed backlog") && OPERATING_DISCLOSURES["GrayMatter Robotics"].metrics[0].period.includes("GrayMatter + Path")');
+check('OPERATING_DISCLOSURES["AgiBot"].tier==="statement" && OPERATING_DISCLOSURES["AgiBot"].basis.includes("not an audited filing")');
+check('OPERATING_DISCLOSURES["Unitree"].metrics[0].period.startsWith("Jul–Sep") && OPERATING_DISCLOSURES["FANUC"].period==="April–September 2026"');
+check('Object.values(OPERATING_DISCLOSURES).every(d=>d.sources.length&&d.sources.every(s=>s.url.startsWith("https://"))&&d.basis&&d.takeaway.startsWith("Author interpretation:"))');
+const operatingHost={innerHTML:''};context.document.getElementById=id=>id==='operating-disclosures'?operatingHost:null;
+vm.runInContext('drawOperatingDisclosures()',context);
+assert.equal((operatingHost.innerHTML.match(/data-operating-company=/g)||[]).length,7);checks++;
+assert.ok(operatingHost.innerHTML.includes('Filed financials') && operatingHost.innerHTML.includes('Public statement') && operatingHost.innerHTML.includes('data-financial-profile="Dobot"'));checks++;
+context.document.getElementById=previousGetElement;
 console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);

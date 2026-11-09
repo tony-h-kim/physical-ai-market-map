@@ -2603,5 +2603,13 @@
       "profile": "https://aws.amazon.com",
       "reviewed": "2026-11-08"
     }
-  ]
+  ],
+  "publicDisclosureSupplement": {
+    "reviewed": "2026-11-08",
+    "companies": [
+      "Dobot",
+      "GrayMatter Robotics"
+    ],
+    "basis": "Added from public issuer and customer disclosures during the Capital update. Separate from the earlier 176-entry PitchBook discovery refresh."
+  }
 }

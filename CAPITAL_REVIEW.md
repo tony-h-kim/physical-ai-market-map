@@ -1,0 +1,11 @@
+# Capital review — November 8, 2026
+
+Q3 lead series: Crunchbase October 27, 2026; global robotics venture funding excluding defense-related companies. USD 9.9B versus USD 4.3B is +130.23%, rounded to +130%, with a USD 5.6B increase. The source’s approximate 185% refers to January–September growth. The prior H1 broad physical AI series is retained in a separate, collapsed context panel and is never summed or spliced with Q3.
+
+Seven operating disclosures retain original currencies and periods. Agility uses the Legacy Agility historical columns in the closing exhibit, not the combined pro forma results. Unitree uses its unaudited Q3 report, including Q3 results and separately labelled nine-month cash flow. UBTECH and Dobot use unaudited H1 exchange disclosures. FANUC uses April–September, not calendar H1; group margin and ROBOT sales retain separate scopes. AgiBot’s revenue is a reported company statement; its production milestone is neither shipments nor customer productivity. No public prospectus/listing was verified for AgiBot or GrayMatter. HII’s shared conditional work ceiling is not company revenue.
+
+Agility’s public-company status and November 4 closing were checked against the November 6 SEC report. Its USD 2.5B mark is a historical merger equity consideration, not current market cap. Dobot and GrayMatter were added to the roster; company counts are 422 organization identities / 430 records, with exactly 100 selected overview identities. Two sourced HII customer relationships were added with the shared ceiling and conditions preserved.
+
+Validation: 145 automated checks pass; artifact validator zero errors and warnings. Browser review at 390, 768, 1440 and 2752 CSS pixels found no page overflow or clipped disclosure cards in the tested states. Light/dark themes, mobile chapter navigation and disclosure-to-company profile opening were exercised. Claim-level evidence gaps are not shown for profiles whose operating evidence is supplied by the new disclosure register.
+
+Source boundaries: this refresh updates Capital and the named operating disclosures. It does not reverify every inherited roster/relationship claim. Original historical financing screens retain their own review dates.

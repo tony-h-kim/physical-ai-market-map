@@ -1,67 +1,40 @@
 # Physical AI Market Map — 2026
 
-An interactive landscape of **244 companies across 25 layers** in physical AI, spanning humanoids, industrial robotics, autonomous vehicles, drones and defence, construction, mining and agriculture.
+[Explore the live map](https://tony-h-kim.github.io/physical-ai-market-map/)
 
-**[→ View the live map](https://tony-h-kim.github.io/physical-ai-market-map/)**
+An independent research artifact by Tony Kim: a curated **100-company overview**, a database representing **422 organizations through 430 records**, and a sourced relationship atlas. Twelve records are products/projects consolidated into their responsible organization for company counts.
 
-**How to use:** Choose a view, filter or search the roster, and select a company for its profile. Insights explains the thesis; Method explains the classifications.
+## Read the ecosystem
 
----
+Five primary functional roles organize the market: components and edge compute; development and learning; intelligence and runtime; robots and autonomous systems; deployment, operations and assurance. The legacy technical categories remain available as a crosswalk. Each company has one primary position; that position does not limit its capabilities.
 
-## Why another market map
+Select a company to inspect its inclusion rationale, products and relationships. The atlas, dependencies, matrix and industry views share the research model. Product membership, ownership, investment, technology collaboration and customer relationships are distinct. Missing lines are research gaps. Shortlists and private notes stay in the browser.
 
-Most published landscapes split physical AI into hardware and software, then merge simulation, world models and robot policies into a single bucket. Both moves hide where value actually accrues.
+## Analysis and evidence
 
-The hardware/software split fails on exactly the companies that matter most: NVIDIA is silicon *and* Isaac, Cosmos and GR00T; Figure is hardware *and* Helix 2. Tesla, Unitree, Anduril and Waymo are all both. That split places the fifteen most important companies in two boxes each — and has nowhere to put fleet orchestration, safety certification or systems integration.
+**Capital:** Q3 2026 robotics venture funding compared with Q3 2025, with explicit exclusion of defense and a separate historical H1 physical AI series. Seven operating-disclosure cases cover Agility, Unitree, AgiBot, UBTECH, Dobot, FANUC and GrayMatter. Periods, original currencies, accounting scope and evidence type accompany the figures. Company statements and conditional work ceilings are separated from filed financial results.
 
-This map is organised by **unit of sale** — what the customer actually buys — not by what a company touches.
+**Value capture:** customer value, substitution and delivery costs. **Investor view:** forecast scope and commercial evidence. **Ecosystem:** incentives and demand tests. Method explains classification, sourcing and limitations.
 
-## The taxonomy
+This is curated research, not an exhaustive census, live financial feed or investment recommendation. Source dates vary; source links and review limits remain visible.
 
-Three planes, twenty-five layers. Every company is assigned to **one primary layer** — the unit of sale, meaning what the customer actually buys. Where no layer dominates, the company is marked **full-stack** rather than forced into a box. Secondary positions are recorded as spans and rendered with a dashed border, never as duplicate entries.
+## Source and validation
 
-| Plane | Groups | Layers |
-|---|---|---|
-| **A · Body** | Components · Infrastructure · Embodiments | A1–A12 |
-| **B · Brain** | Data · Modelling · Applied autonomy | B1–B8 |
-| **C · Operations** | Operational software · Commercial delivery | C1–C5 |
+Edit `source/physical_ai_market_map_artifact.html`, then run:
 
-Two distinctions this map draws that most others don't:
+```text
+python build.py
+node check.js
+python validate.py index.html
+```
 
-- **B4 physics simulation vs. B5 world models vs. B6 robot foundation models.** Three different technical bets with different customers and opposite failure modes — authored dynamics, learned dynamics, and motor policy respectively.
-- **C3 safety and certification as a layer of its own.** The most under-mapped layer in the industry, and arguably the most defensible.
+The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 145 dependency-free checks and the artifact validator with zero errors or warnings.
 
-## What's in it
+## V13-01 — Q3 capital and operating disclosures, November 8, 2026
 
-Three sections, in the order a reader actually needs them.
+Added the Q3 comparison and seven scoped disclosure panels, connected the panels to company profiles, corrected Agility’s completed SPAC status, and added Dobot and GrayMatter to the full database. HII’s conditional USD 900M ceiling is explicitly shared between GrayMatter and Path over seven years. The 100-company selection is unchanged.
 
-**Market map** — the companies, in seven views over one shared set of filters:
-
-- *Overview* — an interactive 25-layer cover atlas, headquarters and business-model charts, and commercial-stage composition
-- *Value chain* — the 25-layer map, every company in the one layer it sells
-- *By industry* — the same companies regrouped by the vertical they serve, for comparing who competes for the same buyer
-- *By geography* — headquarters, with the layer concentration of each region
-- *Layer × model* — cross-tabulate unit of sale and business model
-- *Shortlist* — save companies, compare them and keep private browser-local notes
-- *Screening table* — a flat, sortable list: layer, HQ, business model, maturity, valuation
-
-Filter by plane, vertical, headquarters, business model, commercial maturity, and position (category leaders, full-stack, vertical integrators, disclosed valuation, named deployments). Active filters are shown as dismissible chips with a live count. Click any company for a profile panel: what it sells, how it charges, how far along it is, publicly reported deployments, spans and verticals.
-
-**Insights** — *Capital* (comparable half-year funding and transaction evidence) · *Value capture* (customer value, competitive position and delivery economics, with a worked example and revenue-mix chart) · *Investor view* (forecast scope, deployment evidence and four commercial questions) · *Ecosystem* (capital and product flows, partnership incentives and four demand tests).
-
-**Method** — *Structure & taxonomy* (the taxonomy argument, and the reliability-economics case for why industrial deployment is harder than it looks) · *Method & sources* (taxonomy rules, valuation methodology, the business-model and maturity classifications, objections and responses, known weaknesses).
-
-## V10-00 — rebuilt editorial reading flow, October 12, 2026
-
-All six Insights and Method chapters now use one article column, with titles, introductions, charts and notes aligned. Larger body and supporting text replace inconsistent paragraph widths and small captions. A contents rail sits beside the title on desktop; a collapsible chapter menu preserves reading space on smaller screens.
-
-Value capture follows a vertical three-test framework, a concise worked example and a labeled revenue-mix chart. Shared spacing and typography carry the same reading rhythm across the remaining chapters.
-
-## V9-04 — clearer value-capture framework and chart labels, October 12, 2026
-
-Value capture now uses three explicit tests: customer value, competitive position and delivery economics. Each test states the evidence to seek and what a failure would mean. A worked example connects the framework to a company offer rather than assigning pricing-power assumptions to whole layers.
-
-The Intuitive revenue example uses one row per category, with its label, bar, USD amount and share kept together. All bars share a 0–100% scale. Values were rechecked against the issuer's FY2025 release. Revenue mix is distinguished from recurring contract revenue and category margins. Cross-chapter edits remove categorical margin/accounting claims and unsupported superlatives. Regression checks cover rendered label/value/bar associations; the suite has 59 checks.
+## Earlier release history
 
 ## V9-03 — market-structure theme support, October 12, 2026
 
