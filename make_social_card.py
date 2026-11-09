@@ -9,7 +9,8 @@ root = Path(__file__).parent
 try:
     text = (root / 'index.html').read_text(encoding='utf-8')
     co = parse_companies(slice_between(text, 'const CO = [', '\n];'))
-    total = sum(not c['prod'] for c in co)
+    products = json.loads(text.split('const PRODUCT_CATALOG=', 1)[1].split(';\n', 1)[0])
+    total = len({products.get(c['n'], {}).get('owner', c['n']) for c in co})
     windows_fonts = Path('C:/Windows/Fonts')
     linux_fonts = Path('/usr/share/fonts/truetype/dejavu')
     def font(size, bold=False):

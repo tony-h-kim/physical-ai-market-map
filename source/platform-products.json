@@ -1,0 +1,102 @@
+{
+  "reviewed": "2026-11-08",
+  "rule": "Product/project membership is distinct from corporate ownership. Parent identity is used for counts and overview projection; raw relationship endpoints remain in evidence.",
+  "products": {
+    "NVIDIA Isaac Sim / Omniverse": {
+      "owner": "NVIDIA",
+      "label": "Isaac Sim / Omniverse",
+      "kind": "Simulation framework / platform libraries",
+      "url": "https://developer.nvidia.com/isaac/sim",
+      "function": "Physics-based robot simulation, testing and synthetic data.",
+      "checked": "2026-11-08"
+    },
+    "NVIDIA Cosmos": {
+      "owner": "NVIDIA",
+      "label": "Cosmos",
+      "kind": "World-model platform",
+      "url": "https://www.nvidia.com/en-us/ai/cosmos/",
+      "function": "World models, physical AI data and model development.",
+      "checked": "2026-11-08"
+    },
+    "NVIDIA GR00T": {
+      "owner": "NVIDIA",
+      "label": "Isaac GR00T",
+      "kind": "Robot-model platform",
+      "url": "https://www.nvidia.com/en-us/industries/robotics/isaac-groot/",
+      "function": "General-purpose robot policies and humanoid development workflows.",
+      "checked": "2026-11-08"
+    },
+    "Isaac ROS": {
+      "owner": "NVIDIA",
+      "label": "Isaac ROS",
+      "kind": "Open-source robotics software",
+      "url": "https://developer.nvidia.com/isaac/ros",
+      "function": "Accelerated ROS 2 software for perception, navigation and deployment.",
+      "checked": "2026-11-08"
+    },
+    "NVIDIA Halos": {
+      "owner": "NVIDIA",
+      "label": "Halos",
+      "kind": "Safety platform / inspection services",
+      "url": "https://www.nvidia.com/en-us/ai-trust-center/halos/robotics/",
+      "function": "Safety hardware/software, deployment blueprints and inspection readiness.",
+      "checked": "2026-11-08"
+    },
+    "Gemini Robotics": {
+      "owner": "Google DeepMind",
+      "label": "Gemini Robotics",
+      "kind": "Robot model family",
+      "url": "https://deepmind.google/models/gemini-robotics/",
+      "function": "Models for embodied reasoning and robot actions.",
+      "checked": "2026-11-08"
+    },
+    "DeepMind Genie": {
+      "owner": "Google DeepMind",
+      "label": "Genie",
+      "kind": "World-model research",
+      "url": "https://deepmind.google/models/genie/",
+      "function": "Learned models for generating interactive environments.",
+      "checked": "2026-11-08"
+    },
+    "MuJoCo": {
+      "owner": "Google DeepMind",
+      "label": "MuJoCo",
+      "kind": "Open-source project",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "function": "Physics simulation for robotics and control research.",
+      "checked": "2026-11-08"
+    },
+    "ROS 2 / OSRF": {
+      "owner": "Open Robotics / OSRF",
+      "label": "ROS 2",
+      "kind": "Governed open-source project",
+      "url": "https://www.openrobotics.org/",
+      "function": "Open robot middleware and developer infrastructure.",
+      "checked": "2026-11-08"
+    },
+    "Open Robotics / Gazebo": {
+      "owner": "Open Robotics / OSRF",
+      "label": "Gazebo",
+      "kind": "Governed open-source project",
+      "url": "https://www.openrobotics.org/",
+      "function": "Robot simulation with ROS integration.",
+      "checked": "2026-11-08"
+    },
+    "Meta Project Aria": {
+      "owner": "Meta",
+      "label": "Project Aria",
+      "kind": "Research platform / open-source tools",
+      "url": "https://github.com/facebookresearch/projectaria_tools",
+      "function": "Wearable sensing and tools for egocentric research data.",
+      "checked": "2026-11-08"
+    },
+    "Baidu Apollo": {
+      "owner": "Baidu",
+      "label": "Apollo",
+      "kind": "Autonomy platform / program",
+      "url": "https://github.com/ApolloAuto/apollo",
+      "function": "Autonomous-driving software and related development infrastructure.",
+      "checked": "2026-11-08"
+    }
+  }
+}

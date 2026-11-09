@@ -88,6 +88,14 @@ def main(path):
     co = parse_companies(slice_between(js, "const CO = [", "\n];"))
     layers = parse_layers(slice_between(js, "const TECH_PLANES=[", "\n];"))
     roles = json.loads(slice_between(js, "const ROLE_AUDIT=", ";\n").removeprefix("const ROLE_AUDIT="))
+    products = json.loads(slice_between(js, "const PRODUCT_CATALOG=", ";\n").removeprefix("const PRODUCT_CATALOG="))
+    organization_names = {products.get(c['n'], {}).get('owner', c['n']) for c in co}
+    for c in co:
+        if c['prod'] != (c['n'] in products):
+            err(f"{c['n']}: product/project flag and organization registry disagree")
+    for name, product in products.items():
+        if name not in {c['n'] for c in co} or not product['url'].startswith('https://') or not product['owner']:
+            err(f"{name}: incomplete product/project identity evidence")
     sections = set(re.findall(r'\{c:"([HDISO]\d+)"', slice_between(js, "const PLANES=[", "\n];")))
     if set(roles) != {c['n'] for c in co}:
         err("role register must cover every roster entry exactly once")
@@ -176,9 +184,9 @@ def main(path):
 
     # 12 — headline company count
     for quoted in set(re.findall(r"(\d{3}) companies", head)):
-        if int(quoted) not in (len(co), len([c for c in co if not c["prod"]])):
+        if int(quoted) not in (len(co), len(organization_names)):
             err(f'headline count "{quoted} companies" matches neither entries ({len(co)}) '
-                 f'nor distinct companies ({len([c for c in co if not c["prod"]])})')
+                 f'nor represented organizations ({len(organization_names)})')
 
     # 12b — the taxonomy figure must name every layer that exists
     fig = re.search(r'<div class="fig" id="fig-taxonomy">.*?\n', head, re.S)

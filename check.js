@@ -17,7 +17,7 @@ function check(expression) {
   assert.equal(vm.runInContext(expression, context), true, expression);
   checks++;
 }
-check('CO.length===428 && CO.filter(c=>!c.prod).length===420');
+check('CO.length===428 && CO.filter(c=>!c.prod).length===416 && organizationCount(CO)===420');
 check('!CO.some(c=>c.n==="Suzhou Green Harmonic")');
 check('CO.find(c=>c.n==="RLWRLD").l==="B6" && bmOf(CO.find(c=>c.n==="RLWRLD"))==="soft"');
 check('CO.filter(c=>c.l==="A6").length>24 && roleOf(CO.find(c=>c.n==="Sunday Robotics"))==="S"');
@@ -113,7 +113,7 @@ const blocked = vm.createContext({ ...context, localStorage: { getItem(){ throw 
 vm.runInContext(script.replace(/boot\(\);\s*$/, ''), blocked);
 assert.equal(vm.runInContext('storageAvailable', blocked), false);
 // Relationship data must not silently expand the canonical roster or conflate roles.
-check('CO.length===428 && RA_DATA.edges.length===128 && RA_DATA.edges.filter(e=>e.reviewed).length===41');
+check('CO.length===428 && RA_DATA.edges.length===143 && RA_DATA.edges.filter(e=>e.reviewed).length===63');
 check('!RA_NODES.has("Uber") && !RA_DATA.edges.some(e=>e.a==="Uber"||e.b==="Uber")');
 check('RA_DATA.edges.every(e=>RA_NODES.has(e.a)&&RA_NODES.has(e.b)&&e.s.startsWith("https://"))');
 check('new Set(RA_DATA.edges.map(e=>e.a+"|"+e.b+"|"+e.t)).size===RA_DATA.edges.length');
@@ -123,8 +123,8 @@ vm.runInContext('location.hash="#view=dependencies&follow=Apptronik&evidence=all
 check('view==="dependencies"&&ra.company==="Apptronik"&&ra.scope==="all"&&!ra.context&&ra.matrix==="plane"&&ra.types.size===2');
 check('raEdges(CO).every(e=>["inv","cust"].includes(e.t)&&RA_NODES.get(e.a).p!=="X"&&RA_NODES.get(e.b).p!=="X")');
 vm.runInContext('location.hash="";readHash()',context);
-check('view==="summary"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===4&&ra.context');
-check('raEdges(CO).length===41&&raEdges([]).length===0');
+check('view==="summary"&&ra.company===null&&ra.scope==="checked"&&ra.types.size===5&&ra.context');
+check('raEdges(CO).length===63&&raEdges([]).length===0');
 // Routes preserve actual station endpoints, including reverse, same-column and long routes.
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).startsWith("M50 80 ")');
 check('raRouteGeometry({x:50,y:80},{x:450,y:220},{left:0,right:100},{left:400,right:500}).endsWith("220 H450")');
@@ -143,8 +143,8 @@ for(const mode of ['relationships','territories','dependencies','connections']){
   vm.runInContext(`view=${JSON.stringify(mode)};viewRelationships(reviewHost,CO)`,context);
   const markup=context.reviewHost.innerHTML;
   assert.equal((markup.match(/class="ra-direction-guide"/g)||[]).length,mode==='relationships'?1:0,'Arrowhead guidance is specific to routed lines');checks++;
-  assert.equal((markup.match(/class="ra-line /g)||[]).length,mode==='relationships'?4:0,'Only atlas filters use line-pattern samples');checks++;
-  assert.equal((markup.match(/class="ra-symbol /g)||[]).length,mode==='connections'?4:0,'Only company-matrix filters use cell symbols');checks++;
+  assert.equal((markup.match(/class="ra-line /g)||[]).length,mode==='relationships'?5:0,'Only atlas filters use line-pattern samples');checks++;
+  assert.equal((markup.match(/class="ra-symbol /g)||[]).length,mode==='connections'?5:0,'Only company-matrix filters use cell symbols');checks++;
 }
 check('raDependencies(raEdges(CO)).includes("Choose a company to inspect") && !raDependencies(raEdges(CO)).includes("ra-focus")');
 vm.runInContext('view="connections";ra.company="NVIDIA";ra.matrix="plane";viewRelationships(reviewHost,CO)',context);
@@ -187,4 +187,28 @@ check('TOP100.filter(x=>x.label==="Google DeepMind").length===1 && TOP100_BY_NAM
 const poster=vm.runInContext('summarySvg(summaryRows())',context);
 assert.equal((poster.match(/<a xlink:href=/g)||[]).length,100,'SVG contains exactly 100 company links');checks++;
 assert.ok(poster.includes('Editorial selection')&&poster.includes('Google DeepMind')&&!poster.includes('undefined'));checks++;
+// Parent-company views retain projects without inflating company counts or manufacturing ownership claims.
+check('Object.keys(PRODUCT_CATALOG).length===12 && CO.filter(c=>c.prod).length===12 && organizationCount(CO)===420');
+check('Object.entries(PRODUCT_CATALOG).every(([n,p])=>CO.find(c=>c.n===n).prod && RA_DATA.edges.filter(e=>e.a===p.owner&&e.b===n&&e.t==="platform"&&e.reviewed&&e.s===p.url).length===1)');
+check('!RA_DATA.edges.some(e=>e.t==="own"&&PRODUCT_CATALOG[e.b])');
+check('organizationCount(CO.filter(c=>organizationOf(c)==="NVIDIA"))===1 && CO.filter(c=>organizationOf(c)==="NVIDIA").length===6');
+check('summaryProductRows("NVIDIA").map(p=>p.n).sort().join("|")===["Isaac ROS","NVIDIA Cosmos","NVIDIA GR00T","NVIDIA Halos","NVIDIA Isaac Sim / Omniverse"].sort().join("|")');
+check('summaryProductRows("Gemini Robotics").length===3 && summaryProductRows("ROS 2 / OSRF").length===2');
+check('summaryAnchor("Isaac ROS")==="NVIDIA" && summaryAnchor("MuJoCo")==="Gemini Robotics" && summaryAnchor("Open Robotics / Gazebo")==="ROS 2 / OSRF"');
+check('summaryConnections("NVIDIA",summaryRows()).some(e=>e.a==="NVIDIA Cosmos"&&e.b==="Sereact") && !summaryConnections("NVIDIA",summaryRows()).some(e=>summaryAnchor(e.a)===summaryAnchor(e.b))');
+check('summaryConnections("ROS 2 / OSRF",summaryRows()).some(e=>e.a==="Isaac ROS"&&e.b==="ROS 2 / OSRF")');
+check('summaryProductRows("NVIDIA").every(p=>platformPortfolioHtml("NVIDIA").includes(`data-platform-product="${p.n}"`)) && platformPortfolioHtml("NVIDIA").includes("do not add companies")');
+check('!PRODUCT_CATALOG["Pollen Robotics"] && !PRODUCT_CATALOG["Boston Dynamics"]');
+check('RA_DATA.edges.every(e=>RA_TYPES[e.t]&&RA_SYMBOL[e.t]) && new Set(Object.values(RA_SYMBOL)).size===Object.keys(RA_TYPES).length');
+vm.runInContext('location.hash="#view=relationships&follow=NVIDIA&ties=own,inv,tech,cust";readHash()',context);
+check('ra.types.has("platform") && raEdges(CO).filter(e=>e.a==="NVIDIA"&&e.t==="platform").length===5');
+vm.runInContext('location.hash="#view=relationships&follow=NVIDIA&ties=own,inv,tech,cust&rels=2";readHash()',context);
+check('!ra.types.has("platform") && !raEdges(CO).some(e=>e.t==="platform")');
+vm.runInContext('location.hash="#view=relationships&follow=Google%20DeepMind";readHash()',context);
+check('raLayerAtlas(CO,raEdges(CO)).includes(`data-ra-station="Google DeepMind"`) && raEdges(CO).filter(e=>e.a==="Google DeepMind"&&e.t==="platform").length===3');
+const googleDependencies=vm.runInContext('raDependencies(raEdges(CO))',context);
+assert.ok(googleDependencies.includes('Products &amp; governed projects')&&googleDependencies.includes('MuJoCo'));checks++;
+check('csvText([CO.find(c=>c.n==="Isaac ROS")],false).includes("Organization identity") && csvText([CO.find(c=>c.n==="Isaac ROS")],false).includes("Open-source robotics software")');
+vm.runInContext('location.hash="#view=summary&spotlight=NVIDIA";readHash()',context);
+check('summaryFocusHtml(summaryRows()).includes(`data-platform-product="Isaac ROS"`) && summaryFocusHtml(summaryRows()).includes(`data-platform-product="NVIDIA Halos"`)');
 console.log(`Done — ${checks + 1} data, filter, URL, CSV, relationship, route and storage checks passed; full JavaScript syntax valid.`);

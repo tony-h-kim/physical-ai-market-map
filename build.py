@@ -5,6 +5,7 @@ Edits index.html. Keep the artifact as source of truth; preserves social metadat
 """
 from pathlib import Path
 import re
+import json
 import sys
 
 try:
@@ -16,7 +17,9 @@ try:
     shell = current[:current.index('<style>')]
     # Metadata count follows the roster, so generated and social summaries agree.
     co = source.split('const CO = [', 1)[1].split('\n];', 1)[0]
-    distinct = sum('prod:1' not in entry for entry in re.findall(r'\{n:"(?:[^"\\]|\\.)*".*?\}', co, re.S))
+    products = json.loads(source.split('const PRODUCT_CATALOG=', 1)[1].split(';\n', 1)[0])
+    names = re.findall(r'\{n:"((?:[^"\\]|\\.)*)"', co)
+    distinct = len({products.get(name, {}).get('owner', name) for name in names})
     shell = re.sub(r'\b\d{3} companies\b', f'{distinct} companies', shell)
     body = source[style_end:].strip()
     target_path.write_text(shell + source[style_start:style_end] + '\n</head>\n<body>\n' + body + '\n</body>\n</html>\n', encoding='utf-8', newline='\n')
