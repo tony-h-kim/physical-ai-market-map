@@ -1,0 +1,31 @@
+{
+  "Figure AI": {
+    "sections": [
+      "I1"
+    ],
+    "claim": "Helix is a vision-language-action model for humanoid control; internal capability, not a standalone model-sales claim.",
+    "url": "https://www.figure.ai/news/helix",
+    "reviewed": "2026-11-14"
+  },
+  "Tesla": {
+    "sections": [
+      "I1",
+      "I2"
+    ],
+    "claim": "Tesla describes neural perception-to-control and Optimus/vehicle autonomy stacks; author classification of internal capabilities, not an open foundation-model offer.",
+    "url": "https://www.tesla.com/SI",
+    "reviewed": "2026-11-14"
+  },
+  "NVIDIA": {
+    "sections": [
+      "D2",
+      "D3",
+      "I1",
+      "I3",
+      "O4"
+    ],
+    "claim": "Secondary sections follow the documented NVIDIA product/project ecosystem, including GR00T robot models.",
+    "url": "https://www.nvidia.com/en-us/industries/robotics/isaac-groot/",
+    "reviewed": "2026-11-14"
+  }
+}

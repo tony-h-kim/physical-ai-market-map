@@ -28,7 +28,13 @@ node check.js
 python validate.py index.html
 ```
 
-The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 170 dependency-free checks and the artifact validator with zero errors or warnings.
+The operating-disclosure register and Q3 funding inputs are retained in `source/operating-disclosures.json` and `source/capital-q3-2026.json`. The latest update passes 190 dependency-free checks and the artifact validator with zero errors or warnings.
+
+## V15-00 — editorial research workspaces, November 14, 2026
+
+Merged the supplied editorial reference into the complete product: Newsreader/Inter/JetBrains Mono typography, warm light surfaces, neutral dark mode, three grouped workspaces, research lenses, card badge modes and within-section sorting. Optional secondary section matches use a source-backed review register, with dashed cards and evidence in the inspector. Coverage counts derive from the roster; the legacy technical taxonomy remains a crosswalk. All 430 records, 100 overview companies, 150 relationship records and analytical chapters remain available. The new controls persist in shared URLs and reset together.
+
+`source/secondary-section-review.json` documents the targeted Figure/Tesla/NVIDIA capability review. The V14 lens names roster additions and selected operating/AMD reviews, rather than treating every classification refresh as a newly added company.
 
 ## V14-01 — readable navigation and coverage clarity, November 8, 2026
 

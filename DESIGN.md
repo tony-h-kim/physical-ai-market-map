@@ -35,3 +35,14 @@ Capital and Investor view share one operating-disclosure register. Method uses c
 Readable fragment routes name the destination, such as `#overview`, `#atlas?company=AMD` and `#insights/ecosystem`. Only non-default relationship settings are serialized; the original query-style fragments remain supported. H/D/I/S/O are retained with an early Hardware/Development/Intelligence/Systems/Operations key.
 
 Primary section tabs and secondary view selectors form a measured two-row sticky stack. The page contents offsets follow the measured heights. Phones use horizontally scrollable secondary selectors to preserve reading space. A keyboard-accessible back-to-top control appears after scrolling. Body, control, label and metadata text use one shared type scale across chapters; only headings and metrics retain larger levels.
+
+
+## V15 editorial merge
+
+The user's supplied HTML is a design and behavior reference, not a replacement dataset. Its small sample and incompatible legacy crosswalk are not imported. Existing audited primary sections, organization identity, sources, operating disclosures and the 100-company selection remain authoritative.
+
+The light palette uses warm alabaster, white surfaces, charcoal text and five role accents; dark mode remains neutral charcoal. Newsreader carries headings, Inter carries UI and prose, and JetBrains Mono is reserved for data/codes. The existing shared type scale remains in use.
+
+Market map, Role × model matrix and Screening table form three workspaces. A single view selector retains every alternative visualization and old deep link. Research lenses use declared metadata, not inferred popularity or financial size. Category leaders means the existing editorial flag; maturity means the existing assessed stage. Unknown maturity remains unknown.
+
+The secondary toggle adds reviewed section matches, not all sections in a broadly tagged secondary role. Figure's Helix, Tesla's internal perception/control/autonomy, and NVIDIA's documented product portfolio establish the targeted classifications; sources and caveats appear in their inspectors. Dashed cards distinguish secondary from primary placement. This register is intentionally partial, and it does not create extra company records.

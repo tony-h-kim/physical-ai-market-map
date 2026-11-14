@@ -15,6 +15,8 @@ try:
     current = target_path.read_text(encoding='utf-8')
     style_start, style_end = source.index('<style>'), source.index('</style>') + len('</style>')
     shell = current[:current.index('<style>')]
+    # The reference typography replaces the previous shell fonts without duplicate requests.
+    shell = re.sub(r'<link rel="stylesheet" href="https://fonts.googleapis.com/css2[^">]+">', '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap">', shell)
     # Metadata count follows the roster, so generated and social summaries agree.
     co = source.split('const CO = [', 1)[1].split('\n];', 1)[0]
     products = json.loads(source.split('const PRODUCT_CATALOG=', 1)[1].split(';\n', 1)[0])
