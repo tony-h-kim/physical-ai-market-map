@@ -1,4 +1,4 @@
-# Product review — V14-00
+# Product review: V14-00
 
 Reviewed November 8, 2026. Scope: the complete reader experience, including all market views, analytical chapters, company profiles, relationship encodings, navigation and exports.
 
@@ -32,7 +32,7 @@ CSV serialization and formula protection pass automated checks, and its browser 
 The responsive pass targets the listed widths and current Chrome; it does not certify every browser, device, zoom level or assistive-technology combination.
 
 
-## V14-01 follow-up — November 8, 2026
+## V14-01 follow-up, November 8, 2026
 
 Retained H/D/I/S/O with an early role key and export legend. Replaced generated query-style state with readable destination routes and explicit non-default filter names; legacy links remain supported. Added measured two-row sticky navigation across all three sections, a focus-aware back-to-top button and a compact single-paragraph footer caveat. Consolidated typography into shared body, control, label and metadata sizes; heading and metric hierarchy remains intentional.
 
@@ -41,7 +41,7 @@ AMD previously had two inherited records and no checked-primary records, so its 
 The follow-up passes 170 automated checks and the artifact validator. Reviewed another 144 combinations of route, width and appearance (390/768/1440/2752, light/dark), with no page overflow or clipped visible button text detected. Scrolled all three main sections at phone and desktop sizes to verify that the secondary row sits directly below the primary row. Tested the back-to-top action and its heading focus. New route round-trips, legacy relationship-filter semantics, malformed inputs and named company filters are covered by regression checks.
 
 
-## V15-00 editorial reference merge — November 14, 2026
+## V15-00 editorial reference merge, November 14, 2026
 
 Merged the supplied starter's design and structural controls into the complete existing artifact. Preserved 430 records, 422 organization identities, all 100 overview selections, 150 relationship records, analytical chapters, profile evidence, shortlist notes, CSV/SVG exports and legacy deep links. Did not import the sample dataset or its incompatible legacy-code mapping.
 

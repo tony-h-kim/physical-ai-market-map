@@ -1,6 +1,6 @@
 # Working agreement for this repo
 
-## Commit attribution — ask, never assume
+## Commit attribution: ask, never assume
 
 Do **not** add `Co-Authored-By:`, `Claude-Session:`, `Generated with...` or any
 other AI-attribution trailer to commits or PR descriptions in this repo by default.

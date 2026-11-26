@@ -1,4 +1,4 @@
-# Capital review — November 8, 2026
+# Capital review, November 8, 2026
 
 Q3 lead series: Crunchbase October 27, 2026; global robotics venture funding excluding defense-related companies. USD 9.9B versus USD 4.3B is +130.23%, rounded to +130%, with a USD 5.6B increase. The source’s approximate 185% refers to January–September growth. The prior H1 broad physical AI series is retained in a separate, collapsed context panel and is never summed or spliced with Q3.
 
