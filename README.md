@@ -1,4 +1,4 @@
-# Physical AI Market Map — 2026
+# Physical AI Market Map 2026
 
 [Explore the live map](https://tony-h-kim.github.io/physical-ai-market-map/)
 
